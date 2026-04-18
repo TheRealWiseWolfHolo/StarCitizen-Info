@@ -11,6 +11,9 @@ const IMAGE_COMPOSERS = [
   { name: "900", size: "SIZE_900", ratio: "RATIO_16_9", extension: "WEBP" },
   { name: "1000", size: "SIZE_1000", ratio: "RATIO_16_9", extension: "WEBP" }
 ];
+const SHIP_NAME_OVERRIDES = new Map([
+  ["C2 Hercules", "Hercules Starlifter C2"]
+]);
 
 const SHIP_LIST_QUERY = `query GetShipList($query: SearchQuery!, $storeFront: String = "pledge") {
   store(name: $storeFront, browse: true) {
@@ -133,7 +136,16 @@ function pickPrimaryThumbnail(thumbnailUrls) {
   );
 }
 
+function normalizeShipName(name) {
+  if (!name) {
+    return null;
+  }
+
+  return SHIP_NAME_OVERRIDES.get(name) ?? name;
+}
+
 function normalizeShip(resource) {
+  const normalizedName = normalizeShipName(resource.name ?? resource.title ?? null);
   const thumbnailUrls = createThumbnailUrls(resource.imageComposer);
   const msrpCentsUsd =
     typeof resource.msrp === "number" && Number.isFinite(resource.msrp)
@@ -142,8 +154,8 @@ function normalizeShip(resource) {
 
   return {
     id: String(resource.id ?? ""),
-    title: resource.title ?? resource.name ?? null,
-    name: resource.name ?? resource.title ?? null,
+    title: normalizedName,
+    name: normalizedName,
     slug: resource.slug ?? null,
     url: absoluteUrl(resource.url),
     manufacturerId:
@@ -320,4 +332,3 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
-

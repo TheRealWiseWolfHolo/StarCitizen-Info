@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-18T20:58:56.134Z",
+  "generatedAt": "2026-04-18T21:55:08.369Z",
   "source": {
     "page": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
     "graphql": "https://robertsspaceindustries.com/graphql"
@@ -1147,31 +1147,6 @@
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/f374f5e3a81a903af77aaf920079480890e8b259/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjfBqExzNdjFYFntDZSQvoviQmVRUrSXUz)/source.webp",
         "1000": "https://robertsspaceindustries.com/i/bac6648185eab3ca89a9b859d6092c81fe337587/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjfBqExzNdjFYFntDZSQvoviQmVRUrSXUz)/source.webp"
-      }
-    },
-    {
-      "id": "162",
-      "title": "C2 Hercules",
-      "name": "C2 Hercules",
-      "slug": "k50il15zq7osw",
-      "url": "https://robertsspaceindustries.com/pledge/ships/crusader-starlifter/C2-Hercules",
-      "manufacturerId": 68,
-      "manufacturer": "Crusader Industries",
-      "type": "transport",
-      "focus": "Heavy Freight ",
-      "msrpCentsUsd": 40000,
-      "msrpUsd": 400,
-      "purchasable": true,
-      "productionStatus": "flight-ready",
-      "featuredForShipList": false,
-      "minCrew": 1,
-      "maxCrew": 2,
-      "publishStart": "2021-05-19 00:00:00",
-      "lastUpdate": "2026-03-10 20:32:13",
-      "thumbnailUrl": "https://robertsspaceindustries.com/i/387f877bf5aae2c4dc6e32568d621473b5d4d79e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskpcDUyTPuKfT2cePUz4jof5hYcpd6LjZx)/source.webp",
-      "thumbnailUrls": {
-        "900": "https://robertsspaceindustries.com/i/26981dc4b62862ededfb92d3012452ea175e5e7a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskpcDUyTPuKfT2cePUz4jof5hYcpd6LjZx)/source.webp",
-        "1000": "https://robertsspaceindustries.com/i/387f877bf5aae2c4dc6e32568d621473b5d4d79e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskpcDUyTPuKfT2cePUz4jof5hYcpd6LjZx)/source.webp"
       }
     },
     {
@@ -3222,6 +3197,31 @@
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/4d6646b06e4547f77a58cab4fdc5f3859acad05a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj21mVS6o1YrzqWhXT7tPnLa7wSa8Z5Cr2)/source.webp",
         "1000": "https://robertsspaceindustries.com/i/8632c51efb3ab9c8fdc2cddef7ab0eeca8faaf49/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj21mVS6o1YrzqWhXT7tPnLa7wSa8Z5Cr2)/source.webp"
+      }
+    },
+    {
+      "id": "162",
+      "title": "Hercules Starlifter C2",
+      "name": "Hercules Starlifter C2",
+      "slug": "k50il15zq7osw",
+      "url": "https://robertsspaceindustries.com/pledge/ships/crusader-starlifter/C2-Hercules",
+      "manufacturerId": 68,
+      "manufacturer": "Crusader Industries",
+      "type": "transport",
+      "focus": "Heavy Freight ",
+      "msrpCentsUsd": 40000,
+      "msrpUsd": 400,
+      "purchasable": true,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 1,
+      "maxCrew": 2,
+      "publishStart": "2021-05-19 00:00:00",
+      "lastUpdate": "2026-03-10 20:32:13",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/387f877bf5aae2c4dc6e32568d621473b5d4d79e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskpcDUyTPuKfT2cePUz4jof5hYcpd6LjZx)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/26981dc4b62862ededfb92d3012452ea175e5e7a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskpcDUyTPuKfT2cePUz4jof5hYcpd6LjZx)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/387f877bf5aae2c4dc6e32568d621473b5d4d79e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskpcDUyTPuKfT2cePUz4jof5hYcpd6LjZx)/source.webp"
       }
     },
     {
