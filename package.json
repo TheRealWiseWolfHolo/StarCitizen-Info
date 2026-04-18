@@ -1,0 +1,9 @@
+{
+  "name": "starcitizen-info",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-ships-json.mjs"
+  }
+}
+

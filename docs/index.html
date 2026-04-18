@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Star Citizen Ship MSRP Feed</title>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Orbitron:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #07131d;
+        --bg-alt: #0c1d2b;
+        --panel: rgba(11, 25, 37, 0.84);
+        --panel-strong: rgba(10, 20, 31, 0.94);
+        --line: rgba(126, 172, 210, 0.24);
+        --text: #eef5fb;
+        --muted: #9cb2c5;
+        --accent: #6ee7d8;
+        --accent-strong: #f7b955;
+        --danger: #ff9770;
+        --shadow: 0 24px 60px rgba(0, 0, 0, 0.38);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "IBM Plex Sans", sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(77, 119, 173, 0.22), transparent 40%),
+          linear-gradient(180deg, #091521 0%, #050d15 100%);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        width: min(1200px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 32px 0 56px;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background:
+          linear-gradient(135deg, rgba(247, 185, 85, 0.12), rgba(110, 231, 216, 0.08)),
+          var(--panel);
+        box-shadow: var(--shadow);
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto -80px -80px auto;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(110, 231, 216, 0.18), transparent 72%);
+        pointer-events: none;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        font-size: 12px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      h1 {
+        margin: 0;
+        font-family: "Orbitron", sans-serif;
+        font-size: clamp(2rem, 4vw, 3.35rem);
+        line-height: 1.02;
+      }
+
+      .hero-copy {
+        max-width: 760px;
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 1.02rem;
+        line-height: 1.65;
+      }
+
+      .hero-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .chip-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 20px;
+      }
+
+      .stat {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--panel-strong);
+      }
+
+      .stat-label {
+        color: var(--muted);
+        font-size: 0.86rem;
+      }
+
+      .stat-value {
+        margin-top: 10px;
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.55rem;
+      }
+
+      .controls {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .control,
+      .search {
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(8, 17, 27, 0.92);
+        color: var(--text);
+        font: inherit;
+      }
+
+      .search::placeholder {
+        color: #8198ab;
+      }
+
+      .section-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: baseline;
+        margin: 26px 0 14px;
+      }
+
+      .section-head h2 {
+        margin: 0;
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.2rem;
+      }
+
+      .section-meta {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 14px;
+      }
+
+      .card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+
+      .card-media {
+        aspect-ratio: 16 / 9;
+        background:
+          linear-gradient(180deg, transparent 0%, rgba(5, 13, 21, 0.7) 100%),
+          linear-gradient(135deg, rgba(247, 185, 85, 0.16), rgba(110, 231, 216, 0.08)),
+          center / cover no-repeat;
+      }
+
+      .card-body {
+        padding: 16px;
+      }
+
+      .card-title {
+        margin: 0;
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.06rem;
+      }
+
+      .card-subtitle {
+        margin: 8px 0 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .pill {
+        padding: 7px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .price {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .price strong {
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.15rem;
+        color: var(--accent-strong);
+      }
+
+      .card-link {
+        color: var(--accent);
+        font-size: 0.92rem;
+        text-decoration: none;
+      }
+
+      .empty,
+      .error {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--panel);
+        color: var(--muted);
+      }
+
+      .error {
+        border-color: rgba(255, 151, 112, 0.34);
+        color: #ffd4c7;
+      }
+
+      .loading {
+        color: var(--muted);
+      }
+
+      @media (max-width: 920px) {
+        .stats,
+        .controls {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 640px) {
+        .shell {
+          width: min(100vw - 20px, 1200px);
+          padding: 18px 0 36px;
+        }
+
+        .hero {
+          padding: 22px;
+          border-radius: 24px;
+        }
+
+        .stats,
+        .controls {
+          grid-template-columns: 1fr;
+        }
+
+        .section-head {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Star Citizen Public Feed</p>
+        <h1>Ship MSRP JSON for apps, widgets, and side projects.</h1>
+        <p class="hero-copy">
+          This page is built from the live RSI pledge ship listing and republishes the
+          current MSRP feed as simple JSON. The mobile app can fetch the JSON file
+          directly, while humans can search and browse the same dataset here.
+        </p>
+        <div class="hero-links">
+          <a class="chip-link" href="./ships.json">Open `ships.json`</a>
+          <a
+            class="chip-link"
+            href="https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc"
+          >
+            Source page
+          </a>
+        </div>
+      </section>
+
+      <section class="stats" id="stats">
+        <article class="stat">
+          <div class="stat-label">Total ships</div>
+          <div class="stat-value" id="stat-total">-</div>
+        </article>
+        <article class="stat">
+          <div class="stat-label">Purchasable now</div>
+          <div class="stat-value" id="stat-purchasable">-</div>
+        </article>
+        <article class="stat">
+          <div class="stat-label">Not for sale</div>
+          <div class="stat-value" id="stat-unavailable">-</div>
+        </article>
+        <article class="stat">
+          <div class="stat-label">Last generated</div>
+          <div class="stat-value" id="stat-generated">-</div>
+        </article>
+      </section>
+
+      <section class="controls">
+        <input
+          class="search"
+          id="search"
+          type="search"
+          placeholder="Search ship, manufacturer, focus, or type"
+        />
+        <select class="control" id="manufacturer">
+          <option value="">All manufacturers</option>
+        </select>
+        <select class="control" id="availability">
+          <option value="">All availability</option>
+          <option value="true">Purchasable</option>
+          <option value="false">Unavailable</option>
+        </select>
+        <select class="control" id="status">
+          <option value="">All statuses</option>
+          <option value="flight-ready">Flight Ready</option>
+          <option value="in-concept">In Concept</option>
+        </select>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Fleet Feed</h2>
+          <div class="section-meta" id="result-count">Loading ship data...</div>
+        </div>
+        <div id="message" class="loading">Fetching `ships.json`...</div>
+        <div id="grid" class="grid" hidden></div>
+      </section>
+    </main>
+
+    <script>
+      const state = {
+        ships: [],
+        filteredShips: []
+      };
+
+      const formatCurrency = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        maximumFractionDigits: 2
+      });
+
+      const formatDate = new Intl.DateTimeFormat("en-US", {
+        dateStyle: "medium",
+        timeStyle: "short"
+      });
+
+      const elements = {
+        grid: document.getElementById("grid"),
+        message: document.getElementById("message"),
+        resultCount: document.getElementById("result-count"),
+        statTotal: document.getElementById("stat-total"),
+        statPurchasable: document.getElementById("stat-purchasable"),
+        statUnavailable: document.getElementById("stat-unavailable"),
+        statGenerated: document.getElementById("stat-generated"),
+        manufacturer: document.getElementById("manufacturer"),
+        availability: document.getElementById("availability"),
+        status: document.getElementById("status"),
+        search: document.getElementById("search")
+      };
+
+      function shipSearchText(ship) {
+        return [
+          ship.name,
+          ship.title,
+          ship.manufacturer,
+          ship.focus,
+          ship.type
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
+      }
+
+      function updateStats(payload) {
+        elements.statTotal.textContent = String(payload.count ?? state.ships.length);
+        elements.statPurchasable.textContent = String(
+          payload.summary?.purchasableCount ?? state.ships.filter((ship) => ship.purchasable).length
+        );
+        elements.statUnavailable.textContent = String(
+          payload.summary?.unavailableCount ?? state.ships.filter((ship) => !ship.purchasable).length
+        );
+        elements.statGenerated.textContent = payload.generatedAt
+          ? formatDate.format(new Date(payload.generatedAt))
+          : "-";
+      }
+
+      function populateManufacturers(ships) {
+        const manufacturers = Array.from(
+          new Set(ships.map((ship) => ship.manufacturer).filter(Boolean))
+        ).sort((left, right) => left.localeCompare(right));
+
+        for (const manufacturer of manufacturers) {
+          const option = document.createElement("option");
+          option.value = manufacturer;
+          option.textContent = manufacturer;
+          elements.manufacturer.append(option);
+        }
+      }
+
+      function renderShips() {
+        const search = elements.search.value.trim().toLowerCase();
+        const manufacturer = elements.manufacturer.value;
+        const availability = elements.availability.value;
+        const status = elements.status.value;
+
+        state.filteredShips = state.ships.filter((ship) => {
+          if (manufacturer && ship.manufacturer !== manufacturer) {
+            return false;
+          }
+
+          if (availability !== "") {
+            const expected = availability === "true";
+            if (ship.purchasable !== expected) {
+              return false;
+            }
+          }
+
+          if (status && ship.productionStatus !== status) {
+            return false;
+          }
+
+          if (search && !shipSearchText(ship).includes(search)) {
+            return false;
+          }
+
+          return true;
+        });
+
+        elements.resultCount.textContent =
+          `${state.filteredShips.length} of ${state.ships.length} ships shown`;
+
+        if (!state.filteredShips.length) {
+          elements.grid.hidden = true;
+          elements.message.hidden = false;
+          elements.message.className = "empty";
+          elements.message.textContent = "No ships matched the current filters.";
+          return;
+        }
+
+        const markup = state.filteredShips
+          .map((ship) => {
+            const imageStyle = ship.thumbnailUrl
+              ? `style="background-image: linear-gradient(180deg, transparent 0%, rgba(5, 13, 21, 0.72) 100%), url('${ship.thumbnailUrl}');"`
+              : "";
+            const price = ship.msrpUsd === null ? "Unavailable" : formatCurrency.format(ship.msrpUsd);
+            const type = ship.type ? ship.type.replaceAll("-", " ") : "unknown";
+            const statusLabel = ship.productionStatus ?? "unknown";
+            return `
+              <article class="card">
+                <div class="card-media" ${imageStyle}></div>
+                <div class="card-body">
+                  <h3 class="card-title">${ship.name ?? ship.title ?? "Unknown ship"}</h3>
+                  <p class="card-subtitle">${ship.manufacturer ?? "Unknown manufacturer"}${ship.focus ? " • " + ship.focus : ""}</p>
+                  <div class="pill-row">
+                    <span class="pill">${type}</span>
+                    <span class="pill">${statusLabel}</span>
+                    <span class="pill">${ship.purchasable ? "purchasable" : "not for sale"}</span>
+                  </div>
+                  <div class="price">
+                    <strong>${price}</strong>
+                    <a class="card-link" href="${ship.url ?? "#"}" target="_blank" rel="noreferrer">Open RSI page</a>
+                  </div>
+                </div>
+              </article>
+            `;
+          })
+          .join("");
+
+        elements.grid.innerHTML = markup;
+        elements.grid.hidden = false;
+        elements.message.hidden = true;
+      }
+
+      async function boot() {
+        try {
+          const response = await fetch("./ships.json", { cache: "no-store" });
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+          }
+
+          const payload = await response.json();
+          state.ships = Array.isArray(payload.ships) ? payload.ships : [];
+          updateStats(payload);
+          populateManufacturers(state.ships);
+          renderShips();
+        } catch (error) {
+          elements.grid.hidden = true;
+          elements.message.hidden = false;
+          elements.message.className = "error";
+          elements.message.textContent =
+            `Unable to load ships.json right now. ${error.message}`;
+          elements.resultCount.textContent = "Feed unavailable";
+        }
+      }
+
+      for (const control of [
+        elements.search,
+        elements.manufacturer,
+        elements.availability,
+        elements.status
+      ]) {
+        control.addEventListener("input", renderShips);
+        control.addEventListener("change", renderShips);
+      }
+
+      boot();
+    </script>
+  </body>
+</html>
