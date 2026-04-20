@@ -12,8 +12,21 @@ const IMAGE_COMPOSERS = [
   { name: "1000", size: "SIZE_1000", ratio: "RATIO_16_9", extension: "WEBP" }
 ];
 const SHIP_NAME_OVERRIDES = new Map([
-  ["C2 Hercules", "Hercules Starlifter C2"]
+  ["A2 Hercules", "Hercules Starlifter A2"],
+  ["C2 Hercules", "Hercules Starlifter C2"],
+  ["M2 Hercules", "Hercules Starlifter M2"],
+  ["Mercury", "Mercury Star Runner"],
+  ["Caterpillar Best In Show Edition 2949", "Caterpillar 2949 Best in Show"],
+  ["Cutlass Black Best In Show Edition 2949", "Cutlass Black 2949 Best in Show"],
+  ["Hammerhead Best In Show Edition 2949", "Hammerhead 2949 Best in Show"],
+  ["Reclaimer Best In Show Edition 2949", "Reclaimer 2949 Best in Show"]
 ]);
+const SYNTHETIC_SHIP_VARIANTS = [
+  {
+    name: "Gladius Dunlevy",
+    sourceName: "Gladius"
+  }
+];
 
 const SHIP_LIST_QUERY = `query GetShipList($query: SearchQuery!, $storeFront: String = "pledge") {
   store(name: $storeFront, browse: true) {
@@ -177,6 +190,36 @@ function normalizeShip(resource) {
   };
 }
 
+function appendSyntheticShipVariants(ships) {
+  const existingNames = new Set(ships.map((ship) => ship.name));
+  let nextSyntheticID = ships.reduce((currentMax, ship) => {
+    const numericID = Number.parseInt(ship.id, 10);
+    return Number.isFinite(numericID) ? Math.max(currentMax, numericID) : currentMax;
+  }, 0);
+
+  for (const variant of SYNTHETIC_SHIP_VARIANTS) {
+    if (existingNames.has(variant.name)) {
+      continue;
+    }
+
+    const sourceShip = ships.find((ship) => ship.name === variant.sourceName);
+    if (!sourceShip) {
+      continue;
+    }
+
+    nextSyntheticID += 1;
+    ships.push({
+      ...sourceShip,
+      id: String(nextSyntheticID),
+      title: variant.name,
+      name: variant.name
+    });
+    existingNames.add(variant.name);
+  }
+
+  return ships;
+}
+
 function buildSummary(ships) {
   const manufacturers = new Map();
   let purchasableCount = 0;
@@ -303,9 +346,11 @@ async function main() {
   await mkdir(dirname(OUTPUT_PATH), { recursive: true });
 
   const { totalCount, ships } = await fetchAllShips();
-  const normalizedShips = ships
-    .map(normalizeShip)
+  const normalizedShips = appendSyntheticShipVariants(
+    ships.map(normalizeShip)
+  )
     .sort((left, right) => (left.name ?? "").localeCompare(right.name ?? ""));
+  const syntheticCount = Math.max(0, normalizedShips.length - totalCount);
 
   const output = {
     generatedAt: new Date().toISOString(),
@@ -320,6 +365,7 @@ async function main() {
     },
     count: normalizedShips.length,
     totalCount,
+    syntheticCount,
     summary: buildSummary(normalizedShips),
     ships: normalizedShips
   };
