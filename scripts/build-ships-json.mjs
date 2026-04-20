@@ -24,7 +24,8 @@ const SHIP_NAME_OVERRIDES = new Map([
 const SYNTHETIC_SHIP_VARIANTS = [
   {
     name: "Gladius Dunlevy",
-    sourceName: "Gladius"
+    sourceName: "Gladius",
+    thumbnailUrl: "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg"
   }
 ];
 
@@ -212,7 +213,15 @@ function appendSyntheticShipVariants(ships) {
       ...sourceShip,
       id: String(nextSyntheticID),
       title: variant.name,
-      name: variant.name
+      name: variant.name,
+      thumbnailUrl: variant.thumbnailUrl ?? sourceShip.thumbnailUrl,
+      thumbnailUrls: variant.thumbnailUrl
+        ? {
+            ...sourceShip.thumbnailUrls,
+            "900": variant.thumbnailUrl,
+            "1000": variant.thumbnailUrl
+          }
+        : sourceShip.thumbnailUrls
     });
     existingNames.add(variant.name);
   }

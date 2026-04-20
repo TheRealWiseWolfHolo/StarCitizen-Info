@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T20:01:51.795Z",
+  "generatedAt": "2026-04-20T20:04:28.429Z",
   "source": {
     "page": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
     "graphql": "https://robertsspaceindustries.com/graphql"
@@ -2894,10 +2894,10 @@
       "maxCrew": 1,
       "publishStart": "2015-03-20 00:00:00",
       "lastUpdate": "2025-12-03 21:48:54",
-      "thumbnailUrl": "https://robertsspaceindustries.com/i/60415cc9954828896ce4495b34885d7e3a6951d9/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResieuRXVexPTjwdpMHEWo3saH7q2zcqCJWS)/source.webp",
+      "thumbnailUrl": "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg",
       "thumbnailUrls": {
-        "900": "https://robertsspaceindustries.com/i/72cd468565297f0ec43cbb7d94c61909fdef2872/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResieuRXVexPTjwdpMHEWo3saH7q2zcqCJWS)/source.webp",
-        "1000": "https://robertsspaceindustries.com/i/60415cc9954828896ce4495b34885d7e3a6951d9/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResieuRXVexPTjwdpMHEWo3saH7q2zcqCJWS)/source.webp"
+        "900": "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg",
+        "1000": "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg"
       }
     },
     {
