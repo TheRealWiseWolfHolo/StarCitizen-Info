@@ -107,6 +107,7 @@ let feed = try JSONDecoder().decode(ShipFeed.self, from: data)
 ## Notes
 
 - RSI exposes MSRP in cents, so this feed publishes both `msrpCentsUsd` and `msrpUsd`.
+- When RSI marks a ship as unavailable and does not publish a live MSRP, the feed publishes `msrpLabel: "Not For Sale"` so apps can distinguish that from truly incomplete pricing data.
 - The workflow does not commit generated JSON back into the repo on each daily run.
   - GitHub Pages serves the freshly generated artifact from the workflow instead.
 - If you ever want Cloudflare Pages instead, you can keep the same `docs` output and point Cloudflare at this repo.

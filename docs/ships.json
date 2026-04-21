@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T20:04:28.429Z",
+  "generatedAt": "2026-04-21T01:02:04.381Z",
   "source": {
     "page": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
     "graphql": "https://robertsspaceindustries.com/graphql"
@@ -12,13 +12,13 @@
       false
     ]
   },
-  "count": 251,
+  "count": 252,
   "totalCount": 250,
-  "syntheticCount": 1,
+  "syntheticCount": 2,
   "summary": {
     "purchasableCount": 91,
-    "unavailableCount": 160,
-    "flightReadyCount": 220,
+    "unavailableCount": 161,
+    "flightReadyCount": 221,
     "inConceptCount": 31,
     "manufacturers": [
       {
@@ -35,7 +35,7 @@
       },
       {
         "name": "Drake Interplanetary",
-        "count": 25
+        "count": 26
       },
       {
         "name": "MISC",
@@ -2026,6 +2026,32 @@
       }
     },
     {
+      "id": "316",
+      "title": "Dragonfly Star Kitten Edition",
+      "name": "Dragonfly Star Kitten Edition",
+      "slug": "got2hts66e3ec",
+      "url": "https://robertsspaceindustries.com/pledge/ships/drake-dragonfly/Dragonfly-Black",
+      "manufacturerId": 5,
+      "manufacturer": "Drake Interplanetary",
+      "type": "competition",
+      "focus": "Racing",
+      "msrpCentsUsd": null,
+      "msrpUsd": null,
+      "purchasable": false,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 1,
+      "maxCrew": 2,
+      "publishStart": "2017-12-23 00:00:00",
+      "lastUpdate": "2025-12-03 21:55:57",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/4edf9f73028b9bce027a2f99ef05334615b593e0/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPN4yumMk5nt91UxccBVecfwddqkyqWeJ)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/5fe70a68d30fcc4ff97d100d2a40bc9e2f158293/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPN4yumMk5nt91UxccBVecfwddqkyqWeJ)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/4edf9f73028b9bce027a2f99ef05334615b593e0/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPN4yumMk5nt91UxccBVecfwddqkyqWeJ)/source.webp"
+      },
+      "msrpLabel": "Not For Sale"
+    },
+    {
       "id": "111",
       "title": "Dragonfly Yellowjacket",
       "name": "Dragonfly Yellowjacket",
@@ -2187,6 +2213,7 @@
       "focus": "Medium Fighter",
       "msrpCentsUsd": null,
       "msrpUsd": null,
+      "msrpLabel": "Not For Sale",
       "purchasable": false,
       "productionStatus": "flight-ready",
       "featuredForShipList": false,

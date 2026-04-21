@@ -7,6 +7,7 @@ const GRAPHQL_URL = `${ORIGIN}/graphql`;
 const SOURCE_PAGE_URL =
   `${ORIGIN}/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc`;
 const PAGE_SIZE = 100;
+const NOT_FOR_SALE_MSRP_LABEL = "Not For Sale";
 const IMAGE_COMPOSERS = [
   { name: "900", size: "SIZE_900", ratio: "RATIO_16_9", extension: "WEBP" },
   { name: "1000", size: "SIZE_1000", ratio: "RATIO_16_9", extension: "WEBP" }
@@ -26,6 +27,16 @@ const SYNTHETIC_SHIP_VARIANTS = [
     name: "Gladius Dunlevy",
     sourceName: "Gladius",
     thumbnailUrl: "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg"
+  },
+  {
+    name: "Dragonfly Star Kitten Edition",
+    sourceName: "Dragonfly Black",
+    overrides: {
+      msrpCentsUsd: null,
+      msrpUsd: null,
+      msrpLabel: NOT_FOR_SALE_MSRP_LABEL,
+      purchasable: false
+    }
   }
 ];
 
@@ -158,6 +169,14 @@ function normalizeShipName(name) {
   return SHIP_NAME_OVERRIDES.get(name) ?? name;
 }
 
+function deriveMsrpLabel({ msrpCentsUsd, purchasable }) {
+  if (msrpCentsUsd === null && purchasable === false) {
+    return NOT_FOR_SALE_MSRP_LABEL;
+  }
+
+  return null;
+}
+
 function normalizeShip(resource) {
   const normalizedName = normalizeShipName(resource.name ?? resource.title ?? null);
   const thumbnailUrls = createThumbnailUrls(resource.imageComposer);
@@ -165,6 +184,8 @@ function normalizeShip(resource) {
     typeof resource.msrp === "number" && Number.isFinite(resource.msrp)
       ? resource.msrp
       : null;
+  const purchasable = Boolean(resource.purchasable);
+  const msrpLabel = deriveMsrpLabel({ msrpCentsUsd, purchasable });
 
   return {
     id: String(resource.id ?? ""),
@@ -179,7 +200,8 @@ function normalizeShip(resource) {
     focus: resource.focus ?? null,
     msrpCentsUsd,
     msrpUsd: msrpCentsUsd === null ? null : msrpCentsUsd / 100,
-    purchasable: Boolean(resource.purchasable),
+    ...(msrpLabel ? { msrpLabel } : {}),
+    purchasable,
     productionStatus: resource.productionStatus ?? null,
     featuredForShipList: Boolean(resource.featuredForShipList),
     minCrew: typeof resource.minCrew === "number" ? resource.minCrew : null,
@@ -214,6 +236,7 @@ function appendSyntheticShipVariants(ships) {
       id: String(nextSyntheticID),
       title: variant.name,
       name: variant.name,
+      ...(variant.overrides ?? {}),
       thumbnailUrl: variant.thumbnailUrl ?? sourceShip.thumbnailUrl,
       thumbnailUrls: variant.thumbnailUrl
         ? {

@@ -489,7 +489,7 @@
             const imageStyle = ship.thumbnailUrl
               ? `style="background-image: linear-gradient(180deg, transparent 0%, rgba(5, 13, 21, 0.72) 100%), url('${ship.thumbnailUrl}');"`
               : "";
-            const price = ship.msrpUsd === null ? "Unavailable" : formatCurrency.format(ship.msrpUsd);
+            const price = ship.msrpLabel ?? (ship.msrpUsd === null ? "Unavailable" : formatCurrency.format(ship.msrpUsd));
             const type = ship.type ? ship.type.replaceAll("-", " ") : "unknown";
             const statusLabel = ship.productionStatus ?? "unknown";
             return `
