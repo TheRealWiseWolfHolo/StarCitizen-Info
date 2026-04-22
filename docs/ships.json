@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-22T01:12:59.326Z",
+  "generatedAt": "2026-04-22T01:28:24.518Z",
   "source": {
     "page": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
     "graphql": "https://robertsspaceindustries.com/graphql"
@@ -12,13 +12,13 @@
       false
     ]
   },
-  "count": 260,
+  "count": 262,
   "totalCount": 250,
-  "syntheticCount": 10,
+  "syntheticCount": 12,
   "summary": {
     "purchasableCount": 92,
-    "unavailableCount": 168,
-    "flightReadyCount": 228,
+    "unavailableCount": 170,
+    "flightReadyCount": 230,
     "inConceptCount": 32,
     "manufacturers": [
       {
@@ -43,7 +43,7 @@
       },
       {
         "name": "Origin Jumpworks",
-        "count": 21
+        "count": 23
       },
       {
         "name": "Tumbril",
@@ -326,7 +326,7 @@
       }
     },
     {
-      "id": "321",
+      "id": "323",
       "title": "600i Executive Edition",
       "name": "600i Executive Edition",
       "slug": "0ih9xvaedu7xx",
@@ -350,6 +350,31 @@
         "1000": "https://robertsspaceindustries.com/i/de53d42668b4661de434772e8b494046dae3cdf7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp"
       },
       "msrpLabel": "Not For Sale"
+    },
+    {
+      "id": "322",
+      "title": "600i Exploration Module",
+      "name": "600i Exploration Module",
+      "slug": "4rzlgxtznqilp",
+      "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Explorer",
+      "manufacturerId": 6,
+      "manufacturer": "Origin Jumpworks",
+      "type": "exploration",
+      "focus": "Expedition",
+      "msrpCentsUsd": 47500,
+      "msrpUsd": 475,
+      "purchasable": false,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 2,
+      "maxCrew": 5,
+      "publishStart": "2018-06-30 00:00:00",
+      "lastUpdate": "2026-03-25 23:00:33",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/bbfd42b3a1a3c30b170da468a56e2ffaec6980e9/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqeFfVoF43f38XfD8N5eYmrHRC4QsX4aJ)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/0d4cbd3a4a553b641ee54582a24d45db421d6b25/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqeFfVoF43f38XfD8N5eYmrHRC4QsX4aJ)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/bbfd42b3a1a3c30b170da468a56e2ffaec6980e9/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqeFfVoF43f38XfD8N5eYmrHRC4QsX4aJ)/source.webp"
+      }
     },
     {
       "id": "141",
@@ -380,6 +405,31 @@
       "id": "140",
       "title": "600i Touring",
       "name": "600i Touring",
+      "slug": "0ih9xvaedu7xx",
+      "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Touring",
+      "manufacturerId": 6,
+      "manufacturer": "Origin Jumpworks",
+      "type": "exploration",
+      "focus": "Touring",
+      "msrpCentsUsd": 43500,
+      "msrpUsd": 435,
+      "purchasable": false,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 3,
+      "maxCrew": 5,
+      "publishStart": "2018-12-20 00:00:00",
+      "lastUpdate": "2026-03-25 23:00:34",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/de53d42668b4661de434772e8b494046dae3cdf7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/34bd9cbbe87a33a675aa9dc003a93f3149eb9a3b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/de53d42668b4661de434772e8b494046dae3cdf7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp"
+      }
+    },
+    {
+      "id": "321",
+      "title": "600i Touring Module",
+      "name": "600i Touring Module",
       "slug": "0ih9xvaedu7xx",
       "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Touring",
       "manufacturerId": 6,
@@ -2102,7 +2152,7 @@
       }
     },
     {
-      "id": "324",
+      "id": "326",
       "title": "Dragonfly Star Kitten Edition",
       "name": "Dragonfly Star Kitten Edition",
       "slug": "got2hts66e3ec",
@@ -4555,7 +4605,7 @@
       }
     },
     {
-      "id": "323",
+      "id": "325",
       "title": "Nova Tank",
       "name": "Nova Tank",
       "slug": "ph5ql7orx5n9r",
@@ -6205,7 +6255,7 @@
       }
     },
     {
-      "id": "322",
+      "id": "324",
       "title": "Ursa Rover Fortuna",
       "name": "Ursa Rover Fortuna",
       "slug": "soa3xtkb2ohmt",

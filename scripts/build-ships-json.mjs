@@ -57,6 +57,14 @@ const SYNTHETIC_SHIP_VARIANTS = [
     sourceName: "350r"
   },
   {
+    name: "600i Touring Module",
+    sourceName: "600i Touring"
+  },
+  {
+    name: "600i Exploration Module",
+    sourceName: "600i Explorer"
+  },
+  {
     name: "600i Executive Edition",
     sourceName: "600i Touring",
     overrides: {
