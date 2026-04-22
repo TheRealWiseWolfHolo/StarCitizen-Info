@@ -17,6 +17,8 @@ const SHIP_NAME_OVERRIDES = new Map([
   ["C2 Hercules", "Hercules Starlifter C2"],
   ["M2 Hercules", "Hercules Starlifter M2"],
   ["Mercury", "Mercury Star Runner"],
+  ["Ursa", "Ursa Rover"],
+  ["315p", "315p Explorer"],
   ["Caterpillar Best In Show Edition 2949", "Caterpillar 2949 Best in Show"],
   ["Cutlass Black Best In Show Edition 2949", "Cutlass Black 2949 Best in Show"],
   ["Hammerhead Best In Show Edition 2949", "Hammerhead 2949 Best in Show"],
@@ -27,6 +29,50 @@ const SYNTHETIC_SHIP_VARIANTS = [
     name: "Gladius Dunlevy",
     sourceName: "Gladius",
     thumbnailUrl: "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg"
+  },
+  {
+    name: "Mustang Omega : AMD Edition",
+    sourceName: "Mustang Omega",
+    overrides: {
+      msrpCentsUsd: null,
+      msrpUsd: null,
+      msrpLabel: NOT_FOR_SALE_MSRP_LABEL,
+      purchasable: false
+    }
+  },
+  {
+    name: "Genesis Starliner",
+    sourceName: "Genesis"
+  },
+  {
+    name: "Cutlass 2949 Best In Show",
+    sourceName: "Cutlass Black 2949 Best in Show"
+  },
+  {
+    name: "Reliant Tana - Skirmisher",
+    sourceName: "Reliant Tana"
+  },
+  {
+    name: "350r Racer",
+    sourceName: "350r"
+  },
+  {
+    name: "600i Executive Edition",
+    sourceName: "600i Touring",
+    overrides: {
+      msrpCentsUsd: null,
+      msrpUsd: null,
+      msrpLabel: NOT_FOR_SALE_MSRP_LABEL,
+      purchasable: false
+    }
+  },
+  {
+    name: "Ursa Rover Fortuna",
+    sourceName: "Ursa Fortuna"
+  },
+  {
+    name: "Nova Tank",
+    sourceName: "Nova"
   },
   {
     name: "Dragonfly Star Kitten Edition",

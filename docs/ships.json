@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-21T01:02:04.381Z",
+  "generatedAt": "2026-04-22T01:12:59.326Z",
   "source": {
     "page": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
     "graphql": "https://robertsspaceindustries.com/graphql"
@@ -12,14 +12,14 @@
       false
     ]
   },
-  "count": 252,
+  "count": 260,
   "totalCount": 250,
-  "syntheticCount": 2,
+  "syntheticCount": 10,
   "summary": {
-    "purchasableCount": 91,
-    "unavailableCount": 161,
-    "flightReadyCount": 221,
-    "inConceptCount": 31,
+    "purchasableCount": 92,
+    "unavailableCount": 168,
+    "flightReadyCount": 228,
+    "inConceptCount": 32,
     "manufacturers": [
       {
         "name": "Anvil Aerospace",
@@ -27,7 +27,7 @@
       },
       {
         "name": "Roberts Space Industries",
-        "count": 32
+        "count": 33
       },
       {
         "name": "Aegis Dynamics",
@@ -35,27 +35,27 @@
       },
       {
         "name": "Drake Interplanetary",
-        "count": 26
+        "count": 27
       },
       {
         "name": "MISC",
-        "count": 22
+        "count": 23
       },
       {
         "name": "Origin Jumpworks",
-        "count": 19
+        "count": 21
+      },
+      {
+        "name": "Tumbril",
+        "count": 13
       },
       {
         "name": "Argo Astronautics",
         "count": 12
       },
       {
-        "name": "Tumbril",
-        "count": 12
-      },
-      {
         "name": "Crusader Industries",
-        "count": 11
+        "count": 12
       },
       {
         "name": "Mirai",
@@ -63,7 +63,7 @@
       },
       {
         "name": "Consolidated Outland",
-        "count": 9
+        "count": 10
       },
       {
         "name": "Esperia",
@@ -143,7 +143,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2020-10-08 00:00:00",
-      "lastUpdate": "2025-12-03 22:19:04",
+      "lastUpdate": "2026-04-21 19:56:34",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/275169a858374ce3bcc0fb25639c2b699564c195/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResizfriBj3nFqAvDHZZ7vuSG3tmn1HdLmoL)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/4edda30724031a5f9d8bd270d13f83e92814a058/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResizfriBj3nFqAvDHZZ7vuSG3tmn1HdLmoL)/source.webp",
@@ -202,8 +202,8 @@
     },
     {
       "id": "8",
-      "title": "315p",
-      "name": "315p",
+      "title": "315p Explorer",
+      "name": "315p Explorer",
       "slug": "fzts1fg7ykeo5",
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/315p",
       "manufacturerId": 6,
@@ -243,7 +243,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2014-10-14 00:00:00",
-      "lastUpdate": "2025-12-03 22:19:07",
+      "lastUpdate": "2026-04-21 19:56:36",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/16df092bae7e15e28f5ddf8cb661d420fe8d626a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskJ23FWYyJEzadrDtKz87mfAEoQDHWvg2S)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/5de627d4948ba4767cb81eff709a5c241ba9b1e9/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskJ23FWYyJEzadrDtKz87mfAEoQDHWvg2S)/source.webp",
@@ -254,6 +254,31 @@
       "id": "10",
       "title": "350r",
       "name": "350r",
+      "slug": "id69wp9ug7tts",
+      "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/350r",
+      "manufacturerId": 6,
+      "manufacturer": "Origin Jumpworks",
+      "type": "competition",
+      "focus": "Racing",
+      "msrpCentsUsd": 12500,
+      "msrpUsd": 125,
+      "purchasable": true,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 1,
+      "maxCrew": 1,
+      "publishStart": "2014-09-12 00:00:00",
+      "lastUpdate": "2026-03-11 12:49:30",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/5a07624df24f8c53225dfc71120250ec64bf2f0e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqRzd4VcczH8KK3H3SAgsMrj6ExxrMpge)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/c53b0b87bd3e60484b0e2b5630dfdf99be81de11/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqRzd4VcczH8KK3H3SAgsMrj6ExxrMpge)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/5a07624df24f8c53225dfc71120250ec64bf2f0e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqRzd4VcczH8KK3H3SAgsMrj6ExxrMpge)/source.webp"
+      }
+    },
+    {
+      "id": "320",
+      "title": "350r Racer",
+      "name": "350r Racer",
       "slug": "id69wp9ug7tts",
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/350r",
       "manufacturerId": 6,
@@ -299,6 +324,32 @@
         "900": "https://robertsspaceindustries.com/i/9d14626a2e20de191de73a4b3343b14141df9647/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskjDaVPsYfVMpaEXu82p8NG94e9gDqqSYW)/source.webp",
         "1000": "https://robertsspaceindustries.com/i/20d8f12f195904112d88a4b87b0ff6a3d65c8c37/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskjDaVPsYfVMpaEXu82p8NG94e9gDqqSYW)/source.webp"
       }
+    },
+    {
+      "id": "321",
+      "title": "600i Executive Edition",
+      "name": "600i Executive Edition",
+      "slug": "0ih9xvaedu7xx",
+      "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Touring",
+      "manufacturerId": 6,
+      "manufacturer": "Origin Jumpworks",
+      "type": "exploration",
+      "focus": "Touring",
+      "msrpCentsUsd": null,
+      "msrpUsd": null,
+      "purchasable": false,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 3,
+      "maxCrew": 5,
+      "publishStart": "2018-12-20 00:00:00",
+      "lastUpdate": "2026-03-25 23:00:34",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/de53d42668b4661de434772e8b494046dae3cdf7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/34bd9cbbe87a33a675aa9dc003a93f3149eb9a3b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/de53d42668b4661de434772e8b494046dae3cdf7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp"
+      },
+      "msrpLabel": "Not For Sale"
     },
     {
       "id": "141",
@@ -418,7 +469,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2023-10-19 16:00:00",
-      "lastUpdate": "2025-12-03 22:39:31",
+      "lastUpdate": "2026-04-21 20:04:34",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/8dd23d865543540372922e592bd06196e0cc32ec/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqeH5Syrkjvs1ARQzHr1K5xByXfMTgZrN)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a4a1c63711e1757d6cd71312d2b969902eff38a5/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqeH5Syrkjvs1ARQzHr1K5xByXfMTgZrN)/source.webp",
@@ -493,7 +544,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2018-07-20 17:03:12",
-      "lastUpdate": "2026-02-24 19:25:02",
+      "lastUpdate": "2026-04-21 19:54:56",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/f1f6cfcf6a0e1727ff6384ec8d4a41b56c4f19f1/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskGqmqTJ5KSQvunQtqCc1bKDiTMYMHJ31x)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/baa6a8ec3521f6e6c6e4b45cf85a5f15cfb442f9/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskGqmqTJ5KSQvunQtqCc1bKDiTMYMHJ31x)/source.webp",
@@ -518,7 +569,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2018-07-20 17:03:16",
-      "lastUpdate": "2025-12-03 22:22:11",
+      "lastUpdate": "2026-04-21 19:54:58",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/5be97c785801aad485101653aff20d587fa66725/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseGytXKJM7qV2ksMdJL29f5yVDK18S6uFt)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/75e7620239879387759ede2122949589112d1d14/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseGytXKJM7qV2ksMdJL29f5yVDK18S6uFt)/source.webp",
@@ -543,7 +594,7 @@
       "minCrew": null,
       "maxCrew": 1,
       "publishStart": "2021-11-18 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:33",
+      "lastUpdate": "2026-04-21 20:04:38",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/8ba059daedf99e377a6b4773167364933ec37348/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPUMphCZRXRAQLjVqV1sqM6EBTAiv9qKc)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/dd38f92cb7acfda081052d5ffdd70d1483415b90/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPUMphCZRXRAQLjVqV1sqM6EBTAiv9qKc)/source.webp",
@@ -568,7 +619,7 @@
       "minCrew": null,
       "maxCrew": 1,
       "publishStart": "2021-11-18 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:32",
+      "lastUpdate": "2026-04-21 20:04:37",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/38f0c5a9561f3f29798207b431326db3a998d0ce/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResidZaY5SRiicBUSgjL8oiDCWFUNRcX7Mnv)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c463c215566aba8eaeaaa2c9d4f51eacf50ee4d7/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResidZaY5SRiicBUSgjL8oiDCWFUNRcX7Mnv)/source.webp",
@@ -668,7 +719,7 @@
       "minCrew": null,
       "maxCrew": 1,
       "publishStart": "2018-12-20 00:21:38",
-      "lastUpdate": "2026-03-25 23:08:12",
+      "lastUpdate": "2026-04-21 20:52:54",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/1f0868e6b7d6ee5d0f72cd5fd41063bec3fe7c76/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjUCY424inopgLKcxbZLVecByFWiDge1gS)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/9861febc81cadf49dfe3010d59d270f64385c6b6/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjUCY424inopgLKcxbZLVecByFWiDge1gS)/source.webp",
@@ -693,7 +744,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2025-05-23 16:00:00",
-      "lastUpdate": "2025-12-03 22:42:07",
+      "lastUpdate": "2026-04-21 20:52:36",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/5c0b5f9604975d406c9c80c8facbad95ee5a0328/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjHqQ7nzeWKNJC9PZ799uzA3LV8x15ssJv)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a534a200823b9611e943853e2796b99b9eae7138/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjHqQ7nzeWKNJC9PZ799uzA3LV8x15ssJv)/source.webp",
@@ -918,7 +969,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2026-03-25 16:00:00",
-      "lastUpdate": "2026-03-26 14:32:59",
+      "lastUpdate": "2026-04-21 19:54:46",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/2977e4a9d9f3c907f9422c6264c2f78489b025e5/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskCZWkFFmT8GizYVjNCLrLANTnxxhrj9Qr)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c46396ff5712653d2ba61f685a3a46ad82fe47cc/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskCZWkFFmT8GizYVjNCLrLANTnxxhrj9Qr)/source.webp",
@@ -943,7 +994,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2014-12-09 00:00:00",
-      "lastUpdate": "2025-12-03 21:48:53",
+      "lastUpdate": "2026-04-21 20:03:39",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/35de97c9cec2d6f665c9a8a5093ec9ad1b425fb5/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResf1RcQiMKS1d8aWg7DL1cTuRfHhVbh6JRC)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/848e8f0e436fbe127b89c045631df35d77e217c6/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResf1RcQiMKS1d8aWg7DL1cTuRfHhVbh6JRC)/source.webp",
@@ -968,7 +1019,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2015-12-11 00:00:00",
-      "lastUpdate": "2025-12-03 21:48:52",
+      "lastUpdate": "2026-04-21 20:03:37",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/4cddca806932fe6d4e4e8dc6f9e3d908e81cf46e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResivggYNE4eG6QvxjvFyCFYpGdCAjcE8FWN)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/1f89e0b864e04b347a0a60026b5aa0ab4c558c5e/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResivggYNE4eG6QvxjvFyCFYpGdCAjcE8FWN)/source.webp",
@@ -993,7 +1044,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2016-12-23 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:09",
+      "lastUpdate": "2026-04-21 20:03:33",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/25d4100099aa5f87bb7b36e06056bc4861ab28b8/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjvbX7PuKjrhqxjGg8vwDFs77Wp7ieLKNv)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/4b17b6ddd7cbb4190516e2191147cd016d027471/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjvbX7PuKjrhqxjGg8vwDFs77Wp7ieLKNv)/source.webp",
@@ -1018,7 +1069,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2015-12-11 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:13",
+      "lastUpdate": "2026-04-21 20:03:38",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/b93bc9789afd0d3c79061582aeeb15fe84f6851e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjdrHki5t8uUHTq8X74sN2QBB2BhVkJE8e)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/8cf66eee322f9a0125b96abaf7fe8619f88a4153/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjdrHki5t8uUHTq8X74sN2QBB2BhVkJE8e)/source.webp",
@@ -1043,7 +1094,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2019-07-20 01:30:00",
-      "lastUpdate": "2025-12-03 21:51:53",
+      "lastUpdate": "2026-04-21 20:52:52",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/004b56fd94e9224b95646f683ac234cab884ee06/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj76XQUHMro7sbhMTSrhqtrQngyMgUY8aA)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/59380523fbb44b1043c4fc6b8a8e759126426dab/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj76XQUHMro7sbhMTSrhqtrQngyMgUY8aA)/source.webp",
@@ -1093,7 +1144,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2017-03-31 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:24",
+      "lastUpdate": "2026-04-21 19:51:57",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/ce397ce5177b61e3c698eac1667c7982fc0333a0/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResezCh7hqEM1ouaaszB9mDc2C9vpC1wGmhp)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a715a8ccb2b11f206f5288bbb76366114c18a8f4/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResezCh7hqEM1ouaaszB9mDc2C9vpC1wGmhp)/source.webp",
@@ -1118,7 +1169,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2023-11-16 00:00:00",
-      "lastUpdate": "2025-12-03 21:53:37",
+      "lastUpdate": "2026-04-21 20:04:35",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/bac6648185eab3ca89a9b859d6092c81fe337587/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjfBqExzNdjFYFntDZSQvoviQmVRUrSXUz)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/f374f5e3a81a903af77aaf920079480890e8b259/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjfBqExzNdjFYFntDZSQvoviQmVRUrSXUz)/source.webp",
@@ -1168,7 +1219,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2022-11-17 00:00:00",
-      "lastUpdate": "2025-12-03 21:51:50",
+      "lastUpdate": "2026-04-21 20:52:45",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/33e033b9d65161a39ee2ed496c9ac2771427231e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjYUpdwY9hHjEgqpaExZb84z9p1hR5FWNa)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/aa505234bd826704c08acd2c8125da5dcafeda06/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjYUpdwY9hHjEgqpaExZb84z9p1hR5FWNa)/source.webp",
@@ -1193,7 +1244,7 @@
       "minCrew": 1,
       "maxCrew": 3,
       "publishStart": "2019-11-23 18:00:00",
-      "lastUpdate": "2025-12-03 21:51:52",
+      "lastUpdate": "2026-04-21 20:52:51",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/69de38cb76d9cf625fa4ec27ba9bf741e6598e32/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjZbCSUWdnfpmEffJvwzU9skusSz6GzjN6)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ead735df7aaa02c7985ee7490614df7511bcdd10/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjZbCSUWdnfpmEffJvwzU9skusSz6GzjN6)/source.webp",
@@ -1218,7 +1269,7 @@
       "minCrew": 4,
       "maxCrew": 6,
       "publishStart": "2020-02-27 00:00:00",
-      "lastUpdate": "2025-12-03 22:42:37",
+      "lastUpdate": "2026-04-21 20:53:02",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/5a176dc57589f18effd841146ef5a37e88892aee/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResijpd9a1QppWGLqGr3g6nG4GJrw2mPpW4n)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a4d29ac951b577f598439825f316fdf6829140c0/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResijpd9a1QppWGLqGr3g6nG4GJrw2mPpW4n)/source.webp",
@@ -1318,7 +1369,7 @@
       "minCrew": 2,
       "maxCrew": 4,
       "publishStart": "2016-12-23 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:29",
+      "lastUpdate": "2026-04-21 19:52:04",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/5d38be418f6393b3a97d5341ddf6dcc866f92048/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseBYkxomy2F5nsE4C5GSarCBzaijFs8Gdk)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a412b21957de175fd0a007762d6715bc8a63fc62/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseBYkxomy2F5nsE4C5GSarCBzaijFs8Gdk)/source.webp",
@@ -1393,7 +1444,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2022-06-28 00:00:00",
-      "lastUpdate": "2025-12-03 21:51:51",
+      "lastUpdate": "2026-04-21 20:52:46",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/a4a0559e83591728407a892cd21076bfc8982d88/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskZee9JyWzsJsLzWu91ohmowddjhZycyVx)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/2b3e7406ae748df8f69b0eb05ef33a93c983a5f9/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskZee9JyWzsJsLzWu91ohmowddjhZycyVx)/source.webp",
@@ -1418,7 +1469,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2025-11-22 16:00:00",
-      "lastUpdate": "2025-12-03 22:39:10",
+      "lastUpdate": "2026-04-21 19:51:40",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/0a1dfa00589e8928d43a75fc69f10cdaba212ae3/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskdzBZyYCJeJt12AGHtbTGJ4EVBTfcuJLe)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/77c60407c4d0ad374683d9b8dea75e2e69a6f2ea/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskdzBZyYCJeJt12AGHtbTGJ4EVBTfcuJLe)/source.webp",
@@ -1443,7 +1494,7 @@
       "minCrew": 3,
       "maxCrew": 4,
       "publishStart": "2015-12-11 03:00:00",
-      "lastUpdate": "2025-12-03 22:20:03",
+      "lastUpdate": "2026-04-21 19:55:05",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/0fbfee17b2bae365cd5ab9e7d9441c1eb9b2196f/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskj9ttp7XXgtHcy38CS9NBZHAKXeVYNAKQ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c887b0f8ec8f6060547f9b92b37be89f7fd48ded/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskj9ttp7XXgtHcy38CS9NBZHAKXeVYNAKQ)/source.webp",
@@ -1468,7 +1519,7 @@
       "minCrew": 3,
       "maxCrew": 4,
       "publishStart": "2017-12-23 00:00:00",
-      "lastUpdate": "2025-12-03 22:20:00",
+      "lastUpdate": "2026-04-21 19:55:02",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/fcfd1ae05d35f21bd3fa6d72042d9f5744279dc2/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskTHwgUVJoAa33Yovz7yaSJ1DKCRaxmBoc)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/04b38f7ac05a535127de37325e7a6a4af7f51500/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskTHwgUVJoAa33Yovz7yaSJ1DKCRaxmBoc)/source.webp",
@@ -1493,7 +1544,7 @@
       "minCrew": 3,
       "maxCrew": 4,
       "publishStart": "2018-11-09 00:00:00",
-      "lastUpdate": "2025-12-03 22:22:16",
+      "lastUpdate": "2026-04-21 19:55:01",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/de12bc2d0869631061515afcb4d0faab4268c67b/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjUL2eASUiAi8vcmYQ2MGKTpPxWxMSR3Jv)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/d98278d7499a3b7e01ab114695239b0e11af5f3f/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjUL2eASUiAi8vcmYQ2MGKTpPxWxMSR3Jv)/source.webp",
@@ -1543,7 +1594,7 @@
       "minCrew": 3,
       "maxCrew": 4,
       "publishStart": "2021-08-06 00:00:00",
-      "lastUpdate": "2025-12-03 22:20:01",
+      "lastUpdate": "2026-04-21 19:55:04",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/30976bbcf88aef9986e8eeebae4a208100b8088a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjkS7XpkFPAkxxXZWS9prx9VUShxcyG3p2)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/1a51f98c953cea4f620d86e4728a3b10200a37b3/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjkS7XpkFPAkxxXZWS9prx9VUShxcyG3p2)/source.webp",
@@ -1568,7 +1619,7 @@
       "minCrew": 1,
       "maxCrew": 4,
       "publishStart": "2022-11-17 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:20",
+      "lastUpdate": "2026-04-21 19:51:51",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/f254322de966a6c59fa992181e8fb0cd9922f597/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResf1XMP49iifJEdNC1Y2F1c43JdmfwrQHre)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/099ea2beb1ed357fb59f5158e7740098723dbc5c/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResf1XMP49iifJEdNC1Y2F1c43JdmfwrQHre)/source.webp",
@@ -1593,7 +1644,7 @@
       "minCrew": 3,
       "maxCrew": 8,
       "publishStart": "2015-11-19 00:00:00",
-      "lastUpdate": "2025-12-03 22:42:34",
+      "lastUpdate": "2026-04-21 20:52:59",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/415207b24baccbc8f9a292682fbdf01419ed3c97/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResk6HKtm3JvRDjnuPsnSY6b1Tac2Ltkg4Tp)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/27bc0225ce4101ab6a1ae622688151684e0c6f4d/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResk6HKtm3JvRDjnuPsnSY6b1Tac2Ltkg4Tp)/source.webp",
@@ -1626,6 +1677,31 @@
       }
     },
     {
+      "id": "318",
+      "title": "Cutlass 2949 Best In Show",
+      "name": "Cutlass 2949 Best In Show",
+      "slug": "cbvmsg7qb88ih",
+      "url": "https://robertsspaceindustries.com/pledge/ships/drake-cutlass/Cutlass-Black-Best-In-Show-Edition-2949",
+      "manufacturerId": 5,
+      "manufacturer": "Drake Interplanetary",
+      "type": "combat",
+      "focus": "Medium Fighter / Medium Freight",
+      "msrpCentsUsd": 11000,
+      "msrpUsd": 110,
+      "purchasable": false,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 2,
+      "maxCrew": 2,
+      "publishStart": "2019-11-23 00:00:00",
+      "lastUpdate": "2025-12-03 22:39:18",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/6ad7c7875e63ff0960dd904c959ee9a35188ea77/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskZxaTD7qxdHdVs788qEVxtr8DStUYxoQJ)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/ee6138878ede1a7363cf51d7339101850058d9c5/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskZxaTD7qxdHdVs788qEVxtr8DStUYxoQJ)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/6ad7c7875e63ff0960dd904c959ee9a35188ea77/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskZxaTD7qxdHdVs788qEVxtr8DStUYxoQJ)/source.webp"
+      }
+    },
+    {
       "id": "56",
       "title": "Cutlass Black",
       "name": "Cutlass Black",
@@ -1643,7 +1719,7 @@
       "minCrew": 2,
       "maxCrew": 2,
       "publishStart": "2014-12-19 00:00:00",
-      "lastUpdate": "2026-03-25 23:08:14",
+      "lastUpdate": "2026-04-21 19:52:02",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/23b7d89ec0b391d6ed79e7169c133ecbce5153b3/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseczedehU6DiyGVBJrQEkLAao6v8XpwcvS)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/89f38bdfa10e40946ae9f2af436dbd1a0a8b7ffb/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseczedehU6DiyGVBJrQEkLAao6v8XpwcvS)/source.webp",
@@ -1693,7 +1769,7 @@
       "minCrew": 2,
       "maxCrew": 3,
       "publishStart": "2020-05-22 00:00:00",
-      "lastUpdate": "2026-03-26 16:19:53",
+      "lastUpdate": "2026-04-21 19:52:00",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/9b80c3b6ee3520252d93a03a5d62d37dd67db76c/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseNAXvbPq3dAF8iYwuSZSHMTy24T75fkeA)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c5debae6e01f949c420fd1967c6bab24eaeebbac/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseNAXvbPq3dAF8iYwuSZSHMTy24T75fkeA)/source.webp",
@@ -1718,7 +1794,7 @@
       "minCrew": 2,
       "maxCrew": 2,
       "publishStart": "2020-01-24 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:28",
+      "lastUpdate": "2026-04-21 19:52:01",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/fac734628c93a3bc5163570403de8d6008b22439/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskfBtT1vzYFaw6fbz4Ly8762W5tPFVNwTc)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a768373fa25364d66140fdb5df64cf9f9c0c4a01/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskfBtT1vzYFaw6fbz4Ly8762W5tPFVNwTc)/source.webp",
@@ -1743,7 +1819,7 @@
       "minCrew": 1,
       "maxCrew": 3,
       "publishStart": "2021-12-22 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:16",
+      "lastUpdate": "2026-04-21 19:51:50",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/61ac64d9c5804064a47bd94e0550ab1499b3cb26/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjk8SgXwmm29ZdPPy1wDcMYUbd9Bq6m2W2)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ca708df5ed6af6fe9720c328671efe13a5e4cc3f/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjk8SgXwmm29ZdPPy1wDcMYUbd9Bq6m2W2)/source.webp",
@@ -1768,7 +1844,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2022-11-17 00:00:00",
-      "lastUpdate": "2025-12-03 21:55:54",
+      "lastUpdate": "2026-04-21 19:51:47",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/0394ab32c1b435db8eec143ff91ae468f1af4c20/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj5ym2DKsq5cBCWrdebV79wxvB4CrVzUzi)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/3a4a91c0687d2cc284168e1c00901f27992b191d/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj5ym2DKsq5cBCWrdebV79wxvB4CrVzUzi)/source.webp",
@@ -1793,7 +1869,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2023-12-14 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:14",
+      "lastUpdate": "2026-04-21 19:51:45",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/b9bc6bb3312e830db0bef2a729917a915668c5b1/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResepw8aT4Fei7123y9mJC4z9zyacUBP5Snr)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/33a3804fdc4216665cb14147ebc71020aacdc116/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResepw8aT4Fei7123y9mJC4z9zyacUBP5Snr)/source.webp",
@@ -1818,7 +1894,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2023-10-19 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:15",
+      "lastUpdate": "2026-04-21 19:51:46",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/857bf4b03b55d8c6caf5dfdf0aaad8f7a990572e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResezCiG492YM3jcP1NHchGCbHDScAAMrK82)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/98c767d3ef1de02bfd63ec0e98a3bdc54d9aa112/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResezCiG492YM3jcP1NHchGCbHDScAAMrK82)/source.webp",
@@ -1868,7 +1944,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2018-11-09 00:00:00",
-      "lastUpdate": "2025-12-03 22:21:12",
+      "lastUpdate": "2026-04-21 20:05:48",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/8076b3936abd56c5909191a8f450287f63fa22c4/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResf1QQPcJ8reL5taVHdPd12jHTinHiBkZLa)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/6abfac3c7d794f833b7ceeb9a907ac32ff96bd8c/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResf1QQPcJ8reL5taVHdPd12jHTinHiBkZLa)/source.webp",
@@ -1893,7 +1969,7 @@
       "minCrew": 1,
       "maxCrew": 3,
       "publishStart": "2021-04-22 00:00:00",
-      "lastUpdate": "2026-01-12 17:01:25",
+      "lastUpdate": "2026-04-21 20:05:46",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/e078279a4adc38c2427c14aa8b6b599232a03bd9/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReska4sF4Jmjthby3oaWfcGp3RAXZ2sXnnfG)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/e339fb56839219fcc4fb29f89ab6bd5f20d85873/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReska4sF4Jmjthby3oaWfcGp3RAXZ2sXnnfG)/source.webp",
@@ -1943,7 +2019,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2018-11-09 00:00:00",
-      "lastUpdate": "2025-12-03 22:21:13",
+      "lastUpdate": "2026-04-21 20:05:49",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/34660754908d54903e9a25325d181f248c1a67d7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResf17RScbHmhZMW5NVt2e2sixTQaHNZYva2)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/516a9c1ca1220aa90d7d3d3c866041b1c702ef8c/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResf17RScbHmhZMW5NVt2e2sixTQaHNZYva2)/source.webp",
@@ -1968,7 +2044,7 @@
       "minCrew": 1,
       "maxCrew": 3,
       "publishStart": "2018-11-09 00:00:00",
-      "lastUpdate": "2025-12-03 22:21:15",
+      "lastUpdate": "2026-04-21 20:05:51",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/2cd0f0ef302a104e9049f8580ecc6247295a82f6/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjHeMX4KQtubs1ft9UxmncipirctWZtmSv)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/aceac0a90d6b6c8dbcc5f9771d1b3e3f8bab6ff3/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjHeMX4KQtubs1ft9UxmncipirctWZtmSv)/source.webp",
@@ -2018,7 +2094,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2017-12-23 00:00:00",
-      "lastUpdate": "2025-12-03 21:55:57",
+      "lastUpdate": "2026-04-21 19:51:56",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/4edf9f73028b9bce027a2f99ef05334615b593e0/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPN4yumMk5nt91UxccBVecfwddqkyqWeJ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/5fe70a68d30fcc4ff97d100d2a40bc9e2f158293/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPN4yumMk5nt91UxccBVecfwddqkyqWeJ)/source.webp",
@@ -2026,7 +2102,7 @@
       }
     },
     {
-      "id": "316",
+      "id": "324",
       "title": "Dragonfly Star Kitten Edition",
       "name": "Dragonfly Star Kitten Edition",
       "slug": "got2hts66e3ec",
@@ -2043,7 +2119,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2017-12-23 00:00:00",
-      "lastUpdate": "2025-12-03 21:55:57",
+      "lastUpdate": "2026-04-21 19:51:56",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/4edf9f73028b9bce027a2f99ef05334615b593e0/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPN4yumMk5nt91UxccBVecfwddqkyqWeJ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/5fe70a68d30fcc4ff97d100d2a40bc9e2f158293/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPN4yumMk5nt91UxccBVecfwddqkyqWeJ)/source.webp",
@@ -2119,7 +2195,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2018-06-30 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:07",
+      "lastUpdate": "2026-04-21 20:03:31",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/26b4339b2c3abfe986b38bcdb6f3394573891b8e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1s8gewpqUNmaY5rDCxpDUA1NhMoiVrHt)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/0d301f782bd9ff101f1ca9fdceb64523ad74b885/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1s8gewpqUNmaY5rDCxpDUA1NhMoiVrHt)/source.webp",
@@ -2270,7 +2346,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2024-03-15 14:00:00",
-      "lastUpdate": "2026-01-21 22:12:33",
+      "lastUpdate": "2026-04-21 20:52:43",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/11898460f6c81a86b36767241e96326ebd7e300f/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjHymPx8r84PH9pB8dHUfSKxtsuxz3EFJE)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a7041dc7caf4adcb619bc006d8df7b65696ea383/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjHymPx8r84PH9pB8dHUfSKxtsuxz3EFJE)/source.webp",
@@ -2370,7 +2446,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2025-02-11 16:00:00",
-      "lastUpdate": "2025-12-03 22:42:08",
+      "lastUpdate": "2026-04-21 20:52:37",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/aa2b3c767c2555caa89b0a0239aca9e63ef07a23/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResedtCVBuvj4aJo1EBhKirGcWN1xxtKGk8n)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/3ef86cdd503c9500b58ea93b995d6b7c17f9518d/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResedtCVBuvj4aJo1EBhKirGcWN1xxtKGk8n)/source.webp",
@@ -2420,7 +2496,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2024-11-30 16:00:00",
-      "lastUpdate": "2025-12-03 22:42:11",
+      "lastUpdate": "2026-04-21 20:52:39",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/39cd372e488d85d551cb4cc8fa123e6636f3ca57/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjBJaqSQ4rFWEFiMQicMJTgbnq7v67SFHg)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/4002d8f0607609bf19f08a443f1999494525a379/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjBJaqSQ4rFWEFiMQicMJTgbnq7v67SFHg)/source.webp",
@@ -2470,7 +2546,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2024-11-30 16:00:00",
-      "lastUpdate": "2025-12-03 22:42:10",
+      "lastUpdate": "2026-04-21 20:52:38",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/d1b4c6d0d1d76d6184f4c05313e40c2291da10a3/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskGt89eymTuzVVp1EdXjyc7BASHEb5C5LJ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/3af8d84083308152f423be7eeafb86dbd091bde1/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskGt89eymTuzVVp1EdXjyc7BASHEb5C5LJ)/source.webp",
@@ -2495,7 +2571,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2023-10-10 00:00:00",
-      "lastUpdate": "2025-12-03 22:42:14",
+      "lastUpdate": "2026-04-21 20:52:44",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/dbe4048cfde01b6851a2dc6b5a3403139c9aa3ef/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjTEWFCBvRCcApL8QwcPy9mPPcUhEbyN9c)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/4ac0e35de1d81be47be66320ff3b8c0f2d5cb1f6/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjTEWFCBvRCcApL8QwcPy9mPPcUhEbyN9c)/source.webp",
@@ -2645,7 +2721,7 @@
       "minCrew": 2,
       "maxCrew": 4,
       "publishStart": "2020-12-05 00:00:00",
-      "lastUpdate": "2025-12-03 22:23:16",
+      "lastUpdate": "2026-04-21 19:59:30",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/c51bfec4cc0e06835e221a7948ce37c0c7e4732b/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqTKQ9TNTVk76eayuSkChr5ez3c36SSp6)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/bc590a99b35f3eff917a790f7529d3db76f0ab6c/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqTKQ9TNTVk76eayuSkChr5ez3c36SSp6)/source.webp",
@@ -2670,7 +2746,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2023-05-16 00:00:00",
-      "lastUpdate": "2025-12-03 22:35:05",
+      "lastUpdate": "2026-04-21 19:58:11",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/1aeead1c6c8a81986b915ea67f9dc113e5eb1cb1/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjNsitwktGuZ1F2jyemypwgMsPr4K8FxaJ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a22eac2e52d9407b0bc8085a11be44c5985c6a95/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjNsitwktGuZ1F2jyemypwgMsPr4K8FxaJ)/source.webp",
@@ -2720,7 +2796,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2023-05-16 00:00:00",
-      "lastUpdate": "2025-12-03 22:35:03",
+      "lastUpdate": "2026-04-21 19:58:10",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/8a355f968a9fb8a7a1561f09594de5a53bb520ef/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResiedrpVbiTc8HyRzgMr7wjGhHFaUNQBefx)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/d42631f182586c203432da8b9c4b90af7b4f4450/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResiedrpVbiTc8HyRzgMr7wjGhHFaUNQBefx)/source.webp",
@@ -2770,7 +2846,7 @@
       "minCrew": null,
       "maxCrew": null,
       "publishStart": "2020-05-21 14:59:33",
-      "lastUpdate": "2025-12-03 22:22:30",
+      "lastUpdate": "2026-04-21 19:56:33",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/1900910628c5d39c4f6c8a2c98cb3223cd708ce3/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseN3PD8Yei2EPy6cS9ZnRcMmF7kF9ZRb9G)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/0137c14eebd458228d6191c94514d16bf760e22a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseN3PD8Yei2EPy6cS9ZnRcMmF7kF9ZRb9G)/source.webp",
@@ -2853,6 +2929,31 @@
       }
     },
     {
+      "id": "317",
+      "title": "Genesis Starliner",
+      "name": "Genesis Starliner",
+      "slug": "srzgomjongzux",
+      "url": "https://robertsspaceindustries.com/pledge/ships/starliner/Genesis",
+      "manufacturerId": 68,
+      "manufacturer": "Crusader Industries",
+      "type": "transport",
+      "focus": "Passenger",
+      "msrpCentsUsd": 40000,
+      "msrpUsd": 400,
+      "purchasable": false,
+      "productionStatus": "in-concept",
+      "featuredForShipList": false,
+      "minCrew": 2,
+      "maxCrew": 8,
+      "publishStart": "2014-11-05 00:00:00",
+      "lastUpdate": "2025-12-03 22:39:40",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/28b84eece3d88da1ef46512f5ccda2d52ab5188b/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCZtmWTXGYC6ppEv2dfyqgTt8K3kv8r4E)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/ab7b02002db8cd6966033f827fb3877bf1ece07b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCZtmWTXGYC6ppEv2dfyqgTt8K3kv8r4E)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/28b84eece3d88da1ef46512f5ccda2d52ab5188b/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCZtmWTXGYC6ppEv2dfyqgTt8K3kv8r4E)/source.webp"
+      }
+    },
+    {
       "id": "64",
       "title": "Gladiator",
       "name": "Gladiator",
@@ -2870,7 +2971,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2015-03-20 00:00:00",
-      "lastUpdate": "2025-12-03 22:42:36",
+      "lastUpdate": "2026-04-21 20:53:01",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/24c3aeaad34e328fac28c068188be4d2be8485ea/resize(1820,1024,cover,hgjbks2vRxvijgZCkcudyey3yf2YnBqfanX6U636vzzNeeFdx43A2FpAz62LgThdv7L26Mnnv9U1c1Ci2MqadbqDiE)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a5b52d630e25e663ba0d41784cf158a8f7ac7071/resize(910,512,cover,hgjbks2vRxvijgZCkcudyey3yf2YnBqfanX6U636vzzNeeFdx43A2FpAz62LgThdv7L26Mnnv9U1c1Ci2MqadbqDiE)/source.webp",
@@ -2895,7 +2996,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2015-03-20 00:00:00",
-      "lastUpdate": "2025-12-03 21:48:54",
+      "lastUpdate": "2026-04-21 20:03:48",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/60415cc9954828896ce4495b34885d7e3a6951d9/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResieuRXVexPTjwdpMHEWo3saH7q2zcqCJWS)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/72cd468565297f0ec43cbb7d94c61909fdef2872/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResieuRXVexPTjwdpMHEWo3saH7q2zcqCJWS)/source.webp",
@@ -2920,7 +3021,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2015-03-20 00:00:00",
-      "lastUpdate": "2025-12-03 21:48:54",
+      "lastUpdate": "2026-04-21 20:03:48",
       "thumbnailUrl": "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg",
       "thumbnailUrls": {
         "900": "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg",
@@ -2970,7 +3071,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2016-12-23 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:11",
+      "lastUpdate": "2026-04-21 20:03:34",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/536842fae187ad4bf028eb9f912db297e41c917a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjHxYqZhkCGAu3JFrXyZrgxc2yximhqvWa)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/184d53e769daaebaf21de8d724e3d586d9f0a0c0/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjHxYqZhkCGAu3JFrXyZrgxc2yximhqvWa)/source.webp",
@@ -3020,7 +3121,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2025-03-27 16:00:00",
-      "lastUpdate": "2026-03-25 23:08:10",
+      "lastUpdate": "2026-04-21 19:51:41",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/9a1744357e6a391c84bcc9e214bc73de9b5b8539/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqx8QbDKyKvq57QLarN7q9v5Jm4q5hBWn)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/073d491832db8e08f63b93780e39d4d429af538c/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqx8QbDKyKvq57QLarN7q9v5Jm4q5hBWn)/source.webp",
@@ -3045,7 +3146,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2025-11-22 16:00:00",
-      "lastUpdate": "2025-12-03 22:39:09",
+      "lastUpdate": "2026-04-21 19:51:39",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/9d691bd124472c3fa415e32ea09c44613de87952/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskvvn85TqHb5e13wJvTuggwxw45XVqmdZx)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/e4694bed757fa4a9c738908efd80c5609660888f/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskvvn85TqHb5e13wJvTuggwxw45XVqmdZx)/source.webp",
@@ -3070,7 +3171,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2024-12-20 04:00:00",
-      "lastUpdate": "2026-01-13 17:12:07",
+      "lastUpdate": "2026-04-21 19:58:08",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/478b410c55f539921aa64243ac35830b4df781f8/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjNyeyi5nsV2JkpuiqKNKw4cqRkqD2mEox)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ef8c217daa6cf977e01912aae34b7e07c49eada2/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjNyeyi5nsV2JkpuiqKNKw4cqRkqD2mEox)/source.webp",
@@ -3095,7 +3196,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2025-05-19 16:00:00",
-      "lastUpdate": "2026-01-07 16:26:16",
+      "lastUpdate": "2026-04-21 19:58:05",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/309b117069175079c3ffd10bdd2d049f3ec21109/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResizrRM5jTxuTFgo1xHQEuf9mLWkSATDWeJ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/9ca0a13cd0370d67e98d444bb277092024ee91cf/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResizrRM5jTxuTFgo1xHQEuf9mLWkSATDWeJ)/source.webp",
@@ -3120,7 +3221,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2024-12-20 04:00:00",
-      "lastUpdate": "2026-01-13 16:55:02",
+      "lastUpdate": "2026-04-21 19:58:06",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/2483ec23739aa394061b277527f6e3e7f5c5f9f7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1ndf4manLs7oQb2QBDyvNe2nWg187tCW)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/518043b3a746a4913956636b13c090a693012a12/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1ndf4manLs7oQb2QBDyvNe2nWg187tCW)/source.webp",
@@ -3145,7 +3246,7 @@
       "minCrew": 3,
       "maxCrew": 9,
       "publishStart": "2018-11-09 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:04",
+      "lastUpdate": "2026-04-21 20:03:29",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/2d1133694e11b92d0b4d3bc89887c2ce3c5dc403/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskw8pF3smytMEoihUHnd7hNxebuVtB4znz)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/43af7f9acf3d0f32c919d8aa8cd88163f67c87eb/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskw8pF3smytMEoihUHnd7hNxebuVtB4znz)/source.webp",
@@ -3195,7 +3296,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2018-12-20 00:00:00",
-      "lastUpdate": "2026-03-26 17:27:00",
+      "lastUpdate": "2026-04-21 20:52:56",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/5f4d482dbcafa31057856651b99bb9121bb2dc7b/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqofk6iAEkXWjQtqfG1dYTrB2yze2VMN6)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/5594edbe73c8cc1919fdd64544681173715c0c09/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqofk6iAEkXWjQtqfG1dYTrB2yze2VMN6)/source.webp",
@@ -3220,7 +3321,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2016-12-23 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:26",
+      "lastUpdate": "2026-04-21 19:51:59",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/8632c51efb3ab9c8fdc2cddef7ab0eeca8faaf49/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj21mVS6o1YrzqWhXT7tPnLa7wSa8Z5Cr2)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/4d6646b06e4547f77a58cab4fdc5f3859acad05a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj21mVS6o1YrzqWhXT7tPnLa7wSa8Z5Cr2)/source.webp",
@@ -3245,7 +3346,7 @@
       "minCrew": 1,
       "maxCrew": 6,
       "publishStart": "2021-11-10 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:36",
+      "lastUpdate": "2026-04-21 20:04:40",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/8f68e99ee76f7ab8ae8da725196f32d9a5d61a69/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResidY9GU2m2dhad9nWNxb18qK9ZrBf6PhFU)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/4ac9559797e117521cbe1a1625089ea884b5ce1e/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResidY9GU2m2dhad9nWNxb18qK9ZrBf6PhFU)/source.webp",
@@ -3270,7 +3371,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2021-05-19 00:00:00",
-      "lastUpdate": "2026-03-10 20:32:13",
+      "lastUpdate": "2026-04-21 20:04:43",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/387f877bf5aae2c4dc6e32568d621473b5d4d79e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskpcDUyTPuKfT2cePUz4jof5hYcpd6LjZx)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/26981dc4b62862ededfb92d3012452ea175e5e7a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskpcDUyTPuKfT2cePUz4jof5hYcpd6LjZx)/source.webp",
@@ -3295,7 +3396,7 @@
       "minCrew": 1,
       "maxCrew": 3,
       "publishStart": "2021-05-19 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:37",
+      "lastUpdate": "2026-04-21 20:04:42",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/ecbed3dfd956ca7abe163b3cda1e43784c9d5d53/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseTg8yHWoyFU5ctCYvWz382EoBq77xDmMY)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/388a8a9be8acba17dfcf09da2d9273582b7709be/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseTg8yHWoyFU5ctCYvWz382EoBq77xDmMY)/source.webp",
@@ -3495,7 +3596,7 @@
       "minCrew": 2,
       "maxCrew": 2,
       "publishStart": "2018-06-30 00:00:00",
-      "lastUpdate": "2025-12-03 22:42:31",
+      "lastUpdate": "2026-04-21 20:52:57",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/41d76881a5a0bb0ac3f6500a2ee18c661089f92d/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskGn8CGG5chJtVrZgvDP76ztQKVMaPHKiN)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/fc8df820620d07e14db217b4205dba855624dad9/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskGn8CGG5chJtVrZgvDP76ztQKVMaPHKiN)/source.webp",
@@ -3545,7 +3646,7 @@
       "minCrew": 8,
       "maxCrew": 28,
       "publishStart": "2013-06-26 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:24",
+      "lastUpdate": "2026-04-21 20:03:52",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/6e168e351f1e7634bec6f35fb73dca2d8b4ca900/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqY6z7TSDPHadnqPCeZCNtvaR4zHv7pkE)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/58c8947636fc307db2f8e5e20f0be7d76ff589d0/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqY6z7TSDPHadnqPCeZCNtvaR4zHv7pkE)/source.webp",
@@ -3595,7 +3696,7 @@
       "minCrew": 1,
       "maxCrew": 6,
       "publishStart": "2024-05-25 16:00:00",
-      "lastUpdate": "2026-01-19 14:09:31",
+      "lastUpdate": "2026-04-21 19:51:44",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/5cd6060da3bd100f50a1824e74b1b9fa8c10db30/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCenc9xo5pCEHm5Fwe536D13Zbb9SA7PU)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/4ae644d287bce0e2e9148509a8ee1b02e7c05fb7/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCenc9xo5pCEHm5Fwe536D13Zbb9SA7PU)/source.webp",
@@ -3620,7 +3721,7 @@
       "minCrew": 1,
       "maxCrew": 6,
       "publishStart": "2024-05-25 16:00:00",
-      "lastUpdate": "2025-12-03 22:39:11",
+      "lastUpdate": "2026-04-21 19:51:42",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/ed8e849d3c3f66f71cd99fae9cbe748b280646d2/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResiiq2gADRhkfGJyL3BL3pHMYU5vMcUJ5AN)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/08a31473be4b1441bde5429dc3b8d80c98aae91c/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResiiq2gADRhkfGJyL3BL3pHMYU5vMcUJ5AN)/source.webp",
@@ -3645,7 +3746,7 @@
       "minCrew": 12,
       "maxCrew": 65,
       "publishStart": "2014-11-27 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:20",
+      "lastUpdate": "2026-04-21 20:03:47",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/d06d02ee0e01ad6dcb16561795ae4cd8f87186a3/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjvbX42c3rKWbDaqUyqNmKE6rWyf9aufLJ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/352f133a5c72cd3df8e2a2ffa18b20a058c272de/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjvbX42c3rKWbDaqUyqNmKE6rWyf9aufLJ)/source.webp",
@@ -3695,7 +3796,7 @@
       "minCrew": null,
       "maxCrew": 10,
       "publishStart": "2018-10-19 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:22",
+      "lastUpdate": "2026-04-21 19:51:53",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/cb1e6580add474b7f3f2bf18f5081326d5967779/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqYHRGgyn5CBWsSTK3b9eZJ6fQD1C1ydp)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/63e417c6950cde348b6403193a668c9cea164996/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqYHRGgyn5CBWsSTK3b9eZJ6fQD1C1ydp)/source.webp",
@@ -3720,7 +3821,7 @@
       "minCrew": null,
       "maxCrew": 10,
       "publishStart": "2019-11-30 13:49:20",
-      "lastUpdate": "2025-12-03 22:39:21",
+      "lastUpdate": "2026-04-21 19:51:52",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/7bdbb6f6645c025a35597d000693eefe0b1266bf/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqYJiA954ovGyjrhJzKDcRSB3GeX5S1Wn)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/df083fe06ef59d6ffa0b75708a52966b050490d0/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqYJiA954ovGyjrhJzKDcRSB3GeX5S1Wn)/source.webp",
@@ -3745,7 +3846,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2025-08-14 16:00:00",
-      "lastUpdate": "2025-12-03 21:58:35",
+      "lastUpdate": "2026-04-21 19:57:03",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/037324cea60c33e19a6c05ebbf85b97a124596e8/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj21WaUxWbKR9SuaMi6kvW7goytjDLbo58)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/53ba88cb1df1b7a543c3ca9907ae89e6380d0ea8/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj21WaUxWbKR9SuaMi6kvW7goytjDLbo58)/source.webp",
@@ -3770,7 +3871,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2025-11-24 16:00:00",
-      "lastUpdate": "2026-03-16 15:10:53",
+      "lastUpdate": "2026-04-21 19:57:02",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/deddca4440013e52e9db2df4806ad7ab9e7b4812/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResivS471eTgnjhZtB5WJnDZYBgSEvw8UDCJ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/dcae115e1537d8c5989d568d975b48ae9b94a8fa/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResivS471eTgnjhZtB5WJnDZYBgSEvw8UDCJ)/source.webp",
@@ -3795,7 +3896,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2022-05-19 16:00:00",
-      "lastUpdate": "2025-12-03 22:42:15",
+      "lastUpdate": "2026-04-21 20:52:48",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/2c603af2f1cf33d18fdb74cba906b0f3e45b2e8e/resize(1820,1024,cover,hgjbks2vRxvijgZCkcudyey3yf2YnBqfanX6U636vzzNeeFdx43A2FpAyJAaJtycCHer7whEazSZzqQ1QuY25bU1DQ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c6a7288e7e6e364a976c0b634637e46e0102499a/resize(910,512,cover,hgjbks2vRxvijgZCkcudyey3yf2YnBqfanX6U636vzzNeeFdx43A2FpAyJAaJtycCHer7whEazSZzqQ1QuY25bU1DQ)/source.webp",
@@ -3820,7 +3921,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2021-10-09 21:00:00",
-      "lastUpdate": "2025-12-03 22:42:17",
+      "lastUpdate": "2026-04-21 20:52:50",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/eed7bda0cead13f22d29e0e4898532db163e4fae/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjYSRgY9JUi324WZvNLjX8bNV6rD8Rtger)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c26beba8ca508a593de3321a03471e268b9a8b0b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjYSRgY9JUi324WZvNLjX8bNV6rD8Rtger)/source.webp",
@@ -3845,7 +3946,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2023-05-16 00:00:00",
-      "lastUpdate": "2025-12-03 22:22:03",
+      "lastUpdate": "2026-04-21 19:54:50",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/954a1426939292a4e7aeb6aa3089562abd3e2c3f/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjj6VNDqWaXXDRPKHA57vY6TZ2WCvwXZin)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/6c9fb4a0f4a17e9d36c867ec136fdd9191382f7c/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjj6VNDqWaXXDRPKHA57vY6TZ2WCvwXZin)/source.webp",
@@ -3895,7 +3996,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2019-10-11 13:28:05",
-      "lastUpdate": "2025-12-03 22:19:57",
+      "lastUpdate": "2026-04-21 19:54:55",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/bae32e21338b5dd958fbf9b8ae516b8306c20d17/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjvhkJQG2Y479fwUAWMsuScdWNqgyWMtVt)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/335e81c3af40383638363d63934ee5cbcd018b0a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjvhkJQG2Y479fwUAWMsuScdWNqgyWMtVt)/source.webp",
@@ -3920,7 +4021,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2025-11-26 16:00:00",
-      "lastUpdate": "2025-12-03 22:36:01",
+      "lastUpdate": "2026-04-21 20:00:32",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/91fa76e997d1bda522eea25c0e6db21040e0d0ae/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskP45k9GrJZ4LA7XtBc6VGwea8waPxPGZk)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/525c6bd1d5e06da2cd29a4608606f60999c909eb/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskP45k9GrJZ4LA7XtBc6VGwea8waPxPGZk)/source.webp",
@@ -3970,7 +4071,7 @@
       "minCrew": 2,
       "maxCrew": 3,
       "publishStart": "2020-11-19 00:00:00",
-      "lastUpdate": "2025-12-03 22:39:35",
+      "lastUpdate": "2026-04-21 20:04:39",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/968944e4818ed482e8ca891152eec706ce5575ce/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseM2Qd3hg33nVNrZr93SXcfBLpXPPoyseW)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/1a9f484e3bf8f3f97445ca66e80e8a48ddc12a0e/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseM2Qd3hg33nVNrZr93SXcfBLpXPPoyseW)/source.webp",
@@ -3995,7 +4096,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2025-07-17 16:00:00",
-      "lastUpdate": "2025-12-03 22:21:56",
+      "lastUpdate": "2026-04-21 19:54:47",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/7e690bc04bfb59a9d2ee0e6d5c28102fc9b12bbe/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskpRTAcUsSFGgN36fmGpUihpCzS388kP8r)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c0913e60b40bca768efe19975326b374cff0c73f/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskpRTAcUsSFGgN36fmGpUihpCzS388kP8r)/source.webp",
@@ -4070,7 +4171,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2016-08-25 00:00:00",
-      "lastUpdate": "2025-12-03 22:40:41",
+      "lastUpdate": "2026-04-21 20:00:15",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/81e713f8e644c1e857f81447c80c99adb34aeb68/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqS72thXJhruiyZdkAUXoWmCbfrFo9axn)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/678f0dc803e0f94ef5590b949d05912f54b48a24/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqS72thXJhruiyZdkAUXoWmCbfrFo9axn)/source.webp",
@@ -4095,7 +4196,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2016-08-25 00:00:00",
-      "lastUpdate": "2025-12-03 22:40:42",
+      "lastUpdate": "2026-04-21 20:00:16",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/a4531abec711e22d8da468f488c9f8cea63cbe42/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1m9L4rmH61jLubjuLTYqftH8J2JTVpsQ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/570d57fe658ec1c9017c41eb1f1e1804f1aabfd2/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1m9L4rmH61jLubjuLTYqftH8J2JTVpsQ)/source.webp",
@@ -4120,7 +4221,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2024-05-17 16:00:00",
-      "lastUpdate": "2025-12-03 22:40:35",
+      "lastUpdate": "2026-04-21 20:00:12",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/35e5a3f413c5d72d6ebae4ca5859d4327167377f/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjN1NWaWLDpSVjwYpXDZBfjmjxHsT5bKen)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/b15c14d671e60bd5dbeff0c195adaef2a1cb94a6/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjN1NWaWLDpSVjwYpXDZBfjmjxHsT5bKen)/source.webp",
@@ -4145,7 +4246,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2025-05-15 16:00:00",
-      "lastUpdate": "2025-12-03 22:36:02",
+      "lastUpdate": "2026-04-21 20:00:33",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/dddfae02ba2ffd422d0fd89888d79b2e46cdbc5f/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjk1FFtkNUvaK2WVK9EWKRHJszuiBF2CFg)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/dd69720721ede2e8e6983bff41def185de952706/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjk1FFtkNUvaK2WVK9EWKRHJszuiBF2CFg)/source.webp",
@@ -4170,7 +4271,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2022-04-18 00:00:00",
-      "lastUpdate": "2026-03-31 19:06:35",
+      "lastUpdate": "2026-04-21 19:51:48",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/2ba95c78be656fd8f4c16b64c0367405f83fce82/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjZdarzsBbDcn1GYaeu1WNwbzqtAK8bU9C)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a4c6ef0a4d7f1f8844cf490dce2b276965fa58c2/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjZdarzsBbDcn1GYaeu1WNwbzqtAK8bU9C)/source.webp",
@@ -4328,6 +4429,32 @@
       }
     },
     {
+      "id": "316",
+      "title": "Mustang Omega : AMD Edition",
+      "name": "Mustang Omega : AMD Edition",
+      "slug": "ru4usfo8qcolh",
+      "url": "https://robertsspaceindustries.com/pledge/ships/mustang/Mustang-Omega",
+      "manufacturerId": 22,
+      "manufacturer": "Consolidated Outland",
+      "type": "competition",
+      "focus": "Racing",
+      "msrpCentsUsd": null,
+      "msrpUsd": null,
+      "purchasable": false,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 1,
+      "maxCrew": 1,
+      "publishStart": "2015-03-08 00:00:00",
+      "lastUpdate": "2025-12-03 22:39:55",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/f19022ba7a1707ccdb78dcf695f2ef9d9b9b35fd/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUM4JKzJ9dsqVZzEweh1C1unScWqpchtJ)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/3c0568a8d45f4a012b168fe69f1733a45c54a98b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUM4JKzJ9dsqVZzEweh1C1unScWqpchtJ)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/f19022ba7a1707ccdb78dcf695f2ef9d9b9b35fd/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUM4JKzJ9dsqVZzEweh1C1unScWqpchtJ)/source.webp"
+      },
+      "msrpLabel": "Not For Sale"
+    },
+    {
       "id": "186",
       "title": "Nautilus ",
       "name": "Nautilus ",
@@ -4345,7 +4472,7 @@
       "minCrew": 4,
       "maxCrew": 8,
       "publishStart": "2019-08-24 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:02",
+      "lastUpdate": "2026-04-21 20:03:27",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/051670c059dacd122a5d9fb45b10f9471a5aab80/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResipDnNrrrz7nbvL1DVJLNr6dYAYCQ3zryk)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/e47bf3ff98066dd4f70f83e90ba0b167eb92dff9/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResipDnNrrrz7nbvL1DVJLNr6dYAYCQ3zryk)/source.webp",
@@ -4420,7 +4547,32 @@
       "minCrew": 1,
       "maxCrew": 3,
       "publishStart": "2021-05-19 00:00:00",
-      "lastUpdate": "2025-12-03 22:21:11",
+      "lastUpdate": "2026-04-21 20:05:47",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/2db9fbed233bbd51205c211f1598543a1137e302/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiLgxb3pQ5gbyGvNcvnTjqpEMtxrbTXzv)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/edadba84b4c3c1ba572e59d08c1ff646864b4352/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiLgxb3pQ5gbyGvNcvnTjqpEMtxrbTXzv)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/2db9fbed233bbd51205c211f1598543a1137e302/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiLgxb3pQ5gbyGvNcvnTjqpEMtxrbTXzv)/source.webp"
+      }
+    },
+    {
+      "id": "323",
+      "title": "Nova Tank",
+      "name": "Nova Tank",
+      "slug": "ph5ql7orx5n9r",
+      "url": "https://robertsspaceindustries.com/pledge/ships/nova-tank/Nova",
+      "manufacturerId": 83,
+      "manufacturer": "Tumbril",
+      "type": "ground",
+      "focus": "Combat",
+      "msrpCentsUsd": 12000,
+      "msrpUsd": 120,
+      "purchasable": false,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 1,
+      "maxCrew": 3,
+      "publishStart": "2021-05-19 00:00:00",
+      "lastUpdate": "2026-04-21 20:05:47",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/2db9fbed233bbd51205c211f1598543a1137e302/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiLgxb3pQ5gbyGvNcvnTjqpEMtxrbTXzv)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/edadba84b4c3c1ba572e59d08c1ff646864b4352/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiLgxb3pQ5gbyGvNcvnTjqpEMtxrbTXzv)/source.webp",
@@ -4620,7 +4772,7 @@
       "minCrew": 1,
       "maxCrew": 4,
       "publishStart": "2024-11-30 16:00:00",
-      "lastUpdate": "2026-01-07 16:26:18",
+      "lastUpdate": "2026-04-21 20:52:42",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/8e8ccf69652bbd98c01d29a4028e4978919c1fee/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResee2dEjRP4VR3V37tM6e6iSziURZYpVtxN)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/d47364deebdb95714c2e6d2f3040882590279821/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResee2dEjRP4VR3V37tM6e6iSziURZYpVtxN)/source.webp",
@@ -4645,7 +4797,7 @@
       "minCrew": 1,
       "maxCrew": 7,
       "publishStart": "2020-11-28 15:57:09",
-      "lastUpdate": "2025-12-03 22:22:08",
+      "lastUpdate": "2026-04-21 19:54:54",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/78e2a9e7ea9067314be83fd9057949496b48c1c1/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseHFRPfQtzPkgVSiq2SXDbBKM2vp5SvuoL)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/b299ffd92ac2740967c53aff91b38a8672e02925/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseHFRPfQtzPkgVSiq2SXDbBKM2vp5SvuoL)/source.webp",
@@ -4695,7 +4847,7 @@
       "minCrew": 6,
       "maxCrew": 12,
       "publishStart": "2016-10-09 00:00:00",
-      "lastUpdate": "2025-12-03 22:22:14",
+      "lastUpdate": "2026-04-21 19:55:00",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/8ae451b8e7c2f23574df93fbac8a5dc94df688fb/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjvdsuj4E1TBxYPCwNKBaHDZUcJ54bNLc6)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/7c3a346e4fb285f1514ce80fb2dd83387bc2aa18/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjvdsuj4E1TBxYPCwNKBaHDZUcJ54bNLc6)/source.webp",
@@ -4820,7 +4972,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2024-05-10 00:00:00",
-      "lastUpdate": "2025-12-03 21:58:51",
+      "lastUpdate": "2026-04-21 19:58:09",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/fda2384407c36cc0dcf025c626a427104eec557d/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskHwGLihMvGXWkmUk6XqVmpyqSSy76FghU)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/4f5c6fec059a83984463f286ae325e8112072e66/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskHwGLihMvGXWkmUk6XqVmpyqSSy76FghU)/source.webp",
@@ -5020,7 +5172,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2018-05-16 00:00:00",
-      "lastUpdate": "2025-12-03 22:35:07",
+      "lastUpdate": "2026-04-21 19:58:13",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/bf2b52f15d4d9a58e95d3350a8e985e6ef456d5e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResepoxDo1odgZbP1T6ityiJ87KEdH4JYGC6)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/fa67cb9f2e8fcd1e56122611abe589125199cdae/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResepoxDo1odgZbP1T6ityiJ87KEdH4JYGC6)/source.webp",
@@ -5070,7 +5222,7 @@
       "minCrew": 4,
       "maxCrew": 5,
       "publishStart": "2018-03-31 00:00:00",
-      "lastUpdate": "2026-03-25 23:00:36",
+      "lastUpdate": "2026-04-21 20:03:51",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/968b9b8cae35fba622a5356ee403a3db70f69db1/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjkHit9pz2hMMvi7EmNgpfzTX1oMBWhjF4)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/8ff4a42391315885c8a6c5dafb0250dc6928324a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjkHit9pz2hMMvi7EmNgpfzTX1oMBWhjF4)/source.webp",
@@ -5120,7 +5272,7 @@
       "minCrew": 3,
       "maxCrew": 4,
       "publishStart": "2021-11-18 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:22",
+      "lastUpdate": "2026-04-21 20:03:50",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/fe03b51830cefdc04ea512f9b6887837d02a52a6/resize(1820,1024,cover,hgjbks2vRxvijgZCkcudyey3yf2YnBqfanX6U636vzzNeeFdx43A2FpAtr4dce6zL9JH9YZyXwhA4VkD1n3fdHWi5t)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/789931739b793619ecddbade3287dac262e17a0c/resize(910,512,cover,hgjbks2vRxvijgZCkcudyey3yf2YnBqfanX6U636vzzNeeFdx43A2FpAtr4dce6zL9JH9YZyXwhA4VkD1n3fdHWi5t)/source.webp",
@@ -5220,7 +5372,32 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2019-05-03 00:00:00",
-      "lastUpdate": "2025-12-03 22:23:03",
+      "lastUpdate": "2026-04-21 19:59:28",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/ac002421bd885da62fee1a11ebfe83462d109d9a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskui898hucVaGeAWgdEYuL85w4WovbbF9G)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/34704d8628f1a122c12292ef2c16d9ac4080615b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskui898hucVaGeAWgdEYuL85w4WovbbF9G)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/ac002421bd885da62fee1a11ebfe83462d109d9a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskui898hucVaGeAWgdEYuL85w4WovbbF9G)/source.webp"
+      }
+    },
+    {
+      "id": "319",
+      "title": "Reliant Tana - Skirmisher",
+      "name": "Reliant Tana - Skirmisher",
+      "slug": "i7pp06sc9002d",
+      "url": "https://robertsspaceindustries.com/pledge/ships/reliant/Reliant-Tana",
+      "manufacturerId": 4,
+      "manufacturer": "MISC",
+      "type": "combat",
+      "focus": "Light Fighter",
+      "msrpCentsUsd": 7500,
+      "msrpUsd": 75,
+      "purchasable": false,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 1,
+      "maxCrew": 2,
+      "publishStart": "2019-05-03 00:00:00",
+      "lastUpdate": "2026-04-21 19:59:28",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/ac002421bd885da62fee1a11ebfe83462d109d9a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskui898hucVaGeAWgdEYuL85w4WovbbF9G)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/34704d8628f1a122c12292ef2c16d9ac4080615b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskui898hucVaGeAWgdEYuL85w4WovbbF9G)/source.webp",
@@ -5245,7 +5422,7 @@
       "minCrew": 4,
       "maxCrew": 7,
       "publishStart": "2015-08-07 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:14",
+      "lastUpdate": "2026-04-21 20:03:40",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/b9b0878a9024d628a0a354fcf5e93019f7109618/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCdZHYHWjm6PDHXfWXZ5H5zaPpNaNWnkW)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/1fe48fe3da5511cb6d3e4e8eb8ab87e48660d9f9/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCdZHYHWjm6PDHXfWXZ5H5zaPpNaNWnkW)/source.webp",
@@ -5320,7 +5497,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2016-03-04 00:00:00",
-      "lastUpdate": "2026-01-06 18:05:50",
+      "lastUpdate": "2026-04-21 20:03:42",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/e780fce7b5bc3aef5d54ae873d1ae4ddbdadbbf6/resize(1820,1024,cover,hgjbks2vRxvijgZCkcudyey3yf2YnBqfanX6U636vzzNeeFdx43A2FpAZ7nnvLVtpHFMFWL7o7nMwTrRFj5ZVqWmvn)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/796911961e36ccc56e3862fb294e5254fe06d194/resize(910,512,cover,hgjbks2vRxvijgZCkcudyey3yf2YnBqfanX6U636vzzNeeFdx43A2FpAZ7nnvLVtpHFMFWL7o7nMwTrRFj5ZVqWmvn)/source.webp",
@@ -5345,7 +5522,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2016-12-23 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:12",
+      "lastUpdate": "2026-04-21 20:03:35",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/e0ba58229607b2f143a3413a60a115b37f154bda/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResejaqZiWqzJk1v9rhSh93faaUuRM5WPM98)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/65bad60dc97db2de740bc0f388e15a1ab39b359a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResejaqZiWqzJk1v9rhSh93faaUuRM5WPM98)/source.webp",
@@ -5370,7 +5547,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2024-05-21 16:00:00",
-      "lastUpdate": "2025-12-10 19:27:58",
+      "lastUpdate": "2026-04-21 20:03:25",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/f037fb320d24837acc6152657518d19f13a728c4/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResk7WF8gxQ2oWfEL4DujqfZsZJ6ADujSDF4)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ca9f1d33cd726848184327df7ce0fbaa33caea3d/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResk7WF8gxQ2oWfEL4DujqfZsZJ6ADujSDF4)/source.webp",
@@ -5495,7 +5672,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2022-05-19 00:45:00",
-      "lastUpdate": "2025-12-03 22:22:07",
+      "lastUpdate": "2026-04-21 19:54:53",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/3e91bdb7e1292eb7d8f07b87073b616f6c08355d/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResepsDwQ9u3J1woX35mi3qGoXbvfB38svXg)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/229e2760c91db2b5f79d4bb4bf261094414c303d/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResepsDwQ9u3J1woX35mi3qGoXbvfB38svXg)/source.webp",
@@ -5520,7 +5697,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2023-03-10 23:45:40",
-      "lastUpdate": "2025-12-03 22:22:05",
+      "lastUpdate": "2026-04-21 19:54:52",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/086a250b405bd1cda9ca40831a0ead40d38c48c7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjNrErHqkcicxt9k7X9SsCAMJUprHF2BQ2)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/5414c97f700573e5ad1e9d2fe47e0d0a98dac494/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjNrErHqkcicxt9k7X9SsCAMJUprHF2BQ2)/source.webp",
@@ -5570,7 +5747,7 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2025-10-11 16:00:00",
-      "lastUpdate": "2026-01-07 16:26:20",
+      "lastUpdate": "2026-04-21 19:52:28",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/83496eb7312353e165beff60ddab7e534950beee/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskfNjJxzLeJBQNwz8hZnHvXvcMscGngw4S)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/3d975dc0519182d6dde96538bb493ce0f4f0eb5b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskfNjJxzLeJBQNwz8hZnHvXvcMscGngw4S)/source.webp",
@@ -5595,7 +5772,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2021-11-18 00:00:00",
-      "lastUpdate": "2025-12-03 22:42:16",
+      "lastUpdate": "2026-04-21 20:52:49",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/caec1a43fe808311ca492c51002e9a3bf585393c/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1kD3WpJBNCfd4f5GV9y4U6tFzGqUJY7Q)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/0249256397260fe068bc47b2793c37f32315d0ec/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1kD3WpJBNCfd4f5GV9y4U6tFzGqUJY7Q)/source.webp",
@@ -5620,7 +5797,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2023-11-22 16:00:00",
-      "lastUpdate": "2025-12-03 22:40:39",
+      "lastUpdate": "2026-04-21 20:00:14",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/1d508b10efc1d044d96c19c2120f7b55c09c1f10/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskvzMkR86na9QbqH7S5iyoVoKe6QYJ5fD8)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/3e1004a35c9c968d6ae76d9033526d0e9e16e976/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskvzMkR86na9QbqH7S5iyoVoKe6QYJ5fD8)/source.webp",
@@ -5670,7 +5847,7 @@
       "minCrew": 4,
       "maxCrew": 6,
       "publishStart": "2016-06-10 00:00:00",
-      "lastUpdate": "2025-12-03 22:23:08",
+      "lastUpdate": "2026-04-21 19:59:29",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/e1e68c92930b8985842f5296f437a725430badab/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResipDV185foxRnreqU2TUBknDwpWfUB7q6N)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/2a169859d75b682a70148794b5da32e38d89ff13/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResipDV185foxRnreqU2TUBknDwpWfUB7q6N)/source.webp",
@@ -5695,7 +5872,7 @@
       "minCrew": 1,
       "maxCrew": 4,
       "publishStart": "2024-10-20 10:27:00",
-      "lastUpdate": "2026-01-21 15:54:09",
+      "lastUpdate": "2026-04-21 19:59:27",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/1d60a72b92e06ea7905b461b75dad4ab03bee83a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskuqKJR7ahwoCpivELREMemk2AkjkX8G7Q)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ecdfba05ed9df4d53fc20d41ee12152a88918226/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskuqKJR7ahwoCpivELREMemk2AkjkX8G7Q)/source.webp",
@@ -5720,7 +5897,7 @@
       "minCrew": 1,
       "maxCrew": 8,
       "publishStart": "2024-10-20 10:27:02",
-      "lastUpdate": "2026-01-21 15:54:19",
+      "lastUpdate": "2026-04-21 19:59:26",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/800c29a211e6ec9ac5ae9573cc867bbe312f8470/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1w3KASs6Cf5fSBCJYkGF9z5AWrGMdiWJ)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/d986438ead13160e2b42dd7651d22045ea68818b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1w3KASs6Cf5fSBCJYkGF9z5AWrGMdiWJ)/source.webp",
@@ -5770,7 +5947,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2023-11-16 00:00:00",
-      "lastUpdate": "2025-12-03 22:21:05",
+      "lastUpdate": "2026-04-21 20:05:45",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/3c27118370850da85be980fcecee69364478bcec/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjZs3i5kt5DoxmQ2RRvx2Rh1Dezpgf52Rt)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/6b1c078f7b0058d604f2b006a45a50a3f17d5119/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjZs3i5kt5DoxmQ2RRvx2Rh1Dezpgf52Rt)/source.webp",
@@ -5795,7 +5972,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2023-11-16 00:00:00",
-      "lastUpdate": "2025-12-03 22:21:04",
+      "lastUpdate": "2026-04-21 20:05:43",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/a3ea607a296776a50e8f189013378cb457d0dd89/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskjDGacoXYF6GFUBSrXQAXTc1eFVeygQZt)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/3529535f512edea5ef0983117c80d499a92418aa/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskjDGacoXYF6GFUBSrXQAXTc1eFVeygQZt)/source.webp",
@@ -5920,7 +6097,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2018-03-31 00:00:00",
-      "lastUpdate": "2025-12-03 22:42:33",
+      "lastUpdate": "2026-04-21 20:52:58",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/e226b9dfb09a0db6118b9793e84d91f7c396ce6b/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResipCJvtQrx1nD2gTpcswfhjvPdK8qy1NUN)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/56d421aa2f6c4bba2090ce3472bdb2089a55df06/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResipCJvtQrx1nD2gTpcswfhjvPdK8qy1NUN)/source.webp",
@@ -5945,36 +6122,11 @@
       "minCrew": 1,
       "maxCrew": 2,
       "publishStart": "2024-11-30 16:00:00",
-      "lastUpdate": "2025-12-03 22:42:12",
+      "lastUpdate": "2026-04-21 20:52:41",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/0f0ef47ed3ea5a42f078afc9271b1302b734aac2/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResiqTMftn13eEVWjEGyq1r2u2BNf67RfTBC)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/f6c269d5b31c56c8387d8cf5f1cfd92fc30a2373/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResiqTMftn13eEVWjEGyq1r2u2BNf67RfTBC)/source.webp",
         "1000": "https://robertsspaceindustries.com/i/0f0ef47ed3ea5a42f078afc9271b1302b734aac2/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResiqTMftn13eEVWjEGyq1r2u2BNf67RfTBC)/source.webp"
-      }
-    },
-    {
-      "id": "139",
-      "title": "Ursa",
-      "name": "Ursa",
-      "slug": "vll9hv6lbar6y",
-      "url": "https://robertsspaceindustries.com/pledge/ships/ursa/Ursa",
-      "manufacturerId": 1,
-      "manufacturer": "Roberts Space Industries",
-      "type": "ground",
-      "focus": "Exploration",
-      "msrpCentsUsd": 5000,
-      "msrpUsd": 50,
-      "purchasable": true,
-      "productionStatus": "flight-ready",
-      "featuredForShipList": false,
-      "minCrew": 1,
-      "maxCrew": 2,
-      "publishStart": "2017-12-23 00:00:00",
-      "lastUpdate": "2025-12-03 22:19:58",
-      "thumbnailUrl": "https://robertsspaceindustries.com/i/1baa93c6a56786b022de6b46c1a8c33fa36da6b6/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseM3uUcugp2674rcRWSAagpPVa9SbEyUCE)/source.webp",
-      "thumbnailUrls": {
-        "900": "https://robertsspaceindustries.com/i/a41741ebafa15bbb206c5561eeb89f4b1b6f112a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseM3uUcugp2674rcRWSAagpPVa9SbEyUCE)/source.webp",
-        "1000": "https://robertsspaceindustries.com/i/1baa93c6a56786b022de6b46c1a8c33fa36da6b6/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseM3uUcugp2674rcRWSAagpPVa9SbEyUCE)/source.webp"
       }
     },
     {
@@ -6020,11 +6172,61 @@
       "minCrew": 1,
       "maxCrew": 3,
       "publishStart": "2024-05-17 16:00:00",
-      "lastUpdate": "2026-02-24 19:24:39",
+      "lastUpdate": "2026-04-21 19:54:48",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/e2300d8e61b297bcf8be6b739961ea9f441821aa/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseFsCKauuCq4PYvVGFqV37HbFojR9mgHQS)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/e8a67579a3881895be59de2f0b0e2197d39bcfcd/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseFsCKauuCq4PYvVGFqV37HbFojR9mgHQS)/source.webp",
         "1000": "https://robertsspaceindustries.com/i/e2300d8e61b297bcf8be6b739961ea9f441821aa/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseFsCKauuCq4PYvVGFqV37HbFojR9mgHQS)/source.webp"
+      }
+    },
+    {
+      "id": "139",
+      "title": "Ursa Rover",
+      "name": "Ursa Rover",
+      "slug": "vll9hv6lbar6y",
+      "url": "https://robertsspaceindustries.com/pledge/ships/ursa/Ursa",
+      "manufacturerId": 1,
+      "manufacturer": "Roberts Space Industries",
+      "type": "ground",
+      "focus": "Exploration",
+      "msrpCentsUsd": 5000,
+      "msrpUsd": 50,
+      "purchasable": true,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 1,
+      "maxCrew": 2,
+      "publishStart": "2017-12-23 00:00:00",
+      "lastUpdate": "2026-04-21 19:54:59",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/1baa93c6a56786b022de6b46c1a8c33fa36da6b6/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseM3uUcugp2674rcRWSAagpPVa9SbEyUCE)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/a41741ebafa15bbb206c5561eeb89f4b1b6f112a/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseM3uUcugp2674rcRWSAagpPVa9SbEyUCE)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/1baa93c6a56786b022de6b46c1a8c33fa36da6b6/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseM3uUcugp2674rcRWSAagpPVa9SbEyUCE)/source.webp"
+      }
+    },
+    {
+      "id": "322",
+      "title": "Ursa Rover Fortuna",
+      "name": "Ursa Rover Fortuna",
+      "slug": "soa3xtkb2ohmt",
+      "url": "https://robertsspaceindustries.com/pledge/ships/ursa/Ursa-Fortuna",
+      "manufacturerId": 1,
+      "manufacturer": "Roberts Space Industries",
+      "type": "ground",
+      "focus": "Exploration",
+      "msrpCentsUsd": 5500,
+      "msrpUsd": 55,
+      "purchasable": false,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 1,
+      "maxCrew": 2,
+      "publishStart": "2019-05-03 00:00:00",
+      "lastUpdate": "2026-03-12 15:36:08",
+      "thumbnailUrl": "https://robertsspaceindustries.com/i/f241eb36893fa3087a842300f67127f7a433280a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjBNBJ23W3mEG8ozoUYXBJqa5UXbB8Xogz)/source.webp",
+      "thumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/c6ae625bbaf2a2fb789ca8b9128ae97bd6e85a12/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjBNBJ23W3mEG8ozoUYXBJqa5UXbB8Xogz)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/f241eb36893fa3087a842300f67127f7a433280a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjBNBJ23W3mEG8ozoUYXBJqa5UXbB8Xogz)/source.webp"
       }
     },
     {
@@ -6070,7 +6272,7 @@
       "minCrew": 1,
       "maxCrew": 5,
       "publishStart": "2018-11-09 00:00:00",
-      "lastUpdate": "2025-12-03 22:42:28",
+      "lastUpdate": "2026-04-21 20:52:55",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/33c4ee2869dcf9490841df1d6968eed5d94ef5f9/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqctMmTYuX6sFTZyNbv2gpmbPFTbA9Sna)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/dc24ca06161801f96cfdebc4f1fe31f2027f421e/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskqctMmTYuX6sFTZyNbv2gpmbPFTbA9Sna)/source.webp",
@@ -6120,7 +6322,7 @@
       "minCrew": 2,
       "maxCrew": 2,
       "publishStart": "2019-10-11 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:18",
+      "lastUpdate": "2026-04-21 20:03:44",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/5827d64995a2ea3f3e1418641f5570b8a1043612/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1xF7q7jf7jd79bnxNkSizmEWjeHmN7wC)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c52e08fda33ec3463ff45ce19d834d3276647887/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResj1xF7q7jf7jd79bnxNkSizmEWjeHmN7wC)/source.webp",
@@ -6145,7 +6347,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2016-12-23 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:08",
+      "lastUpdate": "2026-04-21 20:03:32",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/ddf87a3557d7974de14f100d5290431cc52f23f7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskMz76vuAhBK7HF2Vi7XtMGa1Y7NERvKjt)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/9895a17ab446682830f45b31e1b09e1de1f58ba4/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskMz76vuAhBK7HF2Vi7XtMGa1Y7NERvKjt)/source.webp",
@@ -6170,7 +6372,7 @@
       "minCrew": 2,
       "maxCrew": 2,
       "publishStart": "2019-10-11 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:17",
+      "lastUpdate": "2026-04-21 20:03:43",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/7cfa103b8d285fe680502316fdb6684a208e87a2/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskTR6eaJfWreJS6tkpbG1L52GU8WeW2bfk)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/b231fe8e6b535c430f6075195a8f2628cea4d934/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskTR6eaJfWreJS6tkpbG1L52GU8WeW2bfk)/source.webp",
@@ -6195,7 +6397,7 @@
       "minCrew": 2,
       "maxCrew": 2,
       "publishStart": "2016-01-15 00:00:00",
-      "lastUpdate": "2025-12-03 22:43:19",
+      "lastUpdate": "2026-04-21 20:03:46",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/9e22a6d48ab6e41700b03715bdff21f3944596f3/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskkCoaQ3hcYZfVfuw4ru7sC7dzNvKsbGXG)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/98d0506eb15fc91adc258da2225ed096b0f2766c/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskkCoaQ3hcYZfVfuw4ru7sC7dzNvKsbGXG)/source.webp",
@@ -6220,7 +6422,7 @@
       "minCrew": 1,
       "maxCrew": 3,
       "publishStart": "2018-02-22 19:57:53",
-      "lastUpdate": "2025-12-03 22:43:03",
+      "lastUpdate": "2026-04-21 20:03:28",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/9e7e9b7b18f90777c9ab34b571dbacf470d78c52/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResejVm2oahKQbxntDyDipVCaX4byAbDNp6a)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/1d558cb31326eaeeca080e378ea1196980c6b9ec/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResejVm2oahKQbxntDyDipVCaX4byAbDNp6a)/source.webp",
@@ -6245,7 +6447,7 @@
       "minCrew": 1,
       "maxCrew": 1,
       "publishStart": "2023-03-10 00:00:00",
-      "lastUpdate": "2025-12-03 21:55:56",
+      "lastUpdate": "2026-04-21 19:51:55",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/f6db59eb9fab5f42cfea9f996f86dd4036b8d712/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskCvCdRfAMGuDBYzhaECpNCyZZJ4VYpLjp)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/df608b42b852b103c597bf91105b70b203dc03eb/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskCvCdRfAMGuDBYzhaECpNCyZZJ4VYpLjp)/source.webp",
@@ -6395,7 +6597,7 @@
       "minCrew": 1,
       "maxCrew": 3,
       "publishStart": null,
-      "lastUpdate": "2025-12-03 22:22:01",
+      "lastUpdate": "2026-04-21 19:54:49",
       "thumbnailUrl": "https://robertsspaceindustries.com/i/1dc7f0e18d6d6fd2a60cbcd72242cfea1318c043/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResk22Znp2LVdS2JMxJFjrYCirRpVc4v9Pzv)/source.webp",
       "thumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/d0d0aa31e84898d35f276ab65174a292509f9db4/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResk22Znp2LVdS2JMxJFjrYCirRpVc4v9Pzv)/source.webp",
