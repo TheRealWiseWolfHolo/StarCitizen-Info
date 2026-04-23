@@ -215,10 +215,23 @@ function extractDescription($) {
     .filter((text) => text.length >= 80);
 
   if (paragraphCandidates.length) {
-    return paragraphCandidates[0];
+    return sanitizeDescription(paragraphCandidates[0]);
   }
 
-  return normalizeWhitespace($('meta[name="description"]').attr("content")) || null;
+  return sanitizeDescription($('meta[name="description"]').attr("content"));
+}
+
+function sanitizeDescription(value) {
+  const normalized = normalizeWhitespace(value);
+  if (!normalized) {
+    return null;
+  }
+
+  return normalized
+    .replace(/\[\d+\]/g, "")
+    .replace(/\s+([,.;:!?])/g, "$1")
+    .replace(/\s{2,}/g, " ")
+    .trim();
 }
 
 function extractInfoboxItems($, section) {
@@ -497,6 +510,7 @@ function normalizeWhitespace(value) {
 
   return value
     .replace(/\u00A0/g, " ")
+    .replace(/\u2764\uFE0F?/g, "HP")
     .replace(/\s+/g, " ")
     .trim();
 }

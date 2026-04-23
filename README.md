@@ -78,7 +78,7 @@ The feed is built from:
               "name": "CF-337 Panther Repeater",
               "count": 2,
               "size": "S3",
-              "subtitle": "1,500 ❤️ · A",
+              "subtitle": "1,500 HP · A",
               "level": 2
             }
           ],
