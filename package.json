@@ -3,7 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-ships-json.mjs"
+    "build": "node scripts/build-ships-json.mjs && node scripts/build-ship-details-json.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "playwright": "^1.59.1"
   }
 }
-
