@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T18:44:02.594Z",
+  "generatedAt": "2026-04-23T22:06:59.299Z",
   "source": {
     "page": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
     "graphql": "https://robertsspaceindustries.com/graphql"
@@ -12,13 +12,13 @@
       false
     ]
   },
-  "count": 262,
+  "count": 264,
   "totalCount": 250,
-  "syntheticCount": 12,
+  "syntheticCount": 14,
   "summary": {
-    "purchasableCount": 92,
-    "unavailableCount": 170,
-    "flightReadyCount": 230,
+    "purchasableCount": 93,
+    "unavailableCount": 171,
+    "flightReadyCount": 232,
     "inConceptCount": 32,
     "manufacturers": [
       {
@@ -46,12 +46,12 @@
         "count": 23
       },
       {
-        "name": "Tumbril",
-        "count": 13
+        "name": "Argo Astronautics",
+        "count": 14
       },
       {
-        "name": "Argo Astronautics",
-        "count": 12
+        "name": "Tumbril",
+        "count": 13
       },
       {
         "name": "Crusader Industries",
@@ -311,7 +311,7 @@
       }
     },
     {
-      "id": "320",
+      "id": "321",
       "title": "350r Racer",
       "name": "350r Racer",
       "slug": "id69wp9ug7tts",
@@ -371,7 +371,7 @@
       }
     },
     {
-      "id": "323",
+      "id": "324",
       "title": "600i Executive Edition",
       "name": "600i Executive Edition",
       "slug": "4rzlgxtznqilp",
@@ -402,7 +402,7 @@
       }
     },
     {
-      "id": "322",
+      "id": "323",
       "title": "600i Exploration Module",
       "name": "600i Exploration Module",
       "slug": "4rzlgxtznqilp",
@@ -492,7 +492,7 @@
       }
     },
     {
-      "id": "321",
+      "id": "322",
       "title": "600i Touring Module",
       "name": "600i Touring Module",
       "slug": "0ih9xvaedu7xx",
@@ -579,6 +579,36 @@
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/a4f4f97db4797576891c657705a5c99624f7438c/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskN2PtGhQ7i1JD7RWFivT3dm996DXRrinA)/source.webp",
         "1000": "https://robertsspaceindustries.com/i/285d258ad5d533e7e336aa939edf4d78ca5b2678/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskN2PtGhQ7i1JD7RWFivT3dm996DXRrinA)/source.webp"
+      }
+    },
+    {
+      "id": "315",
+      "title": "A.T.L.S.",
+      "name": "A.T.L.S.",
+      "slug": "8kq6y6cndi2il",
+      "url": "https://robertsspaceindustries.com/pledge/ships/atls/ATLS",
+      "manufacturerId": 73,
+      "manufacturer": "Argo Astronautics",
+      "type": "ground",
+      "focus": "Industrial",
+      "msrpCentsUsd": 4000,
+      "msrpUsd": 40,
+      "purchasable": true,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 1,
+      "maxCrew": 1,
+      "publishStart": "2024-09-13 16:00:00",
+      "lastUpdate": "2025-12-03 21:52:36",
+      "thumbnailUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/f2fd1180b63a65e39d2c1c60d4e60a0647bb1748b76bc365fcc5696dc68d9398.webp",
+      "thumbnailUrls": {
+        "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/87e37305e6f2bdd6c19a2c47001792faf0c421d8e259c3e2999b5b272177f437.webp",
+        "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/f2fd1180b63a65e39d2c1c60d4e60a0647bb1748b76bc365fcc5696dc68d9398.webp"
+      },
+      "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/e857649dcd3767d24d3ec5085fbea8a6835fa833/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseYuTuCACieSjiE8s24q9GjXTx67KcfVEe)/source.webp",
+      "sourceThumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/ea09dc105fa51591f83168469dfbed1caad2dda1/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseYuTuCACieSjiE8s24q9GjXTx67KcfVEe)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/e857649dcd3767d24d3ec5085fbea8a6835fa833/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseYuTuCACieSjiE8s24q9GjXTx67KcfVEe)/source.webp"
       }
     },
     {
@@ -2052,7 +2082,7 @@
       }
     },
     {
-      "id": "318",
+      "id": "319",
       "title": "Cutlass 2949 Best In Show",
       "name": "Cutlass 2949 Best In Show",
       "slug": "cbvmsg7qb88ih",
@@ -2562,7 +2592,7 @@
       }
     },
     {
-      "id": "326",
+      "id": "327",
       "title": "Dragonfly Star Kitten Edition",
       "name": "Dragonfly Star Kitten Edition",
       "slug": "got2hts66e3ec",
@@ -3554,7 +3584,7 @@
       }
     },
     {
-      "id": "317",
+      "id": "318",
       "title": "Genesis Starliner",
       "name": "Genesis Starliner",
       "slug": "srzgomjongzux",
@@ -3644,7 +3674,7 @@
       }
     },
     {
-      "id": "315",
+      "id": "316",
       "title": "Gladius Dunlevy",
       "name": "Gladius Dunlevy",
       "slug": "xriwbkclswwcc",
@@ -4994,6 +5024,36 @@
       }
     },
     {
+      "id": "328",
+      "title": "MOLE - Carbon Edition",
+      "name": "MOLE - Carbon Edition",
+      "slug": "yve1mupdhirfi",
+      "url": "https://robertsspaceindustries.com/pledge/ships/argo-mole/Argo-Mole-Carbon-Edition",
+      "manufacturerId": 73,
+      "manufacturer": "Argo Astronautics",
+      "type": "industrial",
+      "focus": "Prospecting / Mining",
+      "msrpCentsUsd": 31500,
+      "msrpUsd": 315,
+      "purchasable": false,
+      "productionStatus": "flight-ready",
+      "featuredForShipList": false,
+      "minCrew": 1,
+      "maxCrew": 4,
+      "publishStart": "2019-12-21 22:41:03",
+      "lastUpdate": "2025-12-03 22:40:38",
+      "thumbnailUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/ade968f836c34701ba6f911ce4349b56dbbeda7eb3b213aee762182efa1d1e64.webp",
+      "thumbnailUrls": {
+        "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/416b7356a30fc135d2db54e6ffa5acd4739f571170e27776718e6d89800ede65.webp",
+        "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/ade968f836c34701ba6f911ce4349b56dbbeda7eb3b213aee762182efa1d1e64.webp"
+      },
+      "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/f07516bc12a7a000473db7ddd63de15261eb06e1/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUQdPtivjxFep51jBzbNQhgDDyVKv9AL6)/source.webp",
+      "sourceThumbnailUrls": {
+        "900": "https://robertsspaceindustries.com/i/79cd09b61ad24b337ba20dfb1010100f3029a8cc/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUQdPtivjxFep51jBzbNQhgDDyVKv9AL6)/source.webp",
+        "1000": "https://robertsspaceindustries.com/i/f07516bc12a7a000473db7ddd63de15261eb06e1/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUQdPtivjxFep51jBzbNQhgDDyVKv9AL6)/source.webp"
+      }
+    },
+    {
       "id": "311",
       "title": "MOTH",
       "name": "MOTH",
@@ -5354,7 +5414,7 @@
       }
     },
     {
-      "id": "316",
+      "id": "317",
       "title": "Mustang Omega : AMD Edition",
       "name": "Mustang Omega : AMD Edition",
       "slug": "ru4usfo8qcolh",
@@ -5505,7 +5565,7 @@
       }
     },
     {
-      "id": "325",
+      "id": "326",
       "title": "Nova Tank",
       "name": "Nova Tank",
       "slug": "ph5ql7orx5n9r",
@@ -6495,7 +6555,7 @@
       }
     },
     {
-      "id": "319",
+      "id": "320",
       "title": "Reliant Tana - Skirmisher",
       "name": "Reliant Tana - Skirmisher",
       "slug": "i7pp06sc9002d",
@@ -7485,7 +7545,7 @@
       }
     },
     {
-      "id": "324",
+      "id": "325",
       "title": "Ursa Rover Fortuna",
       "name": "Ursa Rover Fortuna",
       "slug": "soa3xtkb2ohmt",

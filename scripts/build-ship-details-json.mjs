@@ -26,6 +26,20 @@ const DETAIL_TAB_IDS = [
 const USER_AGENT =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36";
 
+const SYNTHETIC_SHIP_DETAIL_ALIASES = [
+  { name: "A.T.L.S.", sourceName: "ATLS" },
+  { name: "Caterpillar 2949 Best in Show", sourceName: "Caterpillar Best In Show Edition" },
+  { name: "Cutlass Black 2949 Best in Show", sourceName: "Cutlass Black Best In Show Edition" },
+  { name: "Dragonfly Star Kitten Edition", sourceName: "Dragonfly Star Kitten" },
+  { name: "F8C Lightning Executive Edition", sourceName: "F8C Lightning" },
+  { name: "Hammerhead 2949 Best in Show", sourceName: "Hammerhead Best In Show Edition" },
+  { name: "MOLE - Carbon Edition", sourceName: "MOLE" },
+  { name: "Nautilus Solstice Edition", sourceName: "Nautilus" },
+  { name: "Reclaimer 2949 Best in Show", sourceName: "Reclaimer Best In Show Edition" },
+  { name: "Sabre Raven", sourceName: "Sabre" },
+  { name: "Valkyrie Liberator Edition", sourceName: "Valkyrie Liberator" }
+];
+
 const FRIENDLY_HULL_LABELS = {
   "💪": "Physical Damage Resistance",
   "⚡": "Energy Damage Resistance",
@@ -79,7 +93,7 @@ async function buildShipDetails(listHTML) {
 
   console.log(`Parsed ${baseEntries.length} rows from the list page`);
 
-  return asyncPool(DETAIL_CONCURRENCY, baseEntries, async (entry, index) => {
+  const ships = await asyncPool(DETAIL_CONCURRENCY, baseEntries, async (entry, index) => {
     if ((index + 1) % 25 === 0 || index === baseEntries.length - 1) {
       console.log(`Resolving ship detail pages ${index + 1}/${baseEntries.length}`);
     }
@@ -89,6 +103,7 @@ async function buildShipDetails(listHTML) {
       const detailData = parseDetailPage(detailHTML);
       return {
         ...entry,
+        size: entry.size || detailData.size || null,
         description: detailData.description,
         technicalSections: detailData.technicalSections,
         specificationSections: detailData.specificationSections,
@@ -112,6 +127,8 @@ async function buildShipDetails(listHTML) {
       };
     }
   });
+
+  return appendSyntheticShipDetailAliases(ships);
 }
 
 function parseListRow($, row, headerIndex) {
@@ -198,6 +215,7 @@ function parseDetailPage(html) {
   );
 
   return {
+    size: extractFallbackSize($),
     description,
     technicalSections,
     specificationSections,
@@ -206,6 +224,19 @@ function parseDetailPage(html) {
     componentSummary: buildSpecificationSummary(componentSections),
     weaponsUtilitySummary: buildSpecificationSummary(weaponsUtilitySections)
   };
+}
+
+function extractFallbackSize($) {
+  const subtitle = normalizeWhitespace($("#siteSub").first().text())
+    || normalizeWhitespace($(".citizen-sticky-header-page-tagline").first().text())
+    || normalizeWhitespace($('meta[name="description"]').attr("content"));
+
+  if (!subtitle) {
+    return null;
+  }
+
+  const matchedSize = subtitle.match(/\b(Capital|Large|Medium|Small|Snub|Vehicle)\b/i);
+  return matchedSize ? toTitleCase(matchedSize[1]) : null;
 }
 
 function extractDescription($) {
@@ -232,6 +263,10 @@ function sanitizeDescription(value) {
     .replace(/\s+([,.;:!?])/g, "$1")
     .replace(/\s{2,}/g, " ")
     .trim();
+}
+
+function toTitleCase(value) {
+  return value ? value.charAt(0).toUpperCase() + value.slice(1).toLowerCase() : value;
 }
 
 function extractInfoboxItems($, section) {
@@ -501,6 +536,29 @@ function spec(label, value) {
 
 function compactSpecs(items) {
   return items.filter(Boolean);
+}
+
+function appendSyntheticShipDetailAliases(ships) {
+  const existingNames = new Set(ships.map((ship) => ship.name));
+
+  for (const alias of SYNTHETIC_SHIP_DETAIL_ALIASES) {
+    if (existingNames.has(alias.name)) {
+      continue;
+    }
+
+    const sourceShip = ships.find((ship) => ship.name === alias.sourceName);
+    if (!sourceShip) {
+      continue;
+    }
+
+    ships.push({
+      ...sourceShip,
+      name: alias.name
+    });
+    existingNames.add(alias.name);
+  }
+
+  return ships;
 }
 
 function normalizeWhitespace(value) {

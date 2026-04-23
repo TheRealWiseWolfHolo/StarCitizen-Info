@@ -29,6 +29,10 @@ const SHIP_NAME_OVERRIDES = new Map([
 ]);
 const SYNTHETIC_SHIP_VARIANTS = [
   {
+    name: "A.T.L.S.",
+    sourceName: "ATLS"
+  },
+  {
     name: "Gladius Dunlevy",
     sourceName: "Gladius",
     thumbnailUrl: "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg"
@@ -96,6 +100,10 @@ const SYNTHETIC_SHIP_VARIANTS = [
       msrpLabel: NOT_FOR_SALE_MSRP_LABEL,
       purchasable: false
     }
+  },
+  {
+    name: "MOLE - Carbon Edition",
+    sourceName: "Argo Mole Carbon Edition"
   }
 ];
 
