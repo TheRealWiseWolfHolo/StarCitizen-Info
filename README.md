@@ -1,11 +1,13 @@
 # StarCitizen-Info
 
-Public Star Citizen ship MSRP feed generated from the live RSI pledge ship listing.
+Public Star Citizen ship data feeds generated from the live RSI pledge ship listing and StarCitizen.tools specification pages.
 
 ## What It Publishes
 
 - `ships.json`
   - JSON feed your mobile app can fetch directly
+- `ship-details.json`
+  - detailed ship metadata sourced from `starcitizen.tools`, including size, crew, and specification-tab loadouts
 - `resource-manifest.json`
   - map of mirrored ship media published by the feed
 - `index.html`
@@ -19,6 +21,8 @@ The feed is built from:
   - `https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc`
 - source GraphQL endpoint:
   - `https://robertsspaceindustries.com/graphql`
+- source ship detail pages:
+  - `https://starcitizen.tools/List_of_pledge_vehicles`
 
 ## JSON Shape
 
@@ -48,6 +52,62 @@ The feed is built from:
 }
 ```
 
+`docs/ship-details.json` adds the wiki-backed ship specifications:
+
+```json
+{
+  "generatedAt": "2026-04-23T00:00:00.000Z",
+  "sourcePageUrl": "https://starcitizen.tools/List_of_pledge_vehicles",
+  "shipCount": 244,
+  "ships": [
+    {
+      "name": "100i",
+      "pageUrl": "https://starcitizen.tools/100i",
+      "size": "Small",
+      "minCrew": 1,
+      "maxCrew": 1,
+      "technicalSpecs": [
+        { "label": "Length", "value": "19 m" }
+      ],
+      "specificationSections": [
+        {
+          "tab": "Weapons & Utility",
+          "title": "Turret",
+          "items": [
+            {
+              "name": "CF-337 Panther Repeater",
+              "count": 2,
+              "size": "S3",
+              "subtitle": "1,500 ❤️ · A",
+              "level": 2
+            }
+          ],
+          "summaryBySize": [
+            { "size": "S3", "count": 4, "entryCount": 2 }
+          ]
+        }
+      ],
+      "weaponsUtilitySummary": {
+        "bySection": [
+          {
+            "section": "Turret",
+            "size": "S3",
+            "count": 4,
+            "entryCount": 2
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+Notes for `ship-details.json`:
+
+- `technicalSpecs`, `size`, `minCrew`, and `maxCrew` come from the pledge vehicle list.
+- `specificationSections` mirrors the StarCitizen.tools specification tabs and preserves per-card `count`, `size`, `name`, `subtitle`, and nesting `level`.
+- `componentSummary` and `weaponsUtilitySummary` provide pre-aggregated size counts so clients can answer questions like "how many S3 items are in the Turret section?" without reparsing the raw cards.
+
 ## Local Usage
 
 Run the generator locally:
@@ -59,6 +119,7 @@ npm run build
 That writes the latest output to:
 
 - `docs/ships.json`
+- `docs/ship-details.json`
 - `docs/resource-manifest.json`
 - `docs/media/ships/*`
 
@@ -114,6 +175,7 @@ let feed = try JSONDecoder().decode(ShipFeed.self, from: data)
 ## Notes
 
 - RSI exposes MSRP in cents, so this feed publishes both `msrpCentsUsd` and `msrpUsd`.
+- The detailed ship spec feed is separate from the lightweight MSRP feed so apps can choose between smaller list payloads and richer per-ship specification data.
 - When RSI marks a ship as unavailable and does not publish a live MSRP, the feed publishes `msrpLabel: "Not For Sale"` so apps can distinguish that from truly incomplete pricing data.
 - Ship thumbnails are mirrored into GitHub Pages on every build. The feed preserves the original RSI URL in `sourceThumbnailUrl` and `sourceThumbnailUrls` so clients can rewrite matching live RSI assets to the mirrored copy without changing fallback behavior.
 - The workflow does not commit generated JSON back into the repo on each daily run.

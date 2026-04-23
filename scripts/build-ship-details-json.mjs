@@ -91,6 +91,11 @@ async function buildShipDetails(listHTML) {
         ...entry,
         description: detailData.description,
         technicalSections: detailData.technicalSections,
+        specificationSections: detailData.specificationSections,
+        componentEntries: detailData.componentEntries,
+        weaponsUtilityEntries: detailData.weaponsUtilityEntries,
+        componentSummary: detailData.componentSummary,
+        weaponsUtilitySummary: detailData.weaponsUtilitySummary,
         unavailableReason: null
       };
     } catch (error) {
@@ -98,6 +103,11 @@ async function buildShipDetails(listHTML) {
         ...entry,
         description: null,
         technicalSections: [],
+        specificationSections: [],
+        componentEntries: [],
+        weaponsUtilityEntries: [],
+        componentSummary: emptySpecificationSummary(),
+        weaponsUtilitySummary: emptySpecificationSummary(),
         unavailableReason: error instanceof Error ? error.message : String(error)
       };
     }
@@ -159,6 +169,7 @@ function parseDetailPage(html) {
   const $ = cheerio.load(html);
   const description = extractDescription($);
   const technicalSections = [];
+  const specificationSections = [];
 
   for (const { id, title } of DETAIL_TAB_IDS) {
     const section = $(`[id="${id}"]`);
@@ -174,13 +185,26 @@ function parseDetailPage(html) {
       });
     }
 
-    const componentSections = extractComponentSections($, section);
-    technicalSections.push(...componentSections);
+    const componentSections = extractComponentSections($, section, title);
+    specificationSections.push(...componentSections);
+    technicalSections.push(...componentSections.map(toLegacyTechnicalSection));
   }
+
+  const componentSections = specificationSections.filter(
+    (section) => section.tab !== "Weapons & Utility"
+  );
+  const weaponsUtilitySections = specificationSections.filter(
+    (section) => section.tab === "Weapons & Utility"
+  );
 
   return {
     description,
-    technicalSections
+    technicalSections,
+    specificationSections,
+    componentEntries: flattenSectionItems(componentSections),
+    weaponsUtilityEntries: flattenSectionItems(weaponsUtilitySections),
+    componentSummary: buildSpecificationSummary(componentSections),
+    weaponsUtilitySummary: buildSpecificationSummary(weaponsUtilitySections)
   };
 }
 
@@ -233,62 +257,213 @@ function extractInfoboxItems($, section) {
   return dedupeSpecs(items);
 }
 
-function extractComponentSections($, section) {
-  const technicalSections = [];
+function extractComponentSections($, section, tabTitle) {
+  const specificationSections = [];
 
   section.find(".template-components__section").each((_, element) => {
     const componentSection = $(element);
     const title = normalizeWhitespace(componentSection.find(".template-components__label").first().text());
     const items = componentSection
-      .find(".template-component__card")
-      .map((_, cardElement) => {
-        const card = $(cardElement);
-        const count = normalizeWhitespace(card.find(".template-component__count").first().text());
-        const size = normalizeWhitespace(card.find(".template-component__size").first().text());
-        const cardTitle = cleanComponentTitle(
-          normalizeWhitespace(card.find(".template-component__title").first().text())
-        );
-        const subtitle = normalizeWhitespace(card.find(".template-component__subtitle").first().text());
-
-        if (!cardTitle && !subtitle && !count && !size) {
-          return null;
-        }
-
-        const valueParts = [count, size, subtitle].filter(Boolean);
-        return {
-          label: cardTitle || "Component",
-          value: valueParts.join(" · ").nilIfBlank ?? null
-        };
-      })
+      .find(".template-component")
+      .map((_, componentElement) => parseComponentItem($, componentElement))
       .get()
-      .filter(Boolean)
-      .map((item) => ({
-        label: item.label,
-        value: item.value
-      }));
+      .filter(Boolean);
 
     if (items.length) {
-      technicalSections.push({
+      specificationSections.push({
+        tab: tabTitle,
         title: title || "Components",
-        items
+        items,
+        summaryBySize: buildSectionSizeSummary(items)
       });
     }
   });
 
-  return technicalSections;
+  return specificationSections;
 }
 
-function cleanComponentTitle(rawTitle) {
-  if (!rawTitle) {
+function parseComponentItem($, componentElement) {
+  const component = $(componentElement);
+  const card = component.find(".template-component__card").first();
+
+  if (!card.length) {
     return null;
   }
 
-  const matchedSuffix = rawTitle.match(/^(.*?)([a-z]{2,}_[A-Za-z0-9_]+)$/);
-  if (matchedSuffix && matchedSuffix[1]) {
-    return normalizeWhitespace(matchedSuffix[1]);
+  const titleContainer = card.find(".template-component__title").first();
+  const countLabel = normalizeWhitespace(card.find(".template-component__count").first().text()) || null;
+  const size = normalizeWhitespace(card.find(".template-component__size").first().text()) || null;
+  const internalName =
+    normalizeWhitespace(titleContainer.find(".template-component__title-subtext").first().text()) || null;
+  const name = extractComponentName(titleContainer);
+  const subtitle = normalizeWhitespace(card.find(".template-component__subtitle").first().text()) || null;
+  const link = titleContainer.find("a").first();
+  const pagePath = extractWikiPagePath(link.attr("href"));
+
+  if (!name && !internalName && !countLabel && !size && !subtitle) {
+    return null;
   }
 
-  return rawTitle;
+  return {
+    name: name || internalName || "Component",
+    internalName,
+    countLabel,
+    count: parseNullableInteger(countLabel),
+    size,
+    sizeNumber: parseSizeNumber(size),
+    subtitle,
+    level: parseComponentLevel(component.attr("class") || ""),
+    pagePath,
+    pageUrl: pagePath ? absoluteURL(pagePath) : null
+  };
+}
+
+function extractComponentName(titleContainer) {
+  if (!titleContainer?.length) {
+    return null;
+  }
+
+  const clone = titleContainer.clone();
+  clone.find(".template-component__title-subtext").remove();
+  return normalizeWhitespace(clone.text()) || null;
+}
+
+function extractWikiPagePath(href) {
+  if (!href) {
+    return null;
+  }
+
+  try {
+    const url = new URL(href, SITE_ORIGIN);
+    if (url.origin !== SITE_ORIGIN) {
+      return null;
+    }
+
+    if (
+      url.pathname === "/index.php" &&
+      url.searchParams.get("action") === "edit" &&
+      url.searchParams.get("redlink") === "1"
+    ) {
+      return null;
+    }
+
+    return `${url.pathname}${url.search}` || null;
+  } catch {
+    return null;
+  }
+}
+
+function parseComponentLevel(className) {
+  const matchedLevel = className.match(/template-component--level-(\d+)/);
+  return matchedLevel ? Number.parseInt(matchedLevel[1], 10) : null;
+}
+
+function parseSizeNumber(size) {
+  const matchedSize = size?.match(/^S(\d+)$/i);
+  return matchedSize ? Number.parseInt(matchedSize[1], 10) : null;
+}
+
+function toLegacyTechnicalSection(section) {
+  return {
+    title: section.title || "Components",
+    items: section.items.map((item) => ({
+      label: item.name || "Component",
+      value: legacyValueForItem(item)
+    }))
+  };
+}
+
+function legacyValueForItem(item) {
+  const value = normalizeWhitespace(
+    [item.countLabel, item.size, item.internalName, item.subtitle].filter(Boolean).join(" · ")
+  );
+  return value || null;
+}
+
+function flattenSectionItems(sections) {
+  return sections.flatMap((section) =>
+    section.items.map((item) => ({
+      tab: section.tab,
+      section: section.title,
+      ...item
+    }))
+  );
+}
+
+function buildSpecificationSummary(sections) {
+  const entries = flattenSectionItems(sections);
+
+  return {
+    totalEntries: entries.length,
+    totalCount: entries.reduce((sum, entry) => sum + effectiveItemCount(entry), 0),
+    bySection: sections.flatMap((section) =>
+      section.summaryBySize.map((summary) => ({
+        tab: section.tab,
+        section: section.title,
+        ...summary
+      }))
+    ),
+    bySize: buildSizeSummary(entries)
+  };
+}
+
+function buildSectionSizeSummary(items) {
+  return buildSizeSummary(items);
+}
+
+function buildSizeSummary(entries) {
+  const grouped = new Map();
+
+  for (const entry of entries) {
+    const key = entry.size || "Unknown";
+    const current =
+      grouped.get(key) ?? {
+        size: entry.size || null,
+        sizeNumber: entry.sizeNumber ?? null,
+        count: 0,
+        entryCount: 0
+      };
+
+    current.count += effectiveItemCount(entry);
+    current.entryCount += 1;
+
+    if (current.sizeNumber === null && entry.sizeNumber !== null) {
+      current.sizeNumber = entry.sizeNumber;
+    }
+
+    grouped.set(key, current);
+  }
+
+  return Array.from(grouped.values()).sort(compareSizeSummary);
+}
+
+function compareSizeSummary(left, right) {
+  if (left.sizeNumber !== null && right.sizeNumber !== null && left.sizeNumber !== right.sizeNumber) {
+    return left.sizeNumber - right.sizeNumber;
+  }
+
+  if (left.sizeNumber !== null) {
+    return -1;
+  }
+
+  if (right.sizeNumber !== null) {
+    return 1;
+  }
+
+  return (left.size || "").localeCompare(right.size || "");
+}
+
+function effectiveItemCount(entry) {
+  return typeof entry.count === "number" && Number.isFinite(entry.count) ? entry.count : 1;
+}
+
+function emptySpecificationSummary() {
+  return {
+    totalEntries: 0,
+    totalCount: 0,
+    bySection: [],
+    bySize: []
+  };
 }
 
 function dedupeSpecs(items) {
@@ -371,13 +546,5 @@ async function asyncPool(limit, items, mapper) {
   await Promise.all(workers);
   return results;
 }
-
-Object.defineProperty(String.prototype, "nilIfBlank", {
-  value() {
-    const trimmed = this.trim();
-    return trimmed.length ? trimmed : null;
-  },
-  enumerable: false
-});
 
 await main();
