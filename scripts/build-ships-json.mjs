@@ -1,13 +1,16 @@
-import { mkdir, writeFile } from "node:fs/promises";
-import { dirname, resolve } from "node:path";
+import { createHash } from "node:crypto";
+import { mkdir, rm, writeFile } from "node:fs/promises";
+import { dirname, extname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ORIGIN = "https://robertsspaceindustries.com";
 const GRAPHQL_URL = `${ORIGIN}/graphql`;
 const SOURCE_PAGE_URL =
   `${ORIGIN}/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc`;
+const PAGES_BASE_URL = "https://therealwisewolfholo.github.io/StarCitizen-Info";
 const PAGE_SIZE = 100;
 const NOT_FOR_SALE_MSRP_LABEL = "Not For Sale";
+const MEDIA_DIRECTORY_NAME = "media/ships";
 const IMAGE_COMPOSERS = [
   { name: "900", size: "SIZE_900", ratio: "RATIO_16_9", extension: "WEBP" },
   { name: "1000", size: "SIZE_1000", ratio: "RATIO_16_9", extension: "WEBP" }
@@ -158,6 +161,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const PROJECT_ROOT = resolve(__dirname, "..");
 const OUTPUT_PATH = resolve(PROJECT_ROOT, "docs", "ships.json");
+const RESOURCE_MANIFEST_OUTPUT_PATH = resolve(PROJECT_ROOT, "docs", "resource-manifest.json");
+const MEDIA_OUTPUT_PATH = resolve(PROJECT_ROOT, "docs", "media", "ships");
 
 function buildQueryVariables(page) {
   return {
@@ -264,6 +269,136 @@ function normalizeShip(resource) {
     lastUpdate: resource.lastUpdate ?? null,
     thumbnailUrl: pickPrimaryThumbnail(thumbnailUrls),
     thumbnailUrls
+  };
+}
+
+function mediaRequestHeaders(referer = SOURCE_PAGE_URL) {
+  return {
+    "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": referer,
+    "User-Agent": "Mozilla/5.0"
+  };
+}
+
+function hashSourceURL(sourceURL) {
+  return createHash("sha256").update(sourceURL).digest("hex");
+}
+
+function extensionForContentType(contentType) {
+  const normalizedType = contentType?.split(";")[0]?.trim().toLowerCase();
+  switch (normalizedType) {
+    case "image/jpeg":
+      return ".jpg";
+    case "image/png":
+      return ".png";
+    case "image/webp":
+      return ".webp";
+    case "image/avif":
+      return ".avif";
+    case "image/gif":
+      return ".gif";
+    default:
+      return "";
+  }
+}
+
+function inferMirroredExtension(sourceURL, contentType) {
+  try {
+    const sourceExtension = extname(new URL(sourceURL).pathname).toLowerCase();
+    if (sourceExtension) {
+      return sourceExtension;
+    }
+  } catch {
+    // Fall back to content type below.
+  }
+
+  return extensionForContentType(contentType) || ".bin";
+}
+
+function mirroredMediaURL(fileName) {
+  return `${PAGES_BASE_URL}/${MEDIA_DIRECTORY_NAME}/${fileName}`;
+}
+
+async function mirrorMediaAsset(sourceURL) {
+  const response = await fetch(sourceURL, {
+    headers: mediaRequestHeaders(sourceURL)
+  });
+
+  if (!response.ok) {
+    throw new Error(`Media mirror request failed with HTTP ${response.status}`);
+  }
+
+  const contentType = response.headers.get("content-type");
+  const extension = inferMirroredExtension(sourceURL, contentType);
+  const fileName = `${hashSourceURL(sourceURL)}${extension}`;
+  const outputPath = resolve(MEDIA_OUTPUT_PATH, fileName);
+  const body = Buffer.from(await response.arrayBuffer());
+
+  await writeFile(outputPath, body);
+
+  return {
+    sourceUrl: sourceURL,
+    mirroredUrl: mirroredMediaURL(fileName),
+    fileName,
+    contentType: contentType ?? null
+  };
+}
+
+function rewriteThumbnailMap(thumbnailUrls, mirroredResourcesBySource) {
+  return Object.fromEntries(
+    Object.entries(thumbnailUrls).map(([key, value]) => [
+      key,
+      mirroredResourcesBySource.get(value)?.mirroredUrl ?? value
+    ])
+  );
+}
+
+async function mirrorShipMedia(ships) {
+  await rm(MEDIA_OUTPUT_PATH, { recursive: true, force: true });
+  await mkdir(MEDIA_OUTPUT_PATH, { recursive: true });
+
+  const sourceURLs = Array.from(
+    new Set(
+      ships.flatMap((ship) => [
+        ship.thumbnailUrl,
+        ...Object.values(ship.thumbnailUrls ?? {})
+      ]).filter(Boolean)
+    )
+  );
+
+  const mirroredResourcesBySource = new Map();
+
+  for (const sourceURL of sourceURLs) {
+    try {
+      const mirroredResource = await mirrorMediaAsset(sourceURL);
+      mirroredResourcesBySource.set(sourceURL, mirroredResource);
+    } catch (error) {
+      console.warn(`Unable to mirror ${sourceURL}: ${error.message}`);
+    }
+  }
+
+  const mirroredShips = ships.map((ship) => {
+    const sourceThumbnailUrl = ship.thumbnailUrl;
+    const sourceThumbnailUrls = { ...ship.thumbnailUrls };
+    const mirroredThumbnailUrls = rewriteThumbnailMap(sourceThumbnailUrls, mirroredResourcesBySource);
+
+    return {
+      ...ship,
+      sourceThumbnailUrl,
+      sourceThumbnailUrls,
+      thumbnailUrl: sourceThumbnailUrl
+        ? mirroredResourcesBySource.get(sourceThumbnailUrl)?.mirroredUrl ?? sourceThumbnailUrl
+        : null,
+      thumbnailUrls: mirroredThumbnailUrls
+    };
+  });
+
+  return {
+    ships: mirroredShips,
+    resources: Array.from(mirroredResourcesBySource.values()).sort((left, right) =>
+      left.fileName.localeCompare(right.fileName)
+    )
   };
 }
 
@@ -436,6 +571,7 @@ async function main() {
     ships.map(normalizeShip)
   )
     .sort((left, right) => (left.name ?? "").localeCompare(right.name ?? ""));
+  const mirroredOutput = await mirrorShipMedia(normalizedShips);
   const syntheticCount = Math.max(0, normalizedShips.length - totalCount);
 
   const output = {
@@ -449,15 +585,27 @@ async function main() {
       sortDirection: "asc",
       sale: [true, false]
     },
-    count: normalizedShips.length,
+    count: mirroredOutput.ships.length,
     totalCount,
     syntheticCount,
-    summary: buildSummary(normalizedShips),
-    ships: normalizedShips
+    summary: buildSummary(mirroredOutput.ships),
+    ships: mirroredOutput.ships
+  };
+
+  const resourceManifest = {
+    generatedAt: output.generatedAt,
+    count: mirroredOutput.resources.length,
+    resources: mirroredOutput.resources
   };
 
   await writeFile(OUTPUT_PATH, `${JSON.stringify(output, null, 2)}\n`, "utf8");
-  console.log(`Wrote ${normalizedShips.length} ships to ${OUTPUT_PATH}`);
+  await writeFile(
+    RESOURCE_MANIFEST_OUTPUT_PATH,
+    `${JSON.stringify(resourceManifest, null, 2)}\n`,
+    "utf8"
+  );
+  console.log(`Wrote ${mirroredOutput.ships.length} ships to ${OUTPUT_PATH}`);
+  console.log(`Wrote ${mirroredOutput.resources.length} mirrored media resources to ${MEDIA_OUTPUT_PATH}`);
 }
 
 main().catch((error) => {

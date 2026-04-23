@@ -6,8 +6,12 @@ Public Star Citizen ship MSRP feed generated from the live RSI pledge ship listi
 
 - `ships.json`
   - JSON feed your mobile app can fetch directly
+- `resource-manifest.json`
+  - map of mirrored ship media published by the feed
 - `index.html`
   - Human-friendly browser view of the same data
+- `media/ships/*`
+  - mirrored ship images served from GitHub Pages instead of RSI
 
 The feed is built from:
 
@@ -37,7 +41,8 @@ The feed is built from:
       "msrpUsd": 50,
       "purchasable": true,
       "productionStatus": "flight-ready",
-      "thumbnailUrl": "https://robertsspaceindustries.com/i/..."
+      "thumbnailUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/....webp",
+      "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/..."
     }
   ]
 }
@@ -54,6 +59,8 @@ npm run build
 That writes the latest output to:
 
 - `docs/ships.json`
+- `docs/resource-manifest.json`
+- `docs/media/ships/*`
 
 ## GitHub Pages
 
@@ -108,6 +115,7 @@ let feed = try JSONDecoder().decode(ShipFeed.self, from: data)
 
 - RSI exposes MSRP in cents, so this feed publishes both `msrpCentsUsd` and `msrpUsd`.
 - When RSI marks a ship as unavailable and does not publish a live MSRP, the feed publishes `msrpLabel: "Not For Sale"` so apps can distinguish that from truly incomplete pricing data.
+- Ship thumbnails are mirrored into GitHub Pages on every build. The feed preserves the original RSI URL in `sourceThumbnailUrl` and `sourceThumbnailUrls` so clients can rewrite matching live RSI assets to the mirrored copy without changing fallback behavior.
 - The workflow does not commit generated JSON back into the repo on each daily run.
   - GitHub Pages serves the freshly generated artifact from the workflow instead.
 - If you ever want Cloudflare Pages instead, you can keep the same `docs` output and point Cloudflare at this repo.
