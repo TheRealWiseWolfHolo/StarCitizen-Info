@@ -511,6 +511,7 @@ function normalizeWhitespace(value) {
   return value
     .replace(/\u00A0/g, " ")
     .replace(/\u2764\uFE0F?/g, "HP")
+    .replace(/\u{1F5E1}\uFE0F?/gu, "damage")
     .replace(/\s+/g, " ")
     .trim();
 }
