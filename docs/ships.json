@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T00:13:07.159Z",
+  "generatedAt": "2026-04-23T01:16:07.206Z",
   "source": {
     "page": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
     "graphql": "https://robertsspaceindustries.com/graphql"
@@ -374,31 +374,31 @@
       "id": "323",
       "title": "600i Executive Edition",
       "name": "600i Executive Edition",
-      "slug": "0ih9xvaedu7xx",
-      "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Touring",
+      "slug": "4rzlgxtznqilp",
+      "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Explorer",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
       "type": "exploration",
-      "focus": "Touring",
+      "focus": "Expedition",
       "msrpCentsUsd": null,
       "msrpUsd": null,
       "purchasable": false,
       "productionStatus": "flight-ready",
       "featuredForShipList": false,
-      "minCrew": 3,
+      "minCrew": 2,
       "maxCrew": 5,
-      "publishStart": "2018-12-20 00:00:00",
-      "lastUpdate": "2026-03-25 23:00:34",
-      "thumbnailUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/12ffd8f1b4c65a13d8eb3c303d4a54880eeadab82d6d3b7147db983b5b8be06e.webp",
+      "publishStart": "2018-06-30 00:00:00",
+      "lastUpdate": "2026-03-25 23:00:33",
+      "thumbnailUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/d13ffb7fb806522bd961135ecbcfda7385fd9320786cd548a160e93fc67c9cce.webp",
       "thumbnailUrls": {
-        "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/0e722bb8237369130120221ef27bba7453ff6d9d558de8fde0ea1b1838907d97.webp",
-        "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/12ffd8f1b4c65a13d8eb3c303d4a54880eeadab82d6d3b7147db983b5b8be06e.webp"
+        "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/d13ffb7fb806522bd961135ecbcfda7385fd9320786cd548a160e93fc67c9cce.webp",
+        "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/d13ffb7fb806522bd961135ecbcfda7385fd9320786cd548a160e93fc67c9cce.webp"
       },
       "msrpLabel": "Not For Sale",
-      "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/de53d42668b4661de434772e8b494046dae3cdf7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp",
+      "sourceThumbnailUrl": "https://media.starcitizen.tools/thumb/f/fe/600i_-_Legatus_Navium_Edition.jpg/800px-600i_-_Legatus_Navium_Edition.jpg.webp",
       "sourceThumbnailUrls": {
-        "900": "https://robertsspaceindustries.com/i/34bd9cbbe87a33a675aa9dc003a93f3149eb9a3b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp",
-        "1000": "https://robertsspaceindustries.com/i/de53d42668b4661de434772e8b494046dae3cdf7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp"
+        "900": "https://media.starcitizen.tools/thumb/f/fe/600i_-_Legatus_Navium_Edition.jpg/800px-600i_-_Legatus_Navium_Edition.jpg.webp",
+        "1000": "https://media.starcitizen.tools/thumb/f/fe/600i_-_Legatus_Navium_Edition.jpg/800px-600i_-_Legatus_Navium_Edition.jpg.webp"
       }
     },
     {

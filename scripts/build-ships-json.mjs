@@ -69,7 +69,9 @@ const SYNTHETIC_SHIP_VARIANTS = [
   },
   {
     name: "600i Executive Edition",
-    sourceName: "600i Touring",
+    sourceName: "600i Explorer",
+    thumbnailUrl:
+      "https://media.starcitizen.tools/thumb/f/fe/600i_-_Legatus_Navium_Edition.jpg/800px-600i_-_Legatus_Navium_Edition.jpg.webp",
     overrides: {
       msrpCentsUsd: null,
       msrpUsd: null,

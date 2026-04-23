@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-23T00:13:07.159Z",
-  "count": 501,
+  "generatedAt": "2026-04-23T01:16:07.206Z",
+  "count": 502,
   "resources": [
     {
       "sourceUrl": "https://robertsspaceindustries.com/i/741ef4cf2e3afdb9594b2361c4b9c383b89b0829/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskfAiwB65NCsLfMiNpnNGtH6fJUffaK33C)/source.webp",
@@ -2460,6 +2460,12 @@
       "sourceUrl": "https://robertsspaceindustries.com/i/525c6bd1d5e06da2cd29a4608606f60999c909eb/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskP45k9GrJZ4LA7XtBc6VGwea8waPxPGZk)/source.webp",
       "mirroredUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/d127dcf1d5728dc6157cb57e7691d6dca274263529cad4f1d7de2b1306a6c62b.webp",
       "fileName": "d127dcf1d5728dc6157cb57e7691d6dca274263529cad4f1d7de2b1306a6c62b.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "sourceUrl": "https://media.starcitizen.tools/thumb/f/fe/600i_-_Legatus_Navium_Edition.jpg/800px-600i_-_Legatus_Navium_Edition.jpg.webp",
+      "mirroredUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/d13ffb7fb806522bd961135ecbcfda7385fd9320786cd548a160e93fc67c9cce.webp",
+      "fileName": "d13ffb7fb806522bd961135ecbcfda7385fd9320786cd548a160e93fc67c9cce.webp",
       "contentType": "image/webp"
     },
     {
