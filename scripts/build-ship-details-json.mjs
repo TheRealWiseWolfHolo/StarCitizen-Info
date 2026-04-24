@@ -2,6 +2,10 @@ import { writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as cheerio from "cheerio";
+import {
+  buildManufacturerDirectory,
+  resolveManufacturer
+} from "./manufacturer-logos.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -61,6 +65,7 @@ async function main() {
     generatedAt: new Date().toISOString(),
     sourcePageUrl: LIST_URL,
     shipCount: ships.length,
+    manufacturers: buildManufacturerDirectory(ships.map((ship) => ship.manufacturer)),
     ships
   };
 
@@ -165,12 +170,15 @@ function parseListRow($, row, headerIndex) {
     spec("Yaw Rate", cellText("Yaw rate")),
     spec("Concept Announcement Date", cellText("Concept announcement date"))
   ]);
+  const manufacturerName = cellText("Manufacturer") || null;
+  const manufacturer = resolveManufacturer(manufacturerName);
 
   return {
     name: rawName,
     pagePath,
     pageUrl: absoluteURL(pagePath),
-    manufacturer: cellText("Manufacturer") || null,
+    manufacturer: manufacturerName,
+    manufacturerSlug: manufacturer.slug,
     career: cellText("Career") || null,
     role: cellText("Role") || null,
     size: cellText("Ship matrix size") || null,

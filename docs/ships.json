@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T22:06:59.299Z",
+  "generatedAt": "2026-04-24T03:26:35.285Z",
   "source": {
     "page": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
     "graphql": "https://robertsspaceindustries.com/graphql"
@@ -99,6 +99,695 @@
       }
     ]
   },
+  "manufacturers": [
+    {
+      "slug": "aegis-dynamics",
+      "name": "Aegis Dynamics",
+      "aliases": [
+        "Aegis Dynamics"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/aegis-dynamics/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/aegis-dynamics/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/aegis-dynamics/black.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/aegis-dynamics/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/aegis-dynamics/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/aegis-dynamics/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/aegis-dynamics/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/aegis-dynamics/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/aegis-dynamics/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/aegis-dynamics/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/aegis-dynamics/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/aegis-dynamics/black.png"
+          },
+          "white": {
+            "path": "media/manufacturers/aegis-dynamics/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/aegis-dynamics/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/aegis-dynamics/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "anvil-aerospace",
+      "name": "Anvil Aerospace",
+      "aliases": [
+        "Anvil Aerospace"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/anvil-aerospace/color.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/anvil-aerospace/color.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/anvil-aerospace/color.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/anvil-aerospace/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/anvil-aerospace/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/anvil-aerospace/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/anvil-aerospace/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/anvil-aerospace/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/anvil-aerospace/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/anvil-aerospace/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/anvil-aerospace/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/anvil-aerospace/black.png"
+          },
+          "color": {
+            "path": "media/manufacturers/anvil-aerospace/color.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/anvil-aerospace/color.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/anvil-aerospace/color.png"
+          },
+          "white": {
+            "path": "media/manufacturers/anvil-aerospace/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/anvil-aerospace/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/anvil-aerospace/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "aopoa",
+      "name": "Aopoa",
+      "aliases": [
+        "Aopoa"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/aopoa/dark.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/aopoa/dark.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/aopoa/dark.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/aopoa/dark.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/aopoa/dark.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/aopoa/dark.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/aopoa/light.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/aopoa/light.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/aopoa/light.png"
+        },
+        "variants": {
+          "dark": {
+            "path": "media/manufacturers/aopoa/dark.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/aopoa/dark.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/aopoa/dark.png"
+          },
+          "light": {
+            "path": "media/manufacturers/aopoa/light.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/aopoa/light.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/aopoa/light.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "argo-astronautics",
+      "name": "Argo Astronautics",
+      "aliases": [
+        "Argo Astronautics"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/argo-astronautics/dark.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/argo-astronautics/dark.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/argo-astronautics/dark.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/argo-astronautics/dark.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/argo-astronautics/dark.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/argo-astronautics/dark.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/argo-astronautics/light.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/argo-astronautics/light.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/argo-astronautics/light.png"
+        },
+        "variants": {
+          "dark": {
+            "path": "media/manufacturers/argo-astronautics/dark.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/argo-astronautics/dark.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/argo-astronautics/dark.png"
+          },
+          "light": {
+            "path": "media/manufacturers/argo-astronautics/light.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/argo-astronautics/light.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/argo-astronautics/light.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "banu",
+      "name": "Banu",
+      "aliases": [
+        "Banu",
+        "Banu Souli"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/banu/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/banu/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/banu/black.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/banu/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/banu/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/banu/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/banu/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/banu/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/banu/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/banu/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/banu/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/banu/black.png"
+          },
+          "white": {
+            "path": "media/manufacturers/banu/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/banu/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/banu/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "consolidated-outland",
+      "name": "Consolidated Outland",
+      "aliases": [
+        "Consolidated Outland"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/consolidated-outland/color.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/consolidated-outland/color.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/consolidated-outland/color.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/consolidated-outland/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/consolidated-outland/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/consolidated-outland/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/consolidated-outland/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/consolidated-outland/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/consolidated-outland/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/consolidated-outland/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/consolidated-outland/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/consolidated-outland/black.png"
+          },
+          "color": {
+            "path": "media/manufacturers/consolidated-outland/color.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/consolidated-outland/color.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/consolidated-outland/color.png"
+          },
+          "white": {
+            "path": "media/manufacturers/consolidated-outland/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/consolidated-outland/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/consolidated-outland/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "crusader-industries",
+      "name": "Crusader Industries",
+      "aliases": [
+        "Crusader Industries"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/crusader-industries/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/crusader-industries/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/crusader-industries/black.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/crusader-industries/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/crusader-industries/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/crusader-industries/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/crusader-industries/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/crusader-industries/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/crusader-industries/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/crusader-industries/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/crusader-industries/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/crusader-industries/black.png"
+          },
+          "white": {
+            "path": "media/manufacturers/crusader-industries/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/crusader-industries/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/crusader-industries/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "drake-interplanetary",
+      "name": "Drake Interplanetary",
+      "aliases": [
+        "Drake Interplanetary"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/drake-interplanetary/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/drake-interplanetary/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/drake-interplanetary/black.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/drake-interplanetary/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/drake-interplanetary/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/drake-interplanetary/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/drake-interplanetary/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/drake-interplanetary/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/drake-interplanetary/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/drake-interplanetary/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/drake-interplanetary/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/drake-interplanetary/black.png"
+          },
+          "white": {
+            "path": "media/manufacturers/drake-interplanetary/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/drake-interplanetary/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/drake-interplanetary/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "esperia",
+      "name": "Esperia",
+      "aliases": [
+        "Esperia"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/esperia/transparent.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/esperia/transparent.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/esperia/transparent.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/esperia/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/esperia/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/esperia/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/esperia/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/esperia/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/esperia/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/esperia/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/esperia/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/esperia/black.png"
+          },
+          "grey": {
+            "path": "media/manufacturers/esperia/grey.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/esperia/grey.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/esperia/grey.png"
+          },
+          "transparent": {
+            "path": "media/manufacturers/esperia/transparent.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/esperia/transparent.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/esperia/transparent.png"
+          },
+          "white": {
+            "path": "media/manufacturers/esperia/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/esperia/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/esperia/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "gatac-manufacture",
+      "name": "Gatac Manufacture",
+      "aliases": [
+        "Gatac Manufacture"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/gatac-manufacture/dark.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/gatac-manufacture/dark.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/gatac-manufacture/dark.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/gatac-manufacture/dark.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/gatac-manufacture/dark.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/gatac-manufacture/dark.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/gatac-manufacture/light.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/gatac-manufacture/light.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/gatac-manufacture/light.png"
+        },
+        "variants": {
+          "dark": {
+            "path": "media/manufacturers/gatac-manufacture/dark.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/gatac-manufacture/dark.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/gatac-manufacture/dark.png"
+          },
+          "light": {
+            "path": "media/manufacturers/gatac-manufacture/light.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/gatac-manufacture/light.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/gatac-manufacture/light.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "greys-market",
+      "name": "Grey's Market",
+      "aliases": [
+        "Grey's Market",
+        "Greys Market"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/greys-market/black.svg",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/greys-market/black.svg",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/greys-market/black.svg"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/greys-market/black.svg",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/greys-market/black.svg",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/greys-market/black.svg"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/greys-market/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/greys-market/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/greys-market/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/greys-market/black.svg",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/greys-market/black.svg",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/greys-market/black.svg"
+          },
+          "white": {
+            "path": "media/manufacturers/greys-market/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/greys-market/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/greys-market/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "greycat-industrial",
+      "name": "Greycat Industrial",
+      "aliases": [
+        "Greycat Industrial"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/greycat-industrial/color.svg",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/greycat-industrial/color.svg",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/greycat-industrial/color.svg"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/greycat-industrial/color.svg",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/greycat-industrial/color.svg",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/greycat-industrial/color.svg"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/greycat-industrial/black-white.svg",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/greycat-industrial/black-white.svg",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/greycat-industrial/black-white.svg"
+        },
+        "variants": {
+          "black-white": {
+            "path": "media/manufacturers/greycat-industrial/black-white.svg",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/greycat-industrial/black-white.svg",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/greycat-industrial/black-white.svg"
+          },
+          "color": {
+            "path": "media/manufacturers/greycat-industrial/color.svg",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/greycat-industrial/color.svg",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/greycat-industrial/color.svg"
+          }
+        }
+      }
+    },
+    {
+      "slug": "kruger-intergalactic",
+      "name": "Kruger Intergalactic",
+      "aliases": [
+        "Kruger Intergalactic"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/kruger-intergalactic/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/kruger-intergalactic/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/kruger-intergalactic/black.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/kruger-intergalactic/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/kruger-intergalactic/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/kruger-intergalactic/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/kruger-intergalactic/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/kruger-intergalactic/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/kruger-intergalactic/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/kruger-intergalactic/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/kruger-intergalactic/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/kruger-intergalactic/black.png"
+          },
+          "white": {
+            "path": "media/manufacturers/kruger-intergalactic/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/kruger-intergalactic/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/kruger-intergalactic/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "mirai",
+      "name": "Mirai",
+      "aliases": [
+        "Mirai"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/mirai/primary-black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/mirai/primary-black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/mirai/primary-black.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/mirai/primary-black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/mirai/primary-black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/mirai/primary-black.png"
+        },
+        "onDarkBackground": null,
+        "variants": {
+          "icon": {
+            "path": "media/manufacturers/mirai/icon.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/mirai/icon.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/mirai/icon.png"
+          },
+          "primary-black": {
+            "path": "media/manufacturers/mirai/primary-black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/mirai/primary-black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/mirai/primary-black.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "misc",
+      "name": "MISC",
+      "aliases": [
+        "MISC",
+        "Musashi Industrial and Starflight Concern"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/misc/primary.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/misc/primary.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/misc/primary.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/misc/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/misc/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/misc/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/misc/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/misc/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/misc/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/misc/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/misc/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/misc/black.png"
+          },
+          "primary": {
+            "path": "media/manufacturers/misc/primary.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/misc/primary.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/misc/primary.png"
+          },
+          "white": {
+            "path": "media/manufacturers/misc/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/misc/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/misc/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "origin-jumpworks",
+      "name": "Origin Jumpworks",
+      "aliases": [
+        "Origin Jumpworks"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/origin-jumpworks/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/origin-jumpworks/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/origin-jumpworks/black.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/origin-jumpworks/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/origin-jumpworks/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/origin-jumpworks/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/origin-jumpworks/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/origin-jumpworks/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/origin-jumpworks/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/origin-jumpworks/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/origin-jumpworks/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/origin-jumpworks/black.png"
+          },
+          "white": {
+            "path": "media/manufacturers/origin-jumpworks/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/origin-jumpworks/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/origin-jumpworks/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "roberts-space-industries",
+      "name": "Roberts Space Industries",
+      "aliases": [
+        "Roberts Space Industries",
+        "RSI"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/roberts-space-industries/color.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/roberts-space-industries/color.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/roberts-space-industries/color.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/roberts-space-industries/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/roberts-space-industries/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/roberts-space-industries/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/roberts-space-industries/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/roberts-space-industries/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/roberts-space-industries/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/roberts-space-industries/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/roberts-space-industries/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/roberts-space-industries/black.png"
+          },
+          "color": {
+            "path": "media/manufacturers/roberts-space-industries/color.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/roberts-space-industries/color.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/roberts-space-industries/color.png"
+          },
+          "white": {
+            "path": "media/manufacturers/roberts-space-industries/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/roberts-space-industries/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/roberts-space-industries/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "tumbril",
+      "name": "Tumbril",
+      "aliases": [
+        "Tumbril",
+        "Tumbril Land Systems"
+      ],
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/tumbril/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/tumbril/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/tumbril/black.png"
+        },
+        "onLightBackground": {
+          "path": "media/manufacturers/tumbril/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/tumbril/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/tumbril/black.png"
+        },
+        "onDarkBackground": {
+          "path": "media/manufacturers/tumbril/white.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/tumbril/white.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/tumbril/white.png"
+        },
+        "variants": {
+          "black": {
+            "path": "media/manufacturers/tumbril/black.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/tumbril/black.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/tumbril/black.png"
+          },
+          "white": {
+            "path": "media/manufacturers/tumbril/white.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/tumbril/white.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/tumbril/white.png"
+          }
+        }
+      }
+    },
+    {
+      "slug": "vanduul",
+      "name": "Vanduul",
+      "aliases": [
+        "Vanduul"
+      ],
+      "logos": null
+    }
+  ],
   "ships": [
     {
       "id": "159",
@@ -108,6 +797,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-100/100i",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "multi",
       "focus": "Starter / Touring",
       "msrpCentsUsd": 5000,
@@ -138,6 +828,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-100/125a",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "multi",
       "focus": "Starter / Light Fighter",
       "msrpCentsUsd": 6000,
@@ -168,6 +859,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-100/135c",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "multi",
       "focus": "Starter / Light Freight",
       "msrpCentsUsd": 6500,
@@ -198,6 +890,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/300i",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "multi",
       "focus": "Luxury / Touring",
       "msrpCentsUsd": 6000,
@@ -228,6 +921,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/315p",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Pathfinder",
       "msrpCentsUsd": 6500,
@@ -258,6 +952,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/325a",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "combat",
       "focus": "Interdiction / Light Fighter",
       "msrpCentsUsd": 7000,
@@ -288,6 +983,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/350r",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 12500,
@@ -318,6 +1014,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-300/350r",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 12500,
@@ -348,6 +1045,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/400i/400i",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Touring",
       "msrpCentsUsd": 25000,
@@ -378,6 +1076,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Explorer",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": null,
@@ -409,6 +1108,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Explorer",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 47500,
@@ -439,6 +1139,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Explorer",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 47500,
@@ -469,6 +1170,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Touring",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Touring",
       "msrpCentsUsd": 43500,
@@ -499,6 +1201,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/600i/600i-Touring",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Touring",
       "msrpCentsUsd": 43500,
@@ -529,6 +1232,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/85x/85X",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Touring",
       "msrpCentsUsd": 5000,
@@ -559,6 +1263,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/890-jump/890-Jump",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Luxury Touring",
       "msrpCentsUsd": 95000,
@@ -589,6 +1294,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/atls/ATLS",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "ground",
       "focus": "Industrial",
       "msrpCentsUsd": 4000,
@@ -619,6 +1325,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/spirit/A1-Spirit",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "combat",
       "focus": "Bomber",
       "msrpCentsUsd": 20000,
@@ -649,6 +1356,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-ballista/Anvil-Ballista-Dunestalker",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Military",
       "msrpCentsUsd": 14000,
@@ -679,6 +1387,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-ballista/Anvil-Ballista-Snowblind",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Military",
       "msrpCentsUsd": 14000,
@@ -709,6 +1418,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-apollo/Apollo-Medivac",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "support",
       "focus": "Medical",
       "msrpCentsUsd": 29000,
@@ -739,6 +1449,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-apollo/Apollo-Triage",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "support",
       "focus": "Medical",
       "msrpCentsUsd": 26000,
@@ -769,6 +1480,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/crusader-ares/Ares-Inferno",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 25000,
@@ -799,6 +1511,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/crusader-ares/Ares-Ion",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 25000,
@@ -829,6 +1542,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/argo-mole/Argo-Mole-Carbon-Edition",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "industrial",
       "focus": "Prospecting / Mining",
       "msrpCentsUsd": 31500,
@@ -859,6 +1573,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/argo-mole/Argo-Mole-Talus-Edition",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "industrial",
       "focus": "Prospecting / Mining",
       "msrpCentsUsd": 31500,
@@ -889,6 +1604,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/arrastra/Arrastra",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "industrial",
       "focus": "Mining / Refining",
       "msrpCentsUsd": 57500,
@@ -919,6 +1635,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-arrow/Arrow",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 7500,
@@ -949,6 +1666,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-asgard/Asgard",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Dropship",
       "msrpCentsUsd": 35000,
@@ -979,6 +1697,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/atls/ATLS",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "ground",
       "focus": "Industrial",
       "msrpCentsUsd": 4000,
@@ -1009,6 +1728,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/atls/ATLS-GEO",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "ground",
       "focus": "Industrial",
       "msrpCentsUsd": 4500,
@@ -1039,6 +1759,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-aurora/Aurora-Mk-I-CL",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "transport",
       "focus": "Light Freight",
       "msrpCentsUsd": 4500,
@@ -1069,6 +1790,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-aurora/Aurora-Mk-I-ES",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "multi",
       "focus": "Starter / Pathfinder",
       "msrpCentsUsd": 2000,
@@ -1099,6 +1821,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-aurora/Aurora-Mk-I-LN",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "transport",
       "focus": "Light Fighter",
       "msrpCentsUsd": 4000,
@@ -1129,6 +1852,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-aurora/Aurora-Mk-I-LX",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "exploration",
       "focus": "Pathfinder",
       "msrpCentsUsd": 3500,
@@ -1159,6 +1883,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-aurora/Aurora-Mk-I-MR",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "transport",
       "focus": "Light Fighter",
       "msrpCentsUsd": 3000,
@@ -1189,6 +1914,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-aurora/Aurora-Mk-I-SE",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "transport",
       "focus": "Light Fighter",
       "msrpCentsUsd": 6000,
@@ -1219,6 +1945,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aurora-mk-ii/Aurora-Mk-II",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "transport",
       "focus": "Light Fighter",
       "msrpCentsUsd": 4500,
@@ -1249,6 +1976,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aegis-avenger/Avenger-Stalker",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Interdiction",
       "msrpCentsUsd": 6000,
@@ -1279,6 +2007,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aegis-avenger/Avenger-Titan",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "transport",
       "focus": "Light Freight",
       "msrpCentsUsd": 6000,
@@ -1309,6 +2038,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aegis-avenger/Avenger-Titan-Renegade",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "transport",
       "focus": "Light Freight",
       "msrpCentsUsd": 7500,
@@ -1339,6 +2069,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aegis-avenger/Avenger-Warlock",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Interdiction",
       "msrpCentsUsd": 8500,
@@ -1369,6 +2100,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-ballista/Ballista",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Military",
       "msrpCentsUsd": 14000,
@@ -1399,6 +2131,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/vanduul-blade/Blade",
       "manufacturerId": 69,
       "manufacturer": "Esperia",
+      "manufacturerSlug": "esperia",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 27500,
@@ -1429,6 +2162,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-buccaneer/Buccaneer",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "combat",
       "focus": "Interdiction",
       "msrpCentsUsd": 11000,
@@ -1459,6 +2193,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/spirit/C1-Spirit",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "transport",
       "focus": "Medium Freight",
       "msrpCentsUsd": 12500,
@@ -1489,6 +2224,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-pisces/C8-Pisces",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "exploration",
       "focus": "Exploration",
       "msrpCentsUsd": 4500,
@@ -1519,6 +2255,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-pisces/C8R-Pisces",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "support",
       "focus": "Medical",
       "msrpCentsUsd": 6500,
@@ -1549,6 +2286,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-pisces/C8X-Pisces-Expedition",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 4500,
@@ -1579,6 +2317,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/carrack/Carrack",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 60000,
@@ -1609,6 +2348,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/carrack/Carrack-Expedition",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 62500,
@@ -1639,6 +2379,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/carrack/Carrack-Expedition-W-C8X",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 64500,
@@ -1669,6 +2410,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/carrack/Carrack-W-C8X",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 62000,
@@ -1699,6 +2441,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-caterpillar/Caterpillar",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "transport",
       "focus": "Heavy Freight",
       "msrpCentsUsd": 33000,
@@ -1729,6 +2472,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-caterpillar/Caterpillar-Best-In-Show-Edition-2949",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "transport",
       "focus": "Heavy Freight",
       "msrpCentsUsd": 33000,
@@ -1759,6 +2503,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-caterpillar/Caterpillar-Pirate-Edition",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "transport",
       "focus": "Heavy Freight",
       "msrpCentsUsd": 33000,
@@ -1789,6 +2534,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/centurion/Centurion",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "ground",
       "focus": "Combat",
       "msrpCentsUsd": 11000,
@@ -1819,6 +2565,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/clipper/Clipper",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "exploration",
       "focus": "Generalist",
       "msrpCentsUsd": 15000,
@@ -1849,6 +2596,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-constellation/Constellation-Andromeda",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "multi",
       "focus": "Medium Freight / Gun Ship",
       "msrpCentsUsd": 24000,
@@ -1879,6 +2627,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-constellation/Constellation-Aquila",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 31500,
@@ -1909,6 +2658,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-constellation/Constellation-Phoenix",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "exploration",
       "focus": "Luxury Touring",
       "msrpCentsUsd": 35000,
@@ -1939,6 +2689,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-constellation/Constellation-Phoenix-Emerald",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "exploration",
       "focus": "Touring",
       "msrpCentsUsd": 35000,
@@ -1969,6 +2720,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-constellation/Constellation-Taurus",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "transport",
       "focus": "Medium Freight",
       "msrpCentsUsd": 20000,
@@ -1999,6 +2751,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-corsair/Corsair",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 25000,
@@ -2029,6 +2782,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/crucible/Crucible",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "support",
       "focus": "Heavy Repair",
       "msrpCentsUsd": 35000,
@@ -2059,6 +2813,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/csv/CSV-SM",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "ground",
       "focus": "Freight",
       "msrpCentsUsd": 4500,
@@ -2089,6 +2844,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-cutlass/Cutlass-Black-Best-In-Show-Edition-2949",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "combat",
       "focus": "Medium Fighter / Medium Freight",
       "msrpCentsUsd": 11000,
@@ -2119,6 +2875,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-cutlass/Cutlass-Black",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "multi",
       "focus": "Medium Freight",
       "msrpCentsUsd": 11000,
@@ -2149,6 +2906,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-cutlass/Cutlass-Black-Best-In-Show-Edition-2949",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "combat",
       "focus": "Medium Fighter / Medium Freight",
       "msrpCentsUsd": 11000,
@@ -2179,6 +2937,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-cutlass/Cutlass-Blue",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "combat",
       "focus": "Interdiction",
       "msrpCentsUsd": 17500,
@@ -2209,6 +2968,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-cutlass/Cutlass-Red",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "support",
       "focus": "Medical",
       "msrpCentsUsd": 13500,
@@ -2239,6 +2999,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-cutlass/Cutlass-Steel",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "combat",
       "focus": "Dropship",
       "msrpCentsUsd": 23500,
@@ -2269,6 +3030,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/cutter/Cutter",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "transport",
       "focus": "Starter / Light Freight",
       "msrpCentsUsd": 4500,
@@ -2299,6 +3061,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/cutter/Cutter-Rambler",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "exploration",
       "focus": "Starter / Expedition",
       "msrpCentsUsd": 5000,
@@ -2329,6 +3092,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/cutter/Cutter-Scout",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "exploration",
       "focus": "Reconnaissance / Intelligence",
       "msrpCentsUsd": 5000,
@@ -2359,6 +3123,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/cyclone/Cyclone",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Exploration / Recon",
       "msrpCentsUsd": 5500,
@@ -2389,6 +3154,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/cyclone/Cyclone-AA",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Anti-aircraft",
       "msrpCentsUsd": 8000,
@@ -2419,6 +3185,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/cyclone/Cyclone-MT",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Assault",
       "msrpCentsUsd": 7500,
@@ -2449,6 +3216,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/cyclone/Cyclone-RC",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Racing",
       "msrpCentsUsd": 6500,
@@ -2479,6 +3247,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/cyclone/Cyclone-RN",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Recon",
       "msrpCentsUsd": 6500,
@@ -2509,6 +3278,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/cyclone/Cyclone-TR",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Combat",
       "msrpCentsUsd": 6500,
@@ -2539,6 +3309,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/defender/Defender",
       "manufacturerId": 21,
       "manufacturer": "Banu",
+      "manufacturerSlug": "banu",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 22000,
@@ -2569,6 +3340,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-dragonfly/Dragonfly-Black",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 4000,
@@ -2599,6 +3371,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-dragonfly/Dragonfly-Black",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": null,
@@ -2630,6 +3403,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-dragonfly/Dragonfly-Yellowjacket",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 4000,
@@ -2660,6 +3434,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/spirit/E1-Spirit",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "transport",
       "focus": "Passenger",
       "msrpCentsUsd": 15000,
@@ -2690,6 +3465,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/eclipse/Eclipse",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Stealth Bomber",
       "msrpCentsUsd": 30000,
@@ -2720,6 +3496,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/misc-endeavor/Endeavor",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "industrial",
       "focus": "Heavy Science",
       "msrpCentsUsd": 35000,
@@ -2750,6 +3527,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/expanse/Expanse",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "industrial",
       "focus": "Refinery",
       "msrpCentsUsd": 15000,
@@ -2780,6 +3558,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet/F7A-Hornet-Mk-I",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 12500,
@@ -2810,6 +3589,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet-mkii/F7A-Hornet-Mk-II",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": null,
@@ -2841,6 +3621,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet/F7C-Hornet-Mk-I",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 12500,
@@ -2871,6 +3652,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet-mkii/F7C-Hornet-Mk-II",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 17500,
@@ -2901,6 +3683,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet/F7C-Hornet-Wildfire-Mk-I",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 17500,
@@ -2931,6 +3714,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet/F7C-M-Super-Hornet-Heartseeker-Mk-I",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 20000,
@@ -2961,6 +3745,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet/F7C-M-Super-Hornet-Mk-I",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 18000,
@@ -2991,6 +3776,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet-mkii/F7C-M-Super-Hornet-Mk-II",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 24000,
@@ -3021,6 +3807,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet/F7C-R-Hornet-Tracker-Mk-I",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Pathfinder",
       "msrpCentsUsd": 15000,
@@ -3051,6 +3838,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet-mkii/F7C-R-Hornet-Tracker-Mk-II",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Pathfinder",
       "msrpCentsUsd": 18500,
@@ -3081,6 +3869,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet/F7C-S-Hornet-Ghost-Mk-I",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Stealth Fighter",
       "msrpCentsUsd": 14000,
@@ -3111,6 +3900,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet-mkii/F7C-S-Hornet-Ghost-Mk-II",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Stealth Fighter",
       "msrpCentsUsd": 18500,
@@ -3141,6 +3931,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/lightning/F8C-Lightning",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 30000,
@@ -3171,6 +3962,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/lightning/F8C-Lightning-Executive-Edition",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 30000,
@@ -3201,6 +3993,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/fortune/Fortune",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "industrial",
       "focus": "Salvage",
       "msrpCentsUsd": 17500,
@@ -3231,6 +4024,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/misc-freelancer/Freelancer",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "transport",
       "focus": "Medium Freight",
       "msrpCentsUsd": 11000,
@@ -3261,6 +4055,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/misc-freelancer/Freelancer-DUR",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 13500,
@@ -3291,6 +4086,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/misc-freelancer/Freelancer-MAX",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "transport",
       "focus": "Medium Freight",
       "msrpCentsUsd": 15000,
@@ -3321,6 +4117,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/misc-freelancer/Freelancer-MIS",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "combat",
       "focus": "Gun Ship",
       "msrpCentsUsd": 17500,
@@ -3351,6 +4148,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/fury/Fury",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "combat",
       "focus": "Snub Fighter",
       "msrpCentsUsd": 5500,
@@ -3381,6 +4179,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/fury/Fury-LX",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 5500,
@@ -3411,6 +4210,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/fury/Fury-MX",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "combat",
       "focus": "Snub Fighter",
       "msrpCentsUsd": 5500,
@@ -3441,6 +4241,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-g12/G12",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "ground",
       "focus": "Touring",
       "msrpCentsUsd": 6000,
@@ -3471,6 +4272,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-g12/G12a",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "ground",
       "focus": "Military",
       "msrpCentsUsd": 6500,
@@ -3501,6 +4303,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-g12/G12r",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 6000,
@@ -3531,6 +4334,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/galaxy/Galaxy",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "multi",
       "focus": "Modular",
       "msrpCentsUsd": 38000,
@@ -3561,6 +4365,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/starliner/Genesis",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "transport",
       "focus": "Passenger",
       "msrpCentsUsd": 40000,
@@ -3591,6 +4396,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/starliner/Genesis",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "transport",
       "focus": "Passenger",
       "msrpCentsUsd": 40000,
@@ -3621,6 +4427,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-gladiator/Gladiator",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Bomber",
       "msrpCentsUsd": 16500,
@@ -3651,6 +4458,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/gladius/Gladius",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 9000,
@@ -3681,6 +4489,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/gladius/Gladius",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 9000,
@@ -3711,6 +4520,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/gladius/Gladius-Pirate-Edition",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 11000,
@@ -3741,6 +4551,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/gladius/Gladius-Valiant",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 11000,
@@ -3771,6 +4582,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/esperia-glaive/Glaive",
       "manufacturerId": 69,
       "manufacturer": "Esperia",
+      "manufacturerSlug": "esperia",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 35000,
@@ -3801,6 +4613,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/golem/Golem",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "industrial",
       "focus": "Mining",
       "msrpCentsUsd": 6000,
@@ -3831,6 +4644,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/golem/Golem-OX",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "transport",
       "focus": "Light Freight",
       "msrpCentsUsd": 9000,
@@ -3861,6 +4675,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/guardian/Guardian",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 25000,
@@ -3891,6 +4706,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/guardian/Guardian-MX",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 29000,
@@ -3921,6 +4737,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/guardian/Guardian-QI",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 26000,
@@ -3951,6 +4768,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hammerhead/Hammerhead",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Heavy Gun Ship",
       "msrpCentsUsd": 72500,
@@ -3981,6 +4799,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hammerhead/Hammerhead-Best-In-Show-Edition-2949",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Heavy Gun Ship",
       "msrpCentsUsd": 72500,
@@ -4011,6 +4830,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hawk/Hawk",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 10000,
@@ -4041,6 +4861,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/herald/Herald",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "transport",
       "focus": "Medium Data",
       "msrpCentsUsd": 8500,
@@ -4071,6 +4892,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/crusader-starlifter/A2-Hercules",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "combat",
       "focus": "Heavy Bomber",
       "msrpCentsUsd": 75000,
@@ -4101,6 +4923,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/crusader-starlifter/C2-Hercules",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "transport",
       "focus": "Heavy Freight ",
       "msrpCentsUsd": 40000,
@@ -4131,6 +4954,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/crusader-starlifter/M2-Hercules",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "combat",
       "focus": "Military Transport",
       "msrpCentsUsd": 52000,
@@ -4161,6 +4985,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hermes/Hermes",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "transport",
       "focus": "Medium Freighter",
       "msrpCentsUsd": 22000,
@@ -4191,6 +5016,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hoverquad/HoverQuad",
       "manufacturerId": 22,
       "manufacturer": "Consolidated Outland",
+      "manufacturerSlug": "consolidated-outland",
       "type": "ground",
       "focus": "Racing",
       "msrpCentsUsd": 3000,
@@ -4221,6 +5047,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hull/Hull-A",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "industrial",
       "focus": "Medium Freight",
       "msrpCentsUsd": 10000,
@@ -4251,6 +5078,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hull/Hull-B",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "transport",
       "focus": "Medium Hauler",
       "msrpCentsUsd": 28000,
@@ -4281,6 +5109,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hull/Hull-C",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "transport",
       "focus": "Heavy Freight",
       "msrpCentsUsd": 50000,
@@ -4311,6 +5140,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hull/Hull-D",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "transport",
       "focus": "Heavy Freight",
       "msrpCentsUsd": 55000,
@@ -4341,6 +5171,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hull/Hull-E",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "transport",
       "focus": "Heavy Freight",
       "msrpCentsUsd": 75000,
@@ -4371,6 +5202,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/hurricane/Hurricane",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 21000,
@@ -4401,6 +5233,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aegis-idris/Idris-M",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Frigate",
       "msrpCentsUsd": 100000,
@@ -4431,6 +5264,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aegis-idris/Idris-P",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Frigate",
       "msrpCentsUsd": 190000,
@@ -4461,6 +5295,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/intrepid/Intrepid",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "transport",
       "focus": "Light Freight",
       "msrpCentsUsd": 6500,
@@ -4491,6 +5326,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/ironclad/Ironclad",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "transport",
       "focus": "Armored Freight",
       "msrpCentsUsd": 45000,
@@ -4521,6 +5357,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/ironclad/Ironclad-Assault",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "combat",
       "focus": "Combined Arms Platform",
       "msrpCentsUsd": 53500,
@@ -4551,6 +5388,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aegis-javelin/Javelin",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Destroyer",
       "msrpCentsUsd": 300000,
@@ -4581,6 +5419,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/khartu/Khartu-Al",
       "manufacturerId": 81,
       "manufacturer": "Aopoa",
+      "manufacturerSlug": "aopoa",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 17500,
@@ -4611,6 +5450,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-kraken/Kraken",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "industrial",
       "focus": "Multi-Role / Light Carrier",
       "msrpCentsUsd": 165000,
@@ -4641,6 +5481,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-kraken/Kraken-Privateer",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "industrial",
       "focus": "Multi-Role / Light Carrier",
       "msrpCentsUsd": 200000,
@@ -4671,6 +5512,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/wolf/L-21-Wolf",
       "manufacturerId": 19,
       "manufacturer": "Kruger Intergalactic",
+      "manufacturerSlug": "kruger-intergalactic",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 10000,
@@ -4701,6 +5543,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/wolf/L-22-Alpha-Wolf",
       "manufacturerId": 19,
       "manufacturer": "Kruger Intergalactic",
+      "manufacturerSlug": "kruger-intergalactic",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 12000,
@@ -4731,6 +5574,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/legionnaire/Legionnaire",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Boarding",
       "msrpCentsUsd": 12000,
@@ -4761,6 +5605,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/liberator/Liberator",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "transport",
       "focus": "Light Carrier",
       "msrpCentsUsd": 57500,
@@ -4791,6 +5636,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/ursa/Lynx",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "ground",
       "focus": "Luxury Transport / Explorer",
       "msrpCentsUsd": 6000,
@@ -4821,6 +5667,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/origin-m50/M50",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 10000,
@@ -4851,6 +5698,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-mantis/Mantis",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "combat",
       "focus": "Interdictor ",
       "msrpCentsUsd": 15000,
@@ -4881,6 +5729,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mdc/MDC",
       "manufacturerId": 17,
       "manufacturer": "Greycat Industrial",
+      "manufacturerSlug": "greycat-industrial",
       "type": "ground",
       "focus": "Anti-Air",
       "msrpCentsUsd": 5000,
@@ -4911,6 +5760,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/merchantman/Merchantman",
       "manufacturerId": 21,
       "manufacturer": "Banu",
+      "manufacturerSlug": "banu",
       "type": "transport",
       "focus": "Heavy Freight",
       "msrpCentsUsd": 65000,
@@ -4941,6 +5791,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/crusader-mercury-star-runner/Mercury",
       "manufacturerId": 68,
       "manufacturer": "Crusader Industries",
+      "manufacturerSlug": "crusader-industries",
       "type": "transport",
       "focus": "Medium Cargo / Medium Data",
       "msrpCentsUsd": 26000,
@@ -4971,6 +5822,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/rsi-meteor/Meteor",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 26000,
@@ -5001,6 +5853,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/argo-mole/MOLE",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "industrial",
       "focus": "Prospecting / Mining",
       "msrpCentsUsd": 31500,
@@ -5031,6 +5884,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/argo-mole/Argo-Mole-Carbon-Edition",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "industrial",
       "focus": "Prospecting / Mining",
       "msrpCentsUsd": 31500,
@@ -5061,6 +5915,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/moth/MOTH",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "industrial",
       "focus": "Medium Salvage",
       "msrpCentsUsd": 31500,
@@ -5091,6 +5946,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/argo/MPUV-Cargo",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "transport",
       "focus": "Light Freight",
       "msrpCentsUsd": 3500,
@@ -5121,6 +5977,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/argo/MPUV-Personnel",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "transport",
       "focus": "Passenger",
       "msrpCentsUsd": 4000,
@@ -5151,6 +6008,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/argo/MPUV-Tractor",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "transport",
       "focus": "Cargo Loader",
       "msrpCentsUsd": 4000,
@@ -5181,6 +6039,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mtc/MTC",
       "manufacturerId": 17,
       "manufacturer": "Greycat Industrial",
+      "manufacturerSlug": "greycat-industrial",
       "type": "ground",
       "focus": "Combat",
       "msrpCentsUsd": 5000,
@@ -5211,6 +6070,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mule/Mule",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "ground",
       "focus": "Transport",
       "msrpCentsUsd": 4500,
@@ -5241,6 +6101,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mustang/Mustang-Alpha",
       "manufacturerId": 22,
       "manufacturer": "Consolidated Outland",
+      "manufacturerSlug": "consolidated-outland",
       "type": "multi",
       "focus": "Cargo",
       "msrpCentsUsd": 3000,
@@ -5271,6 +6132,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mustang/Mustang-Alpha-Vindicator",
       "manufacturerId": 22,
       "manufacturer": "Consolidated Outland",
+      "manufacturerSlug": "consolidated-outland",
       "type": "multi",
       "focus": "Starter / Light Freight",
       "msrpCentsUsd": 3000,
@@ -5301,6 +6163,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mustang/Mustang-Beta",
       "manufacturerId": 22,
       "manufacturer": "Consolidated Outland",
+      "manufacturerSlug": "consolidated-outland",
       "type": "exploration",
       "focus": "Pathfinder",
       "msrpCentsUsd": 4000,
@@ -5331,6 +6194,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mustang/Mustang-Delta",
       "manufacturerId": 22,
       "manufacturer": "Consolidated Outland",
+      "manufacturerSlug": "consolidated-outland",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 6500,
@@ -5361,6 +6225,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mustang/Mustang-Gamma",
       "manufacturerId": 22,
       "manufacturer": "Consolidated Outland",
+      "manufacturerSlug": "consolidated-outland",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 5500,
@@ -5391,6 +6256,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mustang/Mustang-Omega",
       "manufacturerId": 22,
       "manufacturer": "Consolidated Outland",
+      "manufacturerSlug": "consolidated-outland",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 5500,
@@ -5421,6 +6287,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mustang/Mustang-Omega",
       "manufacturerId": 22,
       "manufacturer": "Consolidated Outland",
+      "manufacturerSlug": "consolidated-outland",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": null,
@@ -5452,6 +6319,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aegis-nautilus/Nautilus",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Minelayer",
       "msrpCentsUsd": 72500,
@@ -5482,6 +6350,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aegis-nautilus/Nautilus-Solstice-Edition",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Minelayer",
       "msrpCentsUsd": 72500,
@@ -5512,6 +6381,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/nomad/Nomad",
       "manufacturerId": 22,
       "manufacturer": "Consolidated Outland",
+      "manufacturerSlug": "consolidated-outland",
       "type": "multi",
       "focus": "Starter",
       "msrpCentsUsd": 8000,
@@ -5542,6 +6412,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/nova-tank/Nova",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Combat",
       "msrpCentsUsd": 12000,
@@ -5572,6 +6443,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/nova-tank/Nova",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Combat",
       "msrpCentsUsd": 12000,
@@ -5602,6 +6474,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/nox/Nox",
       "manufacturerId": 81,
       "manufacturer": "Aopoa",
+      "manufacturerSlug": "aopoa",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 4500,
@@ -5632,6 +6505,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/nox/Nox-Kue",
       "manufacturerId": 81,
       "manufacturer": "Aopoa",
+      "manufacturerSlug": "aopoa",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 4500,
@@ -5662,6 +6536,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/odyssey/Odyssey",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 70000,
@@ -5692,6 +6567,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/orion/Orion",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "industrial",
       "focus": "Heavy Mining",
       "msrpCentsUsd": 65000,
@@ -5722,6 +6598,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/p52-merlin/P-52-Merlin",
       "manufacturerId": 19,
       "manufacturer": "Kruger Intergalactic",
+      "manufacturerSlug": "kruger-intergalactic",
       "type": "combat",
       "focus": "Snub Fighter",
       "msrpCentsUsd": 2500,
@@ -5752,6 +6629,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/p72-archimedes/P-72-Archimedes",
       "manufacturerId": 19,
       "manufacturer": "Kruger Intergalactic",
+      "manufacturerSlug": "kruger-intergalactic",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 3500,
@@ -5782,6 +6660,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/p72-archimedes/P-72-Archimedes-Emerald",
       "manufacturerId": 19,
       "manufacturer": "Kruger Intergalactic",
+      "manufacturerSlug": "kruger-intergalactic",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 4000,
@@ -5812,6 +6691,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/paladin/Paladin",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Gunship",
       "msrpCentsUsd": 35000,
@@ -5842,6 +6722,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/perseus/Perseus",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "combat",
       "focus": "Heavy Gunship",
       "msrpCentsUsd": 80000,
@@ -5872,6 +6753,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/pioneer/Pioneer",
       "manufacturerId": 22,
       "manufacturer": "Consolidated Outland",
+      "manufacturerSlug": "consolidated-outland",
       "type": "multi",
       "focus": "Heavy Construction",
       "msrpCentsUsd": 92500,
@@ -5902,6 +6784,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/polaris/Polaris",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "combat",
       "focus": "Corvette",
       "msrpCentsUsd": 97500,
@@ -5932,6 +6815,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/misc-prospector/Prospector",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "industrial",
       "focus": "Prospecting / Mining",
       "msrpCentsUsd": 15500,
@@ -5962,6 +6846,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/prowler/Prowler",
       "manufacturerId": 69,
       "manufacturer": "Esperia",
+      "manufacturerSlug": "esperia",
       "type": "combat",
       "focus": "Dropship",
       "msrpCentsUsd": 44000,
@@ -5992,6 +6877,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/prowler/Prowler-Utility",
       "manufacturerId": 69,
       "manufacturer": "Esperia",
+      "manufacturerSlug": "esperia",
       "type": "transport",
       "focus": "Cargo",
       "msrpCentsUsd": 30000,
@@ -6022,6 +6908,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/ptv/PTV",
       "manufacturerId": 17,
       "manufacturer": "Greycat Industrial",
+      "manufacturerSlug": "greycat-industrial",
       "type": "ground",
       "focus": "Touring",
       "msrpCentsUsd": 1500,
@@ -6052,6 +6939,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mirai-pulse/Pulse",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "ground",
       "focus": "Combat",
       "msrpCentsUsd": 3000,
@@ -6082,6 +6970,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/mirai-pulse/Pulse-LX",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "ground",
       "focus": "Racing ",
       "msrpCentsUsd": 3000,
@@ -6112,6 +7001,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/raft/RAFT",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "transport",
       "focus": "Medium Freight",
       "msrpCentsUsd": 19000,
@@ -6142,6 +7032,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/railen/Railen",
       "manufacturerId": 93,
       "manufacturer": "Gatac Manufacture",
+      "manufacturerSlug": "gatac-manufacture",
       "type": "transport",
       "focus": "Medium Freight",
       "msrpCentsUsd": 22500,
@@ -6172,6 +7063,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/tumbril-ranger/Ranger-CV",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Touring",
       "msrpCentsUsd": 3500,
@@ -6202,6 +7094,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/tumbril-ranger/Ranger-RC",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Racing",
       "msrpCentsUsd": 3500,
@@ -6232,6 +7125,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/tumbril-ranger/Ranger-TR",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Combat",
       "msrpCentsUsd": 4000,
@@ -6262,6 +7156,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/razor/Razor",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 14500,
@@ -6292,6 +7187,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/razor/Razor-EX",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "competition",
       "focus": "Stealth",
       "msrpCentsUsd": 15500,
@@ -6322,6 +7218,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/razor/Razor-LX",
       "manufacturerId": 96,
       "manufacturer": "Mirai",
+      "manufacturerSlug": "mirai",
       "type": "competition",
       "focus": "Luxury",
       "msrpCentsUsd": 15000,
@@ -6352,6 +7249,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/reclaimer/Reclaimer",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "industrial",
       "focus": "Heavy Salvage",
       "msrpCentsUsd": 40000,
@@ -6382,6 +7280,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/reclaimer/Reclaimer-Best-In-Show-Edition-2949",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "industrial",
       "focus": "Heavy Salvage",
       "msrpCentsUsd": 40000,
@@ -6412,6 +7311,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/redeemer/Redeemer",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Gunship",
       "msrpCentsUsd": 33000,
@@ -6442,6 +7342,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/reliant/Reliant-Kore",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "multi",
       "focus": "Starter / Light Freight",
       "msrpCentsUsd": 6500,
@@ -6472,6 +7373,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/reliant/Reliant-Mako",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "support",
       "focus": "Reporting",
       "msrpCentsUsd": 9500,
@@ -6502,6 +7404,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/reliant/Reliant-Sen",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "industrial",
       "focus": "Light Science",
       "msrpCentsUsd": 8500,
@@ -6532,6 +7435,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/reliant/Reliant-Tana",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 7500,
@@ -6562,6 +7466,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/reliant/Reliant-Tana",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 7500,
@@ -6592,6 +7497,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aegis-retaliator/Retaliator",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Modular Gunship",
       "msrpCentsUsd": 17500,
@@ -6622,6 +7528,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/roc/ROC",
       "manufacturerId": 17,
       "manufacturer": "Greycat Industrial",
+      "manufacturerSlug": "greycat-industrial",
       "type": "industrial",
       "focus": "Mining",
       "msrpCentsUsd": 5500,
@@ -6652,6 +7559,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/roc/ROC-DS",
       "manufacturerId": 17,
       "manufacturer": "Greycat Industrial",
+      "manufacturerSlug": "greycat-industrial",
       "type": "industrial",
       "focus": "Mining",
       "msrpCentsUsd": 7500,
@@ -6682,6 +7590,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/sabre/Sabre",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Stealth Fighter",
       "msrpCentsUsd": 17500,
@@ -6712,6 +7621,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/sabre/Sabre-Comet",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 18500,
@@ -6742,6 +7652,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/sabre/Sabre-Firebird",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 18500,
@@ -6772,6 +7683,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/sabre/Sabre-Peregrine",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 18500,
@@ -6802,6 +7714,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/sabre/Sabre-Raven",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Interdiction",
       "msrpCentsUsd": 20000,
@@ -6832,6 +7745,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/salvation/Salvation",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "industrial",
       "focus": "Light Salvage",
       "msrpCentsUsd": 6000,
@@ -6862,6 +7776,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/aopoa-santokyai/Santoky-i",
       "manufacturerId": 81,
       "manufacturer": "Aopoa",
+      "manufacturerSlug": "aopoa",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 24000,
@@ -6892,6 +7807,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/scorpius/Scorpius",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 24000,
@@ -6922,6 +7838,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/scorpius/Scorpius-Antares",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 23000,
@@ -6952,6 +7869,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/scythe/Scythe",
       "manufacturerId": 13,
       "manufacturer": "Vanduul",
+      "manufacturerSlug": "vanduul",
       "type": "combat",
       "focus": "Medium Fighter",
       "msrpCentsUsd": 30000,
@@ -6982,6 +7900,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/shiv/Shiv",
       "manufacturerId": 97,
       "manufacturer": "Grey's Market",
+      "manufacturerSlug": "greys-market",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 15000,
@@ -7012,6 +7931,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/spartan/Spartan",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "ground",
       "focus": "Transport",
       "msrpCentsUsd": 8000,
@@ -7042,6 +7962,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/argo-srv/SRV",
       "manufacturerId": 73,
       "manufacturer": "Argo Astronautics",
+      "manufacturerSlug": "argo-astronautics",
       "type": "support",
       "focus": "Recovery",
       "msrpCentsUsd": 16500,
@@ -7072,6 +7993,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/misc-starfarer/Starfarer",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "support",
       "focus": "Heavy Refuelling",
       "msrpCentsUsd": 30000,
@@ -7102,6 +8024,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/misc-starfarer/Starfarer-Gemini",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "support",
       "focus": "Heavy Refuelling",
       "msrpCentsUsd": 34000,
@@ -7132,6 +8055,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/starlancer/Starlancer-MAX",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "transport",
       "focus": "Medium Freight",
       "msrpCentsUsd": 25000,
@@ -7162,6 +8086,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/starlancer/Starlancer-TAC",
       "manufacturerId": 4,
       "manufacturer": "MISC",
+      "manufacturerSlug": "misc",
       "type": "combat",
       "focus": "Patrol",
       "msrpCentsUsd": 37500,
@@ -7192,6 +8117,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/stinger/Stinger",
       "manufacturerId": 69,
       "manufacturer": "Esperia",
+      "manufacturerSlug": "esperia",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 31500,
@@ -7222,6 +8148,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/storm/Storm",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Combat Support",
       "msrpCentsUsd": 9000,
@@ -7252,6 +8179,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/storm/Storm-AA",
       "manufacturerId": 83,
       "manufacturer": "Tumbril",
+      "manufacturerSlug": "tumbril",
       "type": "ground",
       "focus": "Combat Support",
       "msrpCentsUsd": 10000,
@@ -7282,6 +8210,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/stv/STV",
       "manufacturerId": 17,
       "manufacturer": "Greycat Industrial",
+      "manufacturerSlug": "greycat-industrial",
       "type": "ground",
       "focus": "Transport",
       "msrpCentsUsd": 4000,
@@ -7312,6 +8241,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/syulen/Syulen",
       "manufacturerId": 93,
       "manufacturer": "Gatac Manufacture",
+      "manufacturerSlug": "gatac-manufacture",
       "type": "multi",
       "focus": "Starter",
       "msrpCentsUsd": 7000,
@@ -7342,6 +8272,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/talon/Talon",
       "manufacturerId": 69,
       "manufacturer": "Esperia",
+      "manufacturerSlug": "esperia",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 11500,
@@ -7372,6 +8303,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/talon/Talon-Shrike",
       "manufacturerId": 69,
       "manufacturer": "Esperia",
+      "manufacturerSlug": "esperia",
       "type": "combat",
       "focus": "Light Fighter",
       "msrpCentsUsd": 11500,
@@ -7402,6 +8334,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/terrapin/Terrapin",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "exploration",
       "focus": "Pathfinder",
       "msrpCentsUsd": 22000,
@@ -7432,6 +8365,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/terrapin/Terrapin-Medic",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "support",
       "focus": "Medical",
       "msrpCentsUsd": 22000,
@@ -7462,6 +8396,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/ursa/Ursa-Fortuna",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "ground",
       "focus": "Exploration",
       "msrpCentsUsd": 5500,
@@ -7492,6 +8427,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/ursa/Ursa-Medivac",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "ground",
       "focus": "Ambulance",
       "msrpCentsUsd": 6000,
@@ -7522,6 +8458,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/ursa/Ursa",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "ground",
       "focus": "Exploration",
       "msrpCentsUsd": 5000,
@@ -7552,6 +8489,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/ursa/Ursa-Fortuna",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "ground",
       "focus": "Exploration",
       "msrpCentsUsd": 5500,
@@ -7582,6 +8520,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/utv/UTV",
       "manufacturerId": 17,
       "manufacturer": "Greycat Industrial",
+      "manufacturerSlug": "greycat-industrial",
       "type": "ground",
       "focus": "Transporter",
       "msrpCentsUsd": 4000,
@@ -7612,6 +8551,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-valkyrie/Valkyrie",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Dropship",
       "msrpCentsUsd": 37500,
@@ -7642,6 +8582,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/anvil-valkyrie/Valkyrie-Liberator-Edition",
       "manufacturerId": 3,
       "manufacturer": "Anvil Aerospace",
+      "manufacturerSlug": "anvil-aerospace",
       "type": "combat",
       "focus": "Dropship",
       "msrpCentsUsd": 37500,
@@ -7672,6 +8613,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/vanguard/Vanguard-Harbinger",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Bomber",
       "msrpCentsUsd": 29000,
@@ -7702,6 +8644,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/vanguard/Vanguard-Hoplite",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Dropship",
       "msrpCentsUsd": 24000,
@@ -7732,6 +8675,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/vanguard/Vanguard-Sentinel",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Interdiction",
       "msrpCentsUsd": 27500,
@@ -7762,6 +8706,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/vanguard/Vanguard-Warden",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "combat",
       "focus": "Heavy Fighter",
       "msrpCentsUsd": 26000,
@@ -7792,6 +8737,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/vulcan/Vulcan",
       "manufacturerId": 12,
       "manufacturer": "Aegis Dynamics",
+      "manufacturerSlug": "aegis-dynamics",
       "type": "multi",
       "focus": "Medium Repair / Medium Refuel",
       "msrpCentsUsd": 20000,
@@ -7822,6 +8768,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/drake-vulture/Vulture",
       "manufacturerId": 5,
       "manufacturer": "Drake Interplanetary",
+      "manufacturerSlug": "drake-interplanetary",
       "type": "industrial",
       "focus": "Light Salvage",
       "msrpCentsUsd": 17500,
@@ -7852,6 +8799,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/x1/X1",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Touring",
       "msrpCentsUsd": 4500,
@@ -7882,6 +8830,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/x1/X1-Force",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "exploration",
       "focus": "Combat",
       "msrpCentsUsd": 5500,
@@ -7912,6 +8861,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/x1/X1-Velocity",
       "manufacturerId": 6,
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "type": "competition",
       "focus": "Racing",
       "msrpCentsUsd": 5000,
@@ -7942,6 +8892,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/zeus-mk-ii/Zeus-Mk-II-CL",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "transport",
       "focus": "Medium Freight",
       "msrpCentsUsd": 17500,
@@ -7972,6 +8923,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/zeus-mk-ii/Zeus-Mk-II-ES",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "exploration",
       "focus": "Expedition",
       "msrpCentsUsd": 17500,
@@ -8002,6 +8954,7 @@
       "url": "https://robertsspaceindustries.com/pledge/ships/zeus-mk-ii/Zeus-Mk-II-MR",
       "manufacturerId": 1,
       "manufacturer": "Roberts Space Industries",
+      "manufacturerSlug": "roberts-space-industries",
       "type": "combat",
       "focus": "Interdiction",
       "msrpCentsUsd": 19000,

@@ -14,6 +14,8 @@ Public Star Citizen ship data feeds generated from the live RSI pledge ship list
   - Human-friendly browser view of the same data
 - `media/ships/*`
   - mirrored ship images served from GitHub Pages instead of RSI
+- `media/manufacturers/*`
+  - published manufacturer logo assets used by the JSON feeds
 
 The feed is built from:
 
@@ -36,11 +38,25 @@ The feed is built from:
     "purchasableCount": 120,
     "unavailableCount": 130
   },
+  "manufacturers": [
+    {
+      "slug": "origin-jumpworks",
+      "name": "Origin Jumpworks",
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/origin-jumpworks/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/origin-jumpworks/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/origin-jumpworks/black.png"
+        }
+      }
+    }
+  ],
   "ships": [
     {
       "id": "159",
       "name": "100i",
       "manufacturer": "Origin Jumpworks",
+      "manufacturerSlug": "origin-jumpworks",
       "msrpCentsUsd": 5000,
       "msrpUsd": 50,
       "purchasable": true,
@@ -59,10 +75,24 @@ The feed is built from:
   "generatedAt": "2026-04-23T00:00:00.000Z",
   "sourcePageUrl": "https://starcitizen.tools/List_of_pledge_vehicles",
   "shipCount": 244,
+  "manufacturers": [
+    {
+      "slug": "origin-jumpworks",
+      "name": "Origin Jumpworks",
+      "logos": {
+        "default": {
+          "path": "media/manufacturers/origin-jumpworks/black.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/origin-jumpworks/black.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/origin-jumpworks/black.png"
+        }
+      }
+    }
+  ],
   "ships": [
     {
       "name": "100i",
       "pageUrl": "https://starcitizen.tools/100i",
+      "manufacturerSlug": "origin-jumpworks",
       "size": "Small",
       "minCrew": 1,
       "maxCrew": 1,
@@ -107,6 +137,12 @@ Notes for `ship-details.json`:
 - `technicalSpecs`, `size`, `minCrew`, and `maxCrew` come from the pledge vehicle list.
 - `specificationSections` mirrors the StarCitizen.tools specification tabs and preserves per-card `count`, `size`, `name`, `subtitle`, and nesting `level`.
 - `componentSummary` and `weaponsUtilitySummary` provide pre-aggregated size counts so clients can answer questions like "how many S3 items are in the Turret section?" without reparsing the raw cards.
+- Both feeds now publish a top-level `manufacturers` directory. Each entry includes a stable `slug`, any known aliases, and `logos` with:
+  - relative `path`
+  - `primaryUrl` for `https://starcitizen-info.pages.dev`
+  - `fallbackUrl` for GitHub Pages
+  - optional `onLightBackground`, `onDarkBackground`, and per-variant addresses when multiple logo treatments are available
+- Ship entries include `manufacturerSlug` so clients can join a ship to the top-level manufacturer logo directory without reparsing the display name.
 
 ## Local Usage
 
@@ -122,6 +158,7 @@ That writes the latest output to:
 - `docs/ship-details.json`
 - `docs/resource-manifest.json`
 - `docs/media/ships/*`
+- `docs/media/manufacturers/*`
 
 ## GitHub Pages
 
@@ -178,6 +215,7 @@ let feed = try JSONDecoder().decode(ShipFeed.self, from: data)
 - The detailed ship spec feed is separate from the lightweight MSRP feed so apps can choose between smaller list payloads and richer per-ship specification data.
 - When RSI marks a ship as unavailable and does not publish a live MSRP, the feed publishes `msrpLabel: "Not For Sale"` so apps can distinguish that from truly incomplete pricing data.
 - Ship thumbnails are mirrored into GitHub Pages on every build. The feed preserves the original RSI URL in `sourceThumbnailUrl` and `sourceThumbnailUrls` so clients can rewrite matching live RSI assets to the mirrored copy without changing fallback behavior.
+- Manufacturer logos are published as static PNG assets under `docs/media/manufacturers/*`. When a manufacturer logo is available from the supplied fan kit, the feeds expose both relative paths and absolute URLs for the primary and fallback hosts.
 - The workflow does not commit generated JSON back into the repo on each daily run.
   - GitHub Pages serves the freshly generated artifact from the workflow instead.
 - If you ever want Cloudflare Pages instead, you can keep the same `docs` output and point Cloudflare at this repo.

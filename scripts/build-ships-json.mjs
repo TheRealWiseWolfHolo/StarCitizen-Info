@@ -2,6 +2,10 @@ import { createHash } from "node:crypto";
 import { mkdir, rm, writeFile } from "node:fs/promises";
 import { dirname, extname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  buildManufacturerDirectory,
+  resolveManufacturer
+} from "./manufacturer-logos.mjs";
 
 const ORIGIN = "https://robertsspaceindustries.com";
 const GRAPHQL_URL = `${ORIGIN}/graphql`;
@@ -255,6 +259,8 @@ function normalizeShip(resource) {
       : null;
   const purchasable = Boolean(resource.purchasable);
   const msrpLabel = deriveMsrpLabel({ msrpCentsUsd, purchasable });
+  const manufacturerName = resource.manufacturer?.name ?? null;
+  const manufacturer = resolveManufacturer(manufacturerName);
 
   return {
     id: String(resource.id ?? ""),
@@ -264,7 +270,8 @@ function normalizeShip(resource) {
     url: absoluteUrl(resource.url),
     manufacturerId:
       typeof resource.manufacturerId === "number" ? resource.manufacturerId : null,
-    manufacturer: resource.manufacturer?.name ?? null,
+    manufacturer: manufacturerName,
+    manufacturerSlug: manufacturer.slug,
     type: resource.type ?? null,
     focus: resource.focus ?? null,
     msrpCentsUsd,
@@ -599,6 +606,9 @@ async function main() {
     totalCount,
     syntheticCount,
     summary: buildSummary(mirroredOutput.ships),
+    manufacturers: buildManufacturerDirectory(
+      mirroredOutput.ships.map((ship) => ship.manufacturer)
+    ),
     ships: mirroredOutput.ships
   };
 
