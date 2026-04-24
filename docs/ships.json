@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T03:26:35.285Z",
+  "generatedAt": "2026-04-24T04:27:27.082Z",
   "source": {
     "page": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
     "graphql": "https://robertsspaceindustries.com/graphql"
@@ -598,21 +598,25 @@
       ],
       "logos": {
         "default": {
-          "path": "media/manufacturers/mirai/primary-black.png",
-          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/mirai/primary-black.png",
-          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/mirai/primary-black.png"
+          "path": "media/manufacturers/mirai/icon-mark.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/mirai/icon-mark.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/mirai/icon-mark.png"
         },
         "onLightBackground": {
           "path": "media/manufacturers/mirai/primary-black.png",
           "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/mirai/primary-black.png",
           "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/mirai/primary-black.png"
         },
-        "onDarkBackground": null,
+        "onDarkBackground": {
+          "path": "media/manufacturers/mirai/icon-mark.png",
+          "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/mirai/icon-mark.png",
+          "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/mirai/icon-mark.png"
+        },
         "variants": {
-          "icon": {
-            "path": "media/manufacturers/mirai/icon.png",
-            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/mirai/icon.png",
-            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/mirai/icon.png"
+          "icon-mark": {
+            "path": "media/manufacturers/mirai/icon-mark.png",
+            "primaryUrl": "https://starcitizen-info.pages.dev/media/manufacturers/mirai/icon-mark.png",
+            "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/mirai/icon-mark.png"
           },
           "primary-black": {
             "path": "media/manufacturers/mirai/primary-black.png",

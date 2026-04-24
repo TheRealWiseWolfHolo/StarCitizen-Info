@@ -180,11 +180,11 @@ const MANUFACTURER_LOGO_SPECS = [
     slug: "mirai",
     name: "Mirai",
     aliases: ["Mirai"],
-    defaultVariant: "primary-black",
+    defaultVariant: "icon-mark",
     onLightBackgroundVariant: "primary-black",
-    onDarkBackgroundVariant: null,
+    onDarkBackgroundVariant: "icon-mark",
     variants: {
-      icon: "icon.png",
+      "icon-mark": "icon-mark.png",
       "primary-black": "primary-black.png"
     }
   },
