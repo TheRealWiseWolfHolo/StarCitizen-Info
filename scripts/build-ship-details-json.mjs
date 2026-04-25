@@ -1,4 +1,4 @@
-import { writeFile, mkdir } from "node:fs/promises";
+import { writeFile, mkdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as cheerio from "cheerio";
@@ -286,9 +286,105 @@ async function buildShipDetails(listHTML) {
     console.log(`SHIP_DETAILS_LIMIT=${SHIP_DETAILS_LIMIT}; building ${entriesToBuild.length} entries`);
   }
 
-  const ships = await buildSpviewerShipDetails(entriesToBuild);
+  try {
+    const ships = await buildSpviewerShipDetails(entriesToBuild);
+    const usableDetailCount = ships.filter(hasUsableSpviewerDetail).length;
+    const minimumUsableDetailCount = minimumUsableSpviewerDetailCount(entriesToBuild.length);
 
-  return appendSyntheticShipDetailAliases(ships);
+    if (usableDetailCount < minimumUsableDetailCount) {
+      throw new Error(
+        `SPViewer detail scrape produced only ${usableDetailCount}/${entriesToBuild.length} usable entries`
+      );
+    }
+
+    return appendSyntheticShipDetailAliases(ships);
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    console.warn(`SPViewer scrape failed; reusing previous detail snapshot where possible: ${reason}`);
+
+    const ships = await buildFallbackShipDetailsFromPreviousSnapshot(entriesToBuild, reason);
+    return appendSyntheticShipDetailAliases(ships);
+  }
+}
+
+function hasUsableSpviewerDetail(ship) {
+  return !ship.unavailableReason;
+}
+
+function minimumUsableSpviewerDetailCount(entryCount) {
+  return Math.min(50, Math.max(1, Math.floor(entryCount * 0.25)));
+}
+
+async function buildFallbackShipDetailsFromPreviousSnapshot(entries, reason) {
+  const previousSnapshot = await loadPreviousShipDetailSnapshot();
+  const previousByName = new Map(previousSnapshot.ships.map((ship) => [ship.name, ship]));
+
+  if (!previousByName.size) {
+    console.warn("No previous ship detail snapshot was available for fallback data.");
+    return entries.map((entry) =>
+      unavailableShip(entry, `SPViewer unavailable and no previous snapshot exists: ${reason}`)
+    );
+  }
+
+  let reusedCount = 0;
+  const ships = entries.map((entry) => {
+    const previousShip = previousByName.get(entry.name);
+
+    if (!previousShip) {
+      return unavailableShip(entry, `SPViewer unavailable and no previous detail snapshot exists: ${reason}`);
+    }
+
+    reusedCount += 1;
+    return mergePreviousShipDetail(entry, previousShip);
+  });
+
+  console.warn(
+    `Reused previous SPViewer detail snapshot for ${reusedCount}/${entries.length} ships` +
+      (previousSnapshot.generatedAt ? ` from ${previousSnapshot.generatedAt}` : "")
+  );
+  return ships;
+}
+
+async function loadPreviousShipDetailSnapshot() {
+  try {
+    const raw = await readFile(outputPath, "utf8");
+    const payload = JSON.parse(raw);
+    const ships = Array.isArray(payload.ships) ? payload.ships : [];
+
+    return {
+      generatedAt: typeof payload.generatedAt === "string" ? payload.generatedAt : null,
+      ships
+    };
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    console.warn(`Could not read previous ship detail snapshot: ${reason}`);
+    return {
+      generatedAt: null,
+      ships: []
+    };
+  }
+}
+
+function mergePreviousShipDetail(entry, previousShip) {
+  return {
+    ...previousShip,
+    ...entry,
+    description: previousShip.description ?? null,
+    technicalSections: Array.isArray(previousShip.technicalSections) ? previousShip.technicalSections : [],
+    specificationSections: Array.isArray(previousShip.specificationSections)
+      ? previousShip.specificationSections
+      : [],
+    componentEntries: Array.isArray(previousShip.componentEntries) ? previousShip.componentEntries : [],
+    weaponsUtilityEntries: Array.isArray(previousShip.weaponsUtilityEntries)
+      ? previousShip.weaponsUtilityEntries
+      : [],
+    componentSummary: previousShip.componentSummary ?? emptySpecificationSummary(),
+    weaponsUtilitySummary: previousShip.weaponsUtilitySummary ?? emptySpecificationSummary(),
+    spviewerId: previousShip.spviewerId ?? null,
+    spviewerName: previousShip.spviewerName ?? null,
+    spviewerPageUrl: previousShip.spviewerPageUrl ?? null,
+    unavailableReason: previousShip.unavailableReason ?? null
+  };
 }
 
 function parseListRow($, row, headerIndex) {
@@ -435,7 +531,16 @@ async function loadSpviewerVehicleIndex(context) {
       timeout: 60_000
     });
     await page.waitForFunction(
-      () => document.querySelectorAll(".ship[id]").length > 50,
+      () => {
+        const shipCount = document.querySelectorAll(".ship[id]").length;
+        const text = document.body.innerText || "";
+
+        return (
+          shipCount > 50 ||
+          text.includes("API error") ||
+          text.includes("Loading time is abnormally long")
+        );
+      },
       null,
       { timeout: 90_000 }
     );
@@ -473,6 +578,11 @@ async function loadSpviewerVehicleIndex(context) {
     }, SPVIEWER_ORIGIN);
 
     console.log(`Loaded ${vehicles.length} SPViewer performance vehicle index entries`);
+
+    if (vehicles.length < 50) {
+      throw new Error(`SPViewer vehicle index unavailable (${vehicles.length} entries loaded)`);
+    }
+
     return vehicles;
   } finally {
     await page.close();
