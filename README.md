@@ -84,6 +84,13 @@ The feed is built from:
   "generatedAt": "2026-04-23T00:00:00.000Z",
   "sourcePageUrl": "https://starcitizen.tools/List_of_pledge_vehicles",
   "detailSourceUrl": "https://www.spviewer.eu",
+  "detailSource": {
+    "name": "SPViewer",
+    "url": "https://www.spviewer.eu",
+    "lastSuccessfulUpdateAt": "2026-04-23T00:00:00.000Z",
+    "usedFallback": false,
+    "fallbackReason": null
+  },
   "shipCount": 255,
   "manufacturers": [
     {
@@ -145,6 +152,7 @@ Notes for `ship-details.json`:
 
 - `technicalSpecs`, `size`, `minCrew`, and `maxCrew` come from the pledge vehicle list.
 - `description`, `technicalSections`, and `specificationSections` are sourced from SPViewer where a SPViewer performance page is available.
+- `detailSource.lastSuccessfulUpdateAt` records the most recent successful SPViewer detail scrape. If SPViewer is temporarily unavailable, the generator reuses the previous detail snapshot and leaves this timestamp unchanged.
 - `specificationSections` mirrors the SPViewer loadout sections and preserves per-card `count`, `size`, `name`, and `subtitle`.
 - `componentSummary` and `weaponsUtilitySummary` provide pre-aggregated size counts so clients can answer questions like "how many S3 weapons are mounted?" without reparsing the raw cards.
 - Concept or production-hold ships that do not have a SPViewer performance page still keep the list-source metadata and publish empty detail/loadout sections with an `unavailableReason`.

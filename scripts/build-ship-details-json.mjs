@@ -238,23 +238,31 @@ const SYNTHETIC_SHIP_DETAIL_ALIASES = [
 async function main() {
   console.log(`Fetching vehicle list from ${LIST_URL}`);
   const listHTML = await fetchText(LIST_URL);
-  const ships = await buildShipDetails(listHTML);
+  const generatedAt = new Date().toISOString();
+  const details = await buildShipDetails(listHTML, generatedAt);
 
   const payload = {
-    generatedAt: new Date().toISOString(),
+    generatedAt,
     sourcePageUrl: LIST_URL,
     detailSourceUrl: SPVIEWER_ORIGIN,
-    shipCount: ships.length,
-    manufacturers: buildManufacturerDirectory(ships.map((ship) => ship.manufacturer)),
-    ships
+    detailSource: {
+      name: "SPViewer",
+      url: SPVIEWER_ORIGIN,
+      lastSuccessfulUpdateAt: details.spviewerLastSuccessfulUpdateAt,
+      usedFallback: details.usedSpviewerFallback,
+      fallbackReason: details.spviewerFallbackReason
+    },
+    shipCount: details.ships.length,
+    manufacturers: buildManufacturerDirectory(details.ships.map((ship) => ship.manufacturer)),
+    ships: details.ships
   };
 
   await mkdir(docsDir, { recursive: true });
   await writeFile(outputPath, JSON.stringify(payload, null, 2) + "\n", "utf8");
-  console.log(`Wrote ${ships.length} ship detail entries to ${outputPath}`);
+  console.log(`Wrote ${details.ships.length} ship detail entries to ${outputPath}`);
 }
 
-async function buildShipDetails(listHTML) {
+async function buildShipDetails(listHTML, generatedAt) {
   const $ = cheerio.load(listHTML);
   const table = $("table.srf-datatable").first();
 
@@ -297,13 +305,23 @@ async function buildShipDetails(listHTML) {
       );
     }
 
-    return appendSyntheticShipDetailAliases(ships);
+    return {
+      ships: appendSyntheticShipDetailAliases(ships),
+      spviewerLastSuccessfulUpdateAt: generatedAt,
+      usedSpviewerFallback: false,
+      spviewerFallbackReason: null
+    };
   } catch (error) {
     const reason = error instanceof Error ? error.message : String(error);
     console.warn(`SPViewer scrape failed; reusing previous detail snapshot where possible: ${reason}`);
 
-    const ships = await buildFallbackShipDetailsFromPreviousSnapshot(entriesToBuild, reason);
-    return appendSyntheticShipDetailAliases(ships);
+    const fallback = await buildFallbackShipDetailsFromPreviousSnapshot(entriesToBuild, reason);
+    return {
+      ships: appendSyntheticShipDetailAliases(fallback.ships),
+      spviewerLastSuccessfulUpdateAt: fallback.lastSuccessfulUpdateAt,
+      usedSpviewerFallback: true,
+      spviewerFallbackReason: reason
+    };
   }
 }
 
@@ -321,9 +339,12 @@ async function buildFallbackShipDetailsFromPreviousSnapshot(entries, reason) {
 
   if (!previousByName.size) {
     console.warn("No previous ship detail snapshot was available for fallback data.");
-    return entries.map((entry) =>
-      unavailableShip(entry, `SPViewer unavailable and no previous snapshot exists: ${reason}`)
-    );
+    return {
+      ships: entries.map((entry) =>
+        unavailableShip(entry, `SPViewer unavailable and no previous snapshot exists: ${reason}`)
+      ),
+      lastSuccessfulUpdateAt: null
+    };
   }
 
   let reusedCount = 0;
@@ -340,9 +361,12 @@ async function buildFallbackShipDetailsFromPreviousSnapshot(entries, reason) {
 
   console.warn(
     `Reused previous SPViewer detail snapshot for ${reusedCount}/${entries.length} ships` +
-      (previousSnapshot.generatedAt ? ` from ${previousSnapshot.generatedAt}` : "")
+      (previousSnapshot.lastSuccessfulUpdateAt ? ` from ${previousSnapshot.lastSuccessfulUpdateAt}` : "")
   );
-  return ships;
+  return {
+    ships,
+    lastSuccessfulUpdateAt: previousSnapshot.lastSuccessfulUpdateAt
+  };
 }
 
 async function loadPreviousShipDetailSnapshot() {
@@ -353,6 +377,7 @@ async function loadPreviousShipDetailSnapshot() {
 
     return {
       generatedAt: typeof payload.generatedAt === "string" ? payload.generatedAt : null,
+      lastSuccessfulUpdateAt: detailSourceLastSuccessfulUpdateAt(payload),
       ships
     };
   } catch (error) {
@@ -360,9 +385,18 @@ async function loadPreviousShipDetailSnapshot() {
     console.warn(`Could not read previous ship detail snapshot: ${reason}`);
     return {
       generatedAt: null,
+      lastSuccessfulUpdateAt: null,
       ships: []
     };
   }
+}
+
+function detailSourceLastSuccessfulUpdateAt(payload) {
+  if (typeof payload.detailSource?.lastSuccessfulUpdateAt === "string") {
+    return payload.detailSource.lastSuccessfulUpdateAt;
+  }
+
+  return typeof payload.generatedAt === "string" ? payload.generatedAt : null;
 }
 
 function mergePreviousShipDetail(entry, previousShip) {

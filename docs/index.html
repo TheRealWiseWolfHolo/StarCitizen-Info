@@ -116,7 +116,7 @@
 
       .stats {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 14px;
         margin-top: 20px;
       }
@@ -360,6 +360,10 @@
           <div class="stat-label">Last generated</div>
           <div class="stat-value" id="stat-generated">-</div>
         </article>
+        <article class="stat">
+          <div class="stat-label">Last successful SPViewer update</div>
+          <div class="stat-value" id="stat-spviewer">-</div>
+        </article>
       </section>
 
       <section class="controls">
@@ -428,6 +432,7 @@
         statPurchasable: document.getElementById("stat-purchasable"),
         statUnavailable: document.getElementById("stat-unavailable"),
         statGenerated: document.getElementById("stat-generated"),
+        statSpviewer: document.getElementById("stat-spviewer"),
         manufacturer: document.getElementById("manufacturer"),
         availability: document.getElementById("availability"),
         status: document.getElementById("status"),
@@ -447,7 +452,16 @@
           .toLowerCase();
       }
 
-      function updateStats(payload) {
+      function formatTimestamp(value) {
+        if (!value) {
+          return "-";
+        }
+
+        const date = new Date(value);
+        return Number.isNaN(date.getTime()) ? "-" : formatDate.format(date);
+      }
+
+      function updateStats(payload, detailPayload = null) {
         elements.statTotal.textContent = String(payload.count ?? state.ships.length);
         elements.statPurchasable.textContent = String(
           payload.summary?.purchasableCount ?? state.ships.filter((ship) => ship.purchasable).length
@@ -455,9 +469,10 @@
         elements.statUnavailable.textContent = String(
           payload.summary?.unavailableCount ?? state.ships.filter((ship) => !ship.purchasable).length
         );
-        elements.statGenerated.textContent = payload.generatedAt
-          ? formatDate.format(new Date(payload.generatedAt))
-          : "-";
+        elements.statGenerated.textContent = formatTimestamp(payload.generatedAt);
+        elements.statSpviewer.textContent = formatTimestamp(
+          detailPayload?.detailSource?.lastSuccessfulUpdateAt
+        );
       }
 
       function populateManufacturers(ships) {
@@ -549,14 +564,33 @@
 
       async function boot() {
         try {
-          const response = await fetch("./ships.json", { cache: "no-store" });
+          const [shipsResult, detailsResult] = await Promise.allSettled([
+            fetch("./ships.json", { cache: "no-store" }),
+            fetch("./ship-details.json", { cache: "no-store" })
+          ]);
+
+          if (shipsResult.status === "rejected") {
+            throw shipsResult.reason;
+          }
+
+          const response = shipsResult.value;
           if (!response.ok) {
             throw new Error(`HTTP ${response.status}`);
           }
 
           const payload = await response.json();
+          let detailPayload = null;
+
+          if (detailsResult.status === "fulfilled" && detailsResult.value.ok) {
+            try {
+              detailPayload = await detailsResult.value.json();
+            } catch {
+              detailPayload = null;
+            }
+          }
+
           state.ships = Array.isArray(payload.ships) ? payload.ships : [];
-          updateStats(payload);
+          updateStats(payload, detailPayload);
           populateManufacturers(state.ships);
           renderShips();
         } catch (error) {
