@@ -272,6 +272,25 @@
         color: var(--muted);
       }
 
+      .credit-panel {
+        margin-top: 24px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--panel);
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .credit-panel strong {
+        color: var(--text);
+      }
+
+      .credit-panel a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
       @media (max-width: 920px) {
         .stats,
         .controls {
@@ -314,6 +333,7 @@
         </p>
         <div class="hero-links">
           <a class="chip-link" href="./ships.json">Open `ships.json`</a>
+          <a class="chip-link" href="./ship-details.json">Open `ship-details.json`</a>
           <a
             class="chip-link"
             href="https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc"
@@ -371,6 +391,15 @@
         </div>
         <div id="message" class="loading">Fetching `ships.json`...</div>
         <div id="grid" class="grid" hidden></div>
+      </section>
+
+      <section class="credit-panel" aria-label="Data credits">
+        <strong>Data credits:</strong>
+        MSRP, production status, and ship media come from RSI. Pledge vehicle metadata such
+        as crew, size, status, and pledge availability comes from StarCitizen.tools.
+        Ship descriptions, technical sections, component data, weapon data, and loadout
+        summaries in `ship-details.json` are powered by
+        <a href="https://www.spviewer.eu/" target="_blank" rel="noreferrer">SPViewer</a>.
       </section>
     </main>
 

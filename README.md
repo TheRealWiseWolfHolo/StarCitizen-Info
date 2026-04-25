@@ -28,6 +28,13 @@ The feed is built from:
 - source component and weapon detail pages:
   - `https://www.spviewer.eu/`
 
+## Credits And Data Attribution
+
+- [SPViewer](https://www.spviewer.eu/) provides the ship performance/detail data used by `docs/ship-details.json`.
+- SPViewer-backed fields include `description`, `technicalSections`, `specificationSections`, `componentEntries`, `weaponsUtilityEntries`, `componentSummary`, `weaponsUtilitySummary`, `spviewerId`, `spviewerName`, and `spviewerPageUrl`.
+- StarCitizen.tools provides the pledge vehicle list metadata preserved in `docs/ship-details.json`, including ship names, source page URLs, manufacturer names, size, crew, in-game status, and pledge availability.
+- RSI provides the pledge ship listing, MSRP data, production status, and source ship media mirrored by `docs/ships.json`.
+
 ## JSON Shape
 
 `docs/ships.json` looks like this:
