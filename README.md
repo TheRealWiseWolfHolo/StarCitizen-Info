@@ -1,13 +1,13 @@
 # StarCitizen-Info
 
-Public Star Citizen ship data feeds generated from the live RSI pledge ship listing and StarCitizen.tools specification pages.
+Public Star Citizen ship data feeds generated from the live RSI pledge ship listing, StarCitizen.tools pledge vehicle metadata, and SPViewer ship detail pages.
 
 ## What It Publishes
 
 - `ships.json`
   - JSON feed your mobile app can fetch directly
 - `ship-details.json`
-  - detailed ship metadata sourced from `starcitizen.tools`, including size, crew, and specification-tab loadouts
+  - detailed ship metadata that keeps size, crew, status, and pledge availability from the StarCitizen.tools pledge vehicle list while sourcing component and weapon loadouts from SPViewer
 - `resource-manifest.json`
   - map of mirrored ship media published by the feed
 - `index.html`
@@ -25,6 +25,8 @@ The feed is built from:
   - `https://robertsspaceindustries.com/graphql`
 - source ship detail pages:
   - `https://starcitizen.tools/List_of_pledge_vehicles`
+- source component and weapon detail pages:
+  - `https://www.spviewer.eu/`
 
 ## JSON Shape
 
@@ -68,13 +70,14 @@ The feed is built from:
 }
 ```
 
-`docs/ship-details.json` adds the wiki-backed ship specifications:
+`docs/ship-details.json` adds SPViewer-backed ship specifications while preserving list-source metadata:
 
 ```json
 {
   "generatedAt": "2026-04-23T00:00:00.000Z",
   "sourcePageUrl": "https://starcitizen.tools/List_of_pledge_vehicles",
-  "shipCount": 244,
+  "detailSourceUrl": "https://www.spviewer.eu",
+  "shipCount": 255,
   "manufacturers": [
     {
       "slug": "origin-jumpworks",
@@ -102,28 +105,27 @@ The feed is built from:
       "specificationSections": [
         {
           "tab": "Weapons & Utility",
-          "title": "Turret",
+          "title": "Weapons",
           "items": [
             {
               "name": "CF-337 Panther Repeater",
               "count": 2,
               "size": "S3",
-              "subtitle": "1,500 HP · A",
-              "level": 2
+              "subtitle": "1,500 HP · A"
             }
           ],
           "summaryBySize": [
-            { "size": "S3", "count": 4, "entryCount": 2 }
+            { "size": "S3", "count": 2, "entryCount": 1 }
           ]
         }
       ],
       "weaponsUtilitySummary": {
         "bySection": [
           {
-            "section": "Turret",
+            "section": "Weapons",
             "size": "S3",
-            "count": 4,
-            "entryCount": 2
+            "count": 2,
+            "entryCount": 1
           }
         ]
       }
@@ -135,8 +137,10 @@ The feed is built from:
 Notes for `ship-details.json`:
 
 - `technicalSpecs`, `size`, `minCrew`, and `maxCrew` come from the pledge vehicle list.
-- `specificationSections` mirrors the StarCitizen.tools specification tabs and preserves per-card `count`, `size`, `name`, `subtitle`, and nesting `level`.
-- `componentSummary` and `weaponsUtilitySummary` provide pre-aggregated size counts so clients can answer questions like "how many S3 items are in the Turret section?" without reparsing the raw cards.
+- `description`, `technicalSections`, and `specificationSections` are sourced from SPViewer where a SPViewer performance page is available.
+- `specificationSections` mirrors the SPViewer loadout sections and preserves per-card `count`, `size`, `name`, and `subtitle`.
+- `componentSummary` and `weaponsUtilitySummary` provide pre-aggregated size counts so clients can answer questions like "how many S3 weapons are mounted?" without reparsing the raw cards.
+- Concept or production-hold ships that do not have a SPViewer performance page still keep the list-source metadata and publish empty detail/loadout sections with an `unavailableReason`.
 - Both feeds now publish a top-level `manufacturers` directory. Each entry includes a stable `slug`, any known aliases, and `logos` with:
   - relative `path`
   - `primaryUrl` for `https://starcitizen-info.pages.dev`
@@ -150,6 +154,12 @@ Run the generator locally:
 
 ```bash
 npm run build
+```
+
+Optional local test controls:
+
+```bash
+SHIP_DETAILS_LIMIT=5 SPVIEWER_DETAIL_CONCURRENCY=2 node scripts/build-ship-details-json.mjs
 ```
 
 That writes the latest output to:
