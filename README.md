@@ -33,7 +33,7 @@ The feed is built from:
 - [SPViewer](https://www.spviewer.eu/) provides the ship performance/detail data used by `docs/ship-details.json`.
 - SPViewer-backed fields include `description`, `technicalSections`, `specificationSections`, `componentEntries`, `weaponsUtilityEntries`, `componentSummary`, `weaponsUtilitySummary`, `spviewerId`, `spviewerName`, and `spviewerPageUrl`.
 - StarCitizen.tools provides the pledge vehicle list metadata preserved in `docs/ship-details.json`, including ship names, source page URLs, manufacturer names, size, crew, in-game status, and pledge availability.
-- RSI provides the pledge ship listing, MSRP data, production status, and source ship media mirrored by `docs/ships.json`.
+- RSI provides the pledge ship listing, MSRP data, current store availability, production status, and source ship media mirrored by `docs/ships.json`.
 
 ## JSON Shape
 
@@ -69,6 +69,8 @@ The feed is built from:
       "msrpCentsUsd": 5000,
       "msrpUsd": 50,
       "purchasable": true,
+      "storeAvailable": true,
+      "storeAvailability": "Available",
       "productionStatus": "flight-ready",
       "thumbnailUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/....webp",
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/..."
@@ -84,6 +86,11 @@ The feed is built from:
   "generatedAt": "2026-04-23T00:00:00.000Z",
   "sourcePageUrl": "https://starcitizen.tools/List_of_pledge_vehicles",
   "detailSourceUrl": "https://www.spviewer.eu",
+  "storeAvailabilitySource": {
+    "name": "Roberts Space Industries pledge ship listing",
+    "url": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
+    "field": "purchasable"
+  },
   "detailSource": {
     "name": "SPViewer",
     "url": "https://www.spviewer.eu",
@@ -237,6 +244,7 @@ let feed = try JSONDecoder().decode(ShipFeed.self, from: data)
 ## Notes
 
 - RSI exposes MSRP in cents, so this feed publishes both `msrpCentsUsd` and `msrpUsd`.
+- RSI store availability comes directly from RSI's pledge ship listing. `purchasable` is the raw RSI flag, while `storeAvailable` and `storeAvailability` are app-friendly derived fields.
 - The detailed ship spec feed is separate from the lightweight MSRP feed so apps can choose between smaller list payloads and richer per-ship specification data.
 - When RSI marks a ship as unavailable and does not publish a live MSRP, the feed publishes `msrpLabel: "Not For Sale"` so apps can distinguish that from truly incomplete pricing data.
 - Ship thumbnails are mirrored into GitHub Pages on every build. The feed preserves the original RSI URL in `sourceThumbnailUrl` and `sourceThumbnailUrls` so clients can rewrite matching live RSI assets to the mirrored copy without changing fallback behavior.

@@ -12,6 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const docsDir = path.resolve(__dirname, "..", "docs");
 const outputPath = path.join(docsDir, "ship-details.json");
+const shipCatalogPath = path.join(docsDir, "ships.json");
 
 const LIST_URL = "https://starcitizen.tools/List_of_pledge_vehicles";
 const SITE_ORIGIN = "https://starcitizen.tools";
@@ -240,11 +241,17 @@ async function main() {
   const listHTML = await fetchText(LIST_URL);
   const generatedAt = new Date().toISOString();
   const details = await buildShipDetails(listHTML, generatedAt);
+  const storeAvailabilityIndex = await loadStoreAvailabilityIndex();
+  const ships = annotateShipsWithStoreAvailability(
+    details.ships,
+    storeAvailabilityIndex.byName
+  );
 
   const payload = {
     generatedAt,
     sourcePageUrl: LIST_URL,
     detailSourceUrl: SPVIEWER_ORIGIN,
+    storeAvailabilitySource: storeAvailabilityIndex.source,
     detailSource: {
       name: "SPViewer",
       url: SPVIEWER_ORIGIN,
@@ -252,14 +259,14 @@ async function main() {
       usedFallback: details.usedSpviewerFallback,
       fallbackReason: details.spviewerFallbackReason
     },
-    shipCount: details.ships.length,
-    manufacturers: buildManufacturerDirectory(details.ships.map((ship) => ship.manufacturer)),
-    ships: details.ships
+    shipCount: ships.length,
+    manufacturers: buildManufacturerDirectory(ships.map((ship) => ship.manufacturer)),
+    ships
   };
 
   await mkdir(docsDir, { recursive: true });
   await writeFile(outputPath, JSON.stringify(payload, null, 2) + "\n", "utf8");
-  console.log(`Wrote ${details.ships.length} ship detail entries to ${outputPath}`);
+  console.log(`Wrote ${ships.length} ship detail entries to ${outputPath}`);
 }
 
 async function buildShipDetails(listHTML, generatedAt) {
@@ -397,6 +404,74 @@ function detailSourceLastSuccessfulUpdateAt(payload) {
   }
 
   return typeof payload.generatedAt === "string" ? payload.generatedAt : null;
+}
+
+async function loadStoreAvailabilityIndex() {
+  try {
+    const raw = await readFile(shipCatalogPath, "utf8");
+    const payload = JSON.parse(raw);
+    const ships = Array.isArray(payload.ships) ? payload.ships : [];
+    const byName = new Map();
+
+    for (const ship of ships) {
+      const key = storeAvailabilityKey(ship.name ?? ship.title);
+      if (!key) {
+        continue;
+      }
+
+      const storeAvailable = typeof ship.storeAvailable === "boolean"
+        ? ship.storeAvailable
+        : typeof ship.purchasable === "boolean"
+          ? ship.purchasable
+          : null;
+      const storeAvailability =
+        normalizeWhitespace(ship.storeAvailability).trim() ||
+        (typeof storeAvailable === "boolean" ? deriveStoreAvailability(storeAvailable) : null);
+
+      if (storeAvailability || typeof storeAvailable === "boolean") {
+        byName.set(key, {
+          storeAvailability,
+          storeAvailable
+        });
+      }
+    }
+
+    return {
+      source: payload.source?.storeAvailability ?? null,
+      byName
+    };
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    console.warn(`Could not read RSI store availability from ships.json: ${reason}`);
+    return {
+      source: null,
+      byName: new Map()
+    };
+  }
+}
+
+function annotateShipsWithStoreAvailability(ships, availabilityByName) {
+  return ships.map((ship) => {
+    const availability = availabilityByName.get(storeAvailabilityKey(ship.name));
+
+    if (!availability) {
+      return ship;
+    }
+
+    return {
+      ...ship,
+      storeAvailable: availability.storeAvailable,
+      storeAvailability: availability.storeAvailability
+    };
+  });
+}
+
+function storeAvailabilityKey(name) {
+  return normalizeWhitespace(name).toLowerCase();
+}
+
+function deriveStoreAvailability(storeAvailable) {
+  return storeAvailable ? "Available" : "Unavailable";
 }
 
 function mergePreviousShipDetail(entry, previousShip) {

@@ -11,6 +11,11 @@ const ORIGIN = "https://robertsspaceindustries.com";
 const GRAPHQL_URL = `${ORIGIN}/graphql`;
 const SOURCE_PAGE_URL =
   `${ORIGIN}/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc`;
+const STORE_AVAILABILITY_SOURCE = {
+  name: "Roberts Space Industries pledge ship listing",
+  url: SOURCE_PAGE_URL,
+  field: "purchasable"
+};
 const PAGES_BASE_URL = "https://therealwisewolfholo.github.io/StarCitizen-Info";
 const PAGE_SIZE = 100;
 const NOT_FOR_SALE_MSRP_LABEL = "Not For Sale";
@@ -250,6 +255,10 @@ function deriveMsrpLabel({ msrpCentsUsd, purchasable }) {
   return null;
 }
 
+function deriveStoreAvailability(purchasable) {
+  return purchasable ? "Available" : "Unavailable";
+}
+
 function normalizeShip(resource) {
   const normalizedName = normalizeShipName(resource.name ?? resource.title ?? null);
   const thumbnailUrls = createThumbnailUrls(resource.imageComposer);
@@ -278,6 +287,8 @@ function normalizeShip(resource) {
     msrpUsd: msrpCentsUsd === null ? null : msrpCentsUsd / 100,
     ...(msrpLabel ? { msrpLabel } : {}),
     purchasable,
+    storeAvailable: purchasable,
+    storeAvailability: deriveStoreAvailability(purchasable),
     productionStatus: resource.productionStatus ?? null,
     featuredForShipList: Boolean(resource.featuredForShipList),
     minCrew: typeof resource.minCrew === "number" ? resource.minCrew : null,
@@ -595,7 +606,8 @@ async function main() {
     generatedAt: new Date().toISOString(),
     source: {
       page: SOURCE_PAGE_URL,
-      graphql: GRAPHQL_URL
+      graphql: GRAPHQL_URL,
+      storeAvailability: STORE_AVAILABILITY_SOURCE
     },
     query: {
       sortField: "name",
