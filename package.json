@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "prebuild": "playwright install chromium",
     "build": "node scripts/build-ships-json.mjs && node scripts/build-ship-details-json.mjs"
   },
   "dependencies": {
