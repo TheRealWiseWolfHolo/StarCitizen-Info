@@ -19,7 +19,23 @@ const SITE_ORIGIN = "https://starcitizen.tools";
 const SPVIEWER_ORIGIN = "https://www.spviewer.eu";
 const SPVIEWER_DETAIL_CONCURRENCY = parsePositiveInteger(
   process.env.SPVIEWER_DETAIL_CONCURRENCY,
-  4
+  8
+);
+const SPVIEWER_INDEX_GOTO_TIMEOUT_MS = parsePositiveInteger(
+  process.env.SPVIEWER_INDEX_GOTO_TIMEOUT_MS,
+  45_000
+);
+const SPVIEWER_INDEX_READY_TIMEOUT_MS = parsePositiveInteger(
+  process.env.SPVIEWER_INDEX_READY_TIMEOUT_MS,
+  60_000
+);
+const SPVIEWER_DETAIL_GOTO_TIMEOUT_MS = parsePositiveInteger(
+  process.env.SPVIEWER_DETAIL_GOTO_TIMEOUT_MS,
+  20_000
+);
+const SPVIEWER_DETAIL_READY_TIMEOUT_MS = parsePositiveInteger(
+  process.env.SPVIEWER_DETAIL_READY_TIMEOUT_MS,
+  25_000
 );
 const SHIP_DETAILS_LIMIT = parsePositiveInteger(process.env.SHIP_DETAILS_LIMIT, 0);
 
@@ -302,7 +318,8 @@ async function buildShipDetails(listHTML, generatedAt) {
   }
 
   try {
-    const ships = await buildSpviewerShipDetails(entriesToBuild);
+    const scrapedShips = await buildSpviewerShipDetails(entriesToBuild);
+    const ships = await fillUnavailableSpviewerDetailsFromPreviousSnapshot(scrapedShips);
     const usableDetailCount = ships.filter(hasUsableSpviewerDetail).length;
     const minimumUsableDetailCount = minimumUsableSpviewerDetailCount(entriesToBuild.length);
 
@@ -404,6 +421,48 @@ function detailSourceLastSuccessfulUpdateAt(payload) {
   }
 
   return typeof payload.generatedAt === "string" ? payload.generatedAt : null;
+}
+
+async function fillUnavailableSpviewerDetailsFromPreviousSnapshot(ships) {
+  const unavailableShips = ships.filter((ship) => !hasUsableSpviewerDetail(ship));
+
+  if (!unavailableShips.length) {
+    return ships;
+  }
+
+  const previousSnapshot = await loadPreviousShipDetailSnapshot();
+  const previousByName = new Map(
+    previousSnapshot.ships
+      .filter(hasUsableSpviewerDetail)
+      .map((ship) => [ship.name, ship])
+  );
+
+  if (!previousByName.size) {
+    return ships;
+  }
+
+  let reusedCount = 0;
+  const mergedShips = ships.map((ship) => {
+    if (hasUsableSpviewerDetail(ship)) {
+      return ship;
+    }
+
+    const previousShip = previousByName.get(ship.name);
+    if (!previousShip) {
+      return ship;
+    }
+
+    reusedCount += 1;
+    return mergePreviousShipDetail(ship, previousShip);
+  });
+
+  if (reusedCount > 0) {
+    console.warn(
+      `Reused previous SPViewer detail snapshot for ${reusedCount}/${unavailableShips.length} unavailable ships`
+    );
+  }
+
+  return mergedShips;
 }
 
 async function loadStoreAvailabilityIndex() {
@@ -637,7 +696,7 @@ async function loadSpviewerVehicleIndex(context) {
   try {
     await page.goto(SPVIEWER_ORIGIN, {
       waitUntil: "domcontentloaded",
-      timeout: 60_000
+      timeout: SPVIEWER_INDEX_GOTO_TIMEOUT_MS
     });
     await page.waitForFunction(
       () => {
@@ -651,7 +710,7 @@ async function loadSpviewerVehicleIndex(context) {
         );
       },
       null,
-      { timeout: 90_000 }
+      { timeout: SPVIEWER_INDEX_READY_TIMEOUT_MS }
     );
 
     const vehicles = await page.evaluate((origin) => {
@@ -777,7 +836,7 @@ async function scrapeSpviewerDetailPage(context, vehicle) {
   try {
     await page.goto(vehicle.pageUrl, {
       waitUntil: "domcontentloaded",
-      timeout: 60_000
+      timeout: SPVIEWER_DETAIL_GOTO_TIMEOUT_MS
     });
     await page.waitForFunction(
       () => {
@@ -785,7 +844,7 @@ async function scrapeSpviewerDetailPage(context, vehicle) {
         return text.includes("Hull") || text.includes("No vehicle") || text.includes("No hardpoint");
       },
       null,
-      { timeout: 90_000 }
+      { timeout: SPVIEWER_DETAIL_READY_TIMEOUT_MS }
     );
 
     const lines = await page.evaluate(() =>

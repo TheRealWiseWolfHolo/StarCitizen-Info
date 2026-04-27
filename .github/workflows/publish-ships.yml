@@ -37,6 +37,12 @@ jobs:
 
       - name: Generate ships.json
         run: npm run build
+        env:
+          SPVIEWER_DETAIL_CONCURRENCY: 8
+          SPVIEWER_INDEX_GOTO_TIMEOUT_MS: 45000
+          SPVIEWER_INDEX_READY_TIMEOUT_MS: 60000
+          SPVIEWER_DETAIL_GOTO_TIMEOUT_MS: 20000
+          SPVIEWER_DETAIL_READY_TIMEOUT_MS: 25000
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
