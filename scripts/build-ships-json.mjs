@@ -39,7 +39,9 @@ const SHIP_NAME_OVERRIDES = new Map([
 const SYNTHETIC_SHIP_VARIANTS = [
   {
     name: "A.T.L.S.",
-    sourceName: "ATLS"
+    sourceName: "ATLS",
+    displayDuplicateOf: "ATLS",
+    hiddenInCatalog: true
   },
   {
     name: "Gladius Dunlevy",
@@ -58,27 +60,39 @@ const SYNTHETIC_SHIP_VARIANTS = [
   },
   {
     name: "Genesis Starliner",
-    sourceName: "Genesis"
+    sourceName: "Genesis",
+    displayDuplicateOf: "Genesis",
+    hiddenInCatalog: true
   },
   {
     name: "Cutlass 2949 Best In Show",
-    sourceName: "Cutlass Black 2949 Best in Show"
+    sourceName: "Cutlass Black 2949 Best in Show",
+    displayDuplicateOf: "Cutlass Black 2949 Best in Show",
+    hiddenInCatalog: true
   },
   {
     name: "Reliant Tana - Skirmisher",
-    sourceName: "Reliant Tana"
+    sourceName: "Reliant Tana",
+    displayDuplicateOf: "Reliant Tana",
+    hiddenInCatalog: true
   },
   {
     name: "350r Racer",
-    sourceName: "350r"
+    sourceName: "350r",
+    displayDuplicateOf: "350r",
+    hiddenInCatalog: true
   },
   {
     name: "600i Touring Module",
-    sourceName: "600i Touring"
+    sourceName: "600i Touring",
+    displayDuplicateOf: "600i Touring",
+    hiddenInCatalog: true
   },
   {
     name: "600i Exploration Module",
-    sourceName: "600i Explorer"
+    sourceName: "600i Explorer",
+    displayDuplicateOf: "600i Explorer",
+    hiddenInCatalog: true
   },
   {
     name: "600i Executive Edition",
@@ -94,11 +108,15 @@ const SYNTHETIC_SHIP_VARIANTS = [
   },
   {
     name: "Ursa Rover Fortuna",
-    sourceName: "Ursa Fortuna"
+    sourceName: "Ursa Fortuna",
+    displayDuplicateOf: "Ursa Fortuna",
+    hiddenInCatalog: true
   },
   {
     name: "Nova Tank",
-    sourceName: "Nova"
+    sourceName: "Nova",
+    displayDuplicateOf: "Nova",
+    hiddenInCatalog: true
   },
   {
     name: "Dragonfly Star Kitten Edition",
@@ -112,7 +130,9 @@ const SYNTHETIC_SHIP_VARIANTS = [
   },
   {
     name: "MOLE - Carbon Edition",
-    sourceName: "Argo Mole Carbon Edition"
+    sourceName: "Argo Mole Carbon Edition",
+    displayDuplicateOf: "Argo Mole Carbon Edition",
+    hiddenInCatalog: true
   }
 ];
 
@@ -447,13 +467,37 @@ function appendSyntheticShipVariants(ships) {
       continue;
     }
 
+    const displayDuplicateOf =
+      variant.displayDuplicateOf ?? variant.overrides?.displayDuplicateOf ?? null;
+    const hiddenInCatalog = Boolean(
+      variant.hiddenInCatalog ?? variant.overrides?.hiddenInCatalog ?? false
+    );
+    const canonicalName =
+      variant.canonicalName ?? displayDuplicateOf ?? variant.sourceName ?? null;
+
+    if (hiddenInCatalog || displayDuplicateOf) {
+      sourceShip.aliases = Array.from(
+        new Set([...(sourceShip.aliases ?? []), variant.name].filter(Boolean))
+      );
+    }
+
+    const { aliases: _sourceAliases, ...sourceShipFields } = sourceShip;
+    const variantAliases = Array.from(
+      new Set([...(variant.aliases ?? []), ...(hiddenInCatalog ? [variant.name] : [])].filter(Boolean))
+    );
+
     nextSyntheticID += 1;
     ships.push({
-      ...sourceShip,
+      ...sourceShipFields,
       id: String(nextSyntheticID),
       title: variant.name,
       name: variant.name,
       ...(variant.overrides ?? {}),
+      ...(canonicalName ? { canonicalName } : {}),
+      ...(displayDuplicateOf ? { displayDuplicateOf } : {}),
+      ...(hiddenInCatalog ? { hiddenInCatalog } : {}),
+      ...(variant.duplicateReason ? { duplicateReason: variant.duplicateReason } : {}),
+      ...(variantAliases.length ? { aliases: variantAliases } : {}),
       thumbnailUrl: variant.thumbnailUrl ?? sourceShip.thumbnailUrl,
       thumbnailUrls: variant.thumbnailUrl
         ? {

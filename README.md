@@ -245,6 +245,7 @@ let feed = try JSONDecoder().decode(ShipFeed.self, from: data)
 
 - RSI exposes MSRP in cents, so this feed publishes both `msrpCentsUsd` and `msrpUsd`.
 - RSI store availability comes directly from RSI's pledge ship listing. `purchasable` is the raw RSI flag, while `storeAvailable` and `storeAvailability` are app-friendly derived fields.
+- Some alternate RSI/wiki naming variants are retained as records for matching, but marked with `displayDuplicateOf` and `hiddenInCatalog` so catalog UIs can hide duplicate display rows without losing alias coverage.
 - The detailed ship spec feed is separate from the lightweight MSRP feed so apps can choose between smaller list payloads and richer per-ship specification data.
 - When RSI marks a ship as unavailable and does not publish a live MSRP, the feed publishes `msrpLabel: "Not For Sale"` so apps can distinguish that from truly incomplete pricing data.
 - Ship thumbnails are mirrored into GitHub Pages on every build. The feed preserves the original RSI URL in `sourceThumbnailUrl` and `sourceThumbnailUrls` so clients can rewrite matching live RSI assets to the mirrored copy without changing fallback behavior.

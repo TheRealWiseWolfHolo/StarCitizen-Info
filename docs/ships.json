@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T01:36:27.726Z",
+  "generatedAt": "2026-04-27T18:35:25.900Z",
   "source": {
     "page": "https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc",
     "graphql": "https://robertsspaceindustries.com/graphql",
@@ -1023,6 +1023,9 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/9b4854e7ecac25c4b956ef7e474dc5e0f8381024988aecb4e20e604b13d631a4.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/b7630d50769806ecea8f34e190d22fcddd98d4b1de5f9557fb0df3ab5b1b8ba8.webp"
       },
+      "aliases": [
+        "350r Racer"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/5a07624df24f8c53225dfc71120250ec64bf2f0e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqRzd4VcczH8KK3H3SAgsMrj6ExxrMpge)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c53b0b87bd3e60484b0e2b5630dfdf99be81de11/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqRzd4VcczH8KK3H3SAgsMrj6ExxrMpge)/source.webp",
@@ -1056,6 +1059,12 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/9b4854e7ecac25c4b956ef7e474dc5e0f8381024988aecb4e20e604b13d631a4.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/b7630d50769806ecea8f34e190d22fcddd98d4b1de5f9557fb0df3ab5b1b8ba8.webp"
       },
+      "canonicalName": "350r",
+      "displayDuplicateOf": "350r",
+      "hiddenInCatalog": true,
+      "aliases": [
+        "350r Racer"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/5a07624df24f8c53225dfc71120250ec64bf2f0e/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqRzd4VcczH8KK3H3SAgsMrj6ExxrMpge)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c53b0b87bd3e60484b0e2b5630dfdf99be81de11/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqRzd4VcczH8KK3H3SAgsMrj6ExxrMpge)/source.webp",
@@ -1123,6 +1132,7 @@
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/d13ffb7fb806522bd961135ecbcfda7385fd9320786cd548a160e93fc67c9cce.webp"
       },
       "msrpLabel": "Not For Sale",
+      "canonicalName": "600i Explorer",
       "sourceThumbnailUrl": "https://media.starcitizen.tools/thumb/f/fe/600i_-_Legatus_Navium_Edition.jpg/800px-600i_-_Legatus_Navium_Edition.jpg.webp",
       "sourceThumbnailUrls": {
         "900": "https://media.starcitizen.tools/thumb/f/fe/600i_-_Legatus_Navium_Edition.jpg/800px-600i_-_Legatus_Navium_Edition.jpg.webp",
@@ -1156,6 +1166,12 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/4a9030ae7f3a000ef4b4d8457f9f9fa1b93c3824d6278a4bd3e073eec545e819.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/3d1edc164fd8b2bcdae7b129c7e2022c75e42da2b73b08773a9df06e2936e2ae.webp"
       },
+      "canonicalName": "600i Explorer",
+      "displayDuplicateOf": "600i Explorer",
+      "hiddenInCatalog": true,
+      "aliases": [
+        "600i Exploration Module"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/bbfd42b3a1a3c30b170da468a56e2ffaec6980e9/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqeFfVoF43f38XfD8N5eYmrHRC4QsX4aJ)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/0d4cbd3a4a553b641ee54582a24d45db421d6b25/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqeFfVoF43f38XfD8N5eYmrHRC4QsX4aJ)/source.webp",
@@ -1189,6 +1205,9 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/4a9030ae7f3a000ef4b4d8457f9f9fa1b93c3824d6278a4bd3e073eec545e819.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/3d1edc164fd8b2bcdae7b129c7e2022c75e42da2b73b08773a9df06e2936e2ae.webp"
       },
+      "aliases": [
+        "600i Exploration Module"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/bbfd42b3a1a3c30b170da468a56e2ffaec6980e9/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqeFfVoF43f38XfD8N5eYmrHRC4QsX4aJ)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/0d4cbd3a4a553b641ee54582a24d45db421d6b25/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjqeFfVoF43f38XfD8N5eYmrHRC4QsX4aJ)/source.webp",
@@ -1222,6 +1241,9 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/0e722bb8237369130120221ef27bba7453ff6d9d558de8fde0ea1b1838907d97.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/12ffd8f1b4c65a13d8eb3c303d4a54880eeadab82d6d3b7147db983b5b8be06e.webp"
       },
+      "aliases": [
+        "600i Touring Module"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/de53d42668b4661de434772e8b494046dae3cdf7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/34bd9cbbe87a33a675aa9dc003a93f3149eb9a3b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp",
@@ -1255,6 +1277,12 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/0e722bb8237369130120221ef27bba7453ff6d9d558de8fde0ea1b1838907d97.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/12ffd8f1b4c65a13d8eb3c303d4a54880eeadab82d6d3b7147db983b5b8be06e.webp"
       },
+      "canonicalName": "600i Touring",
+      "displayDuplicateOf": "600i Touring",
+      "hiddenInCatalog": true,
+      "aliases": [
+        "600i Touring Module"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/de53d42668b4661de434772e8b494046dae3cdf7/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/34bd9cbbe87a33a675aa9dc003a93f3149eb9a3b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiKhuNbUh3JWvLgcSm4Ly5DZPG3eT58cW)/source.webp",
@@ -1354,6 +1382,12 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/87e37305e6f2bdd6c19a2c47001792faf0c421d8e259c3e2999b5b272177f437.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/f2fd1180b63a65e39d2c1c60d4e60a0647bb1748b76bc365fcc5696dc68d9398.webp"
       },
+      "canonicalName": "ATLS",
+      "displayDuplicateOf": "ATLS",
+      "hiddenInCatalog": true,
+      "aliases": [
+        "A.T.L.S."
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/e857649dcd3767d24d3ec5085fbea8a6835fa833/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseYuTuCACieSjiE8s24q9GjXTx67KcfVEe)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ea09dc105fa51591f83168469dfbed1caad2dda1/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseYuTuCACieSjiE8s24q9GjXTx67KcfVEe)/source.webp",
@@ -1618,6 +1652,9 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/416b7356a30fc135d2db54e6ffa5acd4739f571170e27776718e6d89800ede65.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/ade968f836c34701ba6f911ce4349b56dbbeda7eb3b213aee762182efa1d1e64.webp"
       },
+      "aliases": [
+        "MOLE - Carbon Edition"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/f07516bc12a7a000473db7ddd63de15261eb06e1/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUQdPtivjxFep51jBzbNQhgDDyVKv9AL6)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/79cd09b61ad24b337ba20dfb1010100f3029a8cc/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUQdPtivjxFep51jBzbNQhgDDyVKv9AL6)/source.webp",
@@ -1783,6 +1820,9 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/87e37305e6f2bdd6c19a2c47001792faf0c421d8e259c3e2999b5b272177f437.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/f2fd1180b63a65e39d2c1c60d4e60a0647bb1748b76bc365fcc5696dc68d9398.webp"
       },
+      "aliases": [
+        "A.T.L.S."
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/e857649dcd3767d24d3ec5085fbea8a6835fa833/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseYuTuCACieSjiE8s24q9GjXTx67KcfVEe)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ea09dc105fa51591f83168469dfbed1caad2dda1/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseYuTuCACieSjiE8s24q9GjXTx67KcfVEe)/source.webp",
@@ -2800,7 +2840,7 @@
       "minCrew": 3,
       "maxCrew": 4,
       "publishStart": "2018-11-09 00:00:00",
-      "lastUpdate": "2026-04-21 19:55:01",
+      "lastUpdate": "2026-04-27 17:22:38",
       "thumbnailUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/4c5b69c41e489e597de8791bbe69c8ca1159bed519d29168f0241e3c1c440ee4.webp",
       "thumbnailUrls": {
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/710203353c4fe755b12b7dcbb7725b7e5cefcc08c84a99da8bbb2e5bd07fbcae.webp",
@@ -3004,6 +3044,12 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/fda9e75ce069fccc49538a2ce99ea1daf194f30557a653459b62574f8bbcd5d7.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/a5f913c8fb6781d22aeb929b3c7f687889660618e9343baf1ff6f88e3c10d75e.webp"
       },
+      "canonicalName": "Cutlass Black 2949 Best in Show",
+      "displayDuplicateOf": "Cutlass Black 2949 Best in Show",
+      "hiddenInCatalog": true,
+      "aliases": [
+        "Cutlass 2949 Best In Show"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/6ad7c7875e63ff0960dd904c959ee9a35188ea77/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskZxaTD7qxdHdVs788qEVxtr8DStUYxoQJ)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ee6138878ede1a7363cf51d7339101850058d9c5/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskZxaTD7qxdHdVs788qEVxtr8DStUYxoQJ)/source.webp",
@@ -3070,6 +3116,9 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/fda9e75ce069fccc49538a2ce99ea1daf194f30557a653459b62574f8bbcd5d7.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/a5f913c8fb6781d22aeb929b3c7f687889660618e9343baf1ff6f88e3c10d75e.webp"
       },
+      "aliases": [
+        "Cutlass 2949 Best In Show"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/6ad7c7875e63ff0960dd904c959ee9a35188ea77/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskZxaTD7qxdHdVs788qEVxtr8DStUYxoQJ)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ee6138878ede1a7363cf51d7339101850058d9c5/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskZxaTD7qxdHdVs788qEVxtr8DStUYxoQJ)/source.webp",
@@ -3566,6 +3615,7 @@
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/b91b675ffcfd32737edfc3a91f6e0c449f1cc9aa53cc443f95bd02ee715eee0f.webp"
       },
       "msrpLabel": "Not For Sale",
+      "canonicalName": "Dragonfly Black",
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/4edf9f73028b9bce027a2f99ef05334615b593e0/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPN4yumMk5nt91UxccBVecfwddqkyqWeJ)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/5fe70a68d30fcc4ff97d100d2a40bc9e2f158293/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskPN4yumMk5nt91UxccBVecfwddqkyqWeJ)/source.webp",
@@ -4623,6 +4673,9 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/fdc9a7bb65c0c1ae4a821ee84d615ca91e30929885e60dca837078aa859e317e.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/12e44e6a01a6d2f99f8da431b88909bb8b2cf9c4e333e4a4ce4f42443194e2d2.webp"
       },
+      "aliases": [
+        "Genesis Starliner"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/28b84eece3d88da1ef46512f5ccda2d52ab5188b/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCZtmWTXGYC6ppEv2dfyqgTt8K3kv8r4E)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ab7b02002db8cd6966033f827fb3877bf1ece07b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCZtmWTXGYC6ppEv2dfyqgTt8K3kv8r4E)/source.webp",
@@ -4656,6 +4709,12 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/fdc9a7bb65c0c1ae4a821ee84d615ca91e30929885e60dca837078aa859e317e.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/12e44e6a01a6d2f99f8da431b88909bb8b2cf9c4e333e4a4ce4f42443194e2d2.webp"
       },
+      "canonicalName": "Genesis",
+      "displayDuplicateOf": "Genesis",
+      "hiddenInCatalog": true,
+      "aliases": [
+        "Genesis Starliner"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/28b84eece3d88da1ef46512f5ccda2d52ab5188b/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCZtmWTXGYC6ppEv2dfyqgTt8K3kv8r4E)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/ab7b02002db8cd6966033f827fb3877bf1ece07b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjCZtmWTXGYC6ppEv2dfyqgTt8K3kv8r4E)/source.webp",
@@ -4755,6 +4814,7 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/acdb567561d0fabd471cef5c685e41a3175f184afacc42f0fc522a54569a0295.jpg",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/acdb567561d0fabd471cef5c685e41a3175f184afacc42f0fc522a54569a0295.jpg"
       },
+      "canonicalName": "Gladius",
       "sourceThumbnailUrl": "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg",
       "sourceThumbnailUrls": {
         "900": "https://media.robertsspaceindustries.com/nuv5c3lkfqrbd/source.jpg",
@@ -6240,6 +6300,12 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/416b7356a30fc135d2db54e6ffa5acd4739f571170e27776718e6d89800ede65.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/ade968f836c34701ba6f911ce4349b56dbbeda7eb3b213aee762182efa1d1e64.webp"
       },
+      "canonicalName": "Argo Mole Carbon Edition",
+      "displayDuplicateOf": "Argo Mole Carbon Edition",
+      "hiddenInCatalog": true,
+      "aliases": [
+        "MOLE - Carbon Edition"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/f07516bc12a7a000473db7ddd63de15261eb06e1/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUQdPtivjxFep51jBzbNQhgDDyVKv9AL6)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/79cd09b61ad24b337ba20dfb1010100f3029a8cc/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUQdPtivjxFep51jBzbNQhgDDyVKv9AL6)/source.webp",
@@ -6670,6 +6736,7 @@
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/1348a67c876e1f71a2f08a5c629bbc9ba5330e573ca428f7993459f325e0fd8f.webp"
       },
       "msrpLabel": "Not For Sale",
+      "canonicalName": "Mustang Omega",
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/f19022ba7a1707ccdb78dcf695f2ef9d9b9b35fd/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUM4JKzJ9dsqVZzEweh1C1unScWqpchtJ)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/3c0568a8d45f4a012b168fe69f1733a45c54a98b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskUM4JKzJ9dsqVZzEweh1C1unScWqpchtJ)/source.webp",
@@ -6802,6 +6869,9 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/1f80286eb23f72389321c7d7bdbdb698312f845fb96ab1f67ea24102d84edf3e.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/9269869b18e13f7056b20ab0d67f14766fae668eabba31def9a55e942ad64f52.webp"
       },
+      "aliases": [
+        "Nova Tank"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/2db9fbed233bbd51205c211f1598543a1137e302/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiLgxb3pQ5gbyGvNcvnTjqpEMtxrbTXzv)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/edadba84b4c3c1ba572e59d08c1ff646864b4352/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiLgxb3pQ5gbyGvNcvnTjqpEMtxrbTXzv)/source.webp",
@@ -6835,6 +6905,12 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/1f80286eb23f72389321c7d7bdbdb698312f845fb96ab1f67ea24102d84edf3e.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/9269869b18e13f7056b20ab0d67f14766fae668eabba31def9a55e942ad64f52.webp"
       },
+      "canonicalName": "Nova",
+      "displayDuplicateOf": "Nova",
+      "hiddenInCatalog": true,
+      "aliases": [
+        "Nova Tank"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/2db9fbed233bbd51205c211f1598543a1137e302/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiLgxb3pQ5gbyGvNcvnTjqpEMtxrbTXzv)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/edadba84b4c3c1ba572e59d08c1ff646864b4352/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReseiLgxb3pQ5gbyGvNcvnTjqpEMtxrbTXzv)/source.webp",
@@ -7891,6 +7967,9 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/bb6e72efa7d1292c9e960d1c40c2b198993b95cb275e091b53ea09d0587c84d1.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/6c94bac2c35edf34c573fd8538e97d8cfd06c27bcbc0e5f9b1ef69ec92957347.webp"
       },
+      "aliases": [
+        "Reliant Tana - Skirmisher"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/ac002421bd885da62fee1a11ebfe83462d109d9a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskui898hucVaGeAWgdEYuL85w4WovbbF9G)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/34704d8628f1a122c12292ef2c16d9ac4080615b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskui898hucVaGeAWgdEYuL85w4WovbbF9G)/source.webp",
@@ -7924,6 +8003,12 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/bb6e72efa7d1292c9e960d1c40c2b198993b95cb275e091b53ea09d0587c84d1.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/6c94bac2c35edf34c573fd8538e97d8cfd06c27bcbc0e5f9b1ef69ec92957347.webp"
       },
+      "canonicalName": "Reliant Tana",
+      "displayDuplicateOf": "Reliant Tana",
+      "hiddenInCatalog": true,
+      "aliases": [
+        "Reliant Tana - Skirmisher"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/ac002421bd885da62fee1a11ebfe83462d109d9a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskui898hucVaGeAWgdEYuL85w4WovbbF9G)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/34704d8628f1a122c12292ef2c16d9ac4080615b/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjReskui898hucVaGeAWgdEYuL85w4WovbbF9G)/source.webp",
@@ -8914,6 +8999,9 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/4ab2b7333b81b83a9f43c21a1ded1b15057bd10a8cfaaa9eaa9faeb2bc3d9196.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/099a848efc520743e864ec646116d3e90b23bba8220b55c3bc0a96984dff8903.webp"
       },
+      "aliases": [
+        "Ursa Rover Fortuna"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/f241eb36893fa3087a842300f67127f7a433280a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjBNBJ23W3mEG8ozoUYXBJqa5UXbB8Xogz)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c6ae625bbaf2a2fb789ca8b9128ae97bd6e85a12/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjBNBJ23W3mEG8ozoUYXBJqa5UXbB8Xogz)/source.webp",
@@ -9013,6 +9101,12 @@
         "900": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/4ab2b7333b81b83a9f43c21a1ded1b15057bd10a8cfaaa9eaa9faeb2bc3d9196.webp",
         "1000": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/099a848efc520743e864ec646116d3e90b23bba8220b55c3bc0a96984dff8903.webp"
       },
+      "canonicalName": "Ursa Fortuna",
+      "displayDuplicateOf": "Ursa Fortuna",
+      "hiddenInCatalog": true,
+      "aliases": [
+        "Ursa Rover Fortuna"
+      ],
       "sourceThumbnailUrl": "https://robertsspaceindustries.com/i/f241eb36893fa3087a842300f67127f7a433280a/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjBNBJ23W3mEG8ozoUYXBJqa5UXbB8Xogz)/source.webp",
       "sourceThumbnailUrls": {
         "900": "https://robertsspaceindustries.com/i/c6ae625bbaf2a2fb789ca8b9128ae97bd6e85a12/resize(910,512,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResjBNBJ23W3mEG8ozoUYXBJqa5UXbB8Xogz)/source.webp",
