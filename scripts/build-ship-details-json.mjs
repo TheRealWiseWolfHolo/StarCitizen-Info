@@ -236,19 +236,42 @@ const SPVIEWER_NAME_ALIASES = {
   "Valkyrie Liberator Edition": ["Valkyrie", "Anvil Valkyrie"]
 };
 
+const DETAIL_DISPLAY_DUPLICATES = {
+  "315p": "315p Explorer",
+  "A2 Hercules Starlifter": "Hercules Starlifter A2",
+  "Ares Star Fighter Inferno": "Ares Inferno",
+  "Ares Star Fighter Ion": "Ares Ion",
+  "Blade (replica)": "Blade",
+  "C2 Hercules Starlifter": "Hercules Starlifter C2",
+  "C8R Pisces Rescue": "C8R Pisces",
+  "Dragonfly Star Kitten": "Dragonfly Star Kitten Edition",
+  "M2 Hercules Starlifter": "Hercules Starlifter M2",
+  "Ursa": "Ursa Rover",
+  "Valkyrie Liberator": "Valkyrie Liberator Edition"
+};
+
 const SYNTHETIC_SHIP_DETAIL_ALIASES = [
   { name: "A.T.L.S.", sourceName: "ATLS" },
+  { name: "315p Explorer", sourceName: "315p" },
+  { name: "Ares Inferno", sourceName: "Ares Star Fighter Inferno" },
+  { name: "Ares Ion", sourceName: "Ares Star Fighter Ion" },
+  { name: "Blade", sourceName: "Blade (replica)" },
+  { name: "C8R Pisces", sourceName: "C8R Pisces Rescue" },
   { name: "Caterpillar 2949 Best in Show", sourceName: "Caterpillar Best In Show Edition" },
   { name: "Cutlass Black 2949 Best in Show", sourceName: "Cutlass Black Best In Show Edition" },
   { name: "Dragonfly Star Kitten Edition", sourceName: "Dragonfly Star Kitten" },
   { name: "F8C Lightning Executive Edition", sourceName: "F8C Lightning" },
   { name: "Gladius Pirate Edition", sourceName: "Gladius Pirate" },
+  { name: "Hercules Starlifter A2", sourceName: "A2 Hercules Starlifter" },
+  { name: "Hercules Starlifter C2", sourceName: "C2 Hercules Starlifter" },
+  { name: "Hercules Starlifter M2", sourceName: "M2 Hercules Starlifter" },
   { name: "Hammerhead 2949 Best in Show", sourceName: "Hammerhead Best In Show Edition" },
   { name: "MOLE - Carbon Edition", sourceName: "MOLE" },
   { name: "Mustang Omega : AMD Edition", sourceName: "Mustang Omega" },
   { name: "Nautilus Solstice Edition", sourceName: "Nautilus" },
   { name: "Reclaimer 2949 Best in Show", sourceName: "Reclaimer Best In Show Edition" },
   { name: "Sabre Raven", sourceName: "Sabre" },
+  { name: "Ursa Rover", sourceName: "Ursa" },
   { name: "Valkyrie Liberator Edition", sourceName: "Valkyrie Liberator" }
 ];
 
@@ -259,7 +282,7 @@ async function main() {
   const details = await buildShipDetails(listHTML, generatedAt);
   const storeAvailabilityIndex = await loadStoreAvailabilityIndex();
   const ships = annotateShipsWithStoreAvailability(
-    details.ships,
+    applyShipDetailDisplayMetadata(details.ships),
     storeAvailabilityIndex.byName
   );
 
@@ -521,6 +544,26 @@ function annotateShipsWithStoreAvailability(ships, availabilityByName) {
       ...ship,
       storeAvailable: availability.storeAvailable,
       storeAvailability: availability.storeAvailability
+    };
+  });
+}
+
+function applyShipDetailDisplayMetadata(ships) {
+  return ships.map((ship) => {
+    const displayDuplicateOf = DETAIL_DISPLAY_DUPLICATES[ship.name];
+    if (!displayDuplicateOf) {
+      return ship;
+    }
+
+    const aliases = Array.from(new Set([...(ship.aliases ?? []), ship.name].filter(Boolean)));
+
+    return {
+      ...ship,
+      canonicalName: ship.canonicalName ?? displayDuplicateOf,
+      displayDuplicateOf,
+      hiddenInCatalog: true,
+      duplicateReason: ship.duplicateReason ?? "Alternate name for an RSI catalog display entry",
+      ...(aliases.length ? { aliases } : {})
     };
   });
 }
@@ -1278,9 +1321,18 @@ function appendSyntheticShipDetailAliases(ships) {
       continue;
     }
 
+    const {
+      displayDuplicateOf: _sourceDisplayDuplicateOf,
+      hiddenInCatalog: _sourceHiddenInCatalog,
+      duplicateReason: _sourceDuplicateReason,
+      aliases: _sourceAliases,
+      ...sourceShipFields
+    } = sourceShip;
+
     ships.push({
-      ...sourceShip,
-      name: alias.name
+      ...sourceShipFields,
+      name: alias.name,
+      canonicalName: alias.canonicalName ?? sourceShip.canonicalName ?? sourceShip.name
     });
     existingNames.add(alias.name);
   }
