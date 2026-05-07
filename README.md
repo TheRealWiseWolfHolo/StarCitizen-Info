@@ -159,7 +159,7 @@ Notes for `ship-details.json`:
 
 - `technicalSpecs`, `size`, `minCrew`, and `maxCrew` come from the pledge vehicle list.
 - `description`, `technicalSections`, and `specificationSections` are sourced from SPViewer where a SPViewer performance page is available.
-- `detailSource.lastSuccessfulUpdateAt` records the most recent successful SPViewer detail scrape. If SPViewer is temporarily unavailable, the generator reuses the previous detail snapshot and leaves this timestamp unchanged.
+- `detailSource.lastSuccessfulUpdateAt` records the most recent successful SPViewer detail scrape. If the last SPViewer scrape is less than 23 hours old, or if SPViewer is temporarily unavailable, the generator reuses the previous detail snapshot and leaves this timestamp unchanged.
 - `specificationSections` mirrors the SPViewer loadout sections and preserves per-card `count`, `size`, `name`, and `subtitle`.
 - `componentSummary` and `weaponsUtilitySummary` provide pre-aggregated size counts so clients can answer questions like "how many S3 weapons are mounted?" without reparsing the raw cards.
 - Concept or production-hold ships that do not have a SPViewer performance page still keep the list-source metadata and publish empty detail/loadout sections with an `unavailableReason`.
@@ -183,6 +183,10 @@ Optional local test controls:
 ```bash
 SHIP_DETAILS_LIMIT=5 SPVIEWER_DETAIL_CONCURRENCY=2 node scripts/build-ship-details-json.mjs
 ```
+
+The GitHub Actions workflow sets `PREVIOUS_SHIP_DETAILS_URLS` to the current Pages
+`ship-details.json` artifacts so pushes and daily refreshes can reuse the previous
+run's SPViewer data when `SPVIEWER_REFRESH_MIN_INTERVAL_HOURS` has not elapsed.
 
 That writes the latest output to:
 
