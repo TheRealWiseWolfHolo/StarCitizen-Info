@@ -8,6 +8,8 @@ Public Star Citizen ship data feeds generated from the live RSI pledge ship list
   - JSON feed your mobile app can fetch directly
 - `ship-details.json`
   - detailed ship metadata that keeps size, crew, status, and pledge availability from the StarCitizen.tools pledge vehicle list while sourcing component and weapon loadouts from SPViewer
+- `limited-ships.json`
+  - alpha feed of timed limited-ship purchase targets for Hangar Express cart automation
 - `resource-manifest.json`
   - map of mirrored ship media published by the feed
 - `index.html`
@@ -150,6 +152,29 @@ The feed is built from:
           }
         ]
       }
+    }
+  ]
+}
+```
+
+`docs/limited-ships.json` publishes alpha limited-ship purchase targets:
+
+```json
+{
+  "ships": [
+    {
+      "id": "gladius-standalone",
+      "name": "Gladius",
+      "manufacturer": "Aegis Dynamics",
+      "priceUsd": 90,
+      "availabilitySlots": [
+        {
+          "startsAt": "2026-05-01T00:00:00Z",
+          "endsAt": "2026-12-31T23:59:59Z"
+        }
+      ],
+      "storeUrl": "https://robertsspaceindustries.com/pledge/ships/gladius/Gladius",
+      "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/99a752429ba21a9f1652b65de7d23ed4c4c47ea737b4bc624fb7a727e81be439.webp"
     }
   ]
 }
