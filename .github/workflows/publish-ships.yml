@@ -39,6 +39,10 @@ jobs:
         run: npm run build
         env:
           SPVIEWER_DETAIL_CONCURRENCY: 8
+          PREVIOUS_SHIP_DETAILS_URLS: >-
+            https://therealwisewolfholo.github.io/StarCitizen-Info/ship-details.json,
+            https://starcitizen-info.pages.dev/ship-details.json
+          SPVIEWER_REFRESH_MIN_INTERVAL_HOURS: 23
           SPVIEWER_INDEX_GOTO_TIMEOUT_MS: 45000
           SPVIEWER_INDEX_READY_TIMEOUT_MS: 60000
           SPVIEWER_DETAIL_GOTO_TIMEOUT_MS: 20000

@@ -38,6 +38,14 @@ const SPVIEWER_DETAIL_READY_TIMEOUT_MS = parsePositiveInteger(
   25_000
 );
 const SHIP_DETAILS_LIMIT = parsePositiveInteger(process.env.SHIP_DETAILS_LIMIT, 0);
+const PREVIOUS_SHIP_DETAILS_URLS = parseURLList(
+  process.env.PREVIOUS_SHIP_DETAILS_URLS ?? process.env.PREVIOUS_SHIP_DETAILS_URL
+);
+const SPVIEWER_REFRESH_MIN_INTERVAL_HOURS = parsePositiveInteger(
+  process.env.SPVIEWER_REFRESH_MIN_INTERVAL_HOURS,
+  23
+);
+const SPVIEWER_REFRESH_MIN_INTERVAL_MS = SPVIEWER_REFRESH_MIN_INTERVAL_HOURS * 60 * 60 * 1000;
 
 const USER_AGENT =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36";
@@ -275,6 +283,8 @@ const SYNTHETIC_SHIP_DETAIL_ALIASES = [
   { name: "Valkyrie Liberator Edition", sourceName: "Valkyrie Liberator" }
 ];
 
+let previousShipDetailSnapshotPromise = null;
+
 async function main() {
   console.log(`Fetching vehicle list from ${LIST_URL}`);
   const listHTML = await fetchText(LIST_URL);
@@ -340,6 +350,25 @@ async function buildShipDetails(listHTML, generatedAt) {
     console.log(`SHIP_DETAILS_LIMIT=${SHIP_DETAILS_LIMIT}; building ${entriesToBuild.length} entries`);
   }
 
+  const previousSnapshot = await loadPreviousShipDetailSnapshot();
+  const refreshThrottleReason = spviewerRefreshThrottleReason(previousSnapshot, generatedAt);
+
+  if (refreshThrottleReason) {
+    console.warn(`${refreshThrottleReason}; reusing previous detail snapshot where possible.`);
+    const fallback = buildFallbackShipDetailsFromSnapshot(
+      entriesToBuild,
+      previousSnapshot,
+      refreshThrottleReason
+    );
+
+    return {
+      ships: appendSyntheticShipDetailAliases(fallback.ships),
+      spviewerLastSuccessfulUpdateAt: fallback.lastSuccessfulUpdateAt,
+      usedSpviewerFallback: true,
+      spviewerFallbackReason: refreshThrottleReason
+    };
+  }
+
   try {
     const scrapedShips = await buildSpviewerShipDetails(entriesToBuild);
     const ships = await fillUnavailableSpviewerDetailsFromPreviousSnapshot(scrapedShips);
@@ -372,6 +401,33 @@ async function buildShipDetails(listHTML, generatedAt) {
   }
 }
 
+function spviewerRefreshThrottleReason(previousSnapshot, generatedAt) {
+  if (!previousSnapshot.ships.length || !previousSnapshot.lastSuccessfulUpdateAt) {
+    return null;
+  }
+
+  const lastSuccessfulUpdateTime = Date.parse(previousSnapshot.lastSuccessfulUpdateAt);
+  const currentUpdateTime = Date.parse(generatedAt);
+
+  if (!Number.isFinite(lastSuccessfulUpdateTime) || !Number.isFinite(currentUpdateTime)) {
+    return null;
+  }
+
+  const elapsedMs = currentUpdateTime - lastSuccessfulUpdateTime;
+  if (elapsedMs >= SPVIEWER_REFRESH_MIN_INTERVAL_MS) {
+    return null;
+  }
+
+  const nextAllowedAt = new Date(
+    lastSuccessfulUpdateTime + SPVIEWER_REFRESH_MIN_INTERVAL_MS
+  ).toISOString();
+  return (
+    "SPViewer refresh skipped because last successful update at " +
+    `${previousSnapshot.lastSuccessfulUpdateAt} is less than ` +
+    `${SPVIEWER_REFRESH_MIN_INTERVAL_HOURS} hours old; next refresh allowed at ${nextAllowedAt}`
+  );
+}
+
 function hasUsableSpviewerDetail(ship) {
   return !ship.unavailableReason;
 }
@@ -382,6 +438,10 @@ function minimumUsableSpviewerDetailCount(entryCount) {
 
 async function buildFallbackShipDetailsFromPreviousSnapshot(entries, reason) {
   const previousSnapshot = await loadPreviousShipDetailSnapshot();
+  return buildFallbackShipDetailsFromSnapshot(entries, previousSnapshot, reason);
+}
+
+function buildFallbackShipDetailsFromSnapshot(entries, previousSnapshot, reason) {
   const previousByName = new Map(previousSnapshot.ships.map((ship) => [ship.name, ship]));
 
   if (!previousByName.size) {
@@ -417,25 +477,82 @@ async function buildFallbackShipDetailsFromPreviousSnapshot(entries, reason) {
 }
 
 async function loadPreviousShipDetailSnapshot() {
-  try {
-    const raw = await readFile(outputPath, "utf8");
-    const payload = JSON.parse(raw);
-    const ships = Array.isArray(payload.ships) ? payload.ships : [];
+  if (!previousShipDetailSnapshotPromise) {
+    previousShipDetailSnapshotPromise = loadPreviousShipDetailSnapshotUncached();
+  }
 
-    return {
-      generatedAt: typeof payload.generatedAt === "string" ? payload.generatedAt : null,
-      lastSuccessfulUpdateAt: detailSourceLastSuccessfulUpdateAt(payload),
-      ships
-    };
+  return previousShipDetailSnapshotPromise;
+}
+
+async function loadPreviousShipDetailSnapshotUncached() {
+  for (const url of PREVIOUS_SHIP_DETAILS_URLS) {
+    const deployedSnapshot = await loadPreviousShipDetailSnapshotFromURL(url);
+    if (deployedSnapshot) {
+      return deployedSnapshot;
+    }
+  }
+
+  return loadPreviousShipDetailSnapshotFromFile(outputPath);
+}
+
+async function loadPreviousShipDetailSnapshotFromURL(url) {
+  try {
+    const response = await fetch(url, {
+      cache: "no-store",
+      headers: {
+        "user-agent": USER_AGENT,
+        accept: "application/json"
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    const payload = JSON.parse(await response.text());
+    const snapshot = previousShipDetailSnapshotFromPayload(payload);
+
+    if (!snapshot.ships.length) {
+      throw new Error("snapshot did not contain any ships");
+    }
+
+    console.log(`Loaded previous ship detail snapshot from ${url}`);
+    return snapshot;
   } catch (error) {
     const reason = error instanceof Error ? error.message : String(error);
-    console.warn(`Could not read previous ship detail snapshot: ${reason}`);
-    return {
-      generatedAt: null,
-      lastSuccessfulUpdateAt: null,
-      ships: []
-    };
+    console.warn(`Could not read previous ship detail snapshot from ${url}: ${reason}`);
+    return null;
   }
+}
+
+async function loadPreviousShipDetailSnapshotFromFile(filePath) {
+  try {
+    const raw = await readFile(filePath, "utf8");
+    const payload = JSON.parse(raw);
+    return previousShipDetailSnapshotFromPayload(payload);
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    console.warn(`Could not read previous ship detail snapshot from ${filePath}: ${reason}`);
+    return emptyPreviousShipDetailSnapshot();
+  }
+}
+
+function previousShipDetailSnapshotFromPayload(payload) {
+  const ships = Array.isArray(payload.ships) ? payload.ships : [];
+
+  return {
+    generatedAt: typeof payload.generatedAt === "string" ? payload.generatedAt : null,
+    lastSuccessfulUpdateAt: detailSourceLastSuccessfulUpdateAt(payload),
+    ships
+  };
+}
+
+function emptyPreviousShipDetailSnapshot() {
+  return {
+    generatedAt: null,
+    lastSuccessfulUpdateAt: null,
+    ships: []
+  };
 }
 
 function detailSourceLastSuccessfulUpdateAt(payload) {
@@ -1381,6 +1498,13 @@ async function fetchText(url) {
 function parsePositiveInteger(value, fallback) {
   const parsed = Number.parseInt(value ?? "", 10);
   return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+}
+
+function parseURLList(value) {
+  return (value ?? "")
+    .split(",")
+    .map((url) => url.trim())
+    .filter(Boolean);
 }
 
 async function asyncPool(limit, items, mapper) {
