@@ -13,6 +13,20 @@
       ],
       "storeUrl": "https://robertsspaceindustries.com/pledge/ships/gladius/Gladius",
       "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/99a752429ba21a9f1652b65de7d23ed4c4c47ea737b4bc624fb7a727e81be439.webp"
+    },
+    {
+      "id": "ptv-buggy-standalone",
+      "name": "PTV Buggy",
+      "manufacturer": "Greycat Industrial",
+      "priceUsd": 15,
+      "availabilitySlots": [
+        {
+          "startsAt": "2026-05-01T00:00:00Z",
+          "endsAt": "2026-12-31T23:59:59Z"
+        }
+      ],
+      "storeUrl": "https://robertsspaceindustries.com/pledge/ships/ptv/PTV",
+      "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/c02f976fa9c2533a1f579118fac6196714fde394aa090fddf673f688b8590c20.webp"
     }
   ]
 }
