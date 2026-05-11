@@ -27,6 +27,190 @@
       ],
       "storeUrl": "https://robertsspaceindustries.com/pledge/ships/ptv/PTV",
       "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/c02f976fa9c2533a1f579118fac6196714fde394aa090fddf673f688b8590c20.webp"
+    },
+    {
+      "id": "drake-kraken-standalone",
+      "name": "Kraken",
+      "manufacturer": "Drake Interplanetary",
+      "priceUsd": 1650,
+      "availabilitySlots": [
+        {
+          "startsAt": "2026-05-14T16:00:00Z",
+          "endsAt": "2026-05-14T16:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-14T12:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-14T20:00:00Z",
+          "endsAt": "2026-05-14T20:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-14T16:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-15T00:00:00Z",
+          "endsAt": "2026-05-15T00:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-14T20:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-15T04:00:00Z",
+          "endsAt": "2026-05-15T04:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-15T00:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-15T08:00:00Z",
+          "endsAt": "2026-05-15T08:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-15T04:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-15T12:00:00Z",
+          "endsAt": "2026-05-15T12:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-15T08:00:00-04:00"
+        }
+      ],
+      "storeUrl": "https://robertsspaceindustries.com/pledge/ships/drake-kraken/Kraken",
+      "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/6c0a982fc0591d9e1cdace2c233f258aec427235a2ba4fdcf9dfbae1af1ddd88.webp"
+    },
+    {
+      "id": "drake-kraken-privateer-standalone",
+      "name": "Kraken Privateer",
+      "manufacturer": "Drake Interplanetary",
+      "priceUsd": 2000,
+      "availabilitySlots": [
+        {
+          "startsAt": "2026-05-14T16:00:00Z",
+          "endsAt": "2026-05-14T16:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-14T12:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-14T20:00:00Z",
+          "endsAt": "2026-05-14T20:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-14T16:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-15T00:00:00Z",
+          "endsAt": "2026-05-15T00:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-14T20:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-15T04:00:00Z",
+          "endsAt": "2026-05-15T04:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-15T00:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-15T08:00:00Z",
+          "endsAt": "2026-05-15T08:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-15T04:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-15T12:00:00Z",
+          "endsAt": "2026-05-15T12:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-15T08:00:00-04:00"
+        }
+      ],
+      "storeUrl": "https://robertsspaceindustries.com/pledge/ships/drake-kraken/Kraken-Privateer",
+      "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/f293e671baace83aeeeadd4899310666fea0c7c0146c0405c6be79ad73ae8027.webp"
+    },
+    {
+      "id": "aegis-idris-p-standalone",
+      "name": "Idris-P",
+      "manufacturer": "Aegis Dynamics",
+      "priceUsd": 1900,
+      "availabilitySlots": [
+        {
+          "startsAt": "2026-05-20T16:00:00Z",
+          "endsAt": "2026-05-20T16:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-20T12:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-20T20:00:00Z",
+          "endsAt": "2026-05-20T20:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-20T16:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-21T00:00:00Z",
+          "endsAt": "2026-05-21T00:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-20T20:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-21T04:00:00Z",
+          "endsAt": "2026-05-21T04:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-21T00:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-21T08:00:00Z",
+          "endsAt": "2026-05-21T08:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-21T04:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-21T12:00:00Z",
+          "endsAt": "2026-05-21T12:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-21T08:00:00-04:00"
+        }
+      ],
+      "storeUrl": "https://robertsspaceindustries.com/pledge/ships/aegis-idris/Idris-P",
+      "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/eec2ce3033f776674f39fbead9271521e74f5fae0c555887907502be29de6fb7.webp"
+    },
+    {
+      "id": "aegis-javelin-standalone",
+      "name": "Javelin",
+      "manufacturer": "Aegis Dynamics",
+      "priceUsd": 3000,
+      "availabilitySlots": [
+        {
+          "startsAt": "2026-05-20T16:00:00Z",
+          "endsAt": "2026-05-20T16:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-20T12:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-20T20:00:00Z",
+          "endsAt": "2026-05-20T20:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-20T16:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-21T00:00:00Z",
+          "endsAt": "2026-05-21T00:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-20T20:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-21T04:00:00Z",
+          "endsAt": "2026-05-21T04:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-21T00:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-21T08:00:00Z",
+          "endsAt": "2026-05-21T08:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-21T04:00:00-04:00"
+        },
+        {
+          "startsAt": "2026-05-21T12:00:00Z",
+          "endsAt": "2026-05-21T12:30:00Z",
+          "sourceTimeZone": "America/New_York",
+          "sourceStartsAt": "2026-05-21T08:00:00-04:00"
+        }
+      ],
+      "storeUrl": "https://robertsspaceindustries.com/pledge/ships/aegis-javelin/Javelin",
+      "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/6a45b063da0a5afa85db37a0f47c86817e98744b68f3c748240d1fcc673ea5b5.webp"
     }
   ]
 }
