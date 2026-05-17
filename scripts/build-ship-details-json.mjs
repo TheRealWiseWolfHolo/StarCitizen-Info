@@ -342,6 +342,10 @@ async function buildShipDetails(listHTML, generatedAt) {
 
   console.log(`Parsed ${baseEntries.length} rows from the list page`);
 
+  if (!baseEntries.length) {
+    throw new Error("Parsed 0 pledge vehicle rows from the list page.");
+  }
+
   const entriesToBuild = SHIP_DETAILS_LIMIT > 0
     ? baseEntries.slice(0, SHIP_DETAILS_LIMIT)
     : baseEntries;
@@ -726,10 +730,10 @@ function parseListRow($, row, headerIndex) {
 
   const nameCell = cellHTML("Name");
   const nameLink = nameCell.find("a").first();
-  const rawName = normalizeWhitespace(nameLink.text());
-  const pagePath = nameLink.attr("href")?.trim();
+  const rawName = normalizeWhitespace(nameLink.text()) || cellText("Name");
+  const pagePath = nameLink.attr("href")?.trim() || wikiPagePathForTitle(rawName);
 
-  if (!rawName || !pagePath) {
+  if (!rawName) {
     return null;
   }
 
@@ -1478,6 +1482,11 @@ function parseNullableInteger(value) {
 
 function absoluteURL(pathname) {
   return new URL(pathname, SITE_ORIGIN).toString();
+}
+
+function wikiPagePathForTitle(title) {
+  const normalizedTitle = normalizeWhitespace(title).replace(/ /g, "_");
+  return normalizedTitle ? `/${encodeURIComponent(normalizedTitle)}` : null;
 }
 
 async function fetchText(url) {
