@@ -210,7 +210,7 @@ SHIP_DETAILS_LIMIT=5 SPVIEWER_DETAIL_CONCURRENCY=2 node scripts/build-ship-detai
 ```
 
 The GitHub Actions workflow sets `PREVIOUS_SHIP_DETAILS_URLS` to the current Pages
-`ship-details.json` artifacts so pushes and daily refreshes can reuse the previous
+`ship-details.json` artifacts so pushes and scheduled refreshes can reuse the previous
 run's SPViewer data when `SPVIEWER_REFRESH_MIN_INTERVAL_HOURS` has not elapsed.
 
 That writes the latest output to:
@@ -227,12 +227,13 @@ This repo includes `.github/workflows/publish-ships.yml`, which:
 
 - builds the JSON feed on every push to `main`
 - lets you run it manually with `workflow_dispatch`
-- refreshes the feed once per day at `12:00 UTC`
+- refreshes the feed every 12 hours at `00:00 UTC` and `12:00 UTC`
+- reuses the last successful SPViewer detail snapshot when it is less than 48 hours old, while still refreshing the RSI ship list and store availability on every run
 
-As of April 18, 2026 in `America/New_York`, that is:
+As of May 16, 2026 in `America/New_York`, those scheduled runs are:
 
-- `8:00 AM EDT`
-- `7:00 AM EST` after the fall time change
+- `8:00 PM EDT` and `8:00 AM EDT`
+- `7:00 PM EST` and `7:00 AM EST` after the fall time change
 
 After the first push:
 
