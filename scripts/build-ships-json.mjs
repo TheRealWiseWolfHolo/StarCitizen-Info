@@ -11,10 +11,18 @@ const ORIGIN = "https://robertsspaceindustries.com";
 const GRAPHQL_URL = `${ORIGIN}/graphql`;
 const SOURCE_PAGE_URL =
   `${ORIGIN}/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc`;
+const SHIP_UPGRADE_PAGE_URL = `${ORIGIN}/pledge-store/ship-upgrades`;
+const SHIP_UPGRADE_GRAPHQL_URL = `${ORIGIN}/pledge-store/api/upgrade/v2/graphql`;
 const STORE_AVAILABILITY_SOURCE = {
   name: "Roberts Space Industries pledge ship listing",
   url: SOURCE_PAGE_URL,
   field: "purchasable"
+};
+const STORE_UPGRADE_SOURCE = {
+  name: "Roberts Space Industries ship upgrade app",
+  url: SHIP_UPGRADE_PAGE_URL,
+  graphql: SHIP_UPGRADE_GRAPHQL_URL,
+  field: "ships.skus"
 };
 const PAGES_BASE_URL = "https://therealwisewolfholo.github.io/StarCitizen-Info";
 const PAGE_SIZE = 100;
@@ -196,6 +204,23 @@ fragment RSIShipBaseFragment on RSIShip {
   __typename
 }`;
 
+const SHIP_UPGRADE_QUERY = `query initShipUpgrade {
+  ships {
+    id
+    name
+    msrp
+    skus {
+      id
+      title
+      available
+      price
+      body
+      unlimitedStock
+      availableStock
+    }
+  }
+}`;
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const PROJECT_ROOT = resolve(__dirname, "..");
@@ -277,6 +302,36 @@ function deriveMsrpLabel({ msrpCentsUsd, purchasable }) {
 
 function deriveStoreAvailability(purchasable) {
   return purchasable ? "Available" : "Unavailable";
+}
+
+function normalizeCents(value) {
+  return typeof value === "number" && Number.isFinite(value) ? value : null;
+}
+
+function normalizeInteger(value) {
+  if (typeof value === "number" && Number.isInteger(value)) {
+    return value;
+  }
+
+  if (typeof value === "string") {
+    const parsedValue = Number.parseInt(value, 10);
+    return Number.isInteger(parsedValue) ? parsedValue : null;
+  }
+
+  return null;
+}
+
+function centsToUsd(cents) {
+  return cents === null ? null : cents / 100;
+}
+
+function isWarbondSku(sku) {
+  const haystack = [sku?.title, sku?.body]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  return haystack.includes("warbond");
 }
 
 function normalizeShip(resource) {
@@ -635,10 +690,116 @@ async function fetchAllShips() {
   };
 }
 
+function normalizeStoreUpgradeOffer(ship, sku) {
+  const targetShipID = normalizeInteger(ship?.id);
+  const targetShipName = normalizeShipName(ship?.name ?? null);
+  const targetShipMsrpCentsUsd = normalizeCents(ship?.msrp);
+  const priceCentsUsd = normalizeCents(sku?.price);
+
+  if (
+    targetShipID === null ||
+    !targetShipName ||
+    targetShipMsrpCentsUsd === null ||
+    priceCentsUsd === null ||
+    priceCentsUsd <= 0 ||
+    priceCentsUsd >= targetShipMsrpCentsUsd
+  ) {
+    return null;
+  }
+
+  const savingsCentsUsd = targetShipMsrpCentsUsd - priceCentsUsd;
+  const skuID = normalizeInteger(sku?.id);
+  const fallbackID = `${targetShipID}-${sku?.title ?? "warbond"}-${priceCentsUsd}`
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
+  return {
+    id: skuID === null ? `rsi-upgrade-${fallbackID}` : `rsi-upgrade-sku-${skuID}`,
+    type: "warbond",
+    skuId: skuID,
+    title: sku?.title ?? "Warbond Edition",
+    targetShipId: String(targetShipID),
+    targetShipName,
+    targetShipMsrpCentsUsd,
+    targetShipMsrpUsd: centsToUsd(targetShipMsrpCentsUsd),
+    priceCentsUsd,
+    priceUsd: centsToUsd(priceCentsUsd),
+    savingsCentsUsd,
+    savingsUsd: centsToUsd(savingsCentsUsd),
+    available: sku?.available !== false,
+    unlimitedStock:
+      typeof sku?.unlimitedStock === "boolean" ? sku.unlimitedStock : null,
+    availableStock:
+      typeof sku?.availableStock === "number" ? sku.availableStock : null,
+    source: STORE_UPGRADE_SOURCE
+  };
+}
+
+async function fetchStoreUpgradeOffers() {
+  const response = await fetch(SHIP_UPGRADE_GRAPHQL_URL, {
+    method: "POST",
+    headers: {
+      "Accept": "application/json",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Content-Type": "application/json",
+      "Origin": ORIGIN,
+      "Referer": SHIP_UPGRADE_PAGE_URL,
+      "User-Agent": "Mozilla/5.0"
+    },
+    body: JSON.stringify({
+      operationName: "initShipUpgrade",
+      variables: {},
+      query: SHIP_UPGRADE_QUERY
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error(`RSI ship upgrade GraphQL request failed with HTTP ${response.status}.`);
+  }
+
+  const payload = await response.json();
+
+  if (payload?.errors?.length) {
+    const message = payload.errors
+      .map((entry) => entry?.message ?? "Unknown GraphQL error")
+      .join("; ");
+    throw new Error(`RSI ship upgrade GraphQL returned errors: ${message}`);
+  }
+
+  const ships = payload?.data?.ships;
+  if (!Array.isArray(ships)) {
+    throw new Error("RSI ship upgrade GraphQL response did not contain data.ships.");
+  }
+
+  return ships
+    .flatMap((ship) =>
+      (ship.skus ?? [])
+        .filter((sku) => sku?.available !== false && isWarbondSku(sku))
+        .map((sku) => normalizeStoreUpgradeOffer(ship, sku))
+    )
+    .filter(Boolean)
+    .sort((left, right) => {
+      if (right.savingsCentsUsd !== left.savingsCentsUsd) {
+        return right.savingsCentsUsd - left.savingsCentsUsd;
+      }
+
+      return left.targetShipName.localeCompare(right.targetShipName);
+    });
+}
+
 async function main() {
   await mkdir(dirname(OUTPUT_PATH), { recursive: true });
 
   const { totalCount, ships } = await fetchAllShips();
+  let storeUpgradeOffers = [];
+  let storeUpgradeOfferFetchError = null;
+  try {
+    storeUpgradeOffers = await fetchStoreUpgradeOffers();
+  } catch (error) {
+    storeUpgradeOfferFetchError = error.message;
+    console.warn(`Unable to fetch store upgrade offers: ${error.message}`);
+  }
   const normalizedShips = appendSyntheticShipVariants(
     ships.map(normalizeShip)
   )
@@ -651,7 +812,8 @@ async function main() {
     source: {
       page: SOURCE_PAGE_URL,
       graphql: GRAPHQL_URL,
-      storeAvailability: STORE_AVAILABILITY_SOURCE
+      storeAvailability: STORE_AVAILABILITY_SOURCE,
+      storeUpgrades: STORE_UPGRADE_SOURCE
     },
     query: {
       sortField: "name",
@@ -661,10 +823,13 @@ async function main() {
     count: mirroredOutput.ships.length,
     totalCount,
     syntheticCount,
+    storeUpgradeOfferCount: storeUpgradeOffers.length,
+    ...(storeUpgradeOfferFetchError ? { storeUpgradeOfferFetchError } : {}),
     summary: buildSummary(mirroredOutput.ships),
     manufacturers: buildManufacturerDirectory(
       mirroredOutput.ships.map((ship) => ship.manufacturer)
     ),
+    storeUpgradeOffers,
     ships: mirroredOutput.ships
   };
 

@@ -5,7 +5,7 @@ Public Star Citizen ship data feeds generated from the live RSI pledge ship list
 ## What It Publishes
 
 - `ships.json`
-  - JSON feed your mobile app can fetch directly
+  - JSON feed your mobile app can fetch directly, including current public Warbond CCU offers from the RSI ship upgrade app
 - `ship-details.json`
   - detailed ship metadata that keeps size, crew, status, and pledge availability from the StarCitizen.tools pledge vehicle list while sourcing component and weapon loadouts from SPViewer
 - `limited-ships.json`
@@ -25,6 +25,8 @@ The feed is built from:
   - `https://robertsspaceindustries.com/en/pledge/ships?sale=true&sale=false&sortField=name&sortDirection=asc`
 - source GraphQL endpoint:
   - `https://robertsspaceindustries.com/graphql`
+- source ship upgrade GraphQL endpoint:
+  - `https://robertsspaceindustries.com/pledge-store/api/upgrade/v2/graphql`
 - source ship detail pages:
   - `https://starcitizen.tools/List_of_pledge_vehicles`
 - source component and weapon detail pages:
@@ -35,7 +37,7 @@ The feed is built from:
 - [SPViewer](https://www.spviewer.eu/) provides the ship performance/detail data used by `docs/ship-details.json`.
 - SPViewer-backed fields include `description`, `technicalSections`, `specificationSections`, `componentEntries`, `weaponsUtilityEntries`, `componentSummary`, `weaponsUtilitySummary`, `spviewerId`, `spviewerName`, and `spviewerPageUrl`.
 - StarCitizen.tools provides the pledge vehicle list metadata preserved in `docs/ship-details.json`, including ship names, source page URLs, manufacturer names, size, crew, in-game status, and pledge availability.
-- RSI provides the pledge ship listing, MSRP data, current store availability, production status, and source ship media mirrored by `docs/ships.json`.
+- RSI provides the pledge ship listing, MSRP data, current store availability, public Warbond ship upgrade offers, production status, and source ship media mirrored by `docs/ships.json`.
 
 ## JSON Shape
 
@@ -45,6 +47,7 @@ The feed is built from:
 {
   "generatedAt": "2026-04-18T21:00:00.000Z",
   "count": 250,
+  "storeUpgradeOfferCount": 4,
   "summary": {
     "purchasableCount": 120,
     "unavailableCount": 130
@@ -60,6 +63,25 @@ The feed is built from:
           "fallbackUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/manufacturers/origin-jumpworks/black.png"
         }
       }
+    }
+  ],
+  "storeUpgradeOffers": [
+    {
+      "id": "rsi-upgrade-sku-9001",
+      "type": "warbond",
+      "skuId": 9001,
+      "title": "Warbond Edition",
+      "targetShipId": "56",
+      "targetShipName": "Cutlass Black",
+      "targetShipMsrpCentsUsd": 11000,
+      "targetShipMsrpUsd": 110,
+      "priceCentsUsd": 9500,
+      "priceUsd": 95,
+      "savingsCentsUsd": 1500,
+      "savingsUsd": 15,
+      "available": true,
+      "unlimitedStock": true,
+      "availableStock": 0
     }
   ],
   "ships": [
@@ -194,6 +216,7 @@ Notes for `ship-details.json`:
   - `fallbackUrl` for GitHub Pages
   - optional `onLightBackground`, `onDarkBackground`, and per-variant addresses when multiple logo treatments are available
 - Ship entries include `manufacturerSlug` so clients can join a ship to the top-level manufacturer logo directory without reparsing the display name.
+- `storeUpgradeOffers` contains target-level Warbond upgrade offers from the RSI ship upgrade app. Clients can combine each offer with any lower-MSRP source ship where `source.msrpUsd < priceUsd`; the CCU purchase price is `priceUsd - source.msrpUsd`, the direct value is `targetShipMsrpUsd - source.msrpUsd`, and the savings are `savingsUsd`.
 
 ## Local Usage
 
