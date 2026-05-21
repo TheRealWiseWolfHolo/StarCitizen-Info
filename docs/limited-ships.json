@@ -71,7 +71,9 @@
           "sourceStartsAt": "2026-05-15T08:00:00-04:00"
         }
       ],
-      "storeUrl": "https://robertsspaceindustries.com/pledge/ships/drake-kraken/Kraken",
+      "storeUrl": "https://robertsspaceindustries.com/pledge/Standalone-Ships/Kraken",
+      "warbondPriceUsd": 1400,
+      "warbondStoreUrl": "https://robertsspaceindustries.com/pledge/Standalone-Ships/Kraken-Warbond",
       "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/6c0a982fc0591d9e1cdace2c233f258aec427235a2ba4fdcf9dfbae1af1ddd88.webp"
     },
     {
@@ -117,7 +119,9 @@
           "sourceStartsAt": "2026-05-15T08:00:00-04:00"
         }
       ],
-      "storeUrl": "https://robertsspaceindustries.com/pledge/ships/drake-kraken/Kraken-Privateer",
+      "storeUrl": "https://robertsspaceindustries.com/pledge/Standalone-Ships/Kraken-Privateer",
+      "warbondPriceUsd": 1700,
+      "warbondStoreUrl": "https://robertsspaceindustries.com/pledge/Standalone-Ships/Kraken-Privateer-Warbond",
       "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/f293e671baace83aeeeadd4899310666fea0c7c0146c0405c6be79ad73ae8027.webp"
     },
     {
@@ -163,7 +167,9 @@
           "sourceStartsAt": "2026-05-21T08:00:00-04:00"
         }
       ],
-      "storeUrl": "https://robertsspaceindustries.com/pledge/ships/aegis-idris/Idris-P",
+      "storeUrl": "https://robertsspaceindustries.com/pledge/Standalone-Ships/Idris-P",
+      "warbondPriceUsd": 1500,
+      "warbondStoreUrl": "https://robertsspaceindustries.com/pledge/Standalone-Ships/Idris-P-Warbond",
       "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/eec2ce3033f776674f39fbead9271521e74f5fae0c555887907502be29de6fb7.webp"
     },
     {
@@ -209,7 +215,9 @@
           "sourceStartsAt": "2026-05-21T08:00:00-04:00"
         }
       ],
-      "storeUrl": "https://robertsspaceindustries.com/pledge/ships/aegis-javelin/Javelin",
+      "storeUrl": "https://robertsspaceindustries.com/pledge/Standalone-Ships/Javelin",
+      "warbondPriceUsd": 2700,
+      "warbondStoreUrl": "https://robertsspaceindustries.com/pledge/Standalone-Ships/Javelin-Warbond",
       "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/6a45b063da0a5afa85db37a0f47c86817e98744b68f3c748240d1fcc673ea5b5.webp"
     }
   ]
