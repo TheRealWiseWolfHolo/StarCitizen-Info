@@ -333,7 +333,7 @@ async function buildShipDetails(listHTML, generatedAt) {
     .map((_, header) => normalizeWhitespace($(header).text()))
     .get();
 
-  const headerIndex = Object.fromEntries(headers.map((header, index) => [header, index]));
+  const headerIndex = buildHeaderIndex(headers);
 
   const rows = table.find("tbody tr").toArray();
   const baseEntries = rows
@@ -725,8 +725,12 @@ function parseListRow($, row, headerIndex) {
     return null;
   }
 
-  const cellText = (header) => normalizeWhitespace($(cells[headerIndex[header]]).text());
-  const cellHTML = (header) => $(cells[headerIndex[header]]);
+  const cellForHeader = (header) => {
+    const index = headerIndex[header];
+    return Number.isInteger(index) ? cells[index] : null;
+  };
+  const cellText = (header) => normalizeWhitespace($(cellForHeader(header)).text());
+  const cellHTML = (header) => $(cellForHeader(header));
 
   const nameCell = cellHTML("Name");
   const nameLink = nameCell.find("a").first();
@@ -771,6 +775,19 @@ function parseListRow($, row, headerIndex) {
     maxCrew: parseNullableInteger(cellText("Maximum crew")),
     technicalSpecs
   };
+}
+
+function buildHeaderIndex(headers) {
+  const headerIndex = {};
+
+  headers.forEach((header, index) => {
+    const normalizedHeader = header || (index === 0 ? "Name" : "");
+    if (normalizedHeader && headerIndex[normalizedHeader] === undefined) {
+      headerIndex[normalizedHeader] = index;
+    }
+  });
+
+  return headerIndex;
 }
 
 async function buildSpviewerShipDetails(entries) {
