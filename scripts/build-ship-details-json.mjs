@@ -16,7 +16,12 @@ const shipCatalogPath = path.join(docsDir, "ships.json");
 
 const LIST_URL = "https://starcitizen.tools/List_of_pledge_vehicles";
 const SITE_ORIGIN = "https://starcitizen.tools";
+const LIST_API_URL = `${SITE_ORIGIN}/api.php`;
 const SPVIEWER_ORIGIN = "https://www.spviewer.eu";
+const PLEDGE_VEHICLE_API_LIMIT = parsePositiveInteger(
+  process.env.PLEDGE_VEHICLE_API_LIMIT,
+  500
+);
 const SPVIEWER_DETAIL_CONCURRENCY = parsePositiveInteger(
   process.env.SPVIEWER_DETAIL_CONCURRENCY,
   8
@@ -283,13 +288,42 @@ const SYNTHETIC_SHIP_DETAIL_ALIASES = [
   { name: "Valkyrie Liberator Edition", sourceName: "Valkyrie Liberator" }
 ];
 
+const PLEDGE_VEHICLE_ASK_CONDITIONS = [
+  "[[:+]]",
+  "[[Category:Pledge ships||Pledge vehicles]]"
+];
+
+const PLEDGE_VEHICLE_ASK_PRINTOUTS = [
+  "?Page Image",
+  "?Manufacturer",
+  "?Career",
+  "?Role",
+  "?Ship matrix size=Size",
+  "?Production state",
+  "?Pledge availability",
+  "?Entity length=Length",
+  "?Entity width=Width",
+  "?Entity height=Height",
+  "?Mass",
+  "?Minimum crew=Min crew",
+  "?Maximum crew=Max crew",
+  "?Vehicle inventory=Stowage",
+  "?Cargo capacity=Cargo",
+  "?SCM speed",
+  "?Maximum speed=Max speed",
+  "?Roll rate=Roll",
+  "?Pitch rate=Pitch",
+  "?Yaw rate=Yaw",
+  "?Concept announcement date=Concept date"
+];
+
 let previousShipDetailSnapshotPromise = null;
 
 async function main() {
-  console.log(`Fetching vehicle list from ${LIST_URL}`);
-  const listHTML = await fetchText(LIST_URL);
+  console.log(`Fetching vehicle list from ${LIST_API_URL}`);
+  const baseEntries = await fetchPledgeVehicleEntries();
   const generatedAt = new Date().toISOString();
-  const details = await buildShipDetails(listHTML, generatedAt);
+  const details = await buildShipDetails(baseEntries, generatedAt);
   const storeAvailabilityIndex = await loadStoreAvailabilityIndex();
   const ships = annotateShipsWithStoreAvailability(
     applyShipDetailDisplayMetadata(details.ships),
@@ -299,6 +333,7 @@ async function main() {
   const payload = {
     generatedAt,
     sourcePageUrl: LIST_URL,
+    sourceApiUrl: LIST_API_URL,
     detailSourceUrl: SPVIEWER_ORIGIN,
     storeAvailabilitySource: storeAvailabilityIndex.source,
     detailSource: {
@@ -318,32 +353,9 @@ async function main() {
   console.log(`Wrote ${ships.length} ship detail entries to ${outputPath}`);
 }
 
-async function buildShipDetails(listHTML, generatedAt) {
-  const $ = cheerio.load(listHTML);
-  const table = $("table.srf-datatable").first();
-
-  if (!table.length) {
-    throw new Error("Could not find the pledge vehicle table on starcitizen.tools.");
-  }
-
-  const headers = table
-    .find("tr")
-    .first()
-    .find("th")
-    .map((_, header) => normalizeWhitespace($(header).text()))
-    .get();
-
-  const headerIndex = buildHeaderIndex(headers);
-
-  const rows = table.find("tbody tr").toArray();
-  const baseEntries = rows
-    .map((row) => parseListRow($, row, headerIndex))
-    .filter(Boolean);
-
-  console.log(`Parsed ${baseEntries.length} rows from the list page`);
-
+async function buildShipDetails(baseEntries, generatedAt) {
   if (!baseEntries.length) {
-    throw new Error("Parsed 0 pledge vehicle rows from the list page.");
+    throw new Error("Parsed 0 pledge vehicle rows from StarCitizen.tools.");
   }
 
   const entriesToBuild = SHIP_DETAILS_LIMIT > 0
@@ -403,6 +415,217 @@ async function buildShipDetails(listHTML, generatedAt) {
       spviewerFallbackReason: reason
     };
   }
+}
+
+async function fetchPledgeVehicleEntries() {
+  try {
+    const entries = await fetchPledgeVehicleEntriesFromSemanticApi();
+    if (entries.length) {
+      return entries;
+    }
+
+    throw new Error("Semantic MediaWiki API returned no pledge vehicles");
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    console.warn(
+      `StarCitizen.tools API fetch failed; falling back to list page HTML parsing: ${reason}`
+    );
+    const listHTML = await fetchText(LIST_URL);
+    return parsePledgeVehicleEntriesFromHTML(listHTML);
+  }
+}
+
+async function fetchPledgeVehicleEntriesFromSemanticApi() {
+  const results = [];
+  let offset = 0;
+
+  while (true) {
+    const url = new URL(LIST_API_URL);
+    url.searchParams.set("action", "ask");
+    url.searchParams.set("format", "json");
+    url.searchParams.set(
+      "query",
+      buildPledgeVehicleAskQuery({
+        limit: PLEDGE_VEHICLE_API_LIMIT,
+        offset
+      })
+    );
+
+    const payload = await fetchJSON(url.toString());
+    const pageResults = Object.values(payload?.query?.results ?? {});
+    results.push(...pageResults);
+
+    const nextOffset = Number(payload?.["query-continue-offset"]);
+    if (!Number.isFinite(nextOffset) || nextOffset <= offset) {
+      break;
+    }
+
+    offset = nextOffset;
+  }
+
+  const seenNames = new Set();
+  const entries = results
+    .map(parseSemanticPledgeVehicleResult)
+    .filter(Boolean)
+    .filter((entry) => {
+      if (seenNames.has(entry.name)) {
+        return false;
+      }
+
+      seenNames.add(entry.name);
+      return true;
+    })
+    .sort((left, right) => left.name.localeCompare(right.name));
+
+  console.log(`Parsed ${entries.length} rows from the StarCitizen.tools API`);
+  return entries;
+}
+
+function buildPledgeVehicleAskQuery({ limit, offset }) {
+  return [
+    ...PLEDGE_VEHICLE_ASK_CONDITIONS,
+    ...PLEDGE_VEHICLE_ASK_PRINTOUTS,
+    `limit=${limit}`,
+    `offset=${offset}`
+  ].join("|");
+}
+
+function parseSemanticPledgeVehicleResult(result) {
+  const printouts = result?.printouts ?? {};
+  const rawName = normalizeWhitespace(result?.fulltext);
+
+  if (!rawName) {
+    return null;
+  }
+
+  const pageUrl = typeof result?.fullurl === "string"
+    ? result.fullurl
+    : absoluteURL(wikiPagePathForTitle(rawName));
+  const pagePath = wikiPagePathFromURL(pageUrl, rawName);
+  const manufacturerName = semanticPrintoutText(printouts, "Manufacturer") || null;
+  const manufacturer = resolveManufacturer(manufacturerName);
+
+  const technicalSpecs = compactSpecs([
+    spec("Length", semanticPrintoutText(printouts, "Length")),
+    spec("Width", semanticPrintoutText(printouts, "Width")),
+    spec("Height", semanticPrintoutText(printouts, "Height")),
+    spec("Mass", semanticPrintoutText(printouts, "Mass")),
+    spec("Minimum Crew", semanticPrintoutText(printouts, "Min crew")),
+    spec("Maximum Crew", semanticPrintoutText(printouts, "Max crew")),
+    spec("Vehicle Inventory", semanticPrintoutText(printouts, "Stowage")),
+    spec("Cargo Capacity", semanticPrintoutText(printouts, "Cargo")),
+    spec("SCM Speed", semanticPrintoutText(printouts, "SCM speed")),
+    spec("Maximum Speed", semanticPrintoutText(printouts, "Max speed")),
+    spec("Roll Rate", semanticPrintoutText(printouts, "Roll")),
+    spec("Pitch Rate", semanticPrintoutText(printouts, "Pitch")),
+    spec("Yaw Rate", semanticPrintoutText(printouts, "Yaw")),
+    spec("Concept Announcement Date", semanticPrintoutText(printouts, "Concept date"))
+  ]);
+
+  return {
+    name: rawName,
+    pagePath,
+    pageUrl,
+    manufacturer: manufacturerName,
+    manufacturerSlug: manufacturer.slug,
+    career: semanticPrintoutText(printouts, "Career") || null,
+    role: semanticPrintoutText(printouts, "Role") || null,
+    size: semanticPrintoutText(printouts, "Size") || null,
+    inGameStatus: semanticPrintoutText(printouts, "Production state") || null,
+    pledgeAvailability: semanticPrintoutText(printouts, "Pledge availability") || null,
+    minCrew: parseNullableInteger(semanticPrintoutText(printouts, "Min crew")),
+    maxCrew: parseNullableInteger(semanticPrintoutText(printouts, "Max crew")),
+    technicalSpecs
+  };
+}
+
+function semanticPrintoutText(printouts, label) {
+  return (printouts?.[label] ?? [])
+    .map(formatSemanticPrintoutValue)
+    .filter(Boolean)
+    .join(", ");
+}
+
+function formatSemanticPrintoutValue(value) {
+  if (typeof value === "string") {
+    return normalizeWhitespace(value);
+  }
+
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return formatSemanticNumber(value);
+  }
+
+  if (!value || typeof value !== "object") {
+    return "";
+  }
+
+  if (typeof value.timestamp === "string" || typeof value.timestamp === "number") {
+    const timestamp = Number(value.timestamp);
+    if (Number.isFinite(timestamp)) {
+      return new Date(timestamp * 1000).toISOString().slice(0, 10);
+    }
+  }
+
+  if (typeof value.value === "number" && Number.isFinite(value.value)) {
+    return [formatSemanticNumber(value.value), normalizeWhitespace(value.unit)]
+      .filter(Boolean)
+      .join(" ");
+  }
+
+  if (typeof value.fulltext === "string") {
+    return normalizeWhitespace(value.fulltext);
+  }
+
+  if (typeof value.raw === "string") {
+    return normalizeWhitespace(value.raw);
+  }
+
+  return "";
+}
+
+function formatSemanticNumber(value) {
+  return new Intl.NumberFormat("en-US", {
+    maximumFractionDigits: 2
+  }).format(value);
+}
+
+function wikiPagePathFromURL(pageUrl, fallbackName) {
+  try {
+    return new URL(pageUrl).pathname;
+  } catch {
+    return wikiPagePathForTitle(fallbackName);
+  }
+}
+
+function parsePledgeVehicleEntriesFromHTML(listHTML) {
+  const $ = cheerio.load(listHTML);
+  const table = $("table.srf-datatable").first();
+
+  if (!table.length) {
+    throw new Error("Could not find the pledge vehicle table on starcitizen.tools.");
+  }
+
+  const headers = table
+    .find("tr")
+    .first()
+    .find("th")
+    .map((_, header) => normalizeWhitespace($(header).text()))
+    .get();
+
+  const headerIndex = buildHeaderIndex(headers);
+
+  const rows = table.find("tbody tr").toArray();
+  const baseEntries = rows
+    .map((row) => parseListRow($, row, headerIndex))
+    .filter(Boolean);
+
+  console.log(`Parsed ${baseEntries.length} rows from the list page HTML`);
+
+  if (!baseEntries.length) {
+    throw new Error("Parsed 0 pledge vehicle rows from the list page.");
+  }
+
+  return baseEntries;
 }
 
 function spviewerRefreshThrottleReason(previousSnapshot, generatedAt) {
@@ -1519,6 +1742,21 @@ async function fetchText(url) {
   }
 
   return response.text();
+}
+
+async function fetchJSON(url) {
+  const response = await fetch(url, {
+    headers: {
+      "user-agent": USER_AGENT,
+      accept: "application/json"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status} while loading ${url}`);
+  }
+
+  return response.json();
 }
 
 function parsePositiveInteger(value, fallback) {

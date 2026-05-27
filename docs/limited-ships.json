@@ -29,6 +29,20 @@
       "imageUrl": "https://therealwisewolfholo.github.io/StarCitizen-Info/media/ships/c02f976fa9c2533a1f579118fac6196714fde394aa090fddf673f688b8590c20.webp"
     },
     {
+      "id": "anvil-odin-standalone",
+      "name": "Odin",
+      "manufacturer": "Anvil Aerospace",
+      "priceUsd": 5900,
+      "availabilitySlots": [
+        {
+          "startsAt": "2026-05-24T16:00:00Z",
+          "endsAt": "2026-12-31T23:59:59Z"
+        }
+      ],
+      "storeUrl": "https://robertsspaceindustries.com/en/pledge/ships/odin/Odin",
+      "imageUrl": "https://robertsspaceindustries.com/i/8249f977d844d3f51435259d4e4c4cb7b874c547/resize(1820,1024,cover,ADdPNihJzmPbNuTnFsH1DqUeqBRpXdSXVVtgJTyDDgscGKrzJuoFjResivtfLYvFyzwfYeFzw5w3FpCeXVUZoNytJ)/source.webp"
+    },
+    {
       "id": "drake-kraken-standalone",
       "name": "Kraken",
       "manufacturer": "Drake Interplanetary",
