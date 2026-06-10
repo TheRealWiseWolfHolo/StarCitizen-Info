@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "prebuild": "playwright install chromium",
-    "build": "node scripts/build-ships-json.mjs && node scripts/build-ship-details-json.mjs"
+    "build": "node scripts/build-ships-json.mjs && node scripts/build-ship-details-json.mjs && node scripts/build-item-translations-json.mjs"
   },
   "dependencies": {
     "cheerio": "^1.2.0",
