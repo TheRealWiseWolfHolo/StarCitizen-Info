@@ -10,6 +10,8 @@ Public Star Citizen ship data feeds generated from the live RSI pledge ship list
   - detailed ship metadata that keeps size, crew, status, and pledge availability from the StarCitizen.tools pledge vehicle list while sourcing component and weapon loadouts from SPViewer
 - `limited-ships.json`
   - alpha feed of timed limited-ship purchase targets for Hangar Express cart automation
+- `item-translations/zh-Hans.json`
+  - manually curated Simplified Chinese item-name dictionary for strict on-device Hangar display translation
 - `resource-manifest.json`
   - map of mirrored ship media published by the feed
 - `index.html`
@@ -31,6 +33,8 @@ The feed is built from:
   - `https://starcitizen.tools/List_of_pledge_vehicles`
 - source component and weapon detail pages:
   - `https://www.spviewer.eu/`
+- curated item translation source:
+  - `data/item-translations/zh-Hans.json`
 
 ## Credits And Data Attribution
 
@@ -38,6 +42,7 @@ The feed is built from:
 - SPViewer-backed fields include `description`, `technicalSections`, `specificationSections`, `componentEntries`, `weaponsUtilityEntries`, `componentSummary`, `weaponsUtilitySummary`, `spviewerId`, `spviewerName`, and `spviewerPageUrl`.
 - StarCitizen.tools provides the pledge vehicle list metadata preserved in `docs/ship-details.json`, including ship names, source page URLs, manufacturer names, size, crew, in-game status, and pledge availability.
 - RSI provides the pledge ship listing, MSRP data, current store availability, public Warbond ship upgrade offers, production status, and source ship media mirrored by `docs/ships.json`.
+- Item translations are manually curated in this repository and are not machine translated during the build.
 
 ## JSON Shape
 
@@ -202,6 +207,39 @@ The feed is built from:
 }
 ```
 
+`docs/item-translations/zh-Hans.json` publishes strict display translations for Hangar item names:
+
+```json
+{
+  "generatedAt": "2026-06-10T00:00:00.000Z",
+  "locale": "zh-Hans",
+  "version": 1,
+  "count": 2,
+  "entries": [
+    {
+      "source": "F8C Lightning",
+      "translation": "F8C 闪电",
+      "kind": "ship",
+      "aliases": ["Anvil F8C Lightning"]
+    },
+    {
+      "source": "Package - Praetorian Pack",
+      "translation": "组合包 - 禁卫包",
+      "kind": "package",
+      "aliases": []
+    }
+  ]
+}
+```
+
+Notes for `item-translations/zh-Hans.json`:
+
+- `source` is the exact English display text clients should match after trimming, case-folding, and whitespace normalization.
+- `aliases` are alternate exact English keys that resolve to the same `translation`.
+- `kind` is an advisory grouping label such as `ship`, `package`, `upgrade`, `flair`, or `perk`.
+- The build rejects empty values, invalid locales, non-positive versions, empty entry lists, and duplicate `source` or alias keys.
+- Clients should leave unmatched item text unchanged.
+
 Notes for `ship-details.json`:
 
 - `technicalSpecs`, `size`, `minCrew`, and `maxCrew` come from the pledge vehicle list.
@@ -240,6 +278,7 @@ That writes the latest output to:
 
 - `docs/ships.json`
 - `docs/ship-details.json`
+- `docs/item-translations/zh-Hans.json`
 - `docs/resource-manifest.json`
 - `docs/media/ships/*`
 - `docs/media/manufacturers/*`
@@ -269,6 +308,7 @@ Your public URLs should then be:
 
 - `https://therealwisewolfholo.github.io/StarCitizen-Info/`
 - `https://therealwisewolfholo.github.io/StarCitizen-Info/ships.json`
+- `https://therealwisewolfholo.github.io/StarCitizen-Info/item-translations/zh-Hans.json`
 
 ## App Consumption
 
@@ -305,4 +345,5 @@ let feed = try JSONDecoder().decode(ShipFeed.self, from: data)
 - Manufacturer logos are published as static PNG assets under `docs/media/manufacturers/*`. When a manufacturer logo is available from the supplied fan kit, the feeds expose both relative paths and absolute URLs for the primary and fallback hosts.
 - The workflow does not commit generated JSON back into the repo on each daily run.
   - GitHub Pages serves the freshly generated artifact from the workflow instead.
+- Hangar item translations are manually curated source data copied into `docs/item-translations/*` by the build, so apps can fetch the dictionary without bundling it.
 - If you ever want Cloudflare Pages instead, you can keep the same `docs` output and point Cloudflare at this repo.
