@@ -215,6 +215,7 @@ The feed is built from:
   "locale": "zh-Hans",
   "version": 1,
   "count": 2,
+  "sourceCount": 267,
   "entries": [
     {
       "source": "F8C Lightning",
@@ -237,7 +238,9 @@ Notes for `item-translations/zh-Hans.json`:
 - `source` is the exact English display text clients should match after trimming, case-folding, and whitespace normalization.
 - `aliases` are alternate exact English keys that resolve to the same `translation`.
 - `kind` is an advisory grouping label such as `ship`, `package`, `upgrade`, `flair`, or `perk`.
-- The build rejects empty values, invalid locales, non-positive versions, empty entry lists, and duplicate `source` or alias keys.
+- The source file may include blank `translation` values as draft placeholders.
+- The build publishes only entries with non-empty translations and records the full draft size in `sourceCount`.
+- The build rejects empty `source`/`kind` values, invalid locales, non-positive versions, empty entry lists, and duplicate `source` or alias keys.
 - Clients should leave unmatched item text unchanged.
 
 Notes for `ship-details.json`:
@@ -345,5 +348,5 @@ let feed = try JSONDecoder().decode(ShipFeed.self, from: data)
 - Manufacturer logos are published as static PNG assets under `docs/media/manufacturers/*`. When a manufacturer logo is available from the supplied fan kit, the feeds expose both relative paths and absolute URLs for the primary and fallback hosts.
 - The workflow does not commit generated JSON back into the repo on each daily run.
   - GitHub Pages serves the freshly generated artifact from the workflow instead.
-- Hangar item translations are manually curated source data copied into `docs/item-translations/*` by the build, so apps can fetch the dictionary without bundling it.
+- Hangar item translations are manually curated source data copied into `docs/item-translations/*` by the build, so apps can fetch the dictionary without bundling it. Blank draft rows remain in `data/item-translations/*` until a translation is filled in.
 - If you ever want Cloudflare Pages instead, you can keep the same `docs` output and point Cloudflare at this repo.

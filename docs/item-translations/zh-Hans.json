@@ -1,14 +1,16 @@
 {
-  "generatedAt": "2026-06-10T23:36:17.127Z",
+  "generatedAt": "2026-06-11T00:10:02.838Z",
   "locale": "zh-Hans",
   "version": 1,
   "count": 5,
+  "sourceCount": 267,
   "entries": [
     {
       "source": "F8C Lightning",
       "translation": "F8C 闪电",
       "kind": "ship",
       "aliases": [
+        "Anvil Aerospace F8C Lightning",
         "Anvil F8C Lightning"
       ]
     },
@@ -16,7 +18,10 @@
       "source": "F8C Lightning Executive Edition",
       "translation": "F8C 闪电 行政版",
       "kind": "ship",
-      "aliases": []
+      "aliases": [
+        "Anvil Aerospace F8C Lightning Executive Edition",
+        "Anvil F8C Lightning Executive Edition"
+      ]
     },
     {
       "source": "Package - Praetorian Pack",
@@ -25,14 +30,14 @@
       "aliases": []
     },
     {
-      "source": "VIP Wing Commander",
-      "translation": "VIP 联队指挥官",
+      "source": "VIP Legatus Navium",
+      "translation": "VIP 舰队统帅",
       "kind": "package",
       "aliases": []
     },
     {
-      "source": "VIP Legatus Navium",
-      "translation": "VIP 舰队统帅",
+      "source": "VIP Wing Commander",
+      "translation": "VIP 联队指挥官",
       "kind": "package",
       "aliases": []
     }

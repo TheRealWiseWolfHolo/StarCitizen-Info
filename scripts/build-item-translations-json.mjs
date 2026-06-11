@@ -29,6 +29,18 @@ function requireString(value, field, context) {
   return normalized;
 }
 
+function optionalString(value, field, context) {
+  if (value === undefined || value === null) {
+    return "";
+  }
+
+  if (typeof value !== "string") {
+    throw new Error(`${context} field ${field} must be a string when present.`);
+  }
+
+  return value.trim();
+}
+
 function validateAliases(value, context) {
   if (value === undefined) {
     return [];
@@ -48,7 +60,7 @@ function validateEntry(entry, index, seenKeys) {
   }
 
   const source = requireString(entry.source, "source", context);
-  const translation = requireString(entry.translation, "translation", context);
+  const translation = optionalString(entry.translation, "translation", context);
   const kind = requireString(entry.kind, "kind", context);
   const aliases = validateAliases(entry.aliases, context);
 
@@ -101,17 +113,25 @@ async function buildLocale(locale) {
   const outputPath = path.join(projectRoot, "docs", "item-translations", `${locale}.json`);
   const payload = JSON.parse(await readFile(sourcePath, "utf8"));
   const validatedPayload = validatePayload(payload, locale);
+  const completedEntries = validatedPayload.entries.filter((entry) => entry.translation);
+  if (completedEntries.length === 0) {
+    throw new Error(`${locale} must contain at least one completed translation.`);
+  }
+
   const output = {
     generatedAt: new Date().toISOString(),
     locale: validatedPayload.locale,
     version: validatedPayload.version,
-    count: validatedPayload.entries.length,
-    entries: validatedPayload.entries
+    count: completedEntries.length,
+    sourceCount: validatedPayload.entries.length,
+    entries: completedEntries
   };
 
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
-  console.log(`Wrote ${output.count} ${locale} item translations to ${outputPath}`);
+  console.log(
+    `Wrote ${output.count} completed ${locale} item translations from ${output.sourceCount} source entries to ${outputPath}`
+  );
 }
 
 for (const locale of supportedLocales) {
