@@ -1,10 +1,909 @@
 {
-  "generatedAt": "2026-06-11T00:10:02.838Z",
+  "generatedAt": "2026-06-12T00:00:57.249Z",
   "locale": "zh-Hans",
   "version": 1,
-  "count": 5,
+  "count": 267,
   "sourceCount": 267,
   "entries": [
+    {
+      "source": "100i",
+      "translation": "100i",
+      "kind": "ship",
+      "aliases": [
+        "Origin 100i",
+        "Origin Jumpworks 100i"
+      ]
+    },
+    {
+      "source": "125a",
+      "translation": "125a",
+      "kind": "ship",
+      "aliases": [
+        "Origin 125a",
+        "Origin Jumpworks 125a"
+      ]
+    },
+    {
+      "source": "135c",
+      "translation": "135c",
+      "kind": "ship",
+      "aliases": [
+        "Origin 135c",
+        "Origin Jumpworks 135c"
+      ]
+    },
+    {
+      "source": "300i",
+      "translation": "300i",
+      "kind": "ship",
+      "aliases": [
+        "Origin 300i",
+        "Origin Jumpworks 300i"
+      ]
+    },
+    {
+      "source": "315p Explorer",
+      "translation": "315p 探索",
+      "kind": "ship",
+      "aliases": [
+        "Origin 315p Explorer",
+        "Origin Jumpworks 315p Explorer"
+      ]
+    },
+    {
+      "source": "325a",
+      "translation": "325a",
+      "kind": "ship",
+      "aliases": [
+        "Origin 325a",
+        "Origin Jumpworks 325a"
+      ]
+    },
+    {
+      "source": "350r",
+      "translation": "350r",
+      "kind": "ship",
+      "aliases": [
+        "Origin 350r",
+        "Origin Jumpworks 350r"
+      ]
+    },
+    {
+      "source": "350r Racer",
+      "translation": "350r 竞速",
+      "kind": "ship",
+      "aliases": [
+        "Origin 350r Racer",
+        "Origin Jumpworks 350r Racer"
+      ]
+    },
+    {
+      "source": "400i",
+      "translation": "400i",
+      "kind": "ship",
+      "aliases": [
+        "Origin 400i",
+        "Origin Jumpworks 400i"
+      ]
+    },
+    {
+      "source": "600i Executive Edition",
+      "translation": "600i 行政版",
+      "kind": "ship",
+      "aliases": [
+        "Origin 600i Executive Edition",
+        "Origin Jumpworks 600i Executive Edition"
+      ]
+    },
+    {
+      "source": "600i Exploration Module",
+      "translation": "600i 探索",
+      "kind": "ship",
+      "aliases": [
+        "Origin 600i Exploration Module",
+        "Origin Jumpworks 600i Exploration Module"
+      ]
+    },
+    {
+      "source": "600i Explorer",
+      "translation": "600i 探索版",
+      "kind": "ship",
+      "aliases": [
+        "Origin 600i Explorer",
+        "Origin Jumpworks 600i Explorer"
+      ]
+    },
+    {
+      "source": "600i Touring",
+      "translation": "600i 旅行版",
+      "kind": "ship",
+      "aliases": [
+        "Origin 600i Touring",
+        "Origin Jumpworks 600i Touring"
+      ]
+    },
+    {
+      "source": "600i Touring Module",
+      "translation": "600i 旅行版",
+      "kind": "ship",
+      "aliases": [
+        "Origin 600i Touring Module",
+        "Origin Jumpworks 600i Touring Module"
+      ]
+    },
+    {
+      "source": "85X",
+      "translation": "85X",
+      "kind": "ship",
+      "aliases": [
+        "Origin 85X",
+        "Origin Jumpworks 85X"
+      ]
+    },
+    {
+      "source": "890 Jump",
+      "translation": "890 跃动",
+      "kind": "ship",
+      "aliases": [
+        "Origin 890 Jump",
+        "Origin Jumpworks 890 Jump"
+      ]
+    },
+    {
+      "source": "A.T.L.S.",
+      "translation": "A.T.L.S.",
+      "kind": "vehicle",
+      "aliases": [
+        "ARGO A.T.L.S.",
+        "Argo Astronautics A.T.L.S."
+      ]
+    },
+    {
+      "source": "A1 Spirit",
+      "translation": "星灵 A1",
+      "kind": "ship",
+      "aliases": [
+        "Crusader A1 Spirit",
+        "Crusader Industries A1 Spirit"
+      ]
+    },
+    {
+      "source": "Anvil Ballista Dunestalker",
+      "translation": "弩炮 沙丘行者",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Anvil Ballista Dunestalker",
+        "Anvil Anvil Ballista Dunestalker"
+      ]
+    },
+    {
+      "source": "Anvil Ballista Snowblind",
+      "translation": "弩炮 雪盲",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Anvil Ballista Snowblind",
+        "Anvil Anvil Ballista Snowblind"
+      ]
+    },
+    {
+      "source": "Apollo Medivac",
+      "translation": "阿波罗 医疗",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Apollo Medivac",
+        "RSI Apollo Medivac"
+      ]
+    },
+    {
+      "source": "Apollo Triage",
+      "translation": "阿波罗 分诊",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Apollo Triage",
+        "RSI Apollo Triage"
+      ]
+    },
+    {
+      "source": "Ares Inferno",
+      "translation": "战神 地狱火",
+      "kind": "ship",
+      "aliases": [
+        "Crusader Ares Inferno",
+        "Crusader Industries Ares Inferno"
+      ]
+    },
+    {
+      "source": "Ares Ion",
+      "translation": "战神 离子光",
+      "kind": "ship",
+      "aliases": [
+        "Crusader Ares Ion",
+        "Crusader Industries Ares Ion"
+      ]
+    },
+    {
+      "source": "Argo Mole Carbon Edition",
+      "translation": "鼹鼠 炭黑版",
+      "kind": "ship",
+      "aliases": [
+        "ARGO Argo Mole Carbon Edition",
+        "Argo Astronautics Argo Mole Carbon Edition"
+      ]
+    },
+    {
+      "source": "Argo Mole Talus Edition",
+      "translation": "鼹鼠 岩白版",
+      "kind": "ship",
+      "aliases": [
+        "ARGO Argo Mole Talus Edition",
+        "Argo Astronautics Argo Mole Talus Edition"
+      ]
+    },
+    {
+      "source": "Arrastra",
+      "translation": "阿拉斯塔",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Arrastra",
+        "RSI Arrastra"
+      ]
+    },
+    {
+      "source": "Arrow",
+      "translation": "箭头",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Arrow",
+        "Anvil Arrow"
+      ]
+    },
+    {
+      "source": "Asgard",
+      "translation": "阿斯加德",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Asgard",
+        "Anvil Asgard"
+      ]
+    },
+    {
+      "source": "ATLS",
+      "translation": "ATLS",
+      "kind": "vehicle",
+      "aliases": [
+        "Argo Astronautics ATLS",
+        "ARGO ATLS"
+      ]
+    },
+    {
+      "source": "ATLS GEO",
+      "translation": "ATLS GEO",
+      "kind": "vehicle",
+      "aliases": [
+        "Argo Astronautics ATLS GEO",
+        "ARGO ATLS GEO"
+      ]
+    },
+    {
+      "source": "Aurora Mk I CL",
+      "translation": "极光 Mk I CL",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Aurora Mk I CL",
+        "RSI Aurora Mk I CL"
+      ]
+    },
+    {
+      "source": "Aurora Mk I ES",
+      "translation": "极光 Mk I ES",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Aurora Mk I ES",
+        "RSI Aurora Mk I ES"
+      ]
+    },
+    {
+      "source": "Aurora Mk I LN",
+      "translation": "极光 Mk I LN",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Aurora Mk I LN",
+        "RSI Aurora Mk I LN"
+      ]
+    },
+    {
+      "source": "Aurora Mk I LX",
+      "translation": "极光 Mk I LX",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Aurora Mk I LX",
+        "RSI Aurora Mk I LX"
+      ]
+    },
+    {
+      "source": "Aurora Mk I MR",
+      "translation": "极光 Mk I MR",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Aurora Mk I MR",
+        "RSI Aurora Mk I MR"
+      ]
+    },
+    {
+      "source": "Aurora Mk I SE",
+      "translation": "极光 Mk I SE",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Aurora Mk I SE",
+        "RSI Aurora Mk I SE"
+      ]
+    },
+    {
+      "source": "Aurora Mk II",
+      "translation": "极光 Mk II",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Aurora Mk II",
+        "RSI Aurora Mk II"
+      ]
+    },
+    {
+      "source": "Avenger Stalker",
+      "translation": "复仇者 追猎",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Avenger Stalker",
+        "Aegis Dynamics Avenger Stalker"
+      ]
+    },
+    {
+      "source": "Avenger Titan",
+      "translation": "复仇者 泰坦",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Avenger Titan",
+        "Aegis Dynamics Avenger Titan"
+      ]
+    },
+    {
+      "source": "Avenger Titan Renegade",
+      "translation": "复仇者 泰坦变节者",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Avenger Titan Renegade",
+        "Aegis Dynamics Avenger Titan Renegade"
+      ]
+    },
+    {
+      "source": "Avenger Warlock",
+      "translation": "复仇者 术士",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Avenger Warlock",
+        "Aegis Dynamics Avenger Warlock"
+      ]
+    },
+    {
+      "source": "Ballista",
+      "translation": "弩炮",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Ballista",
+        "Anvil Ballista"
+      ]
+    },
+    {
+      "source": "Blade",
+      "translation": "刀锋",
+      "kind": "ship",
+      "aliases": [
+        "Esperia Blade"
+      ]
+    },
+    {
+      "source": "Buccaneer",
+      "translation": "掠夺者",
+      "kind": "ship",
+      "aliases": [
+        "Drake Buccaneer",
+        "Drake Interplanetary Buccaneer"
+      ]
+    },
+    {
+      "source": "C1 Spirit",
+      "translation": "星灵 C1",
+      "kind": "ship",
+      "aliases": [
+        "Crusader C1 Spirit",
+        "Crusader Industries C1 Spirit"
+      ]
+    },
+    {
+      "source": "C8 Pisces",
+      "translation": "C8 双鱼",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace C8 Pisces",
+        "Anvil C8 Pisces"
+      ]
+    },
+    {
+      "source": "C8R Pisces",
+      "translation": "C8R 双鱼",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace C8R Pisces",
+        "Anvil C8R Pisces"
+      ]
+    },
+    {
+      "source": "C8X Pisces Expedition",
+      "translation": "C8X 双鱼 远征",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace C8X Pisces Expedition",
+        "Anvil C8X Pisces Expedition"
+      ]
+    },
+    {
+      "source": "Carrack",
+      "translation": "克拉克",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Carrack",
+        "Anvil Carrack"
+      ]
+    },
+    {
+      "source": "Carrack Expedition",
+      "translation": "克拉克 远征",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Carrack Expedition",
+        "Anvil Carrack Expedition"
+      ]
+    },
+    {
+      "source": "Carrack Expedition w/C8X",
+      "translation": "克拉克 远征 附带C8X",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Carrack Expedition w/C8X",
+        "Anvil Carrack Expedition w/C8X"
+      ]
+    },
+    {
+      "source": "Carrack w/C8X",
+      "translation": "克拉克 附带C8X",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Carrack w/C8X",
+        "Anvil Carrack w/C8X"
+      ]
+    },
+    {
+      "source": "Caterpillar",
+      "translation": "毛虫",
+      "kind": "ship",
+      "aliases": [
+        "Drake Caterpillar",
+        "Drake Interplanetary Caterpillar"
+      ]
+    },
+    {
+      "source": "Caterpillar 2949 Best in Show",
+      "translation": "毛虫 2949 BIS",
+      "kind": "ship",
+      "aliases": [
+        "Drake Caterpillar 2949 Best in Show",
+        "Drake Interplanetary Caterpillar 2949 Best in Show"
+      ]
+    },
+    {
+      "source": "Caterpillar Pirate Edition",
+      "translation": "毛虫 海盗版",
+      "kind": "ship",
+      "aliases": [
+        "Drake Caterpillar Pirate Edition",
+        "Drake Interplanetary Caterpillar Pirate Edition"
+      ]
+    },
+    {
+      "source": "Centurion",
+      "translation": "百夫长",
+      "kind": "vehicle",
+      "aliases": [
+        "Anvil Aerospace Centurion",
+        "Anvil Centurion"
+      ]
+    },
+    {
+      "source": "Clipper",
+      "translation": "快帆",
+      "kind": "ship",
+      "aliases": [
+        "Drake Clipper",
+        "Drake Interplanetary Clipper"
+      ]
+    },
+    {
+      "source": "Constellation Andromeda",
+      "translation": "仙女座",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Constellation Andromeda",
+        "RSI Constellation Andromeda"
+      ]
+    },
+    {
+      "source": "Constellation Aquila",
+      "translation": "天鹰座",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Constellation Aquila",
+        "RSI Constellation Aquila"
+      ]
+    },
+    {
+      "source": "Constellation Phoenix",
+      "translation": "凤凰座",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Constellation Phoenix",
+        "RSI Constellation Phoenix"
+      ]
+    },
+    {
+      "source": "Constellation Phoenix Emerald",
+      "translation": "凤凰座 绿宝石",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Constellation Phoenix Emerald",
+        "RSI Constellation Phoenix Emerald"
+      ]
+    },
+    {
+      "source": "Constellation Taurus",
+      "translation": "金牛座",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Constellation Taurus",
+        "RSI Constellation Taurus"
+      ]
+    },
+    {
+      "source": "Corsair",
+      "translation": "海盗船",
+      "kind": "ship",
+      "aliases": [
+        "Drake Corsair",
+        "Drake Interplanetary Corsair"
+      ]
+    },
+    {
+      "source": "Crucible",
+      "translation": "坩埚",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Crucible",
+        "Anvil Crucible"
+      ]
+    },
+    {
+      "source": "CSV-SM",
+      "translation": "CSV-SM",
+      "kind": "vehicle",
+      "aliases": [
+        "Argo Astronautics CSV-SM",
+        "ARGO CSV-SM"
+      ]
+    },
+    {
+      "source": "Cutlass 2949 Best In Show",
+      "translation": "黑弯刀 2949 BIS",
+      "kind": "ship",
+      "aliases": [
+        "Drake Cutlass 2949 Best In Show",
+        "Drake Interplanetary Cutlass 2949 Best In Show"
+      ]
+    },
+    {
+      "source": "Cutlass Black",
+      "translation": "黑弯刀",
+      "kind": "ship",
+      "aliases": [
+        "Drake Cutlass Black",
+        "Drake Interplanetary Cutlass Black"
+      ]
+    },
+    {
+      "source": "Cutlass Black 2949 Best in Show",
+      "translation": "黑弯刀 2949 BIS",
+      "kind": "ship",
+      "aliases": [
+        "Drake Cutlass Black 2949 Best in Show",
+        "Drake Interplanetary Cutlass Black 2949 Best in Show"
+      ]
+    },
+    {
+      "source": "Cutlass Blue",
+      "translation": "蓝弯刀",
+      "kind": "ship",
+      "aliases": [
+        "Drake Cutlass Blue",
+        "Drake Interplanetary Cutlass Blue"
+      ]
+    },
+    {
+      "source": "Cutlass Red",
+      "translation": "红弯刀",
+      "kind": "ship",
+      "aliases": [
+        "Drake Cutlass Red",
+        "Drake Interplanetary Cutlass Red"
+      ]
+    },
+    {
+      "source": "Cutlass Steel",
+      "translation": "铁弯刀",
+      "kind": "ship",
+      "aliases": [
+        "Drake Cutlass Steel",
+        "Drake Interplanetary Cutlass Steel"
+      ]
+    },
+    {
+      "source": "Cutter",
+      "translation": "小刀",
+      "kind": "ship",
+      "aliases": [
+        "Drake Cutter",
+        "Drake Interplanetary Cutter"
+      ]
+    },
+    {
+      "source": "Cutter Rambler",
+      "translation": "小刀 漫步者",
+      "kind": "ship",
+      "aliases": [
+        "Drake Cutter Rambler",
+        "Drake Interplanetary Cutter Rambler"
+      ]
+    },
+    {
+      "source": "Cutter Scout",
+      "translation": "小刀 侦查",
+      "kind": "ship",
+      "aliases": [
+        "Drake Cutter Scout",
+        "Drake Interplanetary Cutter Scout"
+      ]
+    },
+    {
+      "source": "Cyclone",
+      "translation": "旋风",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Cyclone"
+      ]
+    },
+    {
+      "source": "Cyclone AA",
+      "translation": "旋风 AA",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Cyclone AA"
+      ]
+    },
+    {
+      "source": "Cyclone MT",
+      "translation": "旋风 MT",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Cyclone MT"
+      ]
+    },
+    {
+      "source": "Cyclone RC",
+      "translation": "旋风 RC",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Cyclone RC"
+      ]
+    },
+    {
+      "source": "Cyclone RN",
+      "translation": "旋风 RN",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Cyclone RN"
+      ]
+    },
+    {
+      "source": "Cyclone TR",
+      "translation": "旋风 TR",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Cyclone TR"
+      ]
+    },
+    {
+      "source": "Defender",
+      "translation": "防卫者",
+      "kind": "ship",
+      "aliases": [
+        "Banu Defender"
+      ]
+    },
+    {
+      "source": "Dragonfly Black",
+      "translation": "黑蜻蜓",
+      "kind": "ship",
+      "aliases": [
+        "Drake Dragonfly Black",
+        "Drake Interplanetary Dragonfly Black"
+      ]
+    },
+    {
+      "source": "Dragonfly Star Kitten Edition",
+      "translation": "蜻蜓 星际猫猫版",
+      "kind": "ship",
+      "aliases": [
+        "Drake Dragonfly Star Kitten Edition",
+        "Drake Interplanetary Dragonfly Star Kitten Edition"
+      ]
+    },
+    {
+      "source": "Dragonfly Yellowjacket",
+      "translation": "黄蜻蜓",
+      "kind": "ship",
+      "aliases": [
+        "Drake Dragonfly Yellowjacket",
+        "Drake Interplanetary Dragonfly Yellowjacket"
+      ]
+    },
+    {
+      "source": "E1 Spirit",
+      "translation": "星灵 E1",
+      "kind": "ship",
+      "aliases": [
+        "Crusader E1 Spirit",
+        "Crusader Industries E1 Spirit"
+      ]
+    },
+    {
+      "source": "Eclipse",
+      "translation": "日蚀",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Eclipse",
+        "Aegis Eclipse"
+      ]
+    },
+    {
+      "source": "Endeavor",
+      "translation": "奋进",
+      "kind": "ship",
+      "aliases": [
+        "MISC Endeavor"
+      ]
+    },
+    {
+      "source": "Expanse",
+      "translation": "无垠",
+      "kind": "ship",
+      "aliases": [
+        "MISC Expanse"
+      ]
+    },
+    {
+      "source": "F7A Hornet Mk I",
+      "translation": "F7A 大黄蜂 Mk I",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7A Hornet Mk I",
+        "Anvil F7A Hornet Mk I"
+      ]
+    },
+    {
+      "source": "F7A Hornet Mk II",
+      "translation": "F7A 大黄蜂 Mk II",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7A Hornet Mk II",
+        "Anvil F7A Hornet Mk II"
+      ]
+    },
+    {
+      "source": "F7C Hornet Mk I",
+      "translation": "F7C 大黄蜂 Mk I",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7C Hornet Mk I",
+        "Anvil F7C Hornet Mk I"
+      ]
+    },
+    {
+      "source": "F7C Hornet Mk II",
+      "translation": "F7C 大黄蜂 Mk II",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7C Hornet Mk II",
+        "Anvil F7C Hornet Mk II"
+      ]
+    },
+    {
+      "source": "F7C Hornet Wildfire Mk I",
+      "translation": "F7C 大黄蜂 野火 Mk I",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7C Hornet Wildfire Mk I",
+        "Anvil F7C Hornet Wildfire Mk I"
+      ]
+    },
+    {
+      "source": "F7C-M Super Hornet Heartseeker Mk I",
+      "translation": "F7C-M 超级大黄蜂 寻心者 Mk I",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7C-M Super Hornet Heartseeker Mk I",
+        "Anvil F7C-M Super Hornet Heartseeker Mk I"
+      ]
+    },
+    {
+      "source": "F7C-M Super Hornet Mk I",
+      "translation": "F7C-M 超级大黄蜂 Mk I",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7C-M Super Hornet Mk I",
+        "Anvil F7C-M Super Hornet Mk I"
+      ]
+    },
+    {
+      "source": "F7C-M Super Hornet Mk II",
+      "translation": "F7C-M 超级大黄蜂 Mk II",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7C-M Super Hornet Mk II",
+        "Anvil F7C-M Super Hornet Mk II"
+      ]
+    },
+    {
+      "source": "F7C-R Hornet Tracker Mk I",
+      "translation": "F7C-R 大黄蜂 追踪者 Mk I",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7C-R Hornet Tracker Mk I",
+        "Anvil F7C-R Hornet Tracker Mk I"
+      ]
+    },
+    {
+      "source": "F7C-R Hornet Tracker Mk II",
+      "translation": "F7C-R 大黄蜂 追踪者 Mk II",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7C-R Hornet Tracker Mk II",
+        "Anvil F7C-R Hornet Tracker Mk II"
+      ]
+    },
+    {
+      "source": "F7C-S Hornet Ghost Mk I",
+      "translation": "F7C-S 大黄蜂 幽灵 Mk I",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7C-S Hornet Ghost Mk I",
+        "Anvil F7C-S Hornet Ghost Mk I"
+      ]
+    },
+    {
+      "source": "F7C-S Hornet Ghost Mk II",
+      "translation": "F7C-S 大黄蜂 幽灵 Mk II",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace F7C-S Hornet Ghost Mk II",
+        "Anvil F7C-S Hornet Ghost Mk II"
+      ]
+    },
     {
       "source": "F8C Lightning",
       "translation": "F8C 闪电",
@@ -21,6 +920,1393 @@
       "aliases": [
         "Anvil Aerospace F8C Lightning Executive Edition",
         "Anvil F8C Lightning Executive Edition"
+      ]
+    },
+    {
+      "source": "Fortune",
+      "translation": "财富",
+      "kind": "ship",
+      "aliases": [
+        "MISC Fortune"
+      ]
+    },
+    {
+      "source": "Freelancer",
+      "translation": "自由枪骑兵",
+      "kind": "ship",
+      "aliases": [
+        "MISC Freelancer"
+      ]
+    },
+    {
+      "source": "Freelancer DUR",
+      "translation": "自由枪骑兵 DUR",
+      "kind": "ship",
+      "aliases": [
+        "MISC Freelancer DUR"
+      ]
+    },
+    {
+      "source": "Freelancer MAX",
+      "translation": "自由枪骑兵 MAX",
+      "kind": "ship",
+      "aliases": [
+        "MISC Freelancer MAX"
+      ]
+    },
+    {
+      "source": "Freelancer MIS",
+      "translation": "自由枪骑兵 MIS",
+      "kind": "ship",
+      "aliases": [
+        "MISC Freelancer MIS"
+      ]
+    },
+    {
+      "source": "Fury",
+      "translation": "狂怒",
+      "kind": "ship",
+      "aliases": [
+        "Mirai Fury"
+      ]
+    },
+    {
+      "source": "Fury LX",
+      "translation": "狂怒 LX",
+      "kind": "ship",
+      "aliases": [
+        "Mirai Fury LX"
+      ]
+    },
+    {
+      "source": "Fury MX",
+      "translation": "狂怒 MX",
+      "kind": "ship",
+      "aliases": [
+        "Mirai Fury MX"
+      ]
+    },
+    {
+      "source": "G12",
+      "translation": "G12",
+      "kind": "vehicle",
+      "aliases": [
+        "Origin G12",
+        "Origin Jumpworks G12"
+      ]
+    },
+    {
+      "source": "G12a",
+      "translation": "G12a",
+      "kind": "vehicle",
+      "aliases": [
+        "Origin G12a",
+        "Origin Jumpworks G12a"
+      ]
+    },
+    {
+      "source": "G12r",
+      "translation": "G12r",
+      "kind": "ship",
+      "aliases": [
+        "Origin G12r",
+        "Origin Jumpworks G12r"
+      ]
+    },
+    {
+      "source": "Galaxy",
+      "translation": "银河",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Galaxy",
+        "RSI Galaxy"
+      ]
+    },
+    {
+      "source": "Genesis",
+      "translation": "创世纪",
+      "kind": "ship",
+      "aliases": [
+        "Crusader Genesis",
+        "Crusader Industries Genesis"
+      ]
+    },
+    {
+      "source": "Genesis Starliner",
+      "translation": "创世纪",
+      "kind": "ship",
+      "aliases": [
+        "Crusader Genesis Starliner",
+        "Crusader Industries Genesis Starliner"
+      ]
+    },
+    {
+      "source": "Gladiator",
+      "translation": "角斗士",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Gladiator",
+        "Anvil Gladiator"
+      ]
+    },
+    {
+      "source": "Gladius",
+      "translation": "短剑",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Gladius",
+        "Aegis Gladius"
+      ]
+    },
+    {
+      "source": "Gladius Dunlevy",
+      "translation": "短剑 邓莱维",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Gladius Dunlevy",
+        "Aegis Gladius Dunlevy"
+      ]
+    },
+    {
+      "source": "Gladius Pirate Edition",
+      "translation": "短剑 海盗版",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Gladius Pirate Edition",
+        "Aegis Gladius Pirate Edition"
+      ]
+    },
+    {
+      "source": "Gladius Valiant",
+      "translation": "短剑 勇士",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Gladius Valiant",
+        "Aegis Gladius Valiant"
+      ]
+    },
+    {
+      "source": "Glaive",
+      "translation": "长刀",
+      "kind": "ship",
+      "aliases": [
+        "Esperia Glaive"
+      ]
+    },
+    {
+      "source": "Golem",
+      "translation": "魔像",
+      "kind": "ship",
+      "aliases": [
+        "Drake Golem",
+        "Drake Interplanetary Golem"
+      ]
+    },
+    {
+      "source": "Golem OX",
+      "translation": "魔像 OX",
+      "kind": "ship",
+      "aliases": [
+        "Drake Golem OX",
+        "Drake Interplanetary Golem OX"
+      ]
+    },
+    {
+      "source": "Guardian",
+      "translation": "守护者",
+      "kind": "ship",
+      "aliases": [
+        "Mirai Guardian"
+      ]
+    },
+    {
+      "source": "Guardian MX",
+      "translation": "守护者 MX",
+      "kind": "ship",
+      "aliases": [
+        "Mirai Guardian MX"
+      ]
+    },
+    {
+      "source": "Guardian QI",
+      "translation": "守护者 QI",
+      "kind": "ship",
+      "aliases": [
+        "Mirai Guardian QI"
+      ]
+    },
+    {
+      "source": "Hammerhead",
+      "translation": "锤头鲨",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Hammerhead",
+        "Aegis Hammerhead"
+      ]
+    },
+    {
+      "source": "Hammerhead 2949 Best in Show",
+      "translation": "锤头鲨 2949 BIS",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Hammerhead 2949 Best in Show",
+        "Aegis Hammerhead 2949 Best in Show"
+      ]
+    },
+    {
+      "source": "Hawk",
+      "translation": "猎鹰",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Hawk",
+        "Anvil Hawk"
+      ]
+    },
+    {
+      "source": "Herald",
+      "translation": "信使",
+      "kind": "ship",
+      "aliases": [
+        "Drake Herald",
+        "Drake Interplanetary Herald"
+      ]
+    },
+    {
+      "source": "Hercules Starlifter A2",
+      "translation": "大力神 A2",
+      "kind": "ship",
+      "aliases": [
+        "Crusader Hercules Starlifter A2",
+        "Crusader Industries Hercules Starlifter A2"
+      ]
+    },
+    {
+      "source": "Hercules Starlifter C2",
+      "translation": "大力神 C2",
+      "kind": "ship",
+      "aliases": [
+        "Crusader Hercules Starlifter C2",
+        "Crusader Industries Hercules Starlifter C2"
+      ]
+    },
+    {
+      "source": "Hercules Starlifter M2",
+      "translation": "大力神 M2",
+      "kind": "ship",
+      "aliases": [
+        "Crusader Hercules Starlifter M2",
+        "Crusader Industries Hercules Starlifter M2"
+      ]
+    },
+    {
+      "source": "Hermes",
+      "translation": "爱马仕",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Hermes",
+        "RSI Hermes"
+      ]
+    },
+    {
+      "source": "HoverQuad",
+      "translation": "悬浮驷",
+      "kind": "vehicle",
+      "aliases": [
+        "Consolidated Outland HoverQuad"
+      ]
+    },
+    {
+      "source": "Hull A",
+      "translation": "货A",
+      "kind": "ship",
+      "aliases": [
+        "MISC Hull A"
+      ]
+    },
+    {
+      "source": "Hull B",
+      "translation": "货B",
+      "kind": "ship",
+      "aliases": [
+        "MISC Hull B"
+      ]
+    },
+    {
+      "source": "Hull C",
+      "translation": "货C",
+      "kind": "ship",
+      "aliases": [
+        "MISC Hull C"
+      ]
+    },
+    {
+      "source": "Hull D",
+      "translation": "货D",
+      "kind": "ship",
+      "aliases": [
+        "MISC Hull D"
+      ]
+    },
+    {
+      "source": "Hull E",
+      "translation": "货E",
+      "kind": "ship",
+      "aliases": [
+        "MISC Hull E"
+      ]
+    },
+    {
+      "source": "Hurricane",
+      "translation": "飓风",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Hurricane",
+        "Anvil Hurricane"
+      ]
+    },
+    {
+      "source": "Idris-M",
+      "translation": "伊德里斯-M",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Idris-M",
+        "Aegis Idris-M"
+      ]
+    },
+    {
+      "source": "Idris-P",
+      "translation": "伊德里斯-P",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Idris-P",
+        "Aegis Idris-P"
+      ]
+    },
+    {
+      "source": "Intrepid",
+      "translation": "无畏",
+      "kind": "ship",
+      "aliases": [
+        "Crusader Industries Intrepid",
+        "Crusader Intrepid"
+      ]
+    },
+    {
+      "source": "Ironclad",
+      "translation": "铁甲",
+      "kind": "ship",
+      "aliases": [
+        "Drake Interplanetary Ironclad",
+        "Drake Ironclad"
+      ]
+    },
+    {
+      "source": "Ironclad Assault",
+      "translation": "铁甲 突袭",
+      "kind": "ship",
+      "aliases": [
+        "Drake Interplanetary Ironclad Assault",
+        "Drake Ironclad Assault"
+      ]
+    },
+    {
+      "source": "Javelin",
+      "translation": "标枪",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Javelin",
+        "Aegis Javelin"
+      ]
+    },
+    {
+      "source": "Khartu-Al",
+      "translation": "卡图-Al",
+      "kind": "ship",
+      "aliases": [
+        "Aopoa Khartu-Al"
+      ]
+    },
+    {
+      "source": "Kraken",
+      "translation": "克拉肯",
+      "kind": "ship",
+      "aliases": [
+        "Drake Interplanetary Kraken",
+        "Drake Kraken"
+      ]
+    },
+    {
+      "source": "Kraken Privateer",
+      "translation": "克拉肯 劫掠",
+      "kind": "ship",
+      "aliases": [
+        "Drake Interplanetary Kraken Privateer",
+        "Drake Kraken Privateer"
+      ]
+    },
+    {
+      "source": "L-21 Wolf",
+      "translation": "L-21 狼",
+      "kind": "ship",
+      "aliases": [
+        "Kruger Intergalactic L-21 Wolf",
+        "Kruger L-21 Wolf"
+      ]
+    },
+    {
+      "source": "L-22 Alpha Wolf",
+      "translation": "L-22 头狼",
+      "kind": "ship",
+      "aliases": [
+        "Kruger Intergalactic L-22 Alpha Wolf",
+        "Kruger L-22 Alpha Wolf"
+      ]
+    },
+    {
+      "source": "Legionnaire",
+      "translation": "军团兵",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Legionnaire",
+        "Anvil Legionnaire"
+      ]
+    },
+    {
+      "source": "Liberator",
+      "translation": "解放者",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Liberator",
+        "Anvil Liberator"
+      ]
+    },
+    {
+      "source": "Lynx",
+      "translation": "山猫",
+      "kind": "vehicle",
+      "aliases": [
+        "Roberts Space Industries Lynx",
+        "RSI Lynx"
+      ]
+    },
+    {
+      "source": "M50",
+      "translation": "M50",
+      "kind": "ship",
+      "aliases": [
+        "Origin Jumpworks M50",
+        "Origin M50"
+      ]
+    },
+    {
+      "source": "Mantis",
+      "translation": "螳螂",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Mantis",
+        "RSI Mantis"
+      ]
+    },
+    {
+      "source": "MDC",
+      "translation": "MDC",
+      "kind": "vehicle",
+      "aliases": [
+        "Greycat Industrial MDC",
+        "Greycat MDC"
+      ]
+    },
+    {
+      "source": "Merchantman",
+      "translation": "商船",
+      "kind": "ship",
+      "aliases": [
+        "Banu Merchantman"
+      ]
+    },
+    {
+      "source": "Mercury Star Runner",
+      "translation": "水星",
+      "kind": "ship",
+      "aliases": [
+        "Crusader Industries Mercury Star Runner",
+        "Crusader Mercury Star Runner"
+      ]
+    },
+    {
+      "source": "Meteor",
+      "translation": "流星",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Meteor",
+        "RSI Meteor"
+      ]
+    },
+    {
+      "source": "MOLE",
+      "translation": "鼹鼠",
+      "kind": "ship",
+      "aliases": [
+        "Argo Astronautics MOLE",
+        "ARGO MOLE"
+      ]
+    },
+    {
+      "source": "MOLE - Carbon Edition",
+      "translation": "鼹鼠 炭黑版",
+      "kind": "ship",
+      "aliases": [
+        "Argo Astronautics MOLE - Carbon Edition",
+        "ARGO MOLE - Carbon Edition"
+      ]
+    },
+    {
+      "source": "MOTH",
+      "translation": "飞蛾",
+      "kind": "ship",
+      "aliases": [
+        "Argo Astronautics MOTH",
+        "ARGO MOTH"
+      ]
+    },
+    {
+      "source": "MPUV Cargo",
+      "translation": "MPUV 货运",
+      "kind": "ship",
+      "aliases": [
+        "Argo Astronautics MPUV Cargo",
+        "ARGO MPUV Cargo"
+      ]
+    },
+    {
+      "source": "MPUV Personnel",
+      "translation": "MPUV 客运",
+      "kind": "ship",
+      "aliases": [
+        "Argo Astronautics MPUV Personnel",
+        "ARGO MPUV Personnel"
+      ]
+    },
+    {
+      "source": "MPUV Tractor",
+      "translation": "MPUV 牵引",
+      "kind": "ship",
+      "aliases": [
+        "Argo Astronautics MPUV Tractor",
+        "ARGO MPUV Tractor"
+      ]
+    },
+    {
+      "source": "MTC",
+      "translation": "MTC",
+      "kind": "vehicle",
+      "aliases": [
+        "Greycat Industrial MTC",
+        "Greycat MTC"
+      ]
+    },
+    {
+      "source": "Mule",
+      "translation": "骡子",
+      "kind": "vehicle",
+      "aliases": [
+        "Drake Interplanetary Mule",
+        "Drake Mule"
+      ]
+    },
+    {
+      "source": "Mustang Alpha",
+      "translation": "野马 阿尔法",
+      "kind": "ship",
+      "aliases": [
+        "Consolidated Outland Mustang Alpha"
+      ]
+    },
+    {
+      "source": "Mustang Alpha Vindicator",
+      "translation": "野马 阿尔法 保卫者",
+      "kind": "ship",
+      "aliases": [
+        "Consolidated Outland Mustang Alpha Vindicator"
+      ]
+    },
+    {
+      "source": "Mustang Beta",
+      "translation": "野马 贝塔",
+      "kind": "ship",
+      "aliases": [
+        "Consolidated Outland Mustang Beta"
+      ]
+    },
+    {
+      "source": "Mustang Delta",
+      "translation": "野马 德尔塔",
+      "kind": "ship",
+      "aliases": [
+        "Consolidated Outland Mustang Delta"
+      ]
+    },
+    {
+      "source": "Mustang Gamma",
+      "translation": "野马 伽玛",
+      "kind": "ship",
+      "aliases": [
+        "Consolidated Outland Mustang Gamma"
+      ]
+    },
+    {
+      "source": "Mustang Omega",
+      "translation": "野马 欧米伽",
+      "kind": "ship",
+      "aliases": [
+        "Consolidated Outland Mustang Omega"
+      ]
+    },
+    {
+      "source": "Mustang Omega : AMD Edition",
+      "translation": "野马 欧米伽 AMD版",
+      "kind": "ship",
+      "aliases": [
+        "Consolidated Outland Mustang Omega : AMD Edition"
+      ]
+    },
+    {
+      "source": "Nautilus",
+      "translation": "鹦鹉螺",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Nautilus",
+        "Aegis Nautilus"
+      ]
+    },
+    {
+      "source": "Nautilus Solstice Edition",
+      "translation": "鹦鹉螺 冬至版",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Nautilus Solstice Edition",
+        "Aegis Nautilus Solstice Edition"
+      ]
+    },
+    {
+      "source": "Nomad",
+      "translation": "游牧",
+      "kind": "ship",
+      "aliases": [
+        "Consolidated Outland Nomad"
+      ]
+    },
+    {
+      "source": "Nova",
+      "translation": "新星",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Nova"
+      ]
+    },
+    {
+      "source": "Nova Tank",
+      "translation": "新星",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Nova Tank"
+      ]
+    },
+    {
+      "source": "Nox",
+      "translation": "Nox",
+      "kind": "ship",
+      "aliases": [
+        "Aopoa Nox"
+      ]
+    },
+    {
+      "source": "Nox Kue",
+      "translation": "Nox Kue",
+      "kind": "ship",
+      "aliases": [
+        "Aopoa Nox Kue"
+      ]
+    },
+    {
+      "source": "Odyssey",
+      "translation": "奥德赛",
+      "kind": "ship",
+      "aliases": [
+        "MISC Odyssey"
+      ]
+    },
+    {
+      "source": "Orion",
+      "translation": "猎户座",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Orion",
+        "RSI Orion"
+      ]
+    },
+    {
+      "source": "P-52 Merlin",
+      "translation": "P-52 梅林",
+      "kind": "ship",
+      "aliases": [
+        "Kruger Intergalactic P-52 Merlin",
+        "Kruger P-52 Merlin"
+      ]
+    },
+    {
+      "source": "P-72 Archimedes",
+      "translation": "P-72 阿基米德",
+      "kind": "ship",
+      "aliases": [
+        "Kruger Intergalactic P-72 Archimedes",
+        "Kruger P-72 Archimedes"
+      ]
+    },
+    {
+      "source": "P-72 Archimedes Emerald",
+      "translation": "P-72 阿基米德 绿宝石",
+      "kind": "ship",
+      "aliases": [
+        "Kruger Intergalactic P-72 Archimedes Emerald",
+        "Kruger P-72 Archimedes Emerald"
+      ]
+    },
+    {
+      "source": "Paladin",
+      "translation": "帕拉丁",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Paladin",
+        "Anvil Paladin"
+      ]
+    },
+    {
+      "source": "Perseus",
+      "translation": "英仙座",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Perseus",
+        "RSI Perseus"
+      ]
+    },
+    {
+      "source": "Pioneer",
+      "translation": "开拓者",
+      "kind": "ship",
+      "aliases": [
+        "Consolidated Outland Pioneer"
+      ]
+    },
+    {
+      "source": "Polaris",
+      "translation": "北极星",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Polaris",
+        "RSI Polaris"
+      ]
+    },
+    {
+      "source": "Prospector",
+      "translation": "勘探者",
+      "kind": "ship",
+      "aliases": [
+        "MISC Prospector"
+      ]
+    },
+    {
+      "source": "Prowler",
+      "translation": "徘徊",
+      "kind": "ship",
+      "aliases": [
+        "Esperia Prowler"
+      ]
+    },
+    {
+      "source": "Prowler Utility",
+      "translation": "徘徊 货运",
+      "kind": "ship",
+      "aliases": [
+        "Esperia Prowler Utility"
+      ]
+    },
+    {
+      "source": "PTV",
+      "translation": "PTV",
+      "kind": "vehicle",
+      "aliases": [
+        "Greycat Industrial PTV",
+        "Greycat PTV"
+      ]
+    },
+    {
+      "source": "Pulse",
+      "translation": "脉冲",
+      "kind": "vehicle",
+      "aliases": [
+        "Mirai Pulse"
+      ]
+    },
+    {
+      "source": "Pulse LX",
+      "translation": "脉冲 LX",
+      "kind": "vehicle",
+      "aliases": [
+        "Mirai Pulse LX"
+      ]
+    },
+    {
+      "source": "RAFT",
+      "translation": "木筏",
+      "kind": "ship",
+      "aliases": [
+        "Argo Astronautics RAFT",
+        "ARGO RAFT"
+      ]
+    },
+    {
+      "source": "Railen",
+      "translation": "瑞伦",
+      "kind": "ship",
+      "aliases": [
+        "Gatac Manufacture Railen",
+        "Gatac Railen"
+      ]
+    },
+    {
+      "source": "Ranger CV",
+      "translation": "游骑兵 CV",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Ranger CV"
+      ]
+    },
+    {
+      "source": "Ranger RC",
+      "translation": "游骑兵 RC",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Ranger RC"
+      ]
+    },
+    {
+      "source": "Ranger TR",
+      "translation": "游骑兵 TR",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Ranger TR"
+      ]
+    },
+    {
+      "source": "Razor",
+      "translation": "剃刀",
+      "kind": "ship",
+      "aliases": [
+        "Mirai Razor"
+      ]
+    },
+    {
+      "source": "Razor EX",
+      "translation": "剃刀 EX",
+      "kind": "ship",
+      "aliases": [
+        "Mirai Razor EX"
+      ]
+    },
+    {
+      "source": "Razor LX",
+      "translation": "剃刀 LX",
+      "kind": "ship",
+      "aliases": [
+        "Mirai Razor LX"
+      ]
+    },
+    {
+      "source": "Reclaimer",
+      "translation": "回收者",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Reclaimer",
+        "Aegis Reclaimer"
+      ]
+    },
+    {
+      "source": "Reclaimer 2949 Best in Show",
+      "translation": "回收者 2949 BIS",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Reclaimer 2949 Best in Show",
+        "Aegis Reclaimer 2949 Best in Show"
+      ]
+    },
+    {
+      "source": "Redeemer",
+      "translation": "救赎者",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Redeemer",
+        "Aegis Redeemer"
+      ]
+    },
+    {
+      "source": "Reliant Kore",
+      "translation": "信赖 基础",
+      "kind": "ship",
+      "aliases": [
+        "MISC Reliant Kore"
+      ]
+    },
+    {
+      "source": "Reliant Mako",
+      "translation": "信赖 新闻",
+      "kind": "ship",
+      "aliases": [
+        "MISC Reliant Mako"
+      ]
+    },
+    {
+      "source": "Reliant Sen",
+      "translation": "信赖 科考",
+      "kind": "ship",
+      "aliases": [
+        "MISC Reliant Sen"
+      ]
+    },
+    {
+      "source": "Reliant Tana",
+      "translation": "信赖 武装",
+      "kind": "ship",
+      "aliases": [
+        "MISC Reliant Tana"
+      ]
+    },
+    {
+      "source": "Reliant Tana - Skirmisher",
+      "translation": "信赖 武装 侦察兵",
+      "kind": "ship",
+      "aliases": [
+        "MISC Reliant Tana - Skirmisher"
+      ]
+    },
+    {
+      "source": "Retaliator",
+      "translation": "报复者",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Retaliator",
+        "Aegis Retaliator"
+      ]
+    },
+    {
+      "source": "ROC",
+      "translation": "ROC",
+      "kind": "ship",
+      "aliases": [
+        "Greycat Industrial ROC",
+        "Greycat ROC"
+      ]
+    },
+    {
+      "source": "ROC-DS",
+      "translation": "ROC-DS",
+      "kind": "ship",
+      "aliases": [
+        "Greycat Industrial ROC-DS",
+        "Greycat ROC-DS"
+      ]
+    },
+    {
+      "source": "Sabre",
+      "translation": "军刀",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Sabre",
+        "Aegis Sabre"
+      ]
+    },
+    {
+      "source": "Sabre Comet",
+      "translation": "军刀 彗星",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Sabre Comet",
+        "Aegis Sabre Comet"
+      ]
+    },
+    {
+      "source": "Sabre Firebird",
+      "translation": "军刀 火鸟",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Sabre Firebird",
+        "Aegis Sabre Firebird"
+      ]
+    },
+    {
+      "source": "Sabre Peregrine",
+      "translation": "军刀 游隼",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Sabre Peregrine",
+        "Aegis Sabre Peregrine"
+      ]
+    },
+    {
+      "source": "Sabre Raven",
+      "translation": "军刀 渡鸦",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Sabre Raven",
+        "Aegis Sabre Raven"
+      ]
+    },
+    {
+      "source": "Salvation",
+      "translation": "拯救",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Salvation",
+        "RSI Salvation"
+      ]
+    },
+    {
+      "source": "San'tok.yāi",
+      "translation": "San'tok.yāi",
+      "kind": "ship",
+      "aliases": [
+        "Aopoa San'tok.yāi"
+      ]
+    },
+    {
+      "source": "Scorpius",
+      "translation": "天蝎座",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Scorpius",
+        "RSI Scorpius"
+      ]
+    },
+    {
+      "source": "Scorpius Antares",
+      "translation": "天蝎座 心宿二",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Scorpius Antares",
+        "RSI Scorpius Antares"
+      ]
+    },
+    {
+      "source": "Scythe",
+      "translation": "死镰",
+      "kind": "ship",
+      "aliases": [
+        "Vanduul Scythe"
+      ]
+    },
+    {
+      "source": "Shiv",
+      "translation": "锈刃",
+      "kind": "ship",
+      "aliases": [
+        "Grey's Market Shiv"
+      ]
+    },
+    {
+      "source": "Spartan",
+      "translation": "斯巴达",
+      "kind": "vehicle",
+      "aliases": [
+        "Anvil Aerospace Spartan",
+        "Anvil Spartan"
+      ]
+    },
+    {
+      "source": "SRV",
+      "translation": "SRV",
+      "kind": "ship",
+      "aliases": [
+        "Argo Astronautics SRV",
+        "ARGO SRV"
+      ]
+    },
+    {
+      "source": "Starfarer",
+      "translation": "星际远航者",
+      "kind": "ship",
+      "aliases": [
+        "MISC Starfarer"
+      ]
+    },
+    {
+      "source": "Starfarer Gemini",
+      "translation": "星际远航者 双子座",
+      "kind": "ship",
+      "aliases": [
+        "MISC Starfarer Gemini"
+      ]
+    },
+    {
+      "source": "Starlancer MAX",
+      "translation": "星际枪骑兵 MAX",
+      "kind": "ship",
+      "aliases": [
+        "MISC Starlancer MAX"
+      ]
+    },
+    {
+      "source": "Starlancer TAC",
+      "translation": "星际枪骑兵 TAC",
+      "kind": "ship",
+      "aliases": [
+        "MISC Starlancer TAC"
+      ]
+    },
+    {
+      "source": "Stinger",
+      "translation": "毒刺",
+      "kind": "ship",
+      "aliases": [
+        "Esperia Stinger"
+      ]
+    },
+    {
+      "source": "Storm",
+      "translation": "风暴",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Storm"
+      ]
+    },
+    {
+      "source": "Storm AA",
+      "translation": "风暴 AA",
+      "kind": "vehicle",
+      "aliases": [
+        "Tumbril Storm AA"
+      ]
+    },
+    {
+      "source": "STV",
+      "translation": "STV",
+      "kind": "vehicle",
+      "aliases": [
+        "Greycat Industrial STV",
+        "Greycat STV"
+      ]
+    },
+    {
+      "source": "Syulen",
+      "translation": "速伦",
+      "kind": "ship",
+      "aliases": [
+        "Gatac Manufacture Syulen",
+        "Gatac Syulen"
+      ]
+    },
+    {
+      "source": "Talon",
+      "translation": "利爪",
+      "kind": "ship",
+      "aliases": [
+        "Esperia Talon"
+      ]
+    },
+    {
+      "source": "Talon Shrike",
+      "translation": "利爪 伯劳",
+      "kind": "ship",
+      "aliases": [
+        "Esperia Talon Shrike"
+      ]
+    },
+    {
+      "source": "Terrapin",
+      "translation": "水龟",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Terrapin",
+        "Anvil Terrapin"
+      ]
+    },
+    {
+      "source": "Terrapin Medic",
+      "translation": "水龟 医疗",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Terrapin Medic",
+        "Anvil Terrapin Medic"
+      ]
+    },
+    {
+      "source": "Ursa Fortuna",
+      "translation": "大熊座 幸运星",
+      "kind": "vehicle",
+      "aliases": [
+        "Roberts Space Industries Ursa Fortuna",
+        "RSI Ursa Fortuna"
+      ]
+    },
+    {
+      "source": "Ursa Medivac",
+      "translation": "大熊座 医疗",
+      "kind": "vehicle",
+      "aliases": [
+        "Roberts Space Industries Ursa Medivac",
+        "RSI Ursa Medivac"
+      ]
+    },
+    {
+      "source": "Ursa Rover",
+      "translation": "大熊座",
+      "kind": "vehicle",
+      "aliases": [
+        "Roberts Space Industries Ursa Rover",
+        "RSI Ursa Rover"
+      ]
+    },
+    {
+      "source": "Ursa Rover Fortuna",
+      "translation": "大熊座 幸运星",
+      "kind": "vehicle",
+      "aliases": [
+        "Roberts Space Industries Ursa Rover Fortuna",
+        "RSI Ursa Rover Fortuna"
+      ]
+    },
+    {
+      "source": "UTV",
+      "translation": "UTV",
+      "kind": "vehicle",
+      "aliases": [
+        "Greycat Industrial UTV",
+        "Greycat UTV"
+      ]
+    },
+    {
+      "source": "Valkyrie",
+      "translation": "瓦尔基里",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Valkyrie",
+        "Anvil Valkyrie"
+      ]
+    },
+    {
+      "source": "Valkyrie Liberator Edition",
+      "translation": "瓦尔基里 解放者",
+      "kind": "ship",
+      "aliases": [
+        "Anvil Aerospace Valkyrie Liberator Edition",
+        "Anvil Valkyrie Liberator Edition"
+      ]
+    },
+    {
+      "source": "Vanguard Harbinger",
+      "translation": "先锋 先驱者",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Vanguard Harbinger",
+        "Aegis Vanguard Harbinger"
+      ]
+    },
+    {
+      "source": "Vanguard Hoplite",
+      "translation": "先锋 重装兵",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Vanguard Hoplite",
+        "Aegis Vanguard Hoplite"
+      ]
+    },
+    {
+      "source": "Vanguard Sentinel",
+      "translation": "先锋 哨兵",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Vanguard Sentinel",
+        "Aegis Vanguard Sentinel"
+      ]
+    },
+    {
+      "source": "Vanguard Warden",
+      "translation": "先锋 典狱长",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Vanguard Warden",
+        "Aegis Vanguard Warden"
+      ]
+    },
+    {
+      "source": "Vulcan",
+      "translation": "火神",
+      "kind": "ship",
+      "aliases": [
+        "Aegis Dynamics Vulcan",
+        "Aegis Vulcan"
+      ]
+    },
+    {
+      "source": "Vulture",
+      "translation": "秃鹫",
+      "kind": "ship",
+      "aliases": [
+        "Drake Interplanetary Vulture",
+        "Drake Vulture"
+      ]
+    },
+    {
+      "source": "X1",
+      "translation": "X1",
+      "kind": "ship",
+      "aliases": [
+        "Origin Jumpworks X1",
+        "Origin X1"
+      ]
+    },
+    {
+      "source": "X1 Force",
+      "translation": "X1 武装",
+      "kind": "ship",
+      "aliases": [
+        "Origin Jumpworks X1 Force",
+        "Origin X1 Force"
+      ]
+    },
+    {
+      "source": "X1 Velocity",
+      "translation": "X1 竞速",
+      "kind": "ship",
+      "aliases": [
+        "Origin Jumpworks X1 Velocity",
+        "Origin X1 Velocity"
+      ]
+    },
+    {
+      "source": "Zeus Mk II CL",
+      "translation": "宙斯 Mk II CL",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Zeus Mk II CL",
+        "RSI Zeus Mk II CL"
+      ]
+    },
+    {
+      "source": "Zeus Mk II ES",
+      "translation": "宙斯 Mk II ES",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Zeus Mk II ES",
+        "RSI Zeus Mk II ES"
+      ]
+    },
+    {
+      "source": "Zeus Mk II MR",
+      "translation": "宙斯 Mk II MR",
+      "kind": "ship",
+      "aliases": [
+        "Roberts Space Industries Zeus Mk II MR",
+        "RSI Zeus Mk II MR"
       ]
     },
     {
