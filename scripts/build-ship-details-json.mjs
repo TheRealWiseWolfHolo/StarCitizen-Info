@@ -46,9 +46,19 @@ const SHIP_DETAILS_LIMIT = parsePositiveInteger(process.env.SHIP_DETAILS_LIMIT, 
 const PREVIOUS_SHIP_DETAILS_URLS = parseURLList(
   process.env.PREVIOUS_SHIP_DETAILS_URLS ?? process.env.PREVIOUS_SHIP_DETAILS_URL
 );
+const PUBLISHED_SHIP_DETAILS_URLS = parseURLList(
+  process.env.SHIP_DETAILS_FRESHNESS_URLS || "https://starcitizen-info.pages.dev/ship-details.json"
+);
+const FORCE_SHIP_DETAILS_REFRESH =
+  process.argv.includes("--force") || process.env.FORCE_SHIP_DETAILS_REFRESH === "1";
+const SHIP_DETAILS_REFRESH_MAX_AGE_HOURS = parsePositiveInteger(
+  process.env.SHIP_DETAILS_REFRESH_MAX_AGE_HOURS,
+  12
+);
+const SHIP_DETAILS_REFRESH_MAX_AGE_MS = SHIP_DETAILS_REFRESH_MAX_AGE_HOURS * 60 * 60 * 1000;
 const SPVIEWER_REFRESH_MIN_INTERVAL_HOURS = parsePositiveInteger(
   process.env.SPVIEWER_REFRESH_MIN_INTERVAL_HOURS,
-  48
+  SHIP_DETAILS_REFRESH_MAX_AGE_HOURS
 );
 const SPVIEWER_REFRESH_MIN_INTERVAL_MS = SPVIEWER_REFRESH_MIN_INTERVAL_HOURS * 60 * 60 * 1000;
 
@@ -320,6 +330,10 @@ const PLEDGE_VEHICLE_ASK_PRINTOUTS = [
 let previousShipDetailSnapshotPromise = null;
 
 async function main() {
+  if (await shouldReuseFreshShipDetailsOutput()) {
+    return;
+  }
+
   console.log(`Fetching vehicle list from ${LIST_API_URL}`);
   const baseEntries = await fetchPledgeVehicleEntries();
   const generatedAt = new Date().toISOString();
@@ -351,6 +365,83 @@ async function main() {
   await mkdir(docsDir, { recursive: true });
   await writeFile(outputPath, JSON.stringify(payload, null, 2) + "\n", "utf8");
   console.log(`Wrote ${ships.length} ship detail entries to ${outputPath}`);
+}
+
+async function shouldReuseFreshShipDetailsOutput() {
+  if (FORCE_SHIP_DETAILS_REFRESH) {
+    console.log("Force refresh requested; ignoring published ship-details output.");
+    return false;
+  }
+
+  const reusablePayload = await loadFreshPublishedShipDetailsPayload();
+  if (!reusablePayload) {
+    return false;
+  }
+
+  await mkdir(docsDir, { recursive: true });
+  await writeFile(outputPath, JSON.stringify(reusablePayload.payload, null, 2) + "\n", "utf8");
+  console.log(
+    `Reused published ship details output from ${reusablePayload.url}; last ` +
+      `StarCitizen.tools/SPViewer refresh at ${reusablePayload.generatedAt} is less than ` +
+      `${SHIP_DETAILS_REFRESH_MAX_AGE_HOURS} hours old; next refresh allowed at ` +
+      reusablePayload.nextRefreshAt
+  );
+  return true;
+}
+
+async function loadFreshPublishedShipDetailsPayload() {
+  for (const url of PUBLISHED_SHIP_DETAILS_URLS) {
+    try {
+      const payload = await loadPublishedShipDetailsPayloadFromURL(url);
+      const snapshot = previousShipDetailSnapshotFromPayload(payload);
+
+      if (!snapshot.ships.length || !snapshot.generatedAt) {
+        throw new Error("published payload did not contain generatedAt and ships");
+      }
+
+      const generatedAtTime = Date.parse(snapshot.generatedAt);
+      if (!Number.isFinite(generatedAtTime)) {
+        throw new Error(`published payload has invalid generatedAt: ${snapshot.generatedAt}`);
+      }
+
+      const elapsedMs = Date.now() - generatedAtTime;
+      if (elapsedMs < 0 || elapsedMs >= SHIP_DETAILS_REFRESH_MAX_AGE_MS) {
+        const ageHours = Math.max(0, elapsedMs / 60 / 60 / 1000).toFixed(1);
+        console.log(
+          `Published ship details at ${url} are ${ageHours} hours old; refreshing sources.`
+        );
+        continue;
+      }
+
+      return {
+        payload,
+        url,
+        generatedAt: snapshot.generatedAt,
+        nextRefreshAt: new Date(generatedAtTime + SHIP_DETAILS_REFRESH_MAX_AGE_MS).toISOString()
+      };
+    } catch (error) {
+      const reason = error instanceof Error ? error.message : String(error);
+      console.warn(`Could not check published ship details freshness from ${url}: ${reason}`);
+    }
+  }
+
+  return null;
+}
+
+async function loadPublishedShipDetailsPayloadFromURL(url) {
+  const response = await fetch(url, {
+    cache: "no-store",
+    headers: {
+      "user-agent": USER_AGENT,
+      accept: "application/json"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+
+  return JSON.parse(await response.text());
 }
 
 async function buildShipDetails(baseEntries, generatedAt) {

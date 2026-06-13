@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-12T00:00:57.249Z",
+  "generatedAt": "2026-06-13T00:53:37.184Z",
   "locale": "zh-Hans",
   "version": 1,
-  "count": 267,
-  "sourceCount": 267,
+  "count": 319,
+  "sourceCount": 319,
   "entries": [
     {
       "source": "100i",
@@ -1177,7 +1177,9 @@
       "kind": "ship",
       "aliases": [
         "Crusader Hercules Starlifter A2",
-        "Crusader Industries Hercules Starlifter A2"
+        "Crusader Industries Hercules Starlifter A2",
+        "A2 Hercules",
+        "Hercules A2"
       ]
     },
     {
@@ -1186,7 +1188,9 @@
       "kind": "ship",
       "aliases": [
         "Crusader Hercules Starlifter C2",
-        "Crusader Industries Hercules Starlifter C2"
+        "Crusader Industries Hercules Starlifter C2",
+        "C2 Hercules",
+        "Hercules C2"
       ]
     },
     {
@@ -1195,7 +1199,9 @@
       "kind": "ship",
       "aliases": [
         "Crusader Hercules Starlifter M2",
-        "Crusader Industries Hercules Starlifter M2"
+        "Crusader Industries Hercules Starlifter M2",
+        "M2 Hercules",
+        "Hercules M2"
       ]
     },
     {
@@ -2325,6 +2331,360 @@
       "source": "VIP Wing Commander",
       "translation": "VIP 联队指挥官",
       "kind": "package",
+      "aliases": []
+    },
+    {
+      "source": "Standalone Ships",
+      "translation": "独立舰船",
+      "kind": "keyword",
+      "aliases": [
+        "Standalone Ship"
+      ]
+    },
+    {
+      "source": "Gear",
+      "translation": "装备",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Bundle",
+      "translation": "套装",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Paint",
+      "translation": "涂装",
+      "kind": "keyword",
+      "aliases": [
+        "Paints"
+      ]
+    },
+    {
+      "source": "Upgrade",
+      "translation": "升级",
+      "kind": "keyword",
+      "aliases": [
+        "Upgrades"
+      ]
+    },
+    {
+      "source": "Warbond",
+      "translation": "战争债券",
+      "kind": "keyword",
+      "aliases": [
+        "WB",
+        "War bond"
+      ]
+    },
+    {
+      "source": "Edition",
+      "translation": "版",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Executive Edition",
+      "translation": "行政版",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Best In Show",
+      "translation": "BIS",
+      "kind": "keyword",
+      "aliases": [
+        "BIS",
+        "BestInShow"
+      ]
+    },
+    {
+      "source": "Aegis Dynamics",
+      "translation": "圣盾动力",
+      "kind": "keyword",
+      "aliases": [
+        "Aegis"
+      ]
+    },
+    {
+      "source": "Anvil Aerospace",
+      "translation": "铁砧航天",
+      "kind": "keyword",
+      "aliases": [
+        "Anvil"
+      ]
+    },
+    {
+      "source": "Argo Astronautics",
+      "translation": "南船座宇航",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Aopoa",
+      "translation": "奥波亚",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Banu Souli",
+      "translation": "巴努",
+      "kind": "keyword",
+      "aliases": [
+        "Banu"
+      ]
+    },
+    {
+      "source": "Casse Aerospace",
+      "translation": "卡斯航空",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Consolidated Outland",
+      "translation": "联合外域",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Crusader Industries",
+      "translation": "十字军工业",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Drake Interplanetary",
+      "translation": "德雷克行星际",
+      "kind": "keyword",
+      "aliases": [
+        "Drake"
+      ]
+    },
+    {
+      "source": "Esperia",
+      "translation": "埃斯佩里亚",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Gatac Manufacture",
+      "translation": "盖塔克制造",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Grey‘s Market",
+      "translation": "格雷市场",
+      "kind": "keyword",
+      "aliases": [
+        "Gerys",
+        "Gery's"
+      ]
+    },
+    {
+      "source": "Kruger Intergalatic",
+      "translation": "克鲁格星际",
+      "kind": "keyword",
+      "aliases": [
+        "Kruger"
+      ]
+    },
+    {
+      "source": "Mirai",
+      "translation": "未来",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "MISC",
+      "translation": "武藏工业",
+      "kind": "keyword",
+      "aliases": [
+        "Musashi Industrial and Starflight Concern"
+      ]
+    },
+    {
+      "source": "Origin Jumpworks",
+      "translation": "起源跃动",
+      "kind": "keyword",
+      "aliases": [
+        "Origin"
+      ]
+    },
+    {
+      "source": "Roberts Space Industries",
+      "translation": "罗伯茨太空工业",
+      "kind": "keyword",
+      "aliases": [
+        "RSI"
+      ]
+    },
+    {
+      "source": "Greycat Industrial",
+      "translation": "灰猫工业",
+      "kind": "keyword",
+      "aliases": [
+        "Greycat"
+      ]
+    },
+    {
+      "source": "Tumbril Land Systems",
+      "translation": "盾博尔",
+      "kind": "keyword",
+      "aliases": [
+        "Tumbril"
+      ]
+    },
+    {
+      "source": "Plus",
+      "translation": "和",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Skin",
+      "translation": "涂装",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Patch Bundle",
+      "translation": "版本捆绑包",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Hurston",
+      "translation": "赫斯顿",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Crusader",
+      "translation": "十字军",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "MicroTech",
+      "translation": "微科",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "ArcCrop",
+      "translation": "弧光星",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Luminalia",
+      "translation": "光灯节",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Red Festival",
+      "translation": "火红节",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Stella Fortuna",
+      "translation": "幸运星节",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Invictus Launch Week",
+      "translation": "舰队周",
+      "kind": "keyword",
+      "aliases": [
+        "ILW"
+      ]
+    },
+    {
+      "source": "Foundation Festival",
+      "translation": "奠基节",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Alien Week",
+      "translation": "外星周",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "CitizenCon",
+      "translation": "公民控",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Pirate Week",
+      "translation": "海盗周",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Intergalatic Aerospace Expo",
+      "translation": "星际航空航天博览会",
+      "kind": "keyword",
+      "aliases": [
+        "IAE"
+      ]
+    },
+    {
+      "source": "6 Months Imperator Reward - 20% Coupon",
+      "translation": "订阅奖励: 20% 优惠卷",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Rederral Bonus",
+      "translation": "邀请奖励",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "VIP Legatus2",
+      "translation": "舰队统领",
+      "kind": "keyword",
+      "aliases": [
+        "VIP Legatus",
+        "Legatus Navium"
+      ]
+    },
+    {
+      "source": "Praetorian",
+      "translation": "禁卫官",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Wing Commander",
+      "translation": "联队指挥官",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Space Marshal",
+      "translation": "太空元帅",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Grand Admiral",
+      "translation": "大将",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "High Admiral",
+      "translation": "上将",
+      "kind": "keyword",
       "aliases": []
     }
   ]

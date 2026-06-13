@@ -228,6 +228,12 @@ The feed is built from:
       "translation": "组合包 - 禁卫包",
       "kind": "package",
       "aliases": []
+    },
+    {
+      "source": "Standalone Ships",
+      "translation": "独立舰船",
+      "kind": "keyword",
+      "aliases": ["Standalone Ship"]
     }
   ]
 }
@@ -237,7 +243,7 @@ Notes for `item-translations/zh-Hans.json`:
 
 - `source` is the exact English display text clients should match after trimming, case-folding, and whitespace normalization.
 - `aliases` are alternate exact English keys that resolve to the same `translation`.
-- `kind` is an advisory grouping label such as `ship`, `package`, `upgrade`, `flair`, or `perk`.
+- `kind` is an advisory grouping label such as `ship`, `vehicle`, `package`, `keyword`, `upgrade`, `flair`, or `perk`.
 - The source file may include blank `translation` values as draft placeholders.
 - The build publishes only entries with non-empty translations and records the full draft size in `sourceCount`.
 - The build rejects empty `source`/`kind` values, invalid locales, non-positive versions, empty entry lists, and duplicate `source` or alias keys.
@@ -273,9 +279,14 @@ Optional local test controls:
 SHIP_DETAILS_LIMIT=5 SPVIEWER_DETAIL_CONCURRENCY=2 node scripts/build-ship-details-json.mjs
 ```
 
-The GitHub Actions workflow sets `PREVIOUS_SHIP_DETAILS_URLS` to the current Pages
-`ship-details.json` artifacts so pushes and scheduled refreshes can reuse the previous
-run's SPViewer data when `SPVIEWER_REFRESH_MIN_INTERVAL_HOURS` has not elapsed.
+Before calling StarCitizen.tools or SPViewer, the ship detail generator checks
+`SHIP_DETAILS_FRESHNESS_URLS`, which defaults to
+`https://starcitizen-info.pages.dev/ship-details.json`. If the published payload is
+less than `SHIP_DETAILS_REFRESH_MAX_AGE_HOURS` old, defaulting to 12 hours, the
+generator writes that published payload to `docs/ship-details.json` and skips the
+network refresh. Use `--force` or `FORCE_SHIP_DETAILS_REFRESH=1` to bypass this guard.
+`PREVIOUS_SHIP_DETAILS_URLS` is still used as fallback SPViewer detail data when a
+real refresh runs.
 
 That writes the latest output to:
 
