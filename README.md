@@ -299,12 +299,31 @@ That writes the latest output to:
 
 ## GitHub Pages
 
-This repo includes `.github/workflows/publish-ships.yml`, which:
+This repo includes two GitHub Pages publish workflows.
 
-- builds the JSON feed on every push to `main`
+`Publish ship feed` (`.github/workflows/publish-ships.yml`) is the full refresh workflow. It:
+
+- builds the JSON feed on non-translation pushes to `main`
 - lets you run it manually with `workflow_dispatch`
 - refreshes the feed every 12 hours at `00:00 UTC` and `12:00 UTC`
-- reuses the last successful SPViewer detail snapshot when it is less than 48 hours old, while still refreshing the RSI ship list and store availability on every run
+- reuses the last successful SPViewer detail snapshot when it is less than 12 hours old, while still refreshing the RSI ship list and store availability on every run
+
+`Publish item translations` (`.github/workflows/publish-item-translations.yml`) is the translation-only workflow. It:
+
+- runs on pushes that touch item translation source, generated item translation JSON, translation build scripts, or related workflow files
+- hydrates `docs/` from the currently published Pages feeds before generating the translation feed
+- runs only `node scripts/build-item-translations-json.mjs`
+- deploys the updated `docs/item-translations/zh-Hans.json` without calling RSI, StarCitizen.tools, SPViewer, Playwright, or the full `npm run build`
+
+This keeps manual translation edits fast and avoids triggering a full ship refresh just to publish
+`zh-Hans.json`. Mixed commits that include non-translation feed changes are intentionally left to the
+full workflow.
+
+The translation-only path does not break the scheduled refresh. GitHub Actions `paths` and
+`paths-ignore` filters apply to `push` events only; the existing `schedule` entries still run the full
+refresh every day at `00:00 UTC` and `12:00 UTC`, and `workflow_dispatch` still runs the full refresh
+when selected manually.
+Translation-only deploys share the same Pages concurrency group and queue behind an active full refresh.
 
 As of May 16, 2026 in `America/New_York`, those scheduled runs are:
 
@@ -323,6 +342,29 @@ Your public URLs should then be:
 - `https://therealwisewolfholo.github.io/StarCitizen-Info/`
 - `https://therealwisewolfholo.github.io/StarCitizen-Info/ships.json`
 - `https://therealwisewolfholo.github.io/StarCitizen-Info/item-translations/zh-Hans.json`
+
+### Publishing Item Translations Only
+
+To update Simplified Chinese item translations without a full refresh:
+
+1. Edit `data/item-translations/zh-Hans.json`.
+2. Run `node scripts/build-item-translations-json.mjs` locally if you want to validate before pushing.
+3. Commit and push the source file and generated `docs/item-translations/zh-Hans.json`.
+4. Let the `Publish item translations` workflow deploy the existing published feed plus the updated translation JSON.
+
+The workflow first downloads the current published top-level JSON files and any referenced media assets
+into `docs/`. That safeguard matters because the daily full refresh serves generated artifacts directly
+from GitHub Pages and does not commit those generated files back into the repository. Hydrating first
+prevents a translation-only deploy from replacing a newer published ship feed with older repository
+copies.
+
+For Cloudflare Pages mirrors, keep the same `docs` output directory and use the same no-refresh
+translation publish strategy. This repository does not contain a checked-in Cloudflare Pages project
+configuration, so dashboard build settings still control what `starcitizen-info.pages.dev` does on a
+Git push. If the Cloudflare Pages project is configured to run `npm run build` on every push, it will
+still perform the full refresh; configure that project to use the committed `docs` output for
+translation-only deploys, or deploy `docs` directly with Wrangler, when you only want to publish
+`zh-Hans.json`.
 
 ## App Consumption
 
