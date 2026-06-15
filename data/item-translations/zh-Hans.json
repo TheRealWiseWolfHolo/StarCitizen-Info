@@ -1770,7 +1770,7 @@
     },
     {
       "source": "Railen",
-      "translation": "瑞伦",
+      "translation": "锐伦",
       "kind": "ship",
       "aliases": [
         "Gatac Manufacture Railen",
@@ -2513,9 +2513,7 @@
       "source": "Roberts Space Industries",
       "translation": "罗伯茨太空工业",
       "kind": "keyword",
-      "aliases": [
-        "RSI"
-      ]
+      "aliases": []
     },
     {
       "source": "Greycat Industrial",
@@ -2681,6 +2679,304 @@
     {
       "source": "High Admiral",
       "translation": "上将",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Aurora",
+      "translation": "极光",
+      "kind": "ship",
+      "aliases": []
+    },
+    {
+      "source": "Pitbull",
+      "translation": "斗牛犬",
+      "kind": "ship",
+      "aliases": []
+    },
+    {
+      "source": "Starlite",
+      "translation": "星光",
+      "kind": "ship",
+      "aliases": [
+        "Starlight"
+      ]
+    },
+    {
+      "source": "Tiburon",
+      "translation": "虎鲨",
+      "kind": "ship",
+      "aliases": []
+    },
+    {
+      "source": "Ship",
+      "translation": "舰船",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Flair",
+      "translation": "附加",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Aeroview Hangar",
+      "translation": "Aeroview 机库",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Self-Land Hangar",
+      "translation": "Self-Land 机库",
+      "kind": "keyword",
+      "aliases": [
+        "Self Land Hangar"
+      ]
+    },
+    {
+      "source": "Revel & York Hangar",
+      "translation": "Revel & York 机库",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "VFG Industrial Hangar",
+      "translation": "VFG工业 机库",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Lifetime Insurance",
+      "translation": "永久保险",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Coramor Festival",
+      "translation": "科拉爱人节",
+      "kind": "keyword",
+      "aliases": [
+        "Coramor"
+      ]
+    },
+    {
+      "source": "Lovestruck",
+      "translation": "寻心者",
+      "kind": "keyword",
+      "aliases": [
+        "Love struck"
+      ]
+    },
+    {
+      "source": "Referral Bonus",
+      "translation": "邀请奖励",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Multi",
+      "translation": "多用途",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Corvette",
+      "translation": "轻型护卫舰",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Destroyer",
+      "translation": "驱逐舰",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Heavy Gunship",
+      "translation": "重型炮艇",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Frigate",
+      "translation": "护卫舰",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Stealth Fighter",
+      "translation": "隐形战斗机",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Dropship",
+      "translation": "运兵船",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Ground",
+      "translation": "地面",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Industrial",
+      "translation": "工业",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Salvage",
+      "translation": "打捞",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Freight",
+      "translation": "货船",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Racing",
+      "translation": "竞速",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Starter",
+      "translation": "新手",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Construction",
+      "translation": "建造",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Transport",
+      "translation": "运输",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Transport: Passenger",
+      "translation": "运输：客运",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Military Transport",
+      "translation": "军事运输",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Exploration",
+      "translation": "探索",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Generalist",
+      "translation": "通用",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Competition",
+      "translation": "竞赛",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Multi-Role",
+      "translation": "多用途",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Light Carrier",
+      "translation": "轻型航母",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Snub Fighter",
+      "translation": "寄生战斗机",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Transport: Cargo",
+      "translation": "运输：货运",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Anti-Air",
+      "translation": "防空",
+      "kind": "keyword",
+      "aliases": [
+        "Anti-Aircraft"
+      ]
+    },
+    {
+      "source": "Touring",
+      "translation": "旅行",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Transporter",
+      "translation": "运输",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Light Refueler",
+      "translation": "轻型加油机",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Expedition",
+      "translation": "远征",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Mining",
+      "translation": "开采",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Refining",
+      "translation": "精炼",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Pathfinder",
+      "translation": "探路者",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Interdictor",
+      "translation": "拦截机",
+      "kind": "keyword",
+      "aliases": []
+    },
+    {
+      "source": "Combat Support",
+      "translation": "战场支援",
       "kind": "keyword",
       "aliases": []
     }
