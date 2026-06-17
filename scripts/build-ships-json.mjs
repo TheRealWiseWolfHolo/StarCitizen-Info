@@ -24,7 +24,7 @@ const STORE_UPGRADE_SOURCE = {
   graphql: SHIP_UPGRADE_GRAPHQL_URL,
   field: "ships.skus"
 };
-const PAGES_BASE_URL = "https://therealwisewolfholo.github.io/StarCitizen-Info";
+const PRIMARY_PUBLISHED_BASE_URL = "https://starcitizen-info.pages.dev";
 const PAGE_SIZE = 100;
 const NOT_FOR_SALE_MSRP_LABEL = "Not For Sale";
 const MEDIA_DIRECTORY_NAME = "media/ships";
@@ -420,7 +420,7 @@ function inferMirroredExtension(sourceURL, contentType) {
 }
 
 function mirroredMediaURL(fileName) {
-  return `${PAGES_BASE_URL}/${MEDIA_DIRECTORY_NAME}/${fileName}`;
+  return `${PRIMARY_PUBLISHED_BASE_URL}/${MEDIA_DIRECTORY_NAME}/${fileName}`;
 }
 
 async function mirrorMediaAsset(sourceURL) {
