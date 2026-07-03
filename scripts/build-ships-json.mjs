@@ -22,7 +22,7 @@ const STORE_UPGRADE_SOURCE = {
   name: "Roberts Space Industries ship upgrade app",
   url: SHIP_UPGRADE_PAGE_URL,
   graphql: SHIP_UPGRADE_GRAPHQL_URL,
-  field: "ships.skus"
+  field: "ship(id, from).skus"
 };
 const PRIMARY_PUBLISHED_BASE_URL = "https://starcitizen-info.pages.dev";
 const PAGE_SIZE = 100;
@@ -217,6 +217,26 @@ const SHIP_UPGRADE_QUERY = `query initShipUpgrade {
       body
       unlimitedStock
       availableStock
+    }
+  }
+}`;
+
+const SHIP_UPGRADE_DETAILS_QUERY = `query getShipDetails($id: Int!, $fromShipId: Int) {
+  ship(id: $id, from: $fromShipId) {
+    id
+    name
+    msrp
+    skus {
+      id
+      title
+      price
+      upgradePrice
+      unlimitedStock
+      showStock
+      available
+      availableStock
+      limitedTimeOffer
+      body
     }
   }
 }`;
@@ -730,10 +750,99 @@ function normalizeStoreUpgradeOffer(ship, sku) {
     available: sku?.available !== false,
     unlimitedStock:
       typeof sku?.unlimitedStock === "boolean" ? sku.unlimitedStock : null,
+    showStock:
+      typeof sku?.showStock === "boolean" ? sku.showStock : null,
     availableStock:
       typeof sku?.availableStock === "number" ? sku.availableStock : null,
+    limitedTimeOffer:
+      typeof sku?.limitedTimeOffer === "boolean" ? sku.limitedTimeOffer : null,
     source: STORE_UPGRADE_SOURCE
   };
+}
+
+function storeUpgradeProbeSource(ships, targetShip, sku) {
+  const targetShipID = normalizeInteger(targetShip?.id);
+  const priceCentsUsd = normalizeCents(sku?.price);
+
+  if (targetShipID === null || priceCentsUsd === null) {
+    return null;
+  }
+
+  return ships
+    .filter((ship) => {
+      const shipID = normalizeInteger(ship?.id);
+      const msrpCentsUsd = normalizeCents(ship?.msrp);
+      return shipID !== null &&
+        shipID !== targetShipID &&
+        msrpCentsUsd !== null &&
+        msrpCentsUsd < priceCentsUsd;
+    })
+    .sort((left, right) => normalizeCents(right.msrp) - normalizeCents(left.msrp))[0] ?? null;
+}
+
+async function fetchShipUpgradeDetails(targetShipID, sourceShipID) {
+  const response = await fetch(SHIP_UPGRADE_GRAPHQL_URL, {
+    method: "POST",
+    headers: {
+      "Accept": "application/json",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Content-Type": "application/json",
+      "Origin": ORIGIN,
+      "Referer": SHIP_UPGRADE_PAGE_URL,
+      "User-Agent": "Mozilla/5.0"
+    },
+    body: JSON.stringify({
+      operationName: "getShipDetails",
+      variables: {
+        id: targetShipID,
+        fromShipId: sourceShipID
+      },
+      query: SHIP_UPGRADE_DETAILS_QUERY
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error(`RSI ship upgrade detail GraphQL request failed with HTTP ${response.status}.`);
+  }
+
+  const payload = await response.json();
+
+  if (payload?.errors?.length) {
+    const message = payload.errors
+      .map((entry) => entry?.message ?? "Unknown GraphQL error")
+      .join("; ");
+    throw new Error(`RSI ship upgrade detail GraphQL returned errors: ${message}`);
+  }
+
+  return payload?.data?.ship ?? null;
+}
+
+async function verifiedStoreUpgradeOffer(ships, ship, sku) {
+  const targetShipID = normalizeInteger(ship?.id);
+  const skuID = normalizeInteger(sku?.id);
+  const sourceShip = storeUpgradeProbeSource(ships, ship, sku);
+
+  if (targetShipID === null || skuID === null || !sourceShip) {
+    return null;
+  }
+
+  const sourceShipID = normalizeInteger(sourceShip.id);
+  if (sourceShipID === null) {
+    return null;
+  }
+
+  const detailShip = await fetchShipUpgradeDetails(targetShipID, sourceShipID);
+  const liveSku = detailShip?.skus?.find((entry) => normalizeInteger(entry?.id) === skuID);
+
+  if (!liveSku || liveSku.available === false) {
+    return null;
+  }
+
+  return normalizeStoreUpgradeOffer(ship, {
+    ...sku,
+    ...liveSku,
+    price: sku.price
+  });
 }
 
 async function fetchStoreUpgradeOffers() {
@@ -772,13 +881,33 @@ async function fetchStoreUpgradeOffers() {
     throw new Error("RSI ship upgrade GraphQL response did not contain data.ships.");
   }
 
-  return ships
+  const candidates = ships
     .flatMap((ship) =>
       (ship.skus ?? [])
         .filter((sku) => sku?.available !== false && isWarbondSku(sku))
-        .map((sku) => normalizeStoreUpgradeOffer(ship, sku))
+        .map((sku) => ({ ship, sku }))
     )
-    .filter(Boolean)
+    .filter(({ ship, sku }) => normalizeStoreUpgradeOffer(ship, sku));
+
+  const offers = [];
+  let verificationErrorCount = 0;
+  for (const { ship, sku } of candidates) {
+    try {
+      const offer = await verifiedStoreUpgradeOffer(ships, ship, sku);
+      if (offer) {
+        offers.push(offer);
+      }
+    } catch (error) {
+      verificationErrorCount += 1;
+      console.warn(`Unable to verify store upgrade SKU ${sku?.id ?? "unknown"}: ${error.message}`);
+    }
+  }
+
+  if (candidates.length > 0 && verificationErrorCount === candidates.length) {
+    throw new Error("Unable to verify any RSI store upgrade offers against live ship details.");
+  }
+
+  return offers
     .sort((left, right) => {
       if (right.savingsCentsUsd !== left.savingsCentsUsd) {
         return right.savingsCentsUsd - left.savingsCentsUsd;

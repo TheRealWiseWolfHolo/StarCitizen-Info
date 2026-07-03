@@ -263,7 +263,7 @@ Notes for `ship-details.json`:
   - `fallbackUrl` for GitHub Pages
   - optional `onLightBackground`, `onDarkBackground`, and per-variant addresses when multiple logo treatments are available
 - Ship entries include `manufacturerSlug` so clients can join a ship to the top-level manufacturer logo directory without reparsing the display name.
-- `storeUpgradeOffers` contains target-level Warbond upgrade offers from the RSI ship upgrade app. Clients can combine each offer with any lower-MSRP source ship where `source.msrpUsd < priceUsd`; the CCU purchase price is `priceUsd - source.msrpUsd`, the direct value is `targetShipMsrpUsd - source.msrpUsd`, and the savings are `savingsUsd`.
+- `storeUpgradeOffers` contains target-level Warbond upgrade offers from the RSI ship upgrade app. The generator first finds Warbond candidates in the upgrade initializer, then verifies each candidate still appears in the live `ship(id, from).skus` detail response before publishing it. Clients can combine each offer with any lower-MSRP source ship where `source.msrpUsd < priceUsd`; the CCU purchase price is `priceUsd - source.msrpUsd`, the direct value is `targetShipMsrpUsd - source.msrpUsd`, and the savings are `savingsUsd`.
 
 ## Local Usage
 
