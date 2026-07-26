@@ -9,8 +9,13 @@ on:
       - "data/item-translations/**"
       - "docs/item-translations/**"
       - "scripts/build-item-translations-json.mjs"
+      - "data/events/**"
+      - "docs/events.json"
+      - "scripts/build-events-json.mjs"
+      - "scripts/test-events-json.mjs"
       - "scripts/hydrate-published-docs.mjs"
       - ".github/workflows/publish-item-translations.yml"
+      - ".github/workflows/publish-events.yml"
       - ".github/workflows/publish-ships.yml"
       - "README.md"
   schedule:
