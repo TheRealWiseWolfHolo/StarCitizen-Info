@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T17:39:50.938Z",
+  "generatedAt": "2026-07-26T17:51:20.182Z",
   "count": 22,
   "sources": [
     {
@@ -91,10 +91,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-07-26T22:00:00.000Z",
-        "endsAt": "2026-07-27T03:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-07-26T17:00:00-05:00",
+        "endsAt": "2026-07-26T22:00:00-05:00",
+        "timeZone": "-05:00",
+        "originalTimeZone": "-05:00"
       },
       "location": {
         "isOnline": false,
@@ -112,7 +112,7 @@
           "url": "https://www.barcitizen.org/event-details/austin-bar-citizen-july-meet-up"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "official:foundation-festival-2026-twitch-drops",
@@ -152,10 +152,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-08-01T13:00:00.000Z",
-        "endsAt": "2026-08-01T20:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-08-01T14:00:00+01:00",
+        "endsAt": "2026-08-01T21:00:00+01:00",
+        "timeZone": "+01:00",
+        "originalTimeZone": "+01:00"
       },
       "location": {
         "isOnline": false,
@@ -173,7 +173,7 @@
           "url": "https://www.barcitizen.org/event-details/corby-bar-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:bar-citizen-philippines-2026",
@@ -185,10 +185,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-08-08T09:00:00.000Z",
-        "endsAt": "2026-08-08T16:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-08-08T17:00:00+08:00",
+        "endsAt": "2026-08-09T00:00:00+08:00",
+        "timeZone": "+08:00",
+        "originalTimeZone": "+08:00"
       },
       "location": {
         "isOnline": false,
@@ -206,7 +206,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-philippines-2026"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:bar-citizen-helsinki",
@@ -218,10 +218,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-08-08T14:00:00.000Z",
-        "endsAt": "2026-08-08T18:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-08-08T17:00:00+03:00",
+        "endsAt": "2026-08-08T21:00:00+03:00",
+        "timeZone": "+03:00",
+        "originalTimeZone": "+03:00"
       },
       "location": {
         "isOnline": false,
@@ -239,7 +239,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-helsinki"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:london-bar-citizen-brewdog-waterloo",
@@ -251,10 +251,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-08-08T15:00:00.000Z",
-        "endsAt": "2026-08-08T21:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-08-08T16:00:00+01:00",
+        "endsAt": "2026-08-08T22:00:00+01:00",
+        "timeZone": "+01:00",
+        "originalTimeZone": "+01:00"
       },
       "location": {
         "isOnline": false,
@@ -272,7 +272,7 @@
           "url": "https://www.barcitizen.org/event-details/london-bar-citizen-brewdog-waterloo"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:atlanta-bar-citizen-1",
@@ -284,10 +284,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-08-09T18:00:00.000Z",
-        "endsAt": "2026-08-09T21:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-08-09T14:00:00-04:00",
+        "endsAt": "2026-08-09T17:00:00-04:00",
+        "timeZone": "-04:00",
+        "originalTimeZone": "-04:00"
       },
       "location": {
         "isOnline": false,
@@ -305,7 +305,7 @@
           "url": "https://www.barcitizen.org/event-details/atlanta-bar-citizen-1"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:colorado-bar-citizen",
@@ -317,10 +317,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-08-15T21:00:00.000Z",
-        "endsAt": "2026-08-16T00:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-08-15T15:00:00-06:00",
+        "endsAt": "2026-08-15T18:00:00-06:00",
+        "timeZone": "-06:00",
+        "originalTimeZone": "-06:00"
       },
       "location": {
         "isOnline": false,
@@ -338,7 +338,7 @@
           "url": "https://www.barcitizen.org/event-details/colorado-bar-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:calgary-bar-citizen",
@@ -350,10 +350,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-08-15T21:30:00.000Z",
-        "endsAt": "2026-08-16T00:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-08-15T15:30:00-06:00",
+        "endsAt": "2026-08-15T18:00:00-06:00",
+        "timeZone": "-06:00",
+        "originalTimeZone": "-06:00"
       },
       "location": {
         "isOnline": false,
@@ -371,7 +371,7 @@
           "url": "https://www.barcitizen.org/event-details/calgary-bar-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:bar-citizen-brest",
@@ -383,10 +383,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-08-22T15:00:00.000Z",
-        "endsAt": "2026-08-22T20:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-08-22T17:00:00+02:00",
+        "endsAt": "2026-08-22T22:00:00+02:00",
+        "timeZone": "+02:00",
+        "originalTimeZone": "+02:00"
       },
       "location": {
         "isOnline": false,
@@ -404,7 +404,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-brest"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:syracuse-bar-citizen-1",
@@ -416,10 +416,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-08-22T16:00:00.000Z",
-        "endsAt": "2026-08-22T20:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-08-22T12:00:00-04:00",
+        "endsAt": "2026-08-22T16:00:00-04:00",
+        "timeZone": "-04:00",
+        "originalTimeZone": "-04:00"
       },
       "location": {
         "isOnline": false,
@@ -437,7 +437,7 @@
           "url": "https://www.barcitizen.org/event-details/syracuse-bar-citizen-1"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:camp-citizen",
@@ -449,10 +449,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-09-01T22:00:00.000Z",
-        "endsAt": "2026-09-05T22:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-09-02T00:00:00+02:00",
+        "endsAt": "2026-09-06T00:00:00+02:00",
+        "timeZone": "+02:00",
+        "originalTimeZone": "+02:00"
       },
       "location": {
         "isOnline": false,
@@ -470,7 +470,7 @@
           "url": "https://www.barcitizen.org/event-details/camp-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:pax-west-2026-bar-citizen",
@@ -482,10 +482,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-09-05T01:00:00.000Z",
-        "endsAt": "2026-09-05T04:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-09-04T18:00:00-07:00",
+        "endsAt": "2026-09-04T21:00:00-07:00",
+        "timeZone": "-07:00",
+        "originalTimeZone": "-07:00"
       },
       "location": {
         "isOnline": false,
@@ -503,7 +503,7 @@
           "url": "https://www.barcitizen.org/event-details/pax-west-2026-bar-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:bar-citizen-germany-munich-allershausen",
@@ -515,10 +515,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-09-05T11:30:00.000Z",
-        "endsAt": "2026-09-05T20:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-09-05T13:30:00+02:00",
+        "endsAt": "2026-09-05T22:00:00+02:00",
+        "timeZone": "+02:00",
+        "originalTimeZone": "+02:00"
       },
       "location": {
         "isOnline": false,
@@ -536,7 +536,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-germany-munich-allershausen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:bcam-2026",
@@ -548,10 +548,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-09-05T12:00:00.000Z",
-        "endsAt": "2026-09-05T20:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-09-05T14:00:00+02:00",
+        "endsAt": "2026-09-05T22:00:00+02:00",
+        "timeZone": "+02:00",
+        "originalTimeZone": "+02:00"
       },
       "location": {
         "isOnline": false,
@@ -569,7 +569,7 @@
           "url": "https://www.barcitizen.org/event-details/bcam-2026"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:bar-citizen-edinburgh",
@@ -581,10 +581,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-09-05T13:00:00.000Z",
-        "endsAt": "2026-09-05T22:30:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-09-05T14:00:00+01:00",
+        "endsAt": "2026-09-05T23:30:00+01:00",
+        "timeZone": "+01:00",
+        "originalTimeZone": "+01:00"
       },
       "location": {
         "isOnline": false,
@@ -602,7 +602,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-edinburgh"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:vernal-utah-bar-citizen",
@@ -614,10 +614,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-09-12T21:00:00.000Z",
-        "endsAt": "2026-09-12T23:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-09-12T15:00:00-06:00",
+        "endsAt": "2026-09-12T17:00:00-06:00",
+        "timeZone": "-06:00",
+        "originalTimeZone": "-06:00"
       },
       "location": {
         "isOnline": false,
@@ -635,7 +635,7 @@
           "url": "https://www.barcitizen.org/event-details/vernal-utah-bar-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:bar-citizen-rouen",
@@ -647,10 +647,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-09-19T16:00:00.000Z",
-        "endsAt": "2026-09-19T23:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-09-19T18:00:00+02:00",
+        "endsAt": "2026-09-20T01:00:00+02:00",
+        "timeZone": "+02:00",
+        "originalTimeZone": "+02:00"
       },
       "location": {
         "isOnline": false,
@@ -668,7 +668,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-rouen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:bar-citizen-portugal-2026",
@@ -680,10 +680,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-09-26T14:00:00.000Z",
-        "endsAt": "2026-09-26T19:00:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-09-26T15:00:00+01:00",
+        "endsAt": "2026-09-26T20:00:00+01:00",
+        "timeZone": "+01:00",
+        "originalTimeZone": "+01:00"
       },
       "location": {
         "isOnline": false,
@@ -701,7 +701,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-portugal-2026"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     },
     {
       "id": "barcitizen:dutch-bar-citizen-spijkenisse-2",
@@ -713,10 +713,10 @@
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
-        "startsAt": "2026-09-26T16:00:00.000Z",
-        "endsAt": "2026-09-26T21:59:00.000Z",
-        "timeZone": null,
-        "originalTimeZone": null
+        "startsAt": "2026-09-26T18:00:00+02:00",
+        "endsAt": "2026-09-26T23:59:00+02:00",
+        "timeZone": "+02:00",
+        "originalTimeZone": "+02:00"
       },
       "location": {
         "isOnline": false,
@@ -734,7 +734,7 @@
           "url": "https://www.barcitizen.org/event-details/dutch-bar-citizen-spijkenisse-2"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
     }
   ],
   "quarantine": [

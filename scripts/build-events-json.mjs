@@ -3,6 +3,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as cheerio from "cheerio";
+import { chromium } from "playwright";
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const officialEventsPath = path.join(repositoryRoot, "data/events/official-events.json");
@@ -168,15 +169,22 @@ export function parseBarCitizenDetail(html, sourceURL, verifiedAt = new Date().t
   const mainText = cleanText($("main").text() || $("body").text());
   const heading = cleanText($("h1").first().text());
   const title = cleanText(structured?.name) || heading;
-  const startsAt = structured?.startDate ? new Date(structured.startDate).toISOString() : null;
-  const endsAt = structured?.endDate ? new Date(structured.endDate).toISOString() : null;
+  const startsAt = structured?.startDate && Number.isFinite(Date.parse(structured.startDate))
+    ? structured.startDate
+    : null;
+  const endsAt = structured?.endDate && Number.isFinite(Date.parse(structured.endDate))
+    ? structured.endDate
+    : null;
+  const structuredTimeZone = cleanText(structured?.eventSchedule?.scheduleTimezone)
+    || cleanText(structured?.startDate).match(/(Z|[+-]\d{2}:\d{2})$/)?.[1]
+    || null;
   const schedule = startsAt && endsAt
     ? {
       kind: "timed",
       startsAt,
       endsAt,
-      timeZone: cleanText(structured?.eventSchedule?.scheduleTimezone) || null,
-      originalTimeZone: cleanText(structured?.eventSchedule?.scheduleTimezone) || null,
+      timeZone: structuredTimeZone,
+      originalTimeZone: structuredTimeZone,
     }
     : visibleSchedule(mainText);
   if (!title || !schedule) {
@@ -222,6 +230,45 @@ async function fetchText(url) {
   }
 }
 
+async function fetchCompleteBarCitizenListHTML() {
+  let browser;
+  try {
+    browser = await chromium.launch({ headless: true });
+    const page = await browser.newPage({
+      userAgent: "StarCitizen-Info event feed builder (+https://github.com/TheRealWiseWolfHolo/StarCitizen-Info)",
+    });
+    await page.goto(barCitizenListURL, {
+      waitUntil: "domcontentloaded",
+      timeout: sourceTimeoutMilliseconds,
+    });
+
+    for (let attempt = 0; attempt < 30; attempt += 1) {
+      const loadMore = page
+        .locator("button, a")
+        .filter({ hasText: /^\s*load more\s*$/i })
+        .last();
+      if (await loadMore.count() === 0 || !(await loadMore.isVisible())) break;
+
+      const before = await page.locator("a[href*='/event-details/']").count();
+      await loadMore.click({ timeout: 10_000 });
+      await page.waitForFunction(
+        (previousCount) => document.querySelectorAll("a[href*='/event-details/']").length > previousCount,
+        before,
+        { timeout: 10_000 },
+      ).catch(() => {});
+      const after = await page.locator("a[href*='/event-details/']").count();
+      if (after <= before) break;
+    }
+
+    return await page.content();
+  } catch (error) {
+    console.warn(`Browser expansion failed; using the server-rendered Bar Citizen list: ${error.message}`);
+    return await fetchText(barCitizenListURL);
+  } finally {
+    await browser?.close();
+  }
+}
+
 export function discoverBarCitizenLinks(html) {
   const $ = cheerio.load(html);
   return [...new Set(
@@ -245,7 +292,7 @@ async function loadPreviousFeed() {
 }
 
 async function fetchBarCitizenEvents(generatedAt) {
-  const listHTML = await fetchText(barCitizenListURL);
+  const listHTML = await fetchCompleteBarCitizenListHTML();
   const links = discoverBarCitizenLinks(listHTML);
   if (links.length === 0) throw new Error("event list did not contain any event detail links");
   const results = await Promise.allSettled(links.map(async (url) => {
