@@ -7,6 +7,7 @@ import { chromium } from "playwright";
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const officialEventsPath = path.join(repositoryRoot, "data/events/official-events.json");
+const anticipatedEventsPath = path.join(repositoryRoot, "data/events/anticipated-events.json");
 const outputPath = path.join(repositoryRoot, "docs/events.json");
 const barCitizenListURL = "https://www.barcitizen.org/eventlist";
 const sourceTimeoutMilliseconds = 30_000;
@@ -63,7 +64,10 @@ export function validateEvent(event) {
   if (!cleanText(event?.title)) errors.push("title is required");
   if (!["official", "barCitizen"].includes(event?.category)) errors.push("category is invalid");
   if (!["scheduled", "cancelled", "postponed", "completed"].includes(event?.status)) errors.push("status is invalid");
-  if (!["cigPublished", "communityPublished"].includes(event?.verification)) errors.push("verification is invalid");
+  if (!["cigPublished", "communityPublished", "historicalPattern"].includes(event?.verification)) errors.push("verification is invalid");
+  if (event?.dateConfidence && !["confirmed", "anticipated"].includes(event.dateConfidence)) {
+    errors.push("dateConfidence is invalid");
+  }
   if (!event?.schedule || !["timed", "allDay"].includes(event.schedule.kind)) {
     errors.push("schedule.kind is invalid");
   } else if (event.schedule.kind === "timed") {
@@ -204,6 +208,7 @@ export function parseBarCitizenDetail(html, sourceURL, verifiedAt = new Date().t
     eventType: "inPerson",
     organizer: "Bar Citizens International",
     verification: "communityPublished",
+    dateConfidence: "confirmed",
     status: structured?.eventStatus?.includes("Cancelled") ? "cancelled" : "scheduled",
     schedule,
     location,
@@ -212,6 +217,70 @@ export function parseBarCitizenDetail(html, sourceURL, verifiedAt = new Date().t
       { role: "source", label: "Event details and RSVP", url: normalizeURL(sourceURL) },
     ],
     lastVerifiedAt: verifiedAt,
+  };
+}
+
+function validMonthDay(value) {
+  return /^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/.test(String(value ?? ""));
+}
+
+function projectedDate(year, monthDay) {
+  return `${year}-${monthDay}`;
+}
+
+export function projectAnticipatedEvent(template, basedOnYear, generatedAt = new Date().toISOString()) {
+  if (!cleanText(template?.seriesID) || !cleanText(template?.title)) {
+    throw new Error("anticipated event requires seriesID and title");
+  }
+  if (!validMonthDay(template.startMonthDay) || !validMonthDay(template.endMonthDayExclusive)) {
+    throw new Error(`${template.seriesID}: anticipated dates must use MM-DD`);
+  }
+  const sourceURL = normalizeURL(template.sourceURL);
+  if (!sourceURL) throw new Error(`${template.seriesID}: sourceURL is invalid`);
+
+  const currentYear = new Date(generatedAt).getUTCFullYear();
+  let occurrenceYear = currentYear;
+  let endYear = template.endMonthDayExclusive <= template.startMonthDay
+    ? occurrenceYear + 1
+    : occurrenceYear;
+  let endDateExclusive = projectedDate(endYear, template.endMonthDayExclusive);
+
+  if (Date.parse(`${endDateExclusive}T00:00:00Z`) <= Date.parse(generatedAt)) {
+    occurrenceYear += 1;
+    endYear = template.endMonthDayExclusive <= template.startMonthDay
+      ? occurrenceYear + 1
+      : occurrenceYear;
+    endDateExclusive = projectedDate(endYear, template.endMonthDayExclusive);
+  }
+
+  return {
+    id: `anticipated:${template.seriesID}:${occurrenceYear}`,
+    title: template.title,
+    category: "official",
+    eventType: "online",
+    organizer: "Cloud Imperium Games",
+    verification: "historicalPattern",
+    dateConfidence: "anticipated",
+    anticipation: {
+      basedOnYear,
+      method: "priorYearMonthDay",
+    },
+    status: "scheduled",
+    schedule: {
+      kind: "allDay",
+      startDate: projectedDate(occurrenceYear, template.startMonthDay),
+      endDateExclusive,
+      timeZone: "UTC",
+    },
+    location: {
+      isOnline: true,
+      name: "Star Citizen",
+    },
+    summary: `Anticipated from the official ${basedOnYear} ${template.title} window. CIG has not confirmed this occurrence.`,
+    links: [
+      { role: "source", label: `${basedOnYear} official reference`, url: sourceURL },
+    ],
+    lastVerifiedAt: generatedAt,
   };
 }
 
@@ -329,10 +398,15 @@ function mergeEvents(events) {
 export async function buildEventsFeed() {
   const generatedAt = new Date().toISOString();
   const curated = JSON.parse(await readFile(officialEventsPath, "utf8"));
+  const anticipatedSource = JSON.parse(await readFile(anticipatedEventsPath, "utf8"));
   const officialEvents = curated.events ?? [];
+  const anticipatedEvents = (anticipatedSource.events ?? []).map((event) =>
+    projectAnticipatedEvent(event, anticipatedSource.basedOnYear, generatedAt)
+  );
   const officialErrors = officialEvents.flatMap((event) => validateEvent(event).map((reason) => `${event.id || "unknown"}: ${reason}`));
-  if (officialErrors.length > 0) {
-    throw new Error(`Official event validation failed:\n${officialErrors.join("\n")}`);
+  const anticipatedErrors = anticipatedEvents.flatMap((event) => validateEvent(event).map((reason) => `${event.id || "unknown"}: ${reason}`));
+  if (officialErrors.length > 0 || anticipatedErrors.length > 0) {
+    throw new Error(`Official event validation failed:\n${[...officialErrors, ...anticipatedErrors].join("\n")}`);
   }
 
   const previousFeed = await loadPreviousFeed();
@@ -357,7 +431,7 @@ export async function buildEventsFeed() {
     }
   }
 
-  const events = mergeEvents([...officialEvents, ...barCitizen.events]);
+  const events = mergeEvents([...officialEvents, ...anticipatedEvents, ...barCitizen.events]);
   const output = {
     schemaVersion: 1,
     generatedAt,

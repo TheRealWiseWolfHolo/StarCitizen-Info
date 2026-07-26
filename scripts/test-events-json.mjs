@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import {
   discoverBarCitizenLinks,
   parseBarCitizenDetail,
+  projectAnticipatedEvent,
   stableEventID,
   validateEvent,
 } from "./build-events-json.mjs";
@@ -35,5 +36,18 @@ assert.deepEqual(validateEvent(event), []);
 const suspicious = structuredClone(event);
 suspicious.schedule.endsAt = "2028-09-04T21:00:00-07:00";
 assert(validateEvent(suspicious).includes("Bar Citizen event duration exceeds seven days"));
+
+const anticipated = projectAnticipatedEvent({
+  seriesID: "red-festival",
+  title: "Red Festival",
+  startMonthDay: "01-29",
+  endMonthDayExclusive: "02-18",
+  sourceURL: "https://robertsspaceindustries.com/en/comm-link/transmission/example",
+}, 2025, "2026-07-26T00:00:00.000Z");
+assert.equal(anticipated.id, "anticipated:red-festival:2027");
+assert.equal(anticipated.schedule.startDate, "2027-01-29");
+assert.equal(anticipated.schedule.endDateExclusive, "2027-02-18");
+assert.equal(anticipated.dateConfidence, "anticipated");
+assert.deepEqual(validateEvent(anticipated), []);
 
 console.log("Event feed tests passed.");

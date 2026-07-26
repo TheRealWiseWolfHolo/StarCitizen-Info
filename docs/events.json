@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-26T17:51:20.182Z",
-  "count": 22,
+  "generatedAt": "2026-07-26T18:08:32.519Z",
+  "count": 31,
   "sources": [
     {
       "id": "cig",
@@ -29,6 +29,7 @@
       "eventType": "inPerson",
       "organizer": "Cloud Imperium Games",
       "verification": "cigPublished",
+      "dateConfidence": "confirmed",
       "status": "completed",
       "schedule": {
         "kind": "allDay",
@@ -60,6 +61,7 @@
       "eventType": "online",
       "organizer": "Cloud Imperium Games",
       "verification": "cigPublished",
+      "dateConfidence": "confirmed",
       "status": "completed",
       "schedule": {
         "kind": "allDay",
@@ -88,6 +90,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -112,7 +115,7 @@
           "url": "https://www.barcitizen.org/event-details/austin-bar-citizen-july-meet-up"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "official:foundation-festival-2026-twitch-drops",
@@ -121,6 +124,7 @@
       "eventType": "online",
       "organizer": "Cloud Imperium Games",
       "verification": "cigPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "allDay",
@@ -143,12 +147,46 @@
       "lastVerifiedAt": "2026-07-26T00:00:00.000Z"
     },
     {
+      "id": "anticipated:ship-showdown:2026",
+      "title": "Ship Showdown",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "historicalPattern",
+      "dateConfidence": "anticipated",
+      "anticipation": {
+        "basedOnYear": 2025,
+        "method": "priorYearMonthDay"
+      },
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-07-29",
+        "endDateExclusive": "2026-08-13",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "Anticipated from the official 2025 Ship Showdown window. CIG has not confirmed this occurrence.",
+      "links": [
+        {
+          "role": "source",
+          "label": "2025 official reference",
+          "url": "https://robertsspaceindustries.com/en/ship-showdown2025/community-call"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
+    },
+    {
       "id": "barcitizen:corby-bar-citizen",
       "title": "Corby Bar Citizen",
       "category": "barCitizen",
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -173,7 +211,7 @@
           "url": "https://www.barcitizen.org/event-details/corby-bar-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:bar-citizen-philippines-2026",
@@ -182,6 +220,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -206,7 +245,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-philippines-2026"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:bar-citizen-helsinki",
@@ -215,6 +254,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -239,7 +279,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-helsinki"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:london-bar-citizen-brewdog-waterloo",
@@ -248,6 +288,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -272,7 +313,7 @@
           "url": "https://www.barcitizen.org/event-details/london-bar-citizen-brewdog-waterloo"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:atlanta-bar-citizen-1",
@@ -281,6 +322,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -305,7 +347,7 @@
           "url": "https://www.barcitizen.org/event-details/atlanta-bar-citizen-1"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:colorado-bar-citizen",
@@ -314,6 +356,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -338,7 +381,7 @@
           "url": "https://www.barcitizen.org/event-details/colorado-bar-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:calgary-bar-citizen",
@@ -347,6 +390,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -371,7 +415,7 @@
           "url": "https://www.barcitizen.org/event-details/calgary-bar-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:bar-citizen-brest",
@@ -380,6 +424,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -404,7 +449,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-brest"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:syracuse-bar-citizen-1",
@@ -413,6 +458,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -437,7 +483,7 @@
           "url": "https://www.barcitizen.org/event-details/syracuse-bar-citizen-1"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:camp-citizen",
@@ -446,6 +492,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -470,7 +517,7 @@
           "url": "https://www.barcitizen.org/event-details/camp-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:pax-west-2026-bar-citizen",
@@ -479,6 +526,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -503,7 +551,7 @@
           "url": "https://www.barcitizen.org/event-details/pax-west-2026-bar-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:bar-citizen-germany-munich-allershausen",
@@ -512,6 +560,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -536,7 +585,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-germany-munich-allershausen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:bcam-2026",
@@ -545,6 +594,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -569,7 +619,7 @@
           "url": "https://www.barcitizen.org/event-details/bcam-2026"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:bar-citizen-edinburgh",
@@ -578,6 +628,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -602,7 +653,40 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-edinburgh"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
+    },
+    {
+      "id": "anticipated:pirate-week:2026",
+      "title": "Pirate Week",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "historicalPattern",
+      "dateConfidence": "anticipated",
+      "anticipation": {
+        "basedOnYear": 2025,
+        "method": "priorYearMonthDay"
+      },
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-09-10",
+        "endDateExclusive": "2026-09-23",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "Anticipated from the official 2025 Pirate Week window. CIG has not confirmed this occurrence.",
+      "links": [
+        {
+          "role": "source",
+          "label": "2025 official reference",
+          "url": "https://robertsspaceindustries.com/community-hub/post/pirate-flag-design-contest-vZ6UczUpa6bk1"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:vernal-utah-bar-citizen",
@@ -611,6 +695,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -635,7 +720,7 @@
           "url": "https://www.barcitizen.org/event-details/vernal-utah-bar-citizen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:bar-citizen-rouen",
@@ -644,6 +729,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -668,7 +754,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-rouen"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:bar-citizen-portugal-2026",
@@ -677,6 +763,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -701,7 +788,7 @@
           "url": "https://www.barcitizen.org/event-details/bar-citizen-portugal-2026"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     },
     {
       "id": "barcitizen:dutch-bar-citizen-spijkenisse-2",
@@ -710,6 +797,7 @@
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
@@ -734,7 +822,238 @@
           "url": "https://www.barcitizen.org/event-details/dutch-bar-citizen-spijkenisse-2"
         }
       ],
-      "lastVerifiedAt": "2026-07-26T17:51:20.182Z"
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
+    },
+    {
+      "id": "anticipated:citizencon-direct:2026",
+      "title": "CitizenCon Direct",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "historicalPattern",
+      "dateConfidence": "anticipated",
+      "anticipation": {
+        "basedOnYear": 2025,
+        "method": "priorYearMonthDay"
+      },
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-10-11",
+        "endDateExclusive": "2026-10-12",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "Anticipated from the official 2025 CitizenCon Direct window. CIG has not confirmed this occurrence.",
+      "links": [
+        {
+          "role": "source",
+          "label": "2025 official reference",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/20766-CitizenCon-Direct-2955-Digital-Goodies-Pack-Now-Available"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
+    },
+    {
+      "id": "anticipated:intergalactic-aerospace-expo:2026",
+      "title": "Intergalactic Aerospace Expo",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "historicalPattern",
+      "dateConfidence": "anticipated",
+      "anticipation": {
+        "basedOnYear": 2025,
+        "method": "priorYearMonthDay"
+      },
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-11-20",
+        "endDateExclusive": "2026-12-04",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "Anticipated from the official 2025 Intergalactic Aerospace Expo window. CIG has not confirmed this occurrence.",
+      "links": [
+        {
+          "role": "source",
+          "label": "2025 official reference",
+          "url": "https://robertsspaceindustries.com/en/IAE-2955-Showtime-Contest-rules"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
+    },
+    {
+      "id": "anticipated:luminalia:2026",
+      "title": "Luminalia",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "historicalPattern",
+      "dateConfidence": "anticipated",
+      "anticipation": {
+        "basedOnYear": 2025,
+        "method": "priorYearMonthDay"
+      },
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-12-10",
+        "endDateExclusive": "2026-12-23",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "Anticipated from the official 2025 Luminalia window. CIG has not confirmed this occurrence.",
+      "links": [
+        {
+          "role": "source",
+          "label": "2025 official reference",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/20940-This-Week-In-Star-Citizen"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
+    },
+    {
+      "id": "anticipated:red-festival:2027",
+      "title": "Red Festival",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "historicalPattern",
+      "dateConfidence": "anticipated",
+      "anticipation": {
+        "basedOnYear": 2025,
+        "method": "priorYearMonthDay"
+      },
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2027-01-29",
+        "endDateExclusive": "2027-02-18",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "Anticipated from the official 2025 Red Festival window. CIG has not confirmed this occurrence.",
+      "links": [
+        {
+          "role": "source",
+          "label": "2025 official reference",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/20373-Lunar-New-Year-2025"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
+    },
+    {
+      "id": "anticipated:invictus-launch-week:2027",
+      "title": "Invictus Launch Week",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "historicalPattern",
+      "dateConfidence": "anticipated",
+      "anticipation": {
+        "basedOnYear": 2025,
+        "method": "priorYearMonthDay"
+      },
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2027-05-15",
+        "endDateExclusive": "2027-05-28",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "Anticipated from the official 2025 Invictus Launch Week window. CIG has not confirmed this occurrence.",
+      "links": [
+        {
+          "role": "source",
+          "label": "2025 official reference",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/20489-Invictus-Launch-Week-2955-Countdown"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
+    },
+    {
+      "id": "anticipated:alien-week:2027",
+      "title": "Alien Week",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "historicalPattern",
+      "dateConfidence": "anticipated",
+      "anticipation": {
+        "basedOnYear": 2025,
+        "method": "priorYearMonthDay"
+      },
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2027-06-12",
+        "endDateExclusive": "2027-06-30",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "Anticipated from the official 2025 Alien Week window. CIG has not confirmed this occurrence.",
+      "links": [
+        {
+          "role": "source",
+          "label": "2025 official reference",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/20615-Alien-Week-2025"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
+    },
+    {
+      "id": "anticipated:foundation-festival:2027",
+      "title": "Foundation Festival",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "historicalPattern",
+      "dateConfidence": "anticipated",
+      "anticipation": {
+        "basedOnYear": 2025,
+        "method": "priorYearMonthDay"
+      },
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2027-07-02",
+        "endDateExclusive": "2027-07-15",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "Anticipated from the official 2025 Foundation Festival window. CIG has not confirmed this occurrence.",
+      "links": [
+        {
+          "role": "source",
+          "label": "2025 official reference",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/20622-Foundation-Festival-2025"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T18:08:32.519Z"
     }
   ],
   "quarantine": [

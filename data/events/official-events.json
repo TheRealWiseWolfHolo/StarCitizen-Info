@@ -8,6 +8,7 @@
       "eventType": "online",
       "organizer": "Cloud Imperium Games",
       "verification": "cigPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "allDay",
@@ -36,6 +37,7 @@
       "eventType": "online",
       "organizer": "Cloud Imperium Games",
       "verification": "cigPublished",
+      "dateConfidence": "confirmed",
       "status": "completed",
       "schedule": {
         "kind": "allDay",
@@ -64,6 +66,7 @@
       "eventType": "inPerson",
       "organizer": "Cloud Imperium Games",
       "verification": "cigPublished",
+      "dateConfidence": "confirmed",
       "status": "completed",
       "schedule": {
         "kind": "allDay",

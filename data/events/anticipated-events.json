@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "basedOnYear": 2025,
+  "events": [
+    {
+      "seriesID": "red-festival",
+      "title": "Red Festival",
+      "startMonthDay": "01-29",
+      "endMonthDayExclusive": "02-18",
+      "sourceURL": "https://robertsspaceindustries.com/en/comm-link/transmission/20373-Lunar-New-Year-2025"
+    },
+    {
+      "seriesID": "invictus-launch-week",
+      "title": "Invictus Launch Week",
+      "startMonthDay": "05-15",
+      "endMonthDayExclusive": "05-28",
+      "sourceURL": "https://robertsspaceindustries.com/en/comm-link/transmission/20489-Invictus-Launch-Week-2955-Countdown"
+    },
+    {
+      "seriesID": "alien-week",
+      "title": "Alien Week",
+      "startMonthDay": "06-12",
+      "endMonthDayExclusive": "06-30",
+      "sourceURL": "https://robertsspaceindustries.com/en/comm-link/transmission/20615-Alien-Week-2025"
+    },
+    {
+      "seriesID": "foundation-festival",
+      "title": "Foundation Festival",
+      "startMonthDay": "07-02",
+      "endMonthDayExclusive": "07-15",
+      "sourceURL": "https://robertsspaceindustries.com/en/comm-link/transmission/20622-Foundation-Festival-2025"
+    },
+    {
+      "seriesID": "ship-showdown",
+      "title": "Ship Showdown",
+      "startMonthDay": "07-29",
+      "endMonthDayExclusive": "08-13",
+      "sourceURL": "https://robertsspaceindustries.com/en/ship-showdown2025/community-call"
+    },
+    {
+      "seriesID": "pirate-week",
+      "title": "Pirate Week",
+      "startMonthDay": "09-10",
+      "endMonthDayExclusive": "09-23",
+      "sourceURL": "https://robertsspaceindustries.com/community-hub/post/pirate-flag-design-contest-vZ6UczUpa6bk1"
+    },
+    {
+      "seriesID": "citizencon-direct",
+      "title": "CitizenCon Direct",
+      "startMonthDay": "10-11",
+      "endMonthDayExclusive": "10-12",
+      "sourceURL": "https://robertsspaceindustries.com/en/comm-link/transmission/20766-CitizenCon-Direct-2955-Digital-Goodies-Pack-Now-Available"
+    },
+    {
+      "seriesID": "intergalactic-aerospace-expo",
+      "title": "Intergalactic Aerospace Expo",
+      "startMonthDay": "11-20",
+      "endMonthDayExclusive": "12-04",
+      "sourceURL": "https://robertsspaceindustries.com/en/IAE-2955-Showtime-Contest-rules"
+    },
+    {
+      "seriesID": "luminalia",
+      "title": "Luminalia",
+      "startMonthDay": "12-10",
+      "endMonthDayExclusive": "12-23",
+      "sourceURL": "https://robertsspaceindustries.com/en/comm-link/transmission/20940-This-Week-In-Star-Citizen"
+    }
+  ]
+}

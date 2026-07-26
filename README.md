@@ -43,6 +43,8 @@ The feed is built from:
   - `https://www.barcitizen.org/eventlist`
 - curated official event records:
   - `data/events/official-events.json`
+- annual anticipated-event templates:
+  - `data/events/anticipated-events.json`
 
 ## Credits And Data Attribution
 
@@ -52,6 +54,7 @@ The feed is built from:
 - RSI provides the pledge ship listing, MSRP data, current store availability, public Warbond ship upgrade offers, production status, and source ship media mirrored by `docs/ships.json`.
 - Item translations are manually curated in this repository and are not machine translated during the build.
 - Official event dates are manually verified against CIG Comm-Link announcements. Bar Citizen dates are imported from Bar Citizens International, validated, and quarantined when a range is suspicious.
+- Anticipated annual dates are generated from the official 2025 month/day windows. They use `dateConfidence: "anticipated"`, retain the prior-year official reference, and roll to the next occurrence after the feed generation date; they must not be presented as confirmed CIG dates.
 
 `docs/events.json` publishes the calendar contract:
 
@@ -76,6 +79,7 @@ The feed is built from:
       "eventType": "inPerson",
       "organizer": "Bar Citizens International",
       "verification": "communityPublished",
+      "dateConfidence": "confirmed",
       "status": "scheduled",
       "schedule": {
         "kind": "timed",
