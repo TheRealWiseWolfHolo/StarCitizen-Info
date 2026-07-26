@@ -1,6 +1,6 @@
 # StarCitizen-Info
 
-Public Star Citizen ship data feeds generated from the live RSI pledge ship listing, StarCitizen.tools pledge vehicle metadata, and SPViewer ship detail pages.
+Public Star Citizen ship and event data feeds generated from official RSI sources, StarCitizen.tools, SPViewer, and Bar Citizens International.
 
 ## What It Publishes
 
@@ -10,6 +10,8 @@ Public Star Citizen ship data feeds generated from the live RSI pledge ship list
   - detailed ship metadata that keeps size, crew, status, and pledge availability from the StarCitizen.tools pledge vehicle list while sourcing component and weapon loadouts from SPViewer
 - `limited-ships.json`
   - alpha feed of timed limited-ship purchase targets for Hangar Express cart automation
+- `events.json`
+  - validated official Star Citizen and community Bar Citizen dates for the Hangar Express Event Calendar
 - `item-translations/zh-Hans.json`
   - manually curated Simplified Chinese item-name dictionary for strict on-device Hangar display translation
 - `resource-manifest.json`
@@ -35,6 +37,12 @@ The feed is built from:
   - `https://www.spviewer.eu/`
 - curated item translation source:
   - `data/item-translations/zh-Hans.json`
+- official event source:
+  - `https://robertsspaceindustries.com/en/comm-link`
+- Bar Citizen event source:
+  - `https://www.barcitizen.org/eventlist`
+- curated official event records:
+  - `data/events/official-events.json`
 
 ## Credits And Data Attribution
 
@@ -43,6 +51,61 @@ The feed is built from:
 - StarCitizen.tools provides the pledge vehicle list metadata preserved in `docs/ship-details.json`, including ship names, source page URLs, manufacturer names, size, crew, in-game status, and pledge availability.
 - RSI provides the pledge ship listing, MSRP data, current store availability, public Warbond ship upgrade offers, production status, and source ship media mirrored by `docs/ships.json`.
 - Item translations are manually curated in this repository and are not machine translated during the build.
+- Official event dates are manually verified against CIG Comm-Link announcements. Bar Citizen dates are imported from Bar Citizens International, validated, and quarantined when a range is suspicious.
+
+`docs/events.json` publishes the calendar contract:
+
+```json
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-26T12:00:00.000Z",
+  "count": 2,
+  "sources": [
+    {
+      "id": "barCitizen",
+      "status": "fresh",
+      "usedPreviousData": false,
+      "quarantinedCount": 1
+    }
+  ],
+  "events": [
+    {
+      "id": "barcitizen:pax-west-2026-bar-citizen",
+      "title": "PAX West 2026 Bar Citizen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-09-05T01:00:00.000Z",
+        "endsAt": "2026-09-05T04:00:00.000Z",
+        "originalTimeZone": "PDT"
+      },
+      "location": {
+        "isOnline": false,
+        "city": "Seattle",
+        "countryCode": "US",
+        "formattedAddress": "1158 Broadway, Seattle, WA 98122, USA"
+      },
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/pax-west-2026-bar-citizen"
+        }
+      ]
+    }
+  ],
+  "quarantine": [
+    {
+      "sourceURL": "https://www.barcitizen.org/event-details/example",
+      "reasons": ["Bar Citizen event duration exceeds seven days"]
+    }
+  ]
+}
+```
 
 ## JSON Shape
 

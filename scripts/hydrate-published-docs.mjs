@@ -20,6 +20,7 @@ const topLevelFiles = [
   "ships.json",
   "ship-details.json",
   "limited-ships.json",
+  "events.json",
   "resource-manifest.json",
 ];
 

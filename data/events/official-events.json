@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "events": [
+    {
+      "id": "official:foundation-festival-2026-twitch-drops",
+      "title": "Foundation Festival 2026 Twitch Drops",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "cigPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-07-29",
+        "endDateExclusive": "2026-08-13",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen Twitch streams"
+      },
+      "summary": "Watch eligible Star Citizen streams during Foundation Festival 2026 to earn Twitch Drops.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Official announcement",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T00:00:00.000Z"
+    },
+    {
+      "id": "official:defensecon-2956",
+      "title": "DefenseCon 2956",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "cigPublished",
+      "status": "completed",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-05-14",
+        "endDateExclusive": "2026-05-28",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "DefenseCon 2956 featured manufacturer showcases, activities, and a Star Citizen Free Fly.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Official schedule",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/21129-DefenseCon-2956-Schedule"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T00:00:00.000Z"
+    },
+    {
+      "id": "official:enter-atmosphere-2956",
+      "title": "Enter ATMOSPHERE 2956",
+      "category": "official",
+      "eventType": "inPerson",
+      "organizer": "Cloud Imperium Games",
+      "verification": "cigPublished",
+      "status": "completed",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-02-21",
+        "endDateExclusive": "2026-02-22",
+        "timeZone": "Europe/London"
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Manchester Central",
+        "city": "Manchester",
+        "countryCode": "GB",
+        "formattedAddress": "Manchester Central, Manchester, United Kingdom"
+      },
+      "summary": "The official Star Citizen community event returned to Manchester for a day of presentations and community activities.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Official announcement",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/20975-Love-Luck-And-Adventure-Your-February-In-The-Verse"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T00:00:00.000Z"
+    }
+  ]
+}

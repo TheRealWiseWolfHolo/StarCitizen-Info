@@ -1,0 +1,748 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-26T17:39:50.938Z",
+  "count": 22,
+  "sources": [
+    {
+      "id": "cig",
+      "name": "Cloud Imperium Games",
+      "url": "https://robertsspaceindustries.com/en/comm-link",
+      "status": "curated",
+      "usedPreviousData": false
+    },
+    {
+      "id": "barCitizen",
+      "name": "Bar Citizens International",
+      "url": "https://www.barcitizen.org/eventlist",
+      "status": "fresh",
+      "usedPreviousData": false,
+      "message": null,
+      "discoveredCount": 20,
+      "quarantinedCount": 1
+    }
+  ],
+  "events": [
+    {
+      "id": "official:enter-atmosphere-2956",
+      "title": "Enter ATMOSPHERE 2956",
+      "category": "official",
+      "eventType": "inPerson",
+      "organizer": "Cloud Imperium Games",
+      "verification": "cigPublished",
+      "status": "completed",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-02-21",
+        "endDateExclusive": "2026-02-22",
+        "timeZone": "Europe/London"
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Manchester Central",
+        "city": "Manchester",
+        "countryCode": "GB",
+        "formattedAddress": "Manchester Central, Manchester, United Kingdom"
+      },
+      "summary": "The official Star Citizen community event returned to Manchester for a day of presentations and community activities.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Official announcement",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/20975-Love-Luck-And-Adventure-Your-February-In-The-Verse"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T00:00:00.000Z"
+    },
+    {
+      "id": "official:defensecon-2956",
+      "title": "DefenseCon 2956",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "cigPublished",
+      "status": "completed",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-05-14",
+        "endDateExclusive": "2026-05-28",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen"
+      },
+      "summary": "DefenseCon 2956 featured manufacturer showcases, activities, and a Star Citizen Free Fly.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Official schedule",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/21129-DefenseCon-2956-Schedule"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T00:00:00.000Z"
+    },
+    {
+      "id": "barcitizen:austin-bar-citizen-july-meet-up",
+      "title": "Austin Bar Citizen July Meet-up",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-07-26T22:00:00.000Z",
+        "endsAt": "2026-07-27T03:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "The Victory Tap",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "111 E Main St, Pflugerville, TX 78660, USA"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/austin-bar-citizen-july-meet-up"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "official:foundation-festival-2026-twitch-drops",
+      "title": "Foundation Festival 2026 Twitch Drops",
+      "category": "official",
+      "eventType": "online",
+      "organizer": "Cloud Imperium Games",
+      "verification": "cigPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "allDay",
+        "startDate": "2026-07-29",
+        "endDateExclusive": "2026-08-13",
+        "timeZone": "UTC"
+      },
+      "location": {
+        "isOnline": true,
+        "name": "Star Citizen Twitch streams"
+      },
+      "summary": "Watch eligible Star Citizen streams during Foundation Festival 2026 to earn Twitch Drops.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Official announcement",
+          "url": "https://robertsspaceindustries.com/en/comm-link/transmission/21237-Twitch-Drops-Foundation-Festival-2026"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T00:00:00.000Z"
+    },
+    {
+      "id": "barcitizen:corby-bar-citizen",
+      "title": "Corby Bar Citizen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-08-01T13:00:00.000Z",
+        "endsAt": "2026-08-01T20:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Chequered Flag",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "Causeway Rd, Corby NN17 4DU, UK"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/corby-bar-citizen"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:bar-citizen-philippines-2026",
+      "title": "Bar Citizen Philippines 2026",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-08-08T09:00:00.000Z",
+        "endsAt": "2026-08-08T16:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Bar Citizen Philippines 2026",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "3WV2+2FF Tagaytay City, Cavite, Philippines"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/bar-citizen-philippines-2026"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:bar-citizen-helsinki",
+      "title": "Bar Citizen Helsinki",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-08-08T14:00:00.000Z",
+        "endsAt": "2026-08-08T18:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Kaisla",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "Vilhonkatu 4, 00100 Helsinki, Finland"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/bar-citizen-helsinki"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:london-bar-citizen-brewdog-waterloo",
+      "title": "London Bar Citizen, Brewdog Waterloo",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-08-08T15:00:00.000Z",
+        "endsAt": "2026-08-08T21:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Brewdog Waterloo",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "g, Waterloo Station, York Rd, London SE1 7ND, UK"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/london-bar-citizen-brewdog-waterloo"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:atlanta-bar-citizen-1",
+      "title": "Atlanta Bar Citizen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-08-09T18:00:00.000Z",
+        "endsAt": "2026-08-09T21:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Dave & Busters - Marietta",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "Marietta, GA 30067, USA"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/atlanta-bar-citizen-1"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:colorado-bar-citizen",
+      "title": "Colorado Bar Citizen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-08-15T21:00:00.000Z",
+        "endsAt": "2026-08-16T00:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Launch Pad Brewery",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "884 S Buckley Rd, Aurora, CO 80017, USA"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/colorado-bar-citizen"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:calgary-bar-citizen",
+      "title": "Calgary Bar Citizen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-08-15T21:30:00.000Z",
+        "endsAt": "2026-08-16T00:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Big Sky BBQ",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "306016 15 St E, Foothills, AB T1S 7A7, Canada"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/calgary-bar-citizen"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:bar-citizen-brest",
+      "title": "BAR CITIZEN - BREST",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-08-22T15:00:00.000Z",
+        "endsAt": "2026-08-22T20:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "La Fabrik",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "25 Rue de Pontaniou, 29200 Brest, France"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/bar-citizen-brest"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:syracuse-bar-citizen-1",
+      "title": "Syracuse Bar Citizen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-08-22T16:00:00.000Z",
+        "endsAt": "2026-08-22T20:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Shaughnessy's Irish Pub",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "550 S Warren St, Syracuse, NY 13202, USA"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/syracuse-bar-citizen-1"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:camp-citizen",
+      "title": "Camp Citizen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-09-01T22:00:00.000Z",
+        "endsAt": "2026-09-05T22:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Camp Citizen",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "54570 Deudesfeld, Germany"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/camp-citizen"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:pax-west-2026-bar-citizen",
+      "title": "PAX West 2026 Bar Citizen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-09-05T01:00:00.000Z",
+        "endsAt": "2026-09-05T04:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Stoup Brewery - Capitol Hill Location",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "1158 Broadway, Seattle, WA 98122, USA"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/pax-west-2026-bar-citizen"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:bar-citizen-germany-munich-allershausen",
+      "title": "Bar Citizen GERMANY Munich Allershausen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-09-05T11:30:00.000Z",
+        "endsAt": "2026-09-05T20:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Bar Citizen GERMANY Munich Allershausen",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "Gewerbegebiet West, Kesselbodenstraße, 85391 Allershausen, Germany"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/bar-citizen-germany-munich-allershausen"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:bcam-2026",
+      "title": "BCAM 2026",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-09-05T12:00:00.000Z",
+        "endsAt": "2026-09-05T20:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "BCAM 2026",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "Gewerbegebiet West, Kesselbodenstraße, 85391 Allershausen, Germany"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/bcam-2026"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:bar-citizen-edinburgh",
+      "title": "Bar Citizen Edinburgh",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-09-05T13:00:00.000Z",
+        "endsAt": "2026-09-05T22:30:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Jeremiah's Taproom",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "7-8 Elm Row, Edinburgh EH7 4AA, UK"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/bar-citizen-edinburgh"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:vernal-utah-bar-citizen",
+      "title": "Vernal, Utah Bar Citizen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-09-12T21:00:00.000Z",
+        "endsAt": "2026-09-12T23:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Vernal Brewing Co",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "55 S 500 E, Vernal, UT 84078, USA"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/vernal-utah-bar-citizen"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:bar-citizen-rouen",
+      "title": "Bar Citizen Rouen",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-09-19T16:00:00.000Z",
+        "endsAt": "2026-09-19T23:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Les Explorateurs",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "54 Rue de la République, 76000 Rouen, France"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/bar-citizen-rouen"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:bar-citizen-portugal-2026",
+      "title": "Bar Citizen Portugal 2026",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-09-26T14:00:00.000Z",
+        "endsAt": "2026-09-26T19:00:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "MXM ArtCenter",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "Porto, Portugal"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/bar-citizen-portugal-2026"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    },
+    {
+      "id": "barcitizen:dutch-bar-citizen-spijkenisse-2",
+      "title": "Dutch Bar citizen Spijkenisse #2",
+      "category": "barCitizen",
+      "eventType": "inPerson",
+      "organizer": "Bar Citizens International",
+      "verification": "communityPublished",
+      "status": "scheduled",
+      "schedule": {
+        "kind": "timed",
+        "startsAt": "2026-09-26T16:00:00.000Z",
+        "endsAt": "2026-09-26T21:59:00.000Z",
+        "timeZone": null,
+        "originalTimeZone": null
+      },
+      "location": {
+        "isOnline": false,
+        "name": "Dutch Bar citizen Spijkenisse #2",
+        "city": null,
+        "region": null,
+        "countryCode": null,
+        "formattedAddress": "Spijkenisse, Netherlands"
+      },
+      "summary": "Meet local Star Citizen players at a community-organized Bar Citizen.",
+      "links": [
+        {
+          "role": "source",
+          "label": "Event details and RSVP",
+          "url": "https://www.barcitizen.org/event-details/dutch-bar-citizen-spijkenisse-2"
+        }
+      ],
+      "lastVerifiedAt": "2026-07-26T17:39:50.938Z"
+    }
+  ],
+  "quarantine": [
+    {
+      "sourceURL": "https://www.barcitizen.org/event-details/july-bar-citizen-dfw-lan-party",
+      "reasons": [
+        "Bar Citizen event duration exceeds seven days"
+      ]
+    }
+  ]
+}
